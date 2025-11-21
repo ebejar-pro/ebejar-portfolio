@@ -1,47 +1,51 @@
-# ebejar-portfolio
-# Edmundo Bejar – Professional Portfolio
+# Project Title: API Testing with Postman
 
-Welcome to my portfolio!  
-I am a **Senior QA & Data Quality Analyst** transitioning into **Data Analytics & Gaming QA**.  
-This repository showcases case studies and projects that highlight my expertise in **SQL, Python, Power BI, Selenium, Postman, and Jenkins**, with a focus on delivering business impact through data insights and quality assurance.
-
----
-
-## 📊 Data Analysis Projects
-Projects demonstrating my ability to clean, analyze, and visualize data for actionable insights.
-
-- [SQL Insights](Data-Analysis/Project-01-SQL-Insights/README.md)  
-  Business problem solved with SQL queries and reporting.
-
-- [Power BI Dashboard](Data-Analysis/Project-02-PowerBI-Dashboard/README.md)  
-  Interactive dashboards for financial and compliance reporting.
-
-- [Python Analytics](Data-Analysis/Project-03-Python-Analytics/README.md)  
-  Data cleaning, ETL validation, and exploratory analysis using Python.
+## 📌 Overview
+This project showcases API validation using Postman collections and Newman reports.  
+The objective was to ensure API reliability and reduce defects in integration layers.
 
 ---
 
-## 🧪 Test Automation Projects
-Projects showcasing my experience in building automation frameworks, API testing, and CI/CD pipelines.
-
-- [Selenium Automation](Test-Analysis/Project-01-Automation-Selenium/README.md)  
-  UI test automation integrated with Jenkins pipelines.
-
-- [API Testing with Postman](Test-Analysis/Project-02-API-Testing-Postman/README.md)  
-  Collections and regression testing for APIs with Newman reports.
-
-- [CI/CD with Jenkins](Test-Analysis/Project-03-CI-CD-Jenkins/README.md)  
-  Automated pipelines and QA flowcharts for continuous integration.
+## 🎯 Business Problem
+- APIs lacked consistent validation  
+- Manual testing missed edge cases  
+- Needed automated regression testing for APIs  
 
 ---
 
-## 📂 Structure
-Portfolio/ ├── Data-Analysis/ │   └── Project folders (SQL, Power BI, Python) ├── Test-Analysis/ │   └── Project folders (Selenium, Postman, Jenkins) └── README.md (this landing page)
-
+## 🛠 Tools & Technologies
+- Postman (API collections)  
+- Newman (automated test execution)  
+- Jenkins (pipeline integration)  
 
 ---
 
-## 🌐 Connect With Me
-- [LinkedIn](https://www.linkedin.com/in/edmundo-bejar-3400691b)  
-- [GitHub](https://github.com/ebejar-pro)  
-- 📍 Sydney, NSW | Open to Hybrid & Remote Opportunities
+## 🔍 Approach
+1. Designed Postman collections for core APIs  
+2. Automated regression runs with Newman  
+3. Integrated API tests into Jenkins pipeline  
+4. Generated reports for stakeholders  
+
+---
+
+## 📈 Deliverables
+- Postman collections  
+- Newman test reports  
+- API documentation  
+
+---
+
+## 🚀 Results & Impact
+- Improved API reliability and defect detection  
+- Reduced manual API testing effort by **50%**  
+- Delivered audit-ready API test reports  
+
+---
+
+## 📸 Visuals
+![API Test Report](reports/api_test_report.png)
+
+---
+
+## 📂 Repository Structure
+collections/ # Postman collections reports/     # Newman test reports docs/        # API documentation README.md    # Project documentation

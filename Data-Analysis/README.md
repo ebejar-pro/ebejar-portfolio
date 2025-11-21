@@ -1,47 +1,54 @@
-# ebejar-portfolio
-# Edmundo Bejar – Professional Portfolio
+# Project Title: [SQL Insights & Power BI Dashboard]
 
-Welcome to my portfolio!  
-I am a **Senior QA & Data Quality Analyst** transitioning into **Data Analytics & Gaming QA**.  
-This repository showcases case studies and projects that highlight my expertise in **SQL, Python, Power BI, Selenium, Postman, and Jenkins**, with a focus on delivering business impact through data insights and quality assurance.
-
----
-
-## 📊 Data Analysis Projects
-Projects demonstrating my ability to clean, analyze, and visualize data for actionable insights.
-
-- [SQL Insights](Data-Analysis/Project-01-SQL-Insights/README.md)  
-  Business problem solved with SQL queries and reporting.
-
-- [Power BI Dashboard](Data-Analysis/Project-02-PowerBI-Dashboard/README.md)  
-  Interactive dashboards for financial and compliance reporting.
-
-- [Python Analytics](Data-Analysis/Project-03-Python-Analytics/README.md)  
-  Data cleaning, ETL validation, and exploratory analysis using Python.
+## 📌 Overview
+This project showcases data analysis and visualization for [system/domain].  
+The objective was to [business problem, e.g., improve reporting accuracy, uncover trends, and support decision-making].
 
 ---
 
-## 🧪 Test Automation Projects
-Projects showcasing my experience in building automation frameworks, API testing, and CI/CD pipelines.
-
-- [Selenium Automation](Test-Analysis/Project-01-Automation-Selenium/README.md)  
-  UI test automation integrated with Jenkins pipelines.
-
-- [API Testing with Postman](Test-Analysis/Project-02-API-Testing-Postman/README.md)  
-  Collections and regression testing for APIs with Newman reports.
-
-- [CI/CD with Jenkins](Test-Analysis/Project-03-CI-CD-Jenkins/README.md)  
-  Automated pipelines and QA flowcharts for continuous integration.
+## 🎯 Business Problem
+- Data scattered across multiple sources with inconsistent quality  
+- Manual reporting was slow and error-prone  
+- Stakeholders needed clear, visual insights for compliance and performance monitoring  
 
 ---
 
-## 📂 Structure
-Portfolio/ ├── Data-Analysis/ │   └── Project folders (SQL, Power BI, Python) ├── Test-Analysis/ │   └── Project folders (Selenium, Postman, Jenkins) └── README.md (this landing page)
-
+## 🛠 Tools & Technologies
+- SQL (data extraction and validation)  
+- Python (ETL, cleaning, exploratory analysis)  
+- Power BI (interactive dashboards)  
+- Excel (supporting visuals and validation)  
 
 ---
 
-## 🌐 Connect With Me
-- [LinkedIn](https://www.linkedin.com/in/edmundo-bejar-3400691b)  
-- [GitHub](https://github.com/ebejar-pro)  
-- 📍 Sydney, NSW | Open to Hybrid & Remote Opportunities
+## 🔍 Approach
+1. Collected and sanitized datasets (synthetic or anonymized for demo purposes)  
+2. Built SQL queries to extract insights and validate business rules  
+3. Applied Python scripts for ETL and advanced analytics  
+4. Designed Power BI dashboards for interactive reporting  
+5. Documented workflows and results for audit-ready reporting  
+
+---
+
+## 📈 Deliverables
+- SQL scripts for data insights and validation  
+- Jupyter notebooks with Python analysis  
+- Power BI dashboards (.pbix files + screenshots)  
+- Reports and documentation for stakeholders  
+
+---
+
+## 🚀 Results & Impact
+- Reduced manual reporting effort by **50%**  
+- Improved data accuracy and compliance visibility  
+- Enabled faster decision-making with interactive dashboards  
+
+---
+
+## 📸 Visuals
+![Dashboard Screenshot](screenshots/powerbi_dashboard.png)
+
+---
+
+## 📂 Repository Structure
+data/         # Sample datasets (sanitized or synthetic) notebooks/    # Jupyter notebooks (Python, SQL queries) scripts/      # ETL or data cleaning scripts reports/      # Power BI dashboards, Excel visuals README.md     # Project documentation
