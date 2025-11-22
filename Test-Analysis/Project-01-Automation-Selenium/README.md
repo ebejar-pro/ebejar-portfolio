@@ -49,4 +49,4 @@ The objective was to reduce manual regression testing time and improve CI/CD rel
 ---
 
 ## 📂 Repository Structure
-test-scripts/ # Selenium/TestNG scripts reports/      # Test execution reports diagrams/     # QA pipeline diagrams README.md     # Project documentation
+## test-scripts/ # Selenium/TestNG scripts reports/      # Test execution reports diagrams/     # QA pipeline #diagrams README.md     # Project documentation
