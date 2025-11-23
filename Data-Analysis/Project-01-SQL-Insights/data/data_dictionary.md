@@ -1,8 +1,8 @@
-Certainly! Here’s a clean and professional **Data Dictionary Template** you can use for your project. It is structured and aligned with best practices used in data-driven organisations (e.g., finance, retail, analytics teams). You can adapt it to your tables such as **products, suppliers, customers, employees, sales, commissions**, etc.
+This Data Dictionary details tables and its elements containing the data for a Ficticious Retail Company.  
 
 ---
 
-# 📘 **Data Dictionary Template**
+# 📘 **Data Dictionary ABC Retail Company**
 
 ## 1. **Overview**
 
@@ -10,9 +10,9 @@ Certainly! Here’s a clean and professional **Data Dictionary Template** you ca
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | **Project Name**          | Retail Sales Analytics Database                                                                                        |
 | **System/Database**       | PostgreSQL                                                                                                             |
-| **Prepared By**           | *Your Name*                                                                                                            |
-| **Last Updated**          | *YYYY-MM-DD*                                                                                                           |
-| **Purpose**               | Describe business purpose of this dataset (e.g., "To support retail performance analytics and commission calculation") |
+| **Prepared By**           | *Edmundo Bejar*                                                                                                          |
+| **Last Updated**          | *2025-11-23*                                                                                                           |
+| **Purpose**               | To support retail performance analytics and commission calculation |
 | **Key Business Areas**    | Sales, Customer Management, Inventory, Supplier Management                                                             |
 | **Confidentiality Level** | Internal / Public / Restricted                                                                                         |
 
@@ -22,10 +22,11 @@ Certainly! Here’s a clean and professional **Data Dictionary Template** you ca
 
 | Table Name       | Description                    | Primary Key   | Row Count | Notes                           |
 | ---------------- | ------------------------------ | ------------- | --------- | ------------------------------- |
-| products         | List of saleable products      | product_id    | ~12       | Includes price and supplier     |
+| products         | List of saleable products      | product_id    | ~13       | Includes price and supplier     |
 | suppliers        | Supplier details               | supplier_id   | ~12       | Local and international vendors |
 | customers        | Customer details               | customer_id   | ~8        | Retail customers                |
-| employees        | Employee records (sales staff) | employee_id   | ~11       | Used for commissions            |
+| employees        | Employee records               | employee_id   | ~11       | Used for commissions            |
+|                  | (sales staff job_code='SALES') |               | ~5
 | sales            | Sales transactions             | sale_id       | ~400      | Fact table                      |
 | sales_commission | Commission records             | commission_id | ~200      | Linked to employees             |
 
@@ -35,20 +36,16 @@ Certainly! Here’s a clean and professional **Data Dictionary Template** you ca
 
 ### **Table: sales**
 
-| Field Name   | Data Type     | Nullable | Description                     | Example          | Source                | Notes                      |
-| ------------ | ------------- | -------- | ------------------------------- | ---------------- | --------------------- | -------------------------- |
-| sale_id      | INT           | No       | Unique identifier for each sale | 101              | Auto Generated        | Primary Key                |
-| sale_date    | DATE          | No       | Date of sale                    | 2025-01-15       | Manual / ETL          | Indexed                    |
-| customer_id  | INT           | Yes      | Customer reference              | 3                | customers.customer_id | Foreign Key                |
-| product_id   | INT           | No       | Product reference               | 5                | products.product_id   | FK, indexed                |
-| quantity     | INT           | No       | Number of units sold            | 3                | System entry          | Must be 1–5                |
-| price_sold   | DECIMAL(10,2) | No       | Selling price at transaction    | 549.99           | products.price        | May vary during promotions |
-| employee_id  | INT           | Yes      | Salesperson who made the sale   | 8                | employees.employee_id |                            |
-| supplier_id  | INT           | Yes      | Supplier of the product sold    | 6                | suppliers.supplier_id | From product table         |
-| total_amount | DECIMAL(10,2) | No       | Computed field (price * qty)    | 1649.97          | Calculated            | Can calculate on query     |
-| created_at   | TIMESTAMP     | No       | Record creation                 | 2025-01-15 10:30 | ETL process           |                            |
-
----
+| Field        | Type          | Nullable | Description         | Example           | Notes |
+| ------------ | ------------- | -------- | ------------------- | ----------------- | ----- |
+| sale_id      | INT           | No       | Unique sale code    | 100               | PK    |
+| customer_id  | INT           | No       | Unique customer id  | 35                | FK    |
+| product_id   | INT           | No       | Unique product id   | 23                | FK    |
+| sale_date    | Date          | No       | Sale date           | 2025-09-20        |       |
+| quantity     | INT           | No       | Number of units sold| 3                 |       |
+| employee_id  | INT           | No       | Unique employee id  | 10                | FK    |
+| supplier_id  | INT           | No       | Supplier reference  | 8                 | FK    |
+| created_at   | TIMESTAMP     | No       | Record created      | 2025-09-20        |       |
 
 ### **Table: products**
 
@@ -59,6 +56,49 @@ Certainly! Here’s a clean and professional **Data Dictionary Template** you ca
 | price        | DECIMAL(10,2) | No       | Unit price          | 1199.00           |       |
 | supplier_id  | INT           | No       | Supplier reference  | 8                 | FK    |
 | created_at   | TIMESTAMP     | No       | Record created      | 2024-11-01        |       |
+
+### **Table: customers**
+
+| Field        | Type          | Nullable | Description         | Example             | Notes |
+| ------------ | ------------- | -------- | ------------------- | -----------------   | ----- |
+| customer_id  | INT           | No       | Unique customer code| 8                   | PK    |
+| name         | VARCHAR(100)  | No       | Customer name       | Bob Smith           |       |
+| email        | VARCHAR(100)  | No       | Customer email      | bobsmith@example.com|       |
+| age          | INT           | No       | Customer age        | 38                  |       |
+| created_at   | TIMESTAMP     | No       | Record created      | 2024-11-01          |       |
+
+### **Table: employees**
+
+| Field        | Type          | Nullable | Description         | Example             | Notes |
+| ------------ | ------------- | -------- | ------------------- | -----------------   | ----- |
+| employee_id  | INT           | No       | Unique employee code| 8                   | PK    |
+| name         | VARCHAR(100)  | No       | Employee name       | Eric Law            |       |
+| salary       | DECIMAL(10,2) | No       | Employee salary     | $85,000.00          |       |
+| job_code     | VARCHAR(20)   | No       | Job code            | "MGR", "SALES"      |       |
+| commission   | DECIMAL(10,2) | No       | Sales commission    | $120.50             |       |
+| created_at   | TIMESTAMP     | No       | Record created      | 2024-11-01          |       |
+
+### **Table: suppliers**
+
+| Field        | Type          | Nullable | Description         | Example               | Notes |
+| ------------ | ------------- | -------- | ------------------- | -----------------     | ----- |
+| supplier_id  | INT           | No       | Unique supplier code| 12                    | PK    |
+| name         | VARCHAR(100)  | No       | Supplier name       | TechSource Ltd        |       |
+| contact_email| VARCHAR(100)  | No       | Supplier email      | contact@techsource.com|       |       
+| phone        | VARCHAR(20)   | No       | Supplier phone      | 111-222-333           |       |
+| country      | VARCHAR(50)   | No       | Supplier country    | USA                   |       |
+| created_at   | TIMESTAMP     | No       | Record created      | 2024-11-01            |       |
+
+
+### **Table: employee commissions**
+
+| Field            | Type          | Nullable | Description         | Example             | Notes |
+| ------------     | ------------- | -------- | ------------------- | -----------------   | ----- |
+| commission_id    | INT           | No       | Unique commission id| 10                  | PK    |
+| employee_id      | INT           | No       | Employee name       | 15                  | FK    |
+| sale_id          | INT           | No       | Employee salary     | 35                  | FK    |
+| commission_amount| DECIMAL(10,2) | No       | Job code            | $125.60             |       |
+| created_at       | TIMESTAMP     | No       | Record created      | 2024-11-01          |       |
 
 ---
 
