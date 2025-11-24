@@ -123,9 +123,17 @@ suppliers → products → sales ← customers
              sales_commission ← employees
 ```
 
+## 6. Entity Relationship Diagram
+
+You can click the image or the link below to view the ER diagram.
+
+![Entity Relationship Diagram](Docs/er_diagram.png)
+
+🔗 [Open diagram in new tab](Docs/er_diagram.png)
+
 ---
 
-## 6. **ETL & Transformation Notes**
+## 7. **ETL & Transformation Notes**
 
 | Process                    | Description                                | Frequency  |
 | -------------------------- | ------------------------------------------ | ---------- |
@@ -136,7 +144,7 @@ suppliers → products → sales ← customers
 
 ---
 
-## 7. **Metadata & Technical Considerations**
+## 8. **Metadata & Technical Considerations**
 
 | Aspect            | Details                                          |
 | ----------------- | ------------------------------------------------ |
