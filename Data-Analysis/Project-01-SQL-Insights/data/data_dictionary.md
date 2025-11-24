@@ -115,7 +115,7 @@ This Data Dictionary details tables and its elements containing the data for a f
 
 ---
 
-## 5. **Data Relationships (High Level) - SEE ebejar-portfolio/Data-Analysis/Docs/er_diagram.png**
+## 5. **Data Relationships (High Level)**
 
 ```
 suppliers → products → sales ← customers
@@ -123,7 +123,7 @@ suppliers → products → sales ← customers
              sales_commission ← employees
 ```
 
-## 6. Entity Relationship Diagram
+## 6. **Entity Relationship Diagram**
 
 You can click the image or the link below to view the ER diagram.
 
