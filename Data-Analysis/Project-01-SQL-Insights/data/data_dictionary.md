@@ -45,7 +45,6 @@ This Data Dictionary details tables and its elements containing the data for a f
 | quantity     | INT           | No       | Number of units sold| 3                 |       |
 | employee_id  | INT           | No       | Unique employee id  | 10                | FK    |
 | supplier_id  | INT           | No       | Supplier reference  | 8                 | FK    |
-| created_at   | TIMESTAMP     | No       | Record created      | 2025-09-20        |       |
 
 ### **Table: products**
 
@@ -55,7 +54,7 @@ This Data Dictionary details tables and its elements containing the data for a f
 | product_name | VARCHAR(100)  | No       | Product description | "Air Conditioner" |       |
 | price        | DECIMAL(10,2) | No       | Unit price          | 1199.00           |       |
 | supplier_id  | INT           | No       | Supplier reference  | 8                 | FK    |
-| created_at   | TIMESTAMP     | No       | Record created      | 2024-11-01        |       |
+
 
 ### **Table: customers**
 
@@ -65,7 +64,7 @@ This Data Dictionary details tables and its elements containing the data for a f
 | name         | VARCHAR(100)  | No       | Customer name       | Bob Smith           |       |
 | email        | VARCHAR(100)  | No       | Customer email      | bobsmith@example.com|       |
 | age          | INT           | No       | Customer age        | 38                  |       |
-| created_at   | TIMESTAMP     | No       | Record created      | 2024-11-01          |       |
+
 
 ### **Table: employees**
 
@@ -76,7 +75,7 @@ This Data Dictionary details tables and its elements containing the data for a f
 | salary       | DECIMAL(10,2) | No       | Employee salary     | $85,000.00          |       |
 | job_code     | VARCHAR(20)   | No       | Job code            | "MGR", "SALES"      |       |
 | commission   | DECIMAL(10,2) | No       | Sales commission    | $120.50             |       |
-| created_at   | TIMESTAMP     | No       | Record created      | 2024-11-01          |       |
+
 
 ### **Table: suppliers**
 
@@ -87,7 +86,7 @@ This Data Dictionary details tables and its elements containing the data for a f
 | contact_email| VARCHAR(100)  | No       | Supplier email      | contact@techsource.com|       |       
 | phone        | VARCHAR(20)   | No       | Supplier phone      | 111-222-333           |       |
 | country      | VARCHAR(50)   | No       | Supplier country    | USA                   |       |
-| created_at   | TIMESTAMP     | No       | Record created      | 2024-11-01            |       |
+
 
 
 ### **Table: employee commissions**
@@ -125,7 +124,7 @@ suppliers → products → sales ← customers
 
 ## 6. **Entity Relationship Diagram**
 
-You can click the image or the link below to view the ER diagram.
+See below the ER Diagram or you can click to open it in new tab.
 
 ![Entity Relationship Diagram](Docs/er_diagram.png)
 
