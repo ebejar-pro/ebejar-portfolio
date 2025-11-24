@@ -1,4 +1,4 @@
-This Data Dictionary details tables and its elements containing the data for a Ficticious Retail Company.  
+This Data Dictionary details tables and its elements containing the data for a ficticious retail company.  
 
 ---
 
@@ -104,18 +104,18 @@ This Data Dictionary details tables and its elements containing the data for a F
 
 ## 4. **Business Rules & Data Quality**
 
-| Rule                                                                                | Description |
+| Rules                                                                               | Description |
 | ----------------------------------------------------------------------------------- | ----------- |
 | Quantity must be between 1 and 5.                                                   |             |
 | A sale must reference an existing product and employee.                             |             |
 | A product must always have a valid supplier.                                        |             |
 | Sale date cannot be in the future.                                                  |             |
-| Commission only applies to valid employee sales records.                            |             |
+| Commission only applies to valid employee sales records (job_code = "SALES").       |             |
 | Duplicate customer records must be avoided (use email or mobile number validation). |             |
 
 ---
 
-## 5. **Data Relationships (High Level)**
+## 5. **Data Relationships (High Level) - SEE ebejar-portfolio/Data-Analysis/Docs/er_diagram.png**
 
 ```
 suppliers → products → sales ← customers
@@ -147,20 +147,3 @@ suppliers → products → sales ← customers
 | Data Volume       | Small (training/demo only)                       |
 
 ---
-
-# 📎 Suggested Format for GitHub
-
-You can create this as **data_dictionary.md** in your repository.
-
----
-
-# 👍 Next Steps
-
-Would you like me to:
-
-✔ Help build the **Markdown file for GitHub directly**?
-✔ Generate an **ERD diagram (text or code format)**?
-✔ Suggest **SQL queries for validating data rules (QA style)**?
-✔ Provide a **README structure for your SQL project portfolio**?
-
-Let me know — we can enhance this into a perfect portfolio case study!

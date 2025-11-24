@@ -1,7 +1,7 @@
 # Project Title: SQL Insights
 
 ## 📌 Overview
-This project showcases SQL-based analysis for [system/domain].  
+This project showcases SQL-based analysis for a ficticious company "ABC Retail Company Ltd".  
 The objective was to [business problem, e.g., validate financial transactions and uncover compliance risks].
 
 ---
