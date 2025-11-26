@@ -1,14 +1,17 @@
 # Project Title: SQL Insights
 
 ## 📌 Overview
-This project showcases SQL-based analysis for a ficticious company "ABC Retail Company Ltd".  
-The objective was to [business problem, e.g., validate financial transactions and uncover compliance risks].
+This project showcases SQL-based analysis for a ficticious company "ABC Retail Company Ltd" that sells electro-domestic products in Australia. Initially SQLs have been used to populate with dummy data the tables use by the system. Later other SQL procedures have been developed to validate and calculate financial transactions, and uncover compliance risks.  
 
 ---
 
-## 🎯 Business Problem
-- Data inconsistencies across multiple sources  
-- Manual validation was slow and error-prone  
+## 🎯 Business Scenarios
+- Top 5 selling products by revenue per month
+- Salesperson commission calculation 
+- Monthly sales trends
+- Customer segmentation by age
+- Supplier performance by country
+- 
 - Needed reliable insights for regulatory reporting  
 
 ---
