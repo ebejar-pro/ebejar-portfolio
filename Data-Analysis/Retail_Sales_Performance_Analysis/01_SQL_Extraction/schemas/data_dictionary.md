@@ -11,7 +11,7 @@ This Data Dictionary details tables and its elements containing the data for a f
 | **Project Name**          | Retail Sales Analytics Database                                                                                        |
 | **System/Database**       | PostgreSQL                                                                                                             |
 | **Prepared By**           | *Edmundo Bejar*                                                                                                          |
-| **Last Updated**          | *2025-11-23*                                                                                                           |
+| **Last Updated**          | *2025-11-27*                                                                                                           |
 | **Purpose**               | To support retail performance analytics and commission calculation |
 | **Key Business Areas**    | Sales, Customer Management, Inventory, Supplier Management                                                             |
 | **Confidentiality Level** | Internal / Public / Restricted                                                                                         |
@@ -45,6 +45,8 @@ This Data Dictionary details tables and its elements containing the data for a f
 | quantity     | INT           | No       | Number of units sold| 3                 |       |
 | employee_id  | INT           | No       | Unique employee id  | 10                | FK    |
 | supplier_id  | INT           | No       | Supplier reference  | 8                 | FK    |
+| sales_channel| VAR(20)       | No       | Sale channel        | Online            |       |
+| dispatch_date| Date          | No       | Sale dispatch date  | 2025-09-22        |       |
 
 ### **Table: products**
 
@@ -54,6 +56,9 @@ This Data Dictionary details tables and its elements containing the data for a f
 | product_name | VARCHAR(100)  | No       | Product description | "Air Conditioner" |       |
 | price        | DECIMAL(10,2) | No       | Unit price          | 1199.00           |       |
 | supplier_id  | INT           | No       | Supplier reference  | 8                 | FK    |
+| cost_price   | DECIMAL(10,2) | No       | product cost price  | 235.50            |       |
+| stock_level  | INT           | No       | Stock level         | 25                |       |
+
 
 
 ### **Table: customers**
@@ -89,7 +94,7 @@ This Data Dictionary details tables and its elements containing the data for a f
 
 
 
-### **Table: employee commissions**
+### **Table: sales commissions**
 
 | Field            | Type          | Nullable | Description         | Example             | Notes |
 | ------------     | ------------- | -------- | ------------------- | -----------------   | ----- |
@@ -109,6 +114,8 @@ This Data Dictionary details tables and its elements containing the data for a f
 | A sale must reference an existing product and employee.                             |             |
 | A product must always have a valid supplier.                                        |             |
 | Sale date cannot be in the future.                                                  |             |
+| Sale dispatch cannot less than sale date.                                           |             |  
+| Sale channel can be "Retail" or "Online".                                           |             |
 | Commission only applies to valid employee sales records (job_code = "SALES").       |             |
 | Duplicate customer records must be avoided (use email or mobile number validation). |             |
 
@@ -126,9 +133,9 @@ suppliers → products → sales ← customers
 
 See below the ER Diagram or you can click to open it in new tab.
 
-![Entity Relationship Diagram](Docs/er_diagram.png)
+![Entity Relationship Diagram](Schemes/er_diagram.png)
 
-🔗 [Open diagram in new tab](Docs/er_diagram.png)
+🔗 [Open diagram in new tab](Schemes/er_diagram.png)
 
 ---
 
@@ -138,7 +145,7 @@ See below the ER Diagram or you can click to open it in new tab.
 | -------------------------- | ------------------------------------------ | ---------- |
 | Historical sales data load | Generated synthetically for simulation     | One-off    |
 | Price update sync          | Manually adjusted based on product updates | Ad hoc     |
-| Commission calculation     | Based on sales volume                      | Monthly    |
+| Commission calculation     | Calculated as soon the sale is committed   | Each sale  |
 | Data clean-up              | Ensure no NULL foreign keys                | Continuous |
 
 ---
