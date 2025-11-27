@@ -2,42 +2,66 @@
 # Edmundo Bejar – Professional Portfolio
 
 Welcome to my portfolio!  
-I am a **Senior QA & Data Quality Analyst** transitioning into **Data Analytics & Gaming QA**.  
+I am a **Senior QA & Data Quality Analyst**. This ebejar-portfolio demonstrates my ability to not only analyse business data to drive decision-making but also ensure data integrity and software quality through rigurous testing.
+
 This repository showcases case studies and projects that highlight my expertise in **SQL, Python, Power BI, Selenium, Postman, and Jenkins**, with a focus on delivering business impact through data insights and quality assurance.
 
 ---
 
-## 📊 Data Analysis Projects
-Projects demonstrating my ability to clean, analyze, and visualize data for actionable insights.
+## 📊 Retail Sales Performance Analysis 
+A full-lifecycle project using PostgreSQL for data warehousing, Python for customer segmentation, and Poweer BI for executive dashboards. 
 
-- [SQL Insights](Data-Analysis/Project-01-SQL-Insights/README.md)  
-  Business problem solved with SQL queries and reporting.
+## 📂 Structure
+Retail_Sales_Performance_Analysis/
+│
+├── README.md                 
+├── 01_SQL_Extraction/        
+│   ├── schemas/              
+│   ├── queries/              
+│   └── stored_procedures/    
+│
+├── 02_Python_Analysis/       
+│   ├── notebooks/            
+│   ├── src/                 
+│   └── requirements.txt     
+│
+├── 03_PowerBI_Reporting/     
+│   ├── dashboards/           
+│   ├── screenshots/          
+│   └── DAX_Formulas.md       
+│
+└── data/                     
+    ├── raw/                  
+    └── processed/           
 
-- [Power BI Dashboard](Data-Analysis/Project-02-PowerBI-Dashboard/README.md)  
-  Interactive dashboards for financial and compliance reporting.
-
-- [Python Analytics](Data-Analysis/Project-03-Python-Analytics/README.md)  
-  Data cleaning, ETL validation, and exploratory analysis using Python.
 
 ---
 
-## 🧪 Test Automation Projects
-Projects showcasing my experience in building automation frameworks, API testing, and CI/CD pipelines.
+## 🧪 E-Commerce Automation Framework
+A Selenium-based test automation suite using the Page Object Model design pattern, including a mock Bug Tracking report.
 
-- [Selenium Automation](Test-Analysis/Project-01-Automation-Selenium/README.md)  
-  UI test automation integrated with Jenkins pipelines.
-
-- [API Testing with Postman](Test-Analysis/Project-02-API-Testing-Postman/README.md)  
-  Collections and regression testing for APIs with Newman reports.
-
-- [CI/CD with Jenkins](Test-Analysis/Project-03-CI-CD-Jenkins/README.md)  
-  Automated pipelines and QA flowcharts for continuous integration.
+This project showcase my experience in building automation frameworks, API testing, and CI/CD pipelines.
 
 ---
 
 ## 📂 Structure
-Portfolio/ ├── Data-Analysis/ │   └── Project folders (SQL, Power BI, Python) ├── Test-Analysis/ │   └── Project folders (Selenium, Postman, Jenkins) └── README.md (this landing page)
-
+E_Commerce_Test_Automation/
+│
+├── README.md                 
+├── Test_Plan_Strategy/       
+│   ├── Test_Plan_Document.pdf
+│   ├── Traceability_Matrix.xlsx  
+│   └── Manual_Test_Cases.xlsx    
+│
+├── Automation_Framework/     
+│   ├── pages/               
+│   ├── tests/                
+│   ├── utilities/            
+│   └── reports/             
+│
+└── Bug_Reports/              
+    ├── bug_report_sample.pdf 
+    └── failure_screenshots/
 
 ---
 
