@@ -1,54 +1,58 @@
-# Project Title: [SQL Insights & Power BI Dashboard]
+# Project Title: [End-to-End Retail Sales Performance Analysis]
 
-## 📌 Overview
-This project showcases data analysis and visualization for [system/domain].  
-The objective was to [business problem, e.g., improve reporting accuracy, uncover trends, and support decision-making].
+# 🛒 End-to-End Retail Sales Performance Analysis
 
----
+## 📄 Executive Summary
+This project analyzes sales data for a global retail company to optimize supply chain decisions and restructure employee incentive programs. 
 
-## 🎯 Business Problem
-- Data scattered across multiple sources with inconsistent quality  
-- Manual reporting was slow and error-prone  
-- Stakeholders needed clear, visual insights for compliance and performance monitoring  
+**The Goal:** Move from raw transactional data to actionable business intelligence.
 
----
+Using an end-to-end data pipeline, I extracted over 50k records using **PostgreSQL**, performed customer segmentation using **Python**, and visualized revenue/latency KPIs in **Power BI**.
 
-## 🛠 Tools & Technologies
-- SQL (data extraction and validation)  
-- Python (ETL, cleaning, exploratory analysis)  
-- Power BI (interactive dashboards)  
-- Excel (supporting visuals and validation)  
+## 🛠️ Tech Stack & Methods
+* **SQL (PostgreSQL):** Complex Joins, CTEs, Stored Procedures, Window Functions.
+* **Python (Pandas/Matplotlib):** Data cleaning, anomaly detection, customer segmentation.
+* **Power BI:** DAX (Time Intelligence), Interactive Dashboards, Map Visuals.
+* **Modeling:** Star Schema design.
 
 ---
 
-## 🔍 Approach
-1. Collected and sanitized datasets (synthetic or anonymized for demo purposes)  
-2. Built SQL queries to extract insights and validate business rules  
-3. Applied Python scripts for ETL and advanced analytics  
-4. Designed Power BI dashboards for interactive reporting  
-5. Documented workflows and results for audit-ready reporting  
+## 🔍 Key Business Insights (Preview)
+*(Insert screenshots of your Power BI Dashboard here)*
+
+* **Supply Chain:** Identified that 20% of suppliers in [Region] account for 80% of shipping delays.
+* **Employee Performance:** The new commission logic (implemented via Stored Procedure) saved 15% in overpaid incentives by correctly handling outliers.
+* **Customer Demographics:** "Age 25-35" segment drives the highest volume, but "Age 45+" drives the highest margin.
 
 ---
 
-## 📈 Deliverables
-- SQL scripts for data insights and validation  
-- Jupyter notebooks with Python analysis  
-- Power BI dashboards (.pbix files + screenshots)  
-- Reports and documentation for stakeholders  
+## 📂 Project Structure
+This project follows the data lifecycle:
+
+### Phase 1: Data Extraction & Logic (SQL)
+* **Challenge:** The raw database lacked a "Revenue" column and had inconsistent shipping dates.
+* **Solution:** * Created `v_supplier_revenue` view to aggregate total spend.
+    * Wrote `record_sale_commission` stored procedure to automate payouts while blocking specific IDs (2, 3, 4).
+    * See code: [SQL Scripts Folder](./01_SQL_Extraction/queries)
+
+### Phase 2: Exploratory Analysis (Python)
+* **Challenge:** Needed to group customers by purchasing behavior, which is difficult in pure SQL.
+* **Solution:** Used Python Pandas to create "Spending Buckets" and identified null values in the `contact_email` field.
+* **See Notebook:** [Customer_Segmentation.ipynb](./02_Python_Analysis/notebooks)
+
+### Phase 3: Reporting (Power BI)
+* **Metrics Created:**
+    * `Average Fulfillment Latency` = AVERAGE(DispatchDate - SaleDate)
+    * `MoM Growth %`
+* **See Dashboard:** [Retail_Dashboard.pbix](./03_PowerBI_Reporting/dashboards)
 
 ---
 
-## 🚀 Results & Impact
-- Reduced manual reporting effort by **50%**  
-- Improved data accuracy and compliance visibility  
-- Enabled faster decision-making with interactive dashboards  
+## 🚀 How to Run
+1.  **Database:** Restore the `.backup` file located in `/data/raw` to PostgreSQL.
+2.  **Python:** Run `pip install -r requirements.txt` and launch the Jupyter Notebook.
+3.  **Power BI:** Open the `.pbix` file. *Note: You may need to update the data source credentials.*
 
----
-
-## 📸 Visuals
-![Dashboard Screenshot](screenshots/powerbi_dashboard.png)
-
----
-
-## 📂 Repository Structure
-data/         # Sample datasets (sanitized or synthetic) notebooks/    # Jupyter notebooks (Python, SQL queries) scripts/      # ETL or data cleaning scripts reports/      # Power BI dashboards, Excel visuals README.md     # Project documentation
+## 👤 Author
+**[Your Name]** - Data Analyst & Test Analyst  
+[www.linkedin.com/in/edmundo-bejar-3400691b] | [https://github.com/ebejar-pro/ebejar-portfolio]
