@@ -1,9 +1,9 @@
-# Project Title: [End-to-End Retail Sales Performance Analysis]
+# Project Title: Retail Sales Performance Analysis
 
 # 🛒 End-to-End Retail Sales Performance Analysis
 
 ## 📄 Executive Summary
-This project analyzes sales data for a global retail company to optimize supply chain decisions and restructure employee incentive programs. 
+This project analyses sales data for a global retail company to optimize supply chain decisions and restructure employee incentive programs. 
 
 **The Goal:** Move from raw transactional data to actionable business intelligence.
 
@@ -54,5 +54,5 @@ This project follows the data lifecycle:
 3.  **Power BI:** Open the `.pbix` file. *Note: You may need to update the data source credentials.*
 
 ## 👤 Author
-**[Your Name]** - Data Analyst & Test Analyst  
+**Edmundo Bejar** - Data Analyst & Test Analyst  
 [www.linkedin.com/in/edmundo-bejar-3400691b] | [https://github.com/ebejar-pro/ebejar-portfolio]
