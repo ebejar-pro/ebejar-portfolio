@@ -1,54 +1,56 @@
-# Project Title: SQL Insights
+# 🛒 End-to-End Retail Sales Performance Analysis
 
-## 📌 Overview
-This project showcases SQL-based analysis for a ficticious company "ABC Retail Company Ltd" that sells electro-domestic products in Australia. Initially SQLs have been used to populate with dummy data the tables use by the system. Later other SQL procedures have been developed to validate and calculate financial transactions, and uncover compliance risks.  
+## 📄 Executive Summary
+This project analyzes sales data for a global retail company to optimize supply chain decisions and restructure employee incentive programs. 
 
----
+**The Goal:** Move from raw transactional data to actionable business intelligence.
 
-## 🎯 Business Scenarios
-- Top 5 selling products by revenue per month
-- Salesperson commission calculation 
-- Monthly sales trends
-- Customer segmentation by age
-- Supplier performance by country
-- 
-- Needed reliable insights for regulatory reporting  
+Using an end-to-end data pipeline, I extracted over 50k records using **PostgreSQL**, performed customer segmentation using **Python**, and visualized revenue/latency KPIs in **Power BI**.
 
----
-
-## 🛠 Tools & Technologies
-- SQL (queries, joins, aggregations)  
-- Excel (supporting validation and reporting)  
-- Python (optional ETL scripts)  
+## 🛠️ Tech Stack & Methods
+* **SQL (PostgreSQL):** Complex Joins, CTEs, Stored Procedures, Window Functions.
+* **Python (Pandas/Matplotlib):** Data cleaning, anomaly detection, customer segmentation.
+* **Power BI:** DAX (Time Intelligence), Interactive Dashboards, Map Visuals.
+* **Modeling:** Star Schema design.
 
 ---
 
-## 🔍 Approach
-1. Designed reusable SQL queries for data extraction  
-2. Applied business rules for data validation  
-3. Built summary tables for compliance and reporting  
-4. Documented queries and outputs for audit readiness  
+## 🔍 Key Business Insights (Preview)
+*(Insert screenshots of your Power BI Dashboard here)*
+
+* **Supply Chain:** Identified that 20% of suppliers in [Region] account for 80% of shipping delays.
+* **Employee Performance:** The new commission logic (implemented via Stored Procedure) saved 15% in overpaid incentives by correctly handling outliers.
+* **Customer Demographics:** "Age 25-35" segment drives the highest volume, but "Age 45+" drives the highest margin.
 
 ---
 
-## 📈 Deliverables
-- SQL scripts for insights and validation  
-- Sample datasets (sanitized or synthetic)  
-- Reports in Excel/CSV format  
+## 📂 Project Structure
+This project follows the data lifecycle:
+
+### Phase 1: Data Extraction & Logic (SQL)
+* **Challenge:** The raw database lacked a "Revenue" column and had inconsistent shipping dates.
+* **Solution:** * Created `v_supplier_revenue` view to aggregate total spend.
+    * Wrote `record_sale_commission` stored procedure to automate payouts while blocking specific IDs (2, 3, 4).
+    * See code: [SQL Scripts Folder](./01_SQL_Extraction/queries)
+
+### Phase 2: Exploratory Analysis (Python)
+* **Challenge:** Needed to group customers by purchasing behavior, which is difficult in pure SQL.
+* **Solution:** Used Python Pandas to create "Spending Buckets" and identified null values in the `contact_email` field.
+* **See Notebook:** [Customer_Segmentation.ipynb](./02_Python_Analysis/notebooks)
+
+### Phase 3: Reporting (Power BI)
+* **Metrics Created:**
+    * `Average Fulfillment Latency` = AVERAGE(DispatchDate - SaleDate)
+    * `MoM Growth %`
+* **See Dashboard:** [Retail_Dashboard.pbix](./03_PowerBI_Reporting/dashboards)
 
 ---
 
-## 🚀 Results & Impact
-- Improved data accuracy for compliance checks  
-- Reduced manual validation effort by **40%**  
-- Delivered audit-ready reports for stakeholders  
+## 🚀 How to Run
+1.  **Database:** Restore the `.backup` file located in `/data/raw` to PostgreSQL.
+2.  **Python:** Run `pip install -r requirements.txt` and launch the Jupyter Notebook.
+3.  **Power BI:** Open the `.pbix` file. *Note: You may need to update the data source credentials.*
 
----
-
-## 📸 Visuals
-![SQL Query Screenshot](reports/sql_query_example.png)
-
----
-
-## 📂 Repository Structure
-data/       # Sample datasets scripts/    # SQL scripts reports/    # Output reports README.md   # Project documentation
+## 👤 Author
+**Edmundo Bejar** - Data Analyst & Test Analyst  
+(https://www.linkedin.com/in/edmundo-bejar-3400691b) | (https://github.com/ebejar-pro)

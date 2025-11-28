@@ -2,7 +2,7 @@
 # Edmundo Bejar – Professional Portfolio
 
 Welcome to my portfolio!  
-I am a **Senior QA & Data Quality Analyst**. This ebejar-portfolio demonstrates my ability to not only analyse business data to drive decision-making but also ensure data integrity and software quality through rigurous testing.
+I am a **Senior QA & Data Quality Analyst**. This portfolio demonstrates my ability to not only analyse business data to drive decision-making but also ensure data integrity and software quality through rigurous testing.
 
 This repository showcases case studies and projects that highlight my expertise in **SQL, Python, Power BI, Selenium, Postman, and Jenkins**, with a focus on delivering business impact through data insights and quality assurance.
 
