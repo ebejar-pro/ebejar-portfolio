@@ -1,5 +1,5 @@
-## 📄 Objective
-We set up the tables needed for a Retail Sale Company to perform its business, establish the inter relationship between the tables and populate with dummy data. By looking at the business processes for a retail company selling products thru online or in retails shops we considered necesary to add extra columns to meet business requirements. Also we add more the data for some of the tables to meet report requirements. We use PostgreSQL as develop tool to achieve the objectives of this part of the project.
+# 📄 Objective
+We set up the tables needed for a Retail Sale Company to perform its business, establish the inter relationship between the tables and populate with dummy data. By looking at the business processes for a retail company selling products thru online or in retails shops we considered necesary to add extra columns to meet business requirements. Also we add more data for some of the tables to meet report requirements. We use PostgreSQL as develop tool to achieve the objectives of this part of the project.
 
 ## Schema Design & Integrity:
 
@@ -7,7 +7,7 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
 
 **Solution:** Implemented the schema (Customers, Employees, Products, Suppliers, Sales, Sales Commission) using a Primary Key (PK) and Foreign Key (FK) structure to enforce data integrity (e.g., ensuring every sale links to an existing customer).
 
-👉 **[Reference the create_retail_schema.sql file here](./01_SQL_Extraction/schemas/Retail Company Schema.sql>)**
+👉 **[See the SQL script for table creation](./schemas/Retail_Company_Schema.sql>)**
 
 ## Schema Modification (Adding Dimensions):
 
@@ -21,9 +21,9 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
 
 **Solution:** Created the record_sale_commission Stored Procedure. This logic is called automatically by a Trigger on the sales table.
 
-**Reference both the record_sale_commission procedure file and the create_trigger.sql file here.
-👉 **[Reference the record_sale_commission](./01_SQL_Extraction/stored_procedures/ProcedureRecordSaleCommission.sql>)**
-👉 **[Reference the trigger_record_commission()](./01_SQL_Extraction/stored_procedures/FunctionTriggerRecordCommission.sql>)**
+👉 **[Reference the record_sale_commission](./stored_procedures/Procedure_RecordSale_Commission.sql>)**
+
+👉 **[Reference the trigger_record_commission()](./stored_procedures/Function_TriggerRecord_Commission.sql>)**
 
 ## Data Population & Validation:
 
@@ -31,7 +31,7 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
 
 **Solution:** Created a PostgreSQL function (generate_sales_data()) to programmatically insert 200+ sales and 40+ customers with randomized, yet realistic, dates and ages to ensure adequate data volume and variance for the analysis.
 
-## Business Scenarios
+# Business Scenarios
 
 # Scenario 1: Employee Incentive & Performance
 
@@ -42,6 +42,8 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
             Performance Rank    - A ranked list of salesperson by total revenue generated.
             Sales Channel Split - Percentage of each salesperson's total sales that came from 'Retail' vs 'Online'.
 
+👉 **[See the SQL script for Employee Performance](./queries/1_Employee_Performance.sql>)**
+
 # Scenario 2: Product & Inventory Efficiency
 
 **Business Question:** Which products are the most profitable, and which suppliers are impacting our inventory levels and costs?
@@ -50,6 +52,8 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
             Stock Turnover       - List of products where stock_level is below a set threshold (e.g., < 50), flagging potential re-order needs.
             Supplier Reliability - Ranking suppliers based on the total number of items sold. (More advanced: Flagging suppliers based on fulfillment latency if you enrich your sales table).
 
+👉 **[See the SQL script for Inventory Efficiency](./queries/2_Inventory_Efficiency.sql>)**
+
 # Scenario 3: Customer Segmentation & Demographics
 
 **Business Question:** Who are our most valuable customers, and what are their demographic characteristics (age groups)?
@@ -57,6 +61,9 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
             Age Buckets         - Defining age categories like '18-30 (Young)', '31-55 (Core)', '56+ (Senior)'.
             Top Customers (RFM) - Revenue: Top 10 customers by total spend. Frequency: Customers with the highest number of purchases.
             Segment Revenue     - Total revenue grouped by the new age_segment to identify which demographic is most profitable.
+
+👉 **[See the SQL script for Customer DEmographics](./queries/3_Customer_Demographics.sql>)**
+
 
 ## 👤 Author
 **Edmundo Bejar** - Data Analyst & Test Analyst  
