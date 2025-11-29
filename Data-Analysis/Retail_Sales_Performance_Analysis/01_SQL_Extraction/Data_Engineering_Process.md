@@ -40,9 +40,9 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
 **Business Question:** How effective is the sales team, and how is their commission distributed across different sales channels?
 
 **Focus**: 
-Commission Payout   - Total commission earned by each salesperson.
-Performance Rank    - A ranked list of salesperson by total revenue generated.
-Sales Channel Split - Percentage of each salesperson's total sales that came from 'Retail' vs 'Online'.
+*Commission Payout*   - Total commission earned by each salesperson.
+*Performance Rank*    - A ranked list of salesperson by total revenue generated.
+*Sales Channel Split* - Percentage of each salesperson's total sales that came from 'Retail' vs 'Online'.
 
 👉 **[Reference for Employee Performance](./queries/1_Employee_Performance.sql>)**
 
@@ -50,9 +50,9 @@ Sales Channel Split - Percentage of each salesperson's total sales that came fro
 
 **Business Question:** Which products are the most profitable, and which suppliers are impacting our inventory levels and costs?
 **Focus**: 
-Profit Margin        - Calculated net profit and gross margin percentage per product. 
-Stock Turnover       - List of products where stock_level is below a set threshold (e.g., < 50), flagging potential re-order needs.
-Supplier Reliability - Ranking suppliers based on the total number of items sold. (More advanced: Flagging suppliers based on fulfillment latency if you enrich your sales table).
+*Profit Margin*        - Calculated net profit and gross margin percentage per product. 
+*Stock Turnover*       - List of products where stock_level is below a set threshold (e.g., < 50), flagging potential re-order needs.
+*Supplier Reliability* - Ranking suppliers based on the total number of items sold. (More advanced: Flagging suppliers based on fulfillment latency if you enrich your sales table).
 
 👉 **[Reference for Inventory Efficiency](./queries/2_Inventory_Efficiency.sql>)**
 
@@ -60,9 +60,9 @@ Supplier Reliability - Ranking suppliers based on the total number of items sold
 
 **Business Question:** Who are our most valuable customers, and what are their demographic characteristics (age groups)?
 **Focus**: 
-Age Buckets         - Defining age categories like '18-30 (Young)', '31-55 (Core)', '56+ (Senior)'.
-Top Customers (RFM) - Revenue: Top 10 customers by total spend. Frequency: Customers with the highest number of purchases.
-Segment Revenue     - Total revenue grouped by the new age_segment to identify which demographic is most profitable.
+*Age Buckets*         - Defining age categories like '18-30 (Young)', '31-55 (Core)', '56+ (Senior)'.
+*Top Customers (RFM)* - Revenue: Top 10 customers by total spend. Frequency: Customers with the highest number of purchases.
+*Segment Revenue*     - Total revenue grouped by the new age_segment to identify which demographic is most profitable.
 
 👉 **[Reference for Customer Demographics](./queries/3_Customer_Demographics.sql>)**
 
