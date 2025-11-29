@@ -7,7 +7,7 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
 
 **Solution:** Implemented the schema (Customers, Employees, Products, Suppliers, Sales, Sales Commission) using a Primary Key (PK) and Foreign Key (FK) structure to enforce data integrity (e.g., ensuring every sale links to an existing customer).
 
-👉 **[See the SQL script for table creation](./schemas/Retail_Company_Schema.sql>)**
+👉 **[Reference to table creation](./schemas/Retail_Company_Schema.sql>)**
 
 ## Schema Modification (Adding Dimensions):
 
@@ -31,9 +31,11 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
 
 **Solution:** Created a PostgreSQL function (generate_sales_data()) to programmatically insert 200+ sales and 40+ customers with randomized, yet realistic, dates and ages to ensure adequate data volume and variance for the analysis.
 
+👉 **[Reference to data population & validation](./stored_procedures/Procedure_Generate_SalesData.sql>)**
+
 # Business Scenarios
 
-# Scenario 1: Employee Incentive & Performance
+## Scenario 1: Employee Incentive & Performance
 
 **Business Question:** How effective is the sales team, and how is their commission distributed across different sales channels?
 
@@ -44,7 +46,7 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
 
 👉 **[See the SQL script for Employee Performance](./queries/1_Employee_Performance.sql>)**
 
-# Scenario 2: Product & Inventory Efficiency
+## Scenario 2: Product & Inventory Efficiency
 
 **Business Question:** Which products are the most profitable, and which suppliers are impacting our inventory levels and costs?
 **Focus**: 
@@ -54,7 +56,7 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
 
 👉 **[See the SQL script for Inventory Efficiency](./queries/2_Inventory_Efficiency.sql>)**
 
-# Scenario 3: Customer Segmentation & Demographics
+## Scenario 3: Customer Segmentation & Demographics
 
 **Business Question:** Who are our most valuable customers, and what are their demographic characteristics (age groups)?
 **Focus**: 
@@ -65,6 +67,6 @@ We set up the tables needed for a Retail Sale Company to perform its business, e
 👉 **[See the SQL script for Customer DEmographics](./queries/3_Customer_Demographics.sql>)**
 
 
-## 👤 Author
+# 👤 Author
 **Edmundo Bejar** - Data Analyst & Test Analyst  
 (https://www.linkedin.com/in/edmundo-bejar-3400691b) | (https://github.com/ebejar-pro)
