@@ -27,12 +27,15 @@ Using an end-to-end data pipeline, I extracted over 50k records using **PostgreS
 ## 📂 Project Structure
 This project follows the data lifecycle:
 
-### Phase 1: Data Extraction & Logic (SQL)
-* **Challenge:** The raw database lacked a "Revenue" column and had inconsistent shipping dates.
-* **Solution:** * Created `v_supplier_revenue` view to aggregate total spend.
-    * Wrote `record_sale_commission` stored procedure to automate payouts while blocking specific IDs (2, 3, 4).
-    * See code: [SQL Scripts Folder](./01_SQL_Extraction/queries)
+### Phase 1: Data Extraction & Logic (PostgreSQL)
+* **Objective:** To design a robust data warehouse and automate critical business processes (like commission calculation).
+* **Key Deliverables:** 
+    1.  **Schema Design:** Created 6 tables (Fact/Dimension) with comprehensive integrity checks (PKs, FKs).
+    2.  **Process Automation:** Implemented the **`record_sale_commission` Stored Procedure and Trigger** to handle commission payouts  in real-time.
+    3.  **Data Generation:** Wrote procedural SQL to populate 200+ sales and 40+ customers, ensuring data quality for analysis.
+    4.  **Reporting View:** Created `vw_sales_summary` to provide a flattened view for Power BI consumption.
 
+    👉 **[View Detailed Data Engineering Process Documentation Here](./01_SQL_Extraction/Data_Engineering_Process.md)**
 ### Phase 2: Exploratory Analysis (Python)
 * **Challenge:** Needed to group customers by purchasing behavior, which is difficult in pure SQL.
 * **Solution:** Used Python Pandas to create "Spending Buckets" and identified null values in the `contact_email` field.

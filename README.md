@@ -18,7 +18,8 @@ Retail_Sales_Performance_Analysis/
 ├── 01_SQL_Extraction/        
 │   ├── schemas/              
 │   ├── queries/              
-│   └── stored_procedures/    
+│   └── stored_procedures/ 
+│   └── data_engineering_process.md   
 │
 ├── 02_Python_Analysis/       
 │   ├── notebooks/            
