@@ -43,9 +43,9 @@ We leveraged PostgreSQL to handle complex logic, including stored procedures for
 **Business Question:** How effective is the sales team, and how is their commission distributed across different sales channels?
 
 **Focus** 
-*Commission Payout:*Calculated total commission earned per salesperson.
-*Performance Rank:*Ranked salespeople by total revenue generated using Window Functions.
-*Sales Channel Split:*Analyzed the % of sales via 'Retail' vs. 'Online' for each employee.
+- **Commission Payout:** Calculated total commission earned per salesperson.
+- **Performance Rank:** Ranked salespeople by total revenue generated using Window Functions.
+- **Sales Channel Split:** Analyzed the % of sales via 'Retail' vs. 'Online' for each employee.
 
 👉 **[View Employee Performance Queries](./queries/1_Employee_Performance.sql)**
 
@@ -53,9 +53,9 @@ We leveraged PostgreSQL to handle complex logic, including stored procedures for
 
 **Business Question:** Which products are the most profitable, and which suppliers are impacting our inventory levels?
 **Focus** 
-*Profit Margin:*Calculated net profit and gross margin percentage per product. 
-*Stock Turnover:*List of products where stock_level is below a set threshold (e.g., < 50), flagging potential re-order needs.
-*Supplier Reliability:*Ranked suppliers by volume and fulfillment speed.
+- **Profit Margin:** Calculated net profit and gross margin percentage per product. 
+- **Stock Turnover:** List of products where stock_level is below a set threshold (e.g., < 50), flagging potential re-order needs.
+- **Supplier Reliability:** Ranked suppliers by volume and fulfillment speed.
 
 👉 **[View Inventory Efficiency Queries](./queries/2_Inventory_Efficiency.sql)**
 
@@ -63,9 +63,9 @@ We leveraged PostgreSQL to handle complex logic, including stored procedures for
 
 **Business Question:** Who are our most valuable customers, and what are their demographic characteristics?
 **Focus** 
-*Age Buckets:*Defining age categories like '18-30 (Young)', '31-55 (Core)', '56+ (Senior)'.
-*Top Customers (RFM):*Identified top 10 customers by Revenue and Frequency.
-*Segment Revenue:*Aggregated total revenue by Age Segment to find the most profitable demographic.
+- **Age Buckets:** Defining age categories like '18-30 (Young)', '31-55 (Core)', '56+ (Senior)'.
+- **Top Customers (RFM):** Identified top 10 customers by Revenue and Frequency.
+- **Segment Revenue:** Aggregated total revenue by Age Segment to find the most profitable demographic.
 
 👉 **[View Customer Demographics Queries](./queries/3_Customer_Demographics.sql)**
 
