@@ -56,7 +56,7 @@ We leveraged PostgreSQL to handle complex logic, including stored procedures for
 **Focus** 
 - **Profit Margin:** Calculated net profit and gross margin percentage per product. 
 - **Stock Turnover:** List of products where stock_level is below a set threshold (e.g., < 50), flagging potential re-order needs.
-- **Supplier Reliability:** Ranked suppliers by volume and fulfillment speed.
+- **Supplier Reliability:** Ranked suppliers by volume and total items cost.
 
 👉 **[View Inventory Efficiency Queries](./queries/2_Inventory_Efficiency.sql)**
 
@@ -67,7 +67,7 @@ We leveraged PostgreSQL to handle complex logic, including stored procedures for
 **Focus** 
 - **Age Buckets:** Defining age categories like '18-30 (Young)', '31-55 (Core)', '56+ (Senior)'.
 - **Top Customers (RFM):** Identified top 10 customers by Revenue and Frequency.
-- **Segment Revenue:** Aggregated total revenue by Age Segment to find the most profitable demographic.
+- **Segment Profit:** Aggregated total profit by Age Segment to find the most profitable demographic.
 
 👉 **[View Customer Demographics Queries](./queries/3_Customer_Demographics.sql)**
 
