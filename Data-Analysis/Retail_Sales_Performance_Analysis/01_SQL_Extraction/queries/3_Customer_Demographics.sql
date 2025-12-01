@@ -25,10 +25,10 @@ SELECT
     c.name,
     c.email,
     COUNT(s.sale_id) AS purchase_frequency,
-    SUM(s.quantity * p.price) AS total_lifetime_value
+    SUM(s.quantity * p.price) AS revenue
 FROM customers c
 JOIN sales s ON c.customer_id = s.customer_id
 JOIN products p ON s.product_id = p.product_id
 GROUP BY c.customer_id, c.name, c.email
-ORDER BY total_lifetime_value DESC
-LIMIT 10;
+ORDER BY revenue desc;
+--limit 10;

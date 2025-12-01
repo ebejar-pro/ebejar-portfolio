@@ -32,3 +32,22 @@ FROM products p
 JOIN suppliers s ON p.supplier_id = s.supplier_id
 WHERE p.stock_level < 50
 ORDER BY p.stock_level ASC;
+
+
+-- 3. Ranking Suppliers based on total number of items sold
+-- Ranks suppliers on  by the total revenue they generated
+SELECT 
+    sp.name as supplier_name, 
+    SUM(s.quantity) AS total_items_supplied,
+    SUM(s.quantity * p.cost_price) AS total_items_cost
+FROM suppliers sp
+JOIN sales s ON s.supplier_id = sp.supplier_id
+JOIN products p ON s.supplier_id = p.supplier_id
+GROUP BY sp.name
+ORDER by total_items_cost DESC;
+
+select * from products;
+
+select * from sales;
+
+select * from suppliers;
