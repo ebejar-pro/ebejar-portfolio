@@ -1,5 +1,5 @@
 
-# Scenario 2: Product & Inventory Efficiency
+# Scenario 1: Employee Incentive & Performance Analysis
 
 ## 🎯 Business Question
 How are employee sales performance and commissions distributed?
