@@ -23,7 +23,18 @@ JOIN sales_commission sc ON e.employee_id = sc.employee_id
 GROUP BY e.name, e.job_code
 ORDER BY total_commission_earned DESC;
 
-![alt text](image.png)
+### Total Cpommission Earned by Employee
+
+|employee_name|job_code|total_sales_count|total_commission_earned|
+|-------------|--------|-----------------|-----------------------|
+|Betty Lang|SALES|39|4522.01|
+|Eric Law|SALES|47|4255.92|
+|Rommy Santos|SALES|37|3942.73|
+|Rolly Mars|SALES|40|3785.45|
+|Ken Walters|SALES|34|2824.87|
+
+### 💡 Insights
+
 
 -- 2. Performance Ranking (Revenue Based)
 -- Ranks employees by the total revenue they generated
