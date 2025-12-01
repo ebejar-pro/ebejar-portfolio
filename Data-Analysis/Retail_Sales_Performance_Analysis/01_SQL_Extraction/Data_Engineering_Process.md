@@ -52,6 +52,7 @@ We leveraged PostgreSQL to handle complex logic, including stored procedures for
 ## Scenario 2: Product & Inventory Efficiency
 
 **Business Question:** Which products are the most profitable, and which suppliers are impacting our inventory levels?
+
 **Focus** 
 - **Profit Margin:** Calculated net profit and gross margin percentage per product. 
 - **Stock Turnover:** List of products where stock_level is below a set threshold (e.g., < 50), flagging potential re-order needs.
@@ -62,6 +63,7 @@ We leveraged PostgreSQL to handle complex logic, including stored procedures for
 ## Scenario 3: Customer Segmentation & Demographics
 
 **Business Question:** Who are our most valuable customers, and what are their demographic characteristics?
+
 **Focus** 
 - **Age Buckets:** Defining age categories like '18-30 (Young)', '31-55 (Core)', '56+ (Senior)'.
 - **Top Customers (RFM):** Identified top 10 customers by Revenue and Frequency.

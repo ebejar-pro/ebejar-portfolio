@@ -2,10 +2,10 @@
 # Scenario 1: Employee Incentive & Performance Analysis
 
 ## 🎯 Business Question
-How are employee sales performance and commissions distributed?
+How effective is the sales team, and how is their commission distributed across different sales channels?
 
 ## 1.1 Commission Payout Report
-Shows total commission earned by each employee.
+Calculated total commission earned per salesperson.
 
 ### 🧠 SQL Logic Used
 ```sql
@@ -41,7 +41,7 @@ ORDER BY total_commission_earned DESC;
 
 
 ## 1.2 Performance Ranking (Revenue Based)
-Ranks employees by the total revenue they generated
+Ranked salespeople by total revenue generated using Window Functions.
 
 ### 🧠 SQL Logic Used
 ```sql
@@ -75,7 +75,7 @@ GROUP BY e.name;
 
 
 ## 1.3 Sales Channel Split
-Analyzes whether employees sell more Online or in Retail
+Analyzed the % of sales via 'Retail' vs. 'Online' for each salesperson.
 
 ### 🧠 SQL Logic Used
 ```sql

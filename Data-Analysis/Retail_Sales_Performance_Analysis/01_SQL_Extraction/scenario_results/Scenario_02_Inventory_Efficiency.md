@@ -2,114 +2,138 @@
 # Scenario 2: Product & Inventory Efficiency
 
 ## 🎯 Business Question
-How are employee sales performance and commissions distributed?
+Which products are the most profitable, and which suppliers are impacting our inventory levels?
 
-## 1.1 Commission Payout Report
-Shows total commission earned by each employee.
-
-### 🧠 SQL Logic Used
-```sql
-
-SELECT 
-    e.name AS employee_name,
-    e.job_code,
-    COUNT(sc.sale_id) AS total_sales_count,
-    SUM(sc.commission_amount) AS total_commission_earned
-FROM employees e
-JOIN sales_commission sc ON e.employee_id = sc.employee_id
-GROUP BY e.name, e.job_code
-ORDER BY total_commission_earned DESC;
-```
-
-### 📊 Total Commission Earned by Employee Report
-
-|employee_name|job_code|total_sales_count|total_commission_earned|
-|-------------|--------|-----------------|-----------------------|
-|Betty Lang|SALES|39|4522.01|
-|Eric Law|SALES|47|4255.92|
-|Rommy Santos|SALES|37|3942.73|
-|Rolly Mars|SALES|40|3785.45|
-|Ken Walters|SALES|34|2824.87|
-
-### 💡 Insights
-- **Eric Law** leads in sales count (47 transactions), but **Betty** Lang has slightly higher commission earned.
-→ Suggests higher-value sales or product mix.
-
-- All employees are classified as SALES, confirming correct role detection before commission calculation.
-
-- Range of commissions from $2,824 to $4,522 supports incentive model effectiveness.
-
-
-## 1.2 Performance Ranking (Revenue Based)
-Ranks employees by the total revenue they generated
+## 2.1 Profit Margin Report
+Calculated net profit and gross margin percentage per product.
 
 ### 🧠 SQL Logic Used
 ```sql
 
 SELECT 
-    e.name,
-    SUM(s.quantity * p.price) AS total_revenue_generated,
-    RANK() OVER (ORDER BY SUM(s.quantity * p.price) DESC) AS revenue_rank
-FROM employees e
-JOIN sales s ON e.employee_id = s.employee_id
-JOIN products p ON s.product_id = p.product_id
-WHERE e.job_code = 'SALES'
-GROUP BY e.name;
+    p.product_name,
+    p.price AS selling_price,
+    p.cost_price,
+    (p.price - p.cost_price) AS profit_per_unit,
+    ROUND(((p.price - p.cost_price) / p.price) * 100, 2) AS margin_percentage,
+    SUM(s.quantity) AS total_units_sold
+FROM products p
+LEFT JOIN sales s ON p.product_id = s.product_id
+GROUP BY p.product_id, p.product_name, p.price, p.cost_price
+ORDER BY margin_percentage DESC;
 ```
-### 📊 Performance Revenue Report
 
-|name|total_revenue_generated|revenue_rank|
-|----|-----------------------|------------|
-|Betty Lang|90439.70|1|
-|Eric Law|85377.50|2|
-|Rommy Santos|80053.80|3|
-|Rolly Mars|75129.30|4|
-|Ken Walters|56495.90|5|
+### 📊 Gross Marging By Product 
+
+|product_name|selling_price|cost_price|profit_per_unit|margin_percentage|total_units_sold|
+|------------|-------------|----------|---------------|-----------------|----------------|
+|Kitchen Mixer|249.00|110.00|139.00|55.82|39|
+|Vacuum Cleaner|199.50|90.00|109.50|54.89|54|
+|Electric Shaver|99.50|45.50|54.00|54.27|45|
+|Smart TV 55"|899.50|500.00|399.50|44.41|48|
+|Phone|800.00|450.00|350.00|43.75|67|
+|Coffee Machine|349.50|200.00|149.50|42.78|41|
+|Air Conditioner|1199.00|700.00|499.00|41.62|60|
+|Microwave Oven|169.00|100.00|69.00|40.83|30|
+|Gaming Console|579.00|350.00|229.00|39.55|39|
+|Electric Scooter|899.00|550.00|349.00|38.82|45|
+|Wireless Speaker|129.90|80.50|49.40|38.03|48|
+|Washing Machine|799.00|500.00|299.00|37.42|52|
+|Laptop|1200.00|800.00|400.00|33.33|53|
 
 ### 💡 Insights
-- **Betty Lang** leads in revenue (rank number 1) and accordingly has higher commission earned.
 
-- All employees are classified as SALES, confirming correct role detection before revenue calculation.
+- **Kitchen Mixer** provides the highest margin profit percentage by product (55.82%).
 
-- Employess ranked accordingly with the revenue generated.
+- **Laptop** provides the lowest margin profit percentage (33.33%) although is the item with highest profit by unit ($400.00).
+
+- **Phone** is the highest items sold (67).
 
 
-## 1.3 Sales Channel Split
-Analyzes whether employees sell more Online or in Retail
+## 2.2 Stock Turnover Report
+List of products where stock_level is below a set threshold (e.g., < 50), flagging potential re-order needs.
 
 ### 🧠 SQL Logic Used
 ```sql
 
 SELECT 
-    e.name,
-    s.sales_channel,
-    COUNT(*) AS transactions,
-    SUM(s.quantity * p.price) AS revenue
-FROM employees e
-JOIN sales s ON e.employee_id = s.employee_id
-JOIN products p ON s.product_id = p.product_id
-GROUP BY e.name, s.sales_channel
-ORDER BY e.name, revenue DESC;
+    p.product_name,
+    s.name AS supplier_name,
+    p.stock_level,
+    CASE 
+        WHEN p.stock_level = 0 THEN 'Out of Stock - Urgent'
+        WHEN p.stock_level < 30 THEN 'Critical Low'
+        WHEN p.stock_level < 50 THEN 'Reorder Soon'
+        ELSE 'Healthy'
+    END AS stock_status
+FROM products p
+JOIN suppliers s ON p.supplier_id = s.supplier_id
+WHERE p.stock_level < 50
+ORDER BY p.stock_level ASC;
 ```
 
-### 📊 Revenue Generated by Channel
+### 📊 Stock Levels for Re-Ordering Report
 
-|name|sales_channel|transactions|revenue|
-|----|-------------|------------|-------|
-|Betty Lang|Online|19|52110.20|
-|Betty Lang|Retail|20|38329.50|
-|Eric Law|Online|28|55992.30|
-|Eric Law|Retail|20|29385.20|
-|Ken Walters|Online|20|36381.90|
-|Ken Walters|Retail|14|20114.00|
-|Rolly Mars|Retail|20|42639.00|
-|Rolly Mars|Online|22|32490.30|
-|Rommy Santos|Retail|23|49965.70|
-|Rommy Santos|Online|15|30088.10|
+|product_name|supplier_name|stock_level|stock_status|
+|------------|-------------|-----------|------------|
+|Air Conditioner|ConsultingMBNP|0|Out of Stock - Urgent|
+|Electric Shaver|GadgetWorld|5|Critical Low|
+|Gaming Console|ElectronicsLim|6|Critical Low|
+|Kitchen Mixer|Express Ltd|21|Critical Low|
+|Smart TV 55"|ConsultingABC|22|Critical Low|
+|Microwave Oven|LabTechUltimo Ltd|30|Reorder Soon|
+|Washing Machine|LabTechnos Ltd|32|Reorder Soon|
+|Vacuum Cleaner|ConsultingXYZ|36|Reorder Soon|
+|Phone|TechSource Ltd|43|Reorder Soon|
+
 
 ### 💡 Insights
-- Most sales people sells more thru Online channel than Retail with the exception of **Rommy Santos**.
 
-- All employees are classified as SALES, confirming correct role detection before revenue calculation.
+- **Air Conditioner** is Out of Stock requieres urgent re-ordering (0).
 
-- Employess ranked accordingly with the revenue and channel. 
+- There are 4 products (Electric Shaver, Gaming Console, Kitchen Mixer, and Smart TV 55") with stock level 'Critical Low'.
+
+- There are 4 products (Microwave Oven, Washing Machine, Vacuum Cleaner, and Phone) with stock level 'Reorder Soon'.
+
+
+## 2.3 Supplier Reliability Report
+Ranked suppliers by total volume supplied and cost price.
+
+### 🧠 SQL Logic Used
+```sql
+
+SELECT 
+    sp.name as supplier_name, 
+    SUM(s.quantity) AS total_items_supplied,
+    SUM(s.quantity * p.cost_price) AS total_items_cost
+FROM suppliers sp
+JOIN sales s ON s.supplier_id = sp.supplier_id
+JOIN products p ON s.supplier_id = p.supplier_id
+GROUP BY sp.name
+ORDER by total_items_cost DESC;
+
+```
+
+### 📊 Total Items Supplied and Total Cost Report
+
+|supplier_name|total_items_supplied|total_items_cost|
+|-------------|--------------------|----------|
+|TechSource Ltd|70|43750.00|
+|ConsultingABC|69|34500.00|
+|TelcoABC|55|30250.00|
+|ConsultingMBNP|38|26600.00|
+|ElectronicsLim|66|23100.00|
+|LabTechnos Ltd|44|22000.00|
+|UTSTech Ltd|54|10800.00|
+|LabTechUltimo Ltd|64|6400.00|
+|LabTech Ltd|64|5152.00|
+|Express Ltd|40|4400.00|
+|ConsultingXYZ|38|3420.00|
+|GadgetWorld|54|2457.00|
+
+
+### 💡 Insights
+
+- **TechSource Ltd** is the supplier with the highest total items cost and volume of items supplied.
+
+- **GadgetWorld** is the supplier with the lowest total items cost.
