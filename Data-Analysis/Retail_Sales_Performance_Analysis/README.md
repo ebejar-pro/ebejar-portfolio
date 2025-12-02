@@ -5,7 +5,8 @@ This project analyzes sales data for a global retail company to optimize supply 
 
 **The Goal:** Move from raw transactional data to actionable business intelligence.
 
-Using an end-to-end data pipeline, I extracted over 50k records using **PostgreSQL**, performed customer segmentation using **Python**, and visualized revenue/latency KPIs in **Power BI**.
+Using an end-to-end data pipeline, I created synthetic data 
+using **PostgreSQL**, performed customer segmentation using **Python**, and visualized revenue/latency KPIs in **Power BI**.
 
 ## 🛠️ Tech Stack & Methods
 * **SQL (PostgreSQL):** Complex Joins, CTEs, Stored Procedures, Window Functions.
@@ -33,11 +34,12 @@ This project follows the data lifecycle:
     1.  **Schema Design:** Created 6 tables (Fact/Dimension) with comprehensive integrity checks (PKs, FKs).
     2.  **Process Automation:** Implemented the **`record_sale_commission` Stored Procedure and Trigger** to handle commission payouts  in real-time.
     3.  **Data Generation:** Wrote procedural SQL to populate 200+ sales and 40+ customers, ensuring data quality for analysis.
-    4.  **Reporting View:** Created `vw_sales_summary` to provide a flattened view for Power BI consumption.
+    4.  **Reporting View:** ** [View Business Scenarios Reporting Here](./01_SQL_Extraction/scenario_results).
 
     👉 **[View Detailed Data Engineering Process Documentation Here](./01_SQL_Extraction/Data_Engineering_Process.md)**
+
 ### Phase 2: Exploratory Analysis (Python)
-* **Challenge:** Needed to group customers by purchasing behavior, which is difficult in pure SQL.
+* **Challenge:** Needed to group customers by purchasing behaviour, which is difficult in pure SQL.
 * **Solution:** Used Python Pandas to create "Spending Buckets" and identified null values in the `contact_email` field.
 * **See Notebook:** [Customer_Segmentation.ipynb](./02_Python_Analysis/notebooks)
 
@@ -45,14 +47,14 @@ This project follows the data lifecycle:
 * **Metrics Created:**
     * `Average Fulfillment Latency` = AVERAGE(DispatchDate - SaleDate)
     * `MoM Growth %`
-* **See Dashboard:** [Retail_Dashboard.pbix](./03_PowerBI_Reporting/dashboards)
+**[View Dasboards Here](./03_PowerBI_Reporting/dashboards)
 
 ---
 
 ## 🚀 How to Run
-1.  **Database:** Restore the `.backup` file located in `/data/raw` to PostgreSQL.
+1.  **Database:** Restore the `Retail_Sales_Data_Backup.SQL` [file located in here](./data) to PostgreSQL.
 2.  **Python:** Run `pip install -r requirements.txt` and launch the Jupyter Notebook.
-3.  **Power BI:** Open the `.pbix` file. *Note: You may need to update the data source credentials.*
+3.  **Power BI:** Open the `.pbix` file. **[View Reports (.pbix) Here](./03_PowerBI_Reporting/reports)
 
 ## 👤 Author
 **Edmundo Bejar** - Data Analyst & Test Analyst  

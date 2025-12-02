@@ -57,9 +57,7 @@ For convenience, all tables have been exported to **CSV format**.
 
 Found under:
 
-```
-PowerBI/Data/
-```
+[View CSV Files](../03_PowerBI_Reporting/data)
 
 Includes:
 
