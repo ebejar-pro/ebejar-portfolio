@@ -20,8 +20,8 @@ Retail_Sales_Performance_Analysis/
 │   ├── schemas/              
 │   ├── queries/              
 │   └── stored_procedures/ 
-│   └── scenario_results/ 
-│   └── data_engineering_process.md   
+│   ├── scenario_results/                          
+│   └── Data_Engineering_Process.md   
 │
 ├── 02_Python_Analysis/       
 │   ├── notebooks/            
@@ -34,8 +34,7 @@ Retail_Sales_Performance_Analysis/
 │   ├── data/  
 │   └── PowerBI_Reporting.md       
 │
-└── data/                     
-    ├── Retail_Sales_Data_Backup.sql          
+└── data/Retail_Sales_Data_Backup.sql          
 
 
 ---
