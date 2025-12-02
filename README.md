@@ -1,73 +1,175 @@
-# ebejar-portfolio
-# Edmundo Bejar – Professional Portfolio
+Great — I will create a **professional, recruiter-friendly GitHub root README.md** that showcases your full portfolio:
 
-Welcome to my portfolio!  
-I am a **Senior QA & Data Quality Analyst**. This portfolio demonstrates my ability to not only analyse business data to drive decision-making but also ensure data integrity and software quality through rigurous testing.
+✅ SQL Data Engineering Project
+✅ Python Data Analysis Project
+✅ Power BI Reporting
+✅ Selenium Test Automation Framework
+✅ Your tech skills + what recruiters should know
+✅ A clean, modern, polished structure
 
-This repository showcases case studies and projects that highlight my expertise in **SQL, Python, Power BI, Selenium, Postman, and Jenkins**, with a focus on delivering business impact through data insights and quality assurance.
+Below is the **full version** you can paste directly in your GitHub root.
 
 ---
 
-## 📊 Retail Sales Performance Analysis 
-A full-lifecycle project using PostgreSQL for data warehousing, Python for customer segmentation, and Poweer BI for executive dashboards. 
+# 🌐 Edmundo Bejar – Data Engineering | Analytics | QA Automation Portfolio
 
-## 📂 Structure Data Analysis
+Welcome to my professional portfolio.
+This repository showcases end-to-end projects across **SQL, Data Engineering, Python Analytics, Power BI Reporting, and Test Automation**—demonstrating real-world technical skills used in retail, finance, and general software testing.
+
+---
+
+# 📊 Retail Sales Performance Analysis (End-to-End Data Project)
+
+A complete data-driven project designed to mimic a real retail analytics workflow, including:
+
+* **PostgreSQL Data Engineering & Analytics**
+* **Python for Data Preparation & Statistical Insights (coming soon)**
+* **Power BI Dashboards for Executive Reporting**
+
+## 📁 Project Structure
+
+```
 Retail_Sales_Performance_Analysis/
 │
-├── README.md 
-├── Data Warehouse Architecture.png                
-├── 01_SQL_Extraction/        
-│   ├── schemas/              
-│   ├── queries/              
-│   |── stored_procedures/ 
-|   |── scenario_results/                         
-│   └── Data_Engineering_Process.md   
+├── README.md
+├── Data Warehouse Architecture.png
 │
-├── 02_Python_Analysis/       
-│   ├── notebooks/            
-│   ├── src/                 
-│   └── requirements.txt     
+├── 01_SQL_Extraction/
+│   ├── schemas/
+│   ├── queries/
+│   ├── stored_procedures/
+│   ├── scenario_results/
+│   └── Data_Engineering_Process.md
 │
-├── 03_PowerBI_Reporting/     
-│   ├── dashboards/           
-│   ├── reports/  
-│   ├── data/  
-│   └── PowerBI_Reporting.md       
+├── 02_Python_Analysis/
+│   ├── notebooks/
+│   ├── src/
+│   └── requirements.txt
 │
-└── data/Retail_Sales_Data_Backup.sql          
+├── 03_PowerBI_Reporting/
+│   ├── dashboards/
+│   ├── reports/
+│   ├── data/
+│   └── PowerBI_Reporting.md
+│
+└── data/
+    └── Retail_Sales_Data_Backup.sql
+```
 
+### 🔍 Key SQL Topics Demonstrated
+
+* Joins, subqueries, CTEs
+* Window functions for ranking
+* Stored procedures & triggers (commissions, stock updates)
+* Data validation & integrity checks
+* Business scenario analysis (employee performance, inventory, customer segmentation)
 
 ---
 
-## 🧪 E-Commerce Automation Framework
-A Selenium-based test automation suite using the Page Object Model design pattern, including a mock Bug Tracking report.
+# 🐍 Python Analysis (Pandas, Visualization, KPI Extraction)
 
-This project showcase my experience in building automation frameworks, API testing, and CI/CD pipelines.
+Python scripts and Jupyter notebooks covering:
+
+* Data wrangling & transformation
+* Statistical summaries
+* Customer segmentation
+* Feature engineering
+* Exporting clean datasets to Power BI
+
+(Will be populated next as part of your roadmap.)
 
 ---
 
-## 📂 Structure Test Analysis
+# 📈 Power BI Reporting – Retail Insights
+
+Power BI dashboards that transform SQL & Python outputs into insights for retail leaders.
+
+Includes:
+
+* **Sales Performance Dashboard**
+* **Inventory & Stock Efficiency Dashboard**
+* **Customer Demographics & Purchasing Behavior**
+* **Product Profitability Analysis**
+
+See folder:
+
+```
+03_PowerBI_Reporting/
+```
+
+---
+
+# 🧪 E-Commerce Test Automation Framework (Selenium POM)
+
+This automation framework demonstrates your experience as a Test Analyst & future Test Automation Engineer.
+
+## 📁 Structure
+
+```
 E_Commerce_Test_Automation/
 │
-├── README.md                 
-├── Test_Plan_Strategy/       
+├── README.md
+│
+├── Test_Plan_Strategy/
 │   ├── Test_Plan_Document.pdf
-│   ├── Traceability_Matrix.xlsx  
-│   └── Manual_Test_Cases.xlsx    
+│   ├── Traceability_Matrix.xlsx
+│   └── Manual_Test_Cases.xlsx
 │
-├── Automation_Framework/     
-│   ├── pages/               
-│   ├── tests/                
-│   ├── utilities/            
-│   └── reports/             
+├── Automation_Framework/
+│   ├── pages/
+│   ├── tests/
+│   ├── utilities/
+│   └── reports/
 │
-└── Bug_Reports/              
-    ├── bug_report_sample.pdf 
+└── Bug_Reports/
+    ├── bug_report_sample.pdf
     └── failure_screenshots/
+```
+
+### 🔧 Framework Capabilities
+
+* Selenium WebDriver + Java + TestNG (POM structure)
+* Automated UI workflow tests
+* Reusable page components
+* HTML reports
+* Sample bug analysis
 
 ---
 
-## 🌐 Connect With Me
-- [LinkedIn](https://www.linkedin.com/in/edmundo-bejar-3400691b)  
-- [GitHub](https://github.com/ebejar-pro)  
-- 📍 Sydney, NSW | Open to Hybrid & Remote Opportunities
+# 🧠 Skills Demonstrated in This Portfolio
+
+### **Data Engineering / Analytics**
+
+* PostgreSQL (schemas, ETL logic, triggers, stored procedures)
+* SQL for BI: window functions, CTEs, KPI queries
+* Python (Pandas, NumPy, Matplotlib coming next)
+* Data modelling: star schema, surrogate keys
+
+### **BI & Reporting**
+
+* Power BI Desktop
+* DAX Measures
+* ETL with Power Query
+* Dashboard storytelling for retail
+
+### **QA & Automation**
+
+* Functional testing (15+ years)
+* Selenium WebDriver (Java)
+* TestNG, POM Structure
+* API testing with Postman
+* Defect reporting & traceability
+
+---
+
+# 📬 Contact
+
+If you're a hiring manager or recruiter, feel free to reach out.
+
+📧 **[ebejar3@gmail.com](mailto:ebejar3@gmail.com)**
+📍 Sydney, Australia
+LinkedIn: *(https://www.linkedin.com/in/edmundo-bejar-3400691b)*
+GitHub: *(https://github.com/ebejar-pro)*
+
+---
+
