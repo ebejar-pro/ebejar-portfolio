@@ -1,13 +1,3 @@
-Great — I will create a **professional, recruiter-friendly GitHub root README.md** that showcases your full portfolio:
-
-✅ SQL Data Engineering Project
-✅ Python Data Analysis Project
-✅ Power BI Reporting
-✅ Selenium Test Automation Framework
-✅ Your tech skills + what recruiters should know
-✅ A clean, modern, polished structure
-
-Below is the **full version** you can paste directly in your GitHub root.
 
 ---
 
