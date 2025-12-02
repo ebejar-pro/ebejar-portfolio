@@ -11,14 +11,16 @@ This repository showcases case studies and projects that highlight my expertise 
 ## 📊 Retail Sales Performance Analysis 
 A full-lifecycle project using PostgreSQL for data warehousing, Python for customer segmentation, and Poweer BI for executive dashboards. 
 
-## 📂 Structure
+## 📂 Structure Data Analysis
 Retail_Sales_Performance_Analysis/
 │
-├── README.md                 
+├── README.md 
+├── Data Warehouse Architecture.png                
 ├── 01_SQL_Extraction/        
 │   ├── schemas/              
 │   ├── queries/              
 │   └── stored_procedures/ 
+│   └── scenario_results/ 
 │   └── data_engineering_process.md   
 │
 ├── 02_Python_Analysis/       
@@ -28,12 +30,12 @@ Retail_Sales_Performance_Analysis/
 │
 ├── 03_PowerBI_Reporting/     
 │   ├── dashboards/           
-│   ├── screenshots/          
-│   └── DAX_Formulas.md       
+│   ├── reports/  
+│   ├── data/  
+│   └── PowerBI_Reporting.md       
 │
 └── data/                     
-    ├── raw/                  
-    └── processed/           
+    ├── Retail_Sales_Data_Backup.sql          
 
 
 ---
@@ -45,7 +47,7 @@ This project showcase my experience in building automation frameworks, API testi
 
 ---
 
-## 📂 Structure
+## 📂 Structure Test Analysis
 E_Commerce_Test_Automation/
 │
 ├── README.md                 
