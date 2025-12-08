@@ -1,0 +1,16 @@
+-- STOCK RISK MEASURES
+
+Units Sold =
+SUM ( sales[quantity] )
+
+Stock Level =
+SUM ( products[stock_level] )
+
+Stock Depletion Risk (%) =
+DIVIDE ( [Units Sold], [Stock Level] )
+
+Low Stock Flag =
+IF ( products[stock_level] < 10, 1, 0 )
+
+Out of Stock Flag =
+IF ( products[stock_level] = 0, 1, 0 )

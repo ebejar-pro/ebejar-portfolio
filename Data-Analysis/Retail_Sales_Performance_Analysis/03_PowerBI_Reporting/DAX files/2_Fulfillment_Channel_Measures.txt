@@ -1,0 +1,16 @@
+-- FULFILLMENT CHANNEL EFFICIENCY MEASURES
+
+Order Count =
+COUNTROWS ( sales )
+
+Online Orders =
+CALCULATE ( [Order Count], sales[sales_channel] = "Online" )
+
+Retail Orders =
+CALCULATE ( [Order Count], sales[sales_channel] = "Retail" )
+
+Online Fulfillment % =
+DIVIDE ( [Online Orders], [Order Count] )
+
+Retail Fulfillment % =
+DIVIDE ( [Retail Orders], [Order Count] )

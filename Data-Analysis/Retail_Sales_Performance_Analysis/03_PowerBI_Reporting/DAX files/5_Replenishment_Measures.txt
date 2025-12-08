@@ -1,0 +1,16 @@
+-- REPLENISHMENT & INVENTORY SIMULATION MEASURES
+
+Avg Daily Units Sold =
+AVERAGEX (
+    VALUES ( Date[Date] ),
+    CALCULATE ( SUM ( sales[quantity] ) )
+)
+
+Days of Inventory Left =
+DIVIDE ( products[stock_level], [Avg Daily Units Sold] )
+
+Reorder Point =
+products[stock_level] - ( [Avg Daily Units Sold] * 7 )
+
+Reorder Needed Flag =
+IF ( [Reorder Point] < 0, 1, 0 )

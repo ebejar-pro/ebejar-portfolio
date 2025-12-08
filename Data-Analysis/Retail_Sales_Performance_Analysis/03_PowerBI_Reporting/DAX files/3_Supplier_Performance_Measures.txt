@@ -1,0 +1,18 @@
+-- SUPPLIER DELIVERY PERFORMANCE MEASURES
+
+Revenue =
+SUMX ( sales, sales[quantity] * RELATED(products[price]) )
+
+Revenue by Supplier =
+CALCULATE ( [Revenue], ALLEXCEPT(suppliers, suppliers[supplier_id]) )
+
+Supplier Rank =
+RANKX (
+    ALL ( suppliers[supplier_id] ),
+    [Revenue by Supplier],
+    ,
+    DESC
+)
+
+Supplier Share % =
+DIVIDE ( [Revenue by Supplier], CALCULATE([Revenue], ALL(suppliers)) )

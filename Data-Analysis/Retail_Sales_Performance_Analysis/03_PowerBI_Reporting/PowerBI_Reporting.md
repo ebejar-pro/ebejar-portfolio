@@ -3,7 +3,7 @@
 
 # 📊 Power BI Retail Analytics Dashboard
 
-### *Retail Sales • Employee Performance • Inventory Management • Customer Insights*
+### *Retail Sales • Employee Performance • Inventory Management • Customer Insights • Delivery and Operations*
 
 This Power BI project is built on top of the SQL-based Retail Company database created in **Chapter 01 – SQL Extraction**.
 It demonstrates end-to-end capability across **data modeling, ETL, DAX, visualization, and business storytelling**.
@@ -19,53 +19,63 @@ The dashboards emulate real-world retail analytics used by operational managers,
 This Power BI solution answers five core business domains:
 
 ---
+# 📊 Dashboards Included
 
 ## 1️⃣ Sales Performance
 
 * Total revenue, quantity sold, and average order value
-* Daily and monthly sales trends
+* Monthly sales trends
 * Top-selling products by revenue & quantity
 * Channel performance (Retail vs Online)
-* *Detailed commentary included in the Insights MD*
+* *Power BI Desktop Document  ./dashboards/sales performance/1_Sales_Performance.pbix*
+* *Insights documented in ./dashboards/sales performance/1_Sales_Performance_Insights.md*
+
 
 ---
 
-## 2️⃣ Employee Performance (Sales Team)
+## 2️⃣ Salesperson Performance
 
-* Total commission earned
+* Total sales by salesperson
 * Revenue contribution per salesperson
+* Total commission earned by salesperson
 * Sales breakdown by channel
-* Employee ranking via DAX window functions
-* *Insights documented in Employee_Performance_Insights.md*
+* Salesperson ranking via DAX window functions
+* *Power BI Desktop Document  ./dashboards/salesperson performance/2_Salesperson_Performance.pbix*
+* *Insights documented in ./dashboards/salesperson performance/2_Salesperson_Performance_Insights.md*
 
 ---
 
 ## 3️⃣ Inventory Efficiency
 
-* Stock level overview with conditional formatting
+* Stock level per product
+* Inventory value per product
+* KPI cards: Total inventory value, Total units in stock, Inventory turnover ratio, Cost of goods sold
 * Low-stock product alerts
-* Inventory days remaining
-* Supplier-level dependency analysis
-* *Additional narrative in Inventory_Insights.md*
+* Total units sold by product
+* *Power BI Desktop Document  ./dashboards/inventory efficiency/3_Inventory_Efficiency.pbix*
+* *Insights documented in ./dashboards/inventory efficiency/3_Inventory_Efficiency_Insights.md*
 
 ---
 
 ## 4️⃣ Customer Demographics
 
-* Age group distribution
-* New vs returning customers
-* Customer lifetime revenue
-* Purchasing behaviour insights
-* *Customer insights documented in Customer_Demographics_Insights.md*
+* Customer age segmentation
+* Revenue by age group
+* Customer revenue and units bought 
+* Revenue by customer over time
+* *Power BI Desktop Document  ./dashboards/customer demographics/4_Customer_Demographics.pbix*
+* *Customer insights documented in ./dashboards/customer demographics/4_Customer_Demographics_Insights.md*
 
 ---
 
-## 5️⃣ Delivery & Operations (Optional Enhancement)
+## 5️⃣ Delivery And Operations
 
-* Average dispatch time
-* Fulfillment delays
-* Lead-time patterns by product & supplier
-* *This module is optional but ready for future extension*
+* Order dispatch performance
+* Supplier delivery performance
+* Fulfillment channel efficiency
+* Inventory movement - stock level % of units sold
+* *Power BI Desktop Document  ./dashboards/delivery operations/5_Delivery_Operations.pbix*
+* *Delivery insights documented in ./dashboards/delivery operations/5_Delivery_And_Operations_Insights.md*
 
 ---
 
@@ -94,7 +104,7 @@ This folder includes all data necessary to run Power BI independently—**no Pos
 
 📌 Optional:
 A full PostgreSQL backup is available here:
-`../data/Retail_Sales_Data_Backup.sql`
+`./Data/Retail_Sales_Data_Backup.sql`
 
 ---
 
@@ -130,6 +140,13 @@ This ensures strong performance and intuitive reporting.
 
 # 📐 Core DAX Measures
 
+[🔗 View DAX Measures text files](./DAX files)
+1_Order_to_Dispatch_Measures.txt
+2_Fulfillment_Channel_Measures.txt
+3_Supplier_Performance_Measures.txt
+4_Stock_Risk_Measures.txt
+5_Replenishment_Measures.txt
+
 Below are examples of key measures used throughout the dashboards:
 
 ```DAX
@@ -148,42 +165,11 @@ More DAX measures can be viewed inside the `.pbix` file in the dashboards folder
 
 ---
 
-# 📊 Dashboards Included
-
-### **1️⃣ Sales Performance Dashboard**
-
-* Revenue trend
-* Top 10 products
-* Customer contribution
-* Channel split
-
-### **2️⃣ Employee Performance Dashboard**
-
-* Total commission
-* Revenue by staff
-* Channel performance
-* Salesperson ranking
-
-### **3️⃣ Inventory & Supplier Dashboard**
-
-* Stock levels
-* Low-stock heatmap
-* Inventory value
-* Supplier distribution
-
-### **4️⃣ Customer Demographics Dashboard**
-
-* Age distribution
-* Customer segmentation
-* Purchase frequency
-
----
-
 # ▶️ How to Use This Project
 
 ### **Step 1 — Download the PBIX File**
 
-File: `Retail_Analytics.pbix`
+Files: `Sales_Performance.pbix`, `Salesperson_Performance.pbix`, `Inventory_Efficiency.pbix`, `Customer_Demographics.pbix`, and `Delivery_And_Operations.pbix`
 
 ### **Step 2 — Ensure Data Folder Exists**
 
@@ -193,7 +179,7 @@ CSV files must stay in:
 03_PowerBI_Reporting/data/
 ```
 
-### **Step 3 — Open in Power BI Desktop**
+### **Step 3 — Open in Power BI Desktop each pbix file**
 
 The model should load instantly.
 

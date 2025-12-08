@@ -1,0 +1,19 @@
+-- ORDER TO DISPATCH MEASURES
+
+Avg Dispatch Days =
+AVERAGE ( sales[dispatch_date] - sales[sale_date] )
+
+Avg Dispatch Days (Online) =
+CALCULATE(
+    [Avg Dispatch Days],
+    sales[sales_channel] = "Online"
+)
+
+Avg Dispatch Days (Retail) =
+CALCULATE(
+    [Avg Dispatch Days],
+    sales[sales_channel] = "Retail"
+)
+
+Dispatch Count =
+COUNTROWS ( sales )
