@@ -6,7 +6,7 @@
 ### *Retail Sales • Employee Performance • Inventory Management • Customer Insights • Delivery and Operations*
 
 This Power BI project is built on top of the SQL-based Retail Company database created in **Chapter 01 – SQL Extraction**.
-It demonstrates end-to-end capability across **data modeling, ETL, DAX, visualization, and business storytelling**.
+It demonstrates end-to-end capability across **data modeling, ETL, DAX, visualisation, and business storytelling**.
 
 [🔗 View ER Diagram](../01_SQL_Extraction/schemas/er_diagram.png)
 
