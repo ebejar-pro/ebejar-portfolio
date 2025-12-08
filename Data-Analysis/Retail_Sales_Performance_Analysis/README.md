@@ -1,12 +1,12 @@
 # 🛒 End-to-End Retail Sales Performance Analysis
 
 ## 📄 Executive Summary
-This project analyzes sales data for a global retail company to optimize supply chain decisions and restructure employee incentive programs. 
+This project analyzes sales data for a global retail company to optimise supply chain decisions and restructure employee incentive programs. 
 
 **The Goal:** Move from raw transactional data to actionable business intelligence.
 
 Using an end-to-end data pipeline, I created synthetic data 
-using **PostgreSQL**, performed customer segmentation using **Python**, and visualized revenue/latency KPIs in **Power BI**.
+using **PostgreSQL**, performed customer segmentation using **Python**, and visualised revenue/latency KPIs in **Power BI**.
 
 ## 🛠️ Tech Stack & Methods
 * **SQL (PostgreSQL):** Complex Joins, CTEs, Stored Procedures, Window Functions.
@@ -16,12 +16,11 @@ using **PostgreSQL**, performed customer segmentation using **Python**, and visu
 
 ---
 
-## 🔍 Key Business Insights (Preview)
-*(Insert screenshots of your Power BI Dashboard here)*
+## 🔍 Key Business Insights
+* **Each module 01_SQL_EXtraction, 02_Python_Analysis, and 03_PowerBI_Reporting Supply Chain has a business insight report.
 
-* **Supply Chain:** Identified that 20% of suppliers in [Region] account for 80% of shipping delays.
-* **Employee Performance:** The new commission logic (implemented via Stored Procedure) saved 15% in overpaid incentives by correctly handling outliers.
-* **Customer Demographics:** "Age 25-35" segment drives the highest volume, but "Age 45+" drives the highest margin.
+**[For example Power BI Delivery Operations is found here ](./03_PowerBI_Reporting/dashboards/delivery%20operations/5_Delivery_And_Operators_Insights)
+
 
 ---
 
@@ -34,7 +33,7 @@ This project follows the data lifecycle:
     1.  **Schema Design:** Created 6 tables (Fact/Dimension) with comprehensive integrity checks (PKs, FKs).
     2.  **Process Automation:** Implemented the **`record_sale_commission` Stored Procedure and Trigger** to handle commission payouts  in real-time.
     3.  **Data Generation:** Wrote procedural SQL to populate 200+ sales and 40+ customers, ensuring data quality for analysis.
-    4.  **Reporting View:** ** [View Business Scenarios Reporting Here](./01_SQL_Extraction/scenario_results).
+    4.  **Reporting View:** ** 👉 [View Business Scenarios Reporting Here](./01_SQL_Extraction/scenario_results).
 
     👉 **[View Detailed Data Engineering Process Documentation Here](./01_SQL_Extraction/Data_Engineering_Process.md)**
 
@@ -47,14 +46,14 @@ This project follows the data lifecycle:
 * **Metrics Created:**
     * `Average Fulfillment Latency` = AVERAGE(DispatchDate - SaleDate)
     * `MoM Growth %`
-**[View Dasboards Here](./03_PowerBI_Reporting/dashboards)
+👉 **[View Dasboards Here](./03_PowerBI_Reporting/dashboards)
 
 ---
 
 ## 🚀 How to Run
 1.  **Database:** Restore the `Retail_Sales_Data_Backup.SQL` [file located in here](./data) to PostgreSQL.
 2.  **Python:** Run `pip install -r requirements.txt` and launch the Jupyter Notebook.
-3.  **Power BI:** Open the `.pbix` file. **[View Reports (.pbix) Here](./03_PowerBI_Reporting/reports)
+3.  **Power BI:** Open the `.pbix` file. **[View Reports (.pbix) Here](./03_PowerBI_Reporting/dashboards)
 
 ## 👤 Author
 **Edmundo Bejar** - Data Analyst & Test Analyst  
