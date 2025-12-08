@@ -57,7 +57,7 @@ Retail_Sales_Performance_Analysis/
 
 ---
 
-# 🐍 Python Analysis (Pandas, Visualization, KPI Extraction)
+# 🐍 Python Analysis (Pandas, Visualisation, KPI Extraction)
 
 Python scripts and Jupyter notebooks covering:
 
