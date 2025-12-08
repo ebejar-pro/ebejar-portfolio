@@ -29,20 +29,19 @@ This project follows the data lifecycle:
 ### Phase 2: Exploratory Analysis (Python)
 * **Challenge:** Needed to group customers by purchasing behaviour, which is difficult in pure SQL.
 * **Solution:** Used Python Pandas to create "Spending Buckets" and identified null values in the `contact_email` field.
-* **See Notebook:** [See Python code here](./02_Python_Analysis/notebooks)
+* **See Notebook:** Jupyter Notebooks to write the Python code.
 
 ### Phase 3: Reporting (Power BI)
 * **Metrics Created:**
     * `Average Fulfillment Latency` = AVERAGE(DispatchDate - SaleDate)
     * `MoM Growth %`
- **[See Dasboards here](./03_PowerBI_Reporting/dashboards)
 
 ---
 
 ## 🚀 How to Run
 1.  **Database:** Restore the `Retail_Sales_Data_Backup.SQL` [file located in here](./data) to PostgreSQL.
 2.  **Python:** Run `pip install -r requirements.txt` and launch the Jupyter Notebook.
-3.  **Power BI:** Open the `.pbix` file. **[View Reports (.pbix) here](./03_PowerBI_Reporting/dashboards/customer demographics/4_Customer_Demographics.pbix)
+3.  **Power BI:** Run pbix files in Power BI Desktop.
 
 ## 👤 Author
 **Edmundo Bejar** - Data Analyst & Test Analyst  
