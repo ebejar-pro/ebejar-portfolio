@@ -38,7 +38,8 @@ Retail_Sales_Performance_Analysis/
 │
 ├── 03_PowerBI_Reporting/
 │   ├── dashboards/
-│   ├── reports/
+│   ├── images/
+│   ├── DAX files/
 │   ├── data/
 │   └── PowerBI_Reporting.md
 │
@@ -66,7 +67,7 @@ Python scripts and Jupyter notebooks covering:
 * Feature engineering
 * Exporting clean datasets to Power BI
 
-(Will be populated next as part of your roadmap.)
+(This section is under development.)
 
 ---
 
@@ -77,19 +78,20 @@ Power BI dashboards that transform SQL & Python outputs into insights for retail
 Includes:
 
 * **Sales Performance Dashboard**
+* **Salesperson Performance Dashboard**
 * **Inventory & Stock Efficiency Dashboard**
-* **Customer Demographics & Purchasing Behavior**
-* **Product Profitability Analysis**
+* **Customer Demographics & Purchasing Behavior Dashboard**
+* **Inventory Efficiency Dashboard**
 
 See folder:
 
 ```
-03_PowerBI_Reporting/
+03_PowerBI_Reporting/dashboards
 ```
 
 ---
 
-# 🧪 E-Commerce Test Automation Framework (Selenium POM)
+# 🧪 E-Commerce Test Automation Framework (Selenium POM) - under development
 
 This automation framework demonstrates your experience as a Test Analyst & future Test Automation Engineer.
 
@@ -132,7 +134,7 @@ E_Commerce_Test_Automation/
 
 * PostgreSQL (schemas, ETL logic, triggers, stored procedures)
 * SQL for BI: window functions, CTEs, KPI queries
-* Python (Pandas, NumPy, Matplotlib coming next)
+* Python (Pandas, NumPy, Matplotlib)
 * Data modelling: star schema, surrogate keys
 
 ### **BI & Reporting**
@@ -144,7 +146,7 @@ E_Commerce_Test_Automation/
 
 ### **QA & Automation**
 
-* Functional testing (15+ years)
+* Functional testing (10+ years)
 * Selenium WebDriver (Java)
 * TestNG, POM Structure
 * API testing with Postman
