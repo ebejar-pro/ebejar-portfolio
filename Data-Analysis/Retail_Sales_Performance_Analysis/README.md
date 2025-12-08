@@ -14,15 +14,6 @@ using **PostgreSQL**, performed customer segmentation using **Python**, and visu
 * **Power BI:** DAX (Time Intelligence), Interactive Dashboards, Map Visuals.
 * **Modeling:** Star Schema design.
 
----
-
-## 🔍 Key Business Insights
-* **Each module 01_SQL_EXtraction, 02_Python_Analysis, and 03_PowerBI_Reporting Supply Chain has a business insight report.
-
-**[For example Power BI Delivery Operations is found here ](./03_PowerBI_Reporting/dashboards/delivery%20operations/5_Delivery_And_Operators_Insights)
-
-
----
 
 ## 📂 Project Structure
 This project follows the data lifecycle:
@@ -33,27 +24,25 @@ This project follows the data lifecycle:
     1.  **Schema Design:** Created 6 tables (Fact/Dimension) with comprehensive integrity checks (PKs, FKs).
     2.  **Process Automation:** Implemented the **`record_sale_commission` Stored Procedure and Trigger** to handle commission payouts  in real-time.
     3.  **Data Generation:** Wrote procedural SQL to populate 200+ sales and 40+ customers, ensuring data quality for analysis.
-    4.  **Reporting View:** ** 👉 [View Business Scenarios Reporting Here](./01_SQL_Extraction/scenario_results).
-
-    👉 **[View Detailed Data Engineering Process Documentation Here](./01_SQL_Extraction/Data_Engineering_Process.md)**
+    4.  **Reporting View:** Exporting tables data into CSV format to use in PowerBI Reporting
 
 ### Phase 2: Exploratory Analysis (Python)
 * **Challenge:** Needed to group customers by purchasing behaviour, which is difficult in pure SQL.
 * **Solution:** Used Python Pandas to create "Spending Buckets" and identified null values in the `contact_email` field.
-* **See Notebook:** [Customer_Segmentation.ipynb](./02_Python_Analysis/notebooks)
+* **See Notebook:** [See Python code here](./02_Python_Analysis/notebooks)
 
 ### Phase 3: Reporting (Power BI)
 * **Metrics Created:**
     * `Average Fulfillment Latency` = AVERAGE(DispatchDate - SaleDate)
     * `MoM Growth %`
-👉 **[View Dasboards Here](./03_PowerBI_Reporting/dashboards)
+ **[See Dasboards here](./03_PowerBI_Reporting/dashboards)
 
 ---
 
 ## 🚀 How to Run
 1.  **Database:** Restore the `Retail_Sales_Data_Backup.SQL` [file located in here](./data) to PostgreSQL.
 2.  **Python:** Run `pip install -r requirements.txt` and launch the Jupyter Notebook.
-3.  **Power BI:** Open the `.pbix` file. **[View Reports (.pbix) Here](./03_PowerBI_Reporting/dashboards)
+3.  **Power BI:** Open the `.pbix` file. **[View Reports (.pbix) here](./03_PowerBI_Reporting/dashboards/customer demographics/4_Customer_Demographics.pbix)
 
 ## 👤 Author
 **Edmundo Bejar** - Data Analyst & Test Analyst  
