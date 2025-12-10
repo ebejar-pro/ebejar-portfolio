@@ -1,0 +1,13 @@
+"supplier_id","name","contact_email","phone","country"
+1,TechSource Ltd,contact@techsource.com,"111-222-3333",USA
+2,GadgetWorld,info@gadgetworld.com,"444-555-6666",Australia
+3,LabTech Ltd,contact@labtech.com.au,"111-764-3333",Australia
+4,ConsultingABC,info@consultingabc.com.au,"51367-555-6666",Australia
+5,Express Ltd,contact@express.com.au,"111-764-3333",Australia
+6,ConsultingXYZ,info@consultingabc.com.uk,"88367-555-6666",England
+7,LabTechnos Ltd,contact@labtechos.com.au,"111-673-3333",China
+8,ConsultingMBNP,info@consultingmbpn.com.au,"55367-555-6666",Australia
+9,LabTechUltimo Ltd,contact@labtechultimo.com,"896-764-3333",USA
+10,ElectronicsLim,info@electronicslim.com.au,"22367-555-6666",Australia
+11,UTSTech Ltd,contact@utstech.com.au,"702-764-3333",Australia
+12,TelcoABC,info@telcoabc.com.au,"7854-555-6666",Australia
