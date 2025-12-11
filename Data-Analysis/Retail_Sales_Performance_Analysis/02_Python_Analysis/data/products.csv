@@ -1,14 +1,14 @@
-"product_id","product_name","price","supplier_id","cost_price","stock_level"
-2,Phone,800.00,1,450.00,43
-7,Washing Machine,799.00,7,500.00,32
-4,"Smart TV 55""",899.50,4,500.00,22
-12,Electric Scooter,899.00,12,550.00,55
-8,Air Conditioner,1199.00,8,700.00,0
-9,Microwave Oven,169.00,9,100.00,30
-3,Wireless Speaker,129.90,3,80.50,72
-5,Kitchen Mixer,249.00,5,110.00,21
-13,Electric Shaver,99.50,2,45.50,5
-10,Gaming Console,579.00,10,350.00,6
-1,Laptop,1200.00,1,800.00,67
-6,Vacuum Cleaner,199.50,6,90.00,36
-11,Coffee Machine,349.50,11,200.00,59
+product_id,product_name,price,supplier_id,cost_price,stock_level,category
+2,Phone,800,1,450,43,Electronics
+7,Washing Machine,799,7,500,32,Home Appliances
+4,"Smart TV 55""",899.5,4,500,22,Electronics
+12,Electric Scooter,899,12,550,55,Lifestyle
+8,Air Conditioner,1199,8,700,0,Home Appliances
+9,Microwave Oven,169,9,100,30,Home Appliances
+3,Wireless Speaker,129.9,3,80.5,72,Electronics
+5,Kitchen Mixer,249,5,110,21,Home Appliances
+13,Electric Shaver,99.5,2,45.5,5,Lifestyle
+10,Gaming Console,579,10,350,6,Electronics
+1,Laptop,1200,1,800,67,Electronics
+6,Vacuum Cleaner,199.5,6,90,36,Home Appliances
+11,Coffee Machine,349.5,11,200,59,Home Appliances

@@ -1,0 +1,98 @@
+--- RETAIL ANALYSIS LOG STARTED: 2025-12-11 20:50:20.727631 ---
+--- 1. Loading DataFrames ---
+✅ Loaded sales: 201 rows.
+✅ Loaded customers: 47 rows.
+✅ Loaded employees: 11 rows.
+✅ Loaded products: 13 rows.
+✅ Loaded sales_commission: 197 rows.
+
+--- 2. Data Cleaning and Inspection ---
+
+[Table: sales]
+✅ No null values found.
+✅ No exact duplicate rows found.
+Data Types:
+sale_id                   int64
+customer_id               int64
+product_id                int64
+sale_date        datetime64[ns]
+quantity                  int64
+employee_id               int64
+supplier_id               int64
+sales_channel            object
+dispatch_date    datetime64[ns]
+dtype: object
+
+[Table: customers]
+✅ No null values found.
+✅ No exact duplicate rows found.
+Data Types:
+customer_id     int64
+name           object
+email          object
+age             int64
+dtype: object
+
+!!! CHECK: CUSTOMERS COLUMNS !!!
+['customer_id', 'name', 'email', 'age']
+
+[Table: employees]
+✅ No null values found.
+✅ No exact duplicate rows found.
+Data Types:
+employee_id      int64
+name            object
+salary         float64
+job_code        object
+commission     float64
+dtype: object
+
+!!! CHECK: EMPLOYEES COLUMNS !!!
+['employee_id', 'name', 'salary', 'job_code', 'commission']
+
+[Table: products]
+✅ No null values found.
+✅ No exact duplicate rows found.
+Data Types:
+product_id        int64
+product_name     object
+price           float64
+supplier_id       int64
+cost_price      float64
+stock_level       int64
+category         object
+dtype: object
+
+!!! CHECK: PRODUCTS COLUMNS !!!
+['product_id', 'product_name', 'price', 'supplier_id', 'cost_price', 'stock_level', 'category']
+
+[Table: sales_commission]
+✅ No null values found.
+✅ No exact duplicate rows found.
+Data Types:
+commission_id          int64
+employee_id            int64
+sale_id                int64
+commission_amount    float64
+created_at            object
+dtype: object
+
+--- 3. Merging DataFrames (Star Schema Join) ---
+✅ Final Master DataFrame created with 201 rows.
+
+--- 4. Feature Engineering: Financial Metrics ---
+✅ New columns created: Revenue, COGS, Profit, Fulfillment_Days.
+
+Quick Financial Summary:
+Total Revenue: $387,496.20
+Total Profit: $158,284.70
+
+--- 5. Final Master Data Preview (First 5 Rows) ---
+   sale_id  sale_date  customer_name  age employee_name job_code      product_name         category  Revenue
+0       91 2025-11-06      Elly Laos   56   Ken Walters    SALES   Washing Machine  Home Appliances   1598.0
+1       92 2025-09-17      Bob Smith   45    Betty Lang    SALES            Laptop      Electronics   6000.0
+2       93 2025-09-14  Alice Johnson   30      Eric Law    SALES      Smart TV 55"      Electronics   1799.0
+3       94 2025-04-27  Robert Rollis   60   Ken Walters    SALES             Phone      Electronics   1600.0
+4       95 2025-09-12    David Green   38    Betty Lang    SALES  Wireless Speaker      Electronics    389.7
+
+--- RETAIL ANALYSIS LOG FINISHED: 2025-12-11 20:50:20.806522 ---
