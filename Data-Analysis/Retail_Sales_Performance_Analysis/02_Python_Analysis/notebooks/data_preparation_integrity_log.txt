@@ -1,31 +1,9 @@
---- RETAIL ANALYSIS LOG STARTED: 2025-12-11 20:50:20.727631 ---
+--- RETAIL ANALYSIS LOG STARTED: 2025-12-15 12:04:55.768090 ---
 --- 1. Loading DataFrames ---
-✅ Loaded sales: 201 rows.
-✅ Loaded customers: 47 rows.
-✅ Loaded employees: 11 rows.
-✅ Loaded products: 13 rows.
-✅ Loaded sales_commission: 197 rows.
 
 --- 2. Data Cleaning and Inspection ---
 
-[Table: sales]
-✅ No null values found.
-✅ No exact duplicate rows found.
-Data Types:
-sale_id                   int64
-customer_id               int64
-product_id                int64
-sale_date        datetime64[ns]
-quantity                  int64
-employee_id               int64
-supplier_id               int64
-sales_channel            object
-dispatch_date    datetime64[ns]
-dtype: object
-
 [Table: customers]
-✅ No null values found.
-✅ No exact duplicate rows found.
 Data Types:
 customer_id     int64
 name           object
@@ -37,8 +15,6 @@ dtype: object
 ['customer_id', 'name', 'email', 'age']
 
 [Table: employees]
-✅ No null values found.
-✅ No exact duplicate rows found.
 Data Types:
 employee_id      int64
 name            object
@@ -51,8 +27,6 @@ dtype: object
 ['employee_id', 'name', 'salary', 'job_code', 'commission']
 
 [Table: products]
-✅ No null values found.
-✅ No exact duplicate rows found.
 Data Types:
 product_id        int64
 product_name     object
@@ -66,9 +40,20 @@ dtype: object
 !!! CHECK: PRODUCTS COLUMNS !!!
 ['product_id', 'product_name', 'price', 'supplier_id', 'cost_price', 'stock_level', 'category']
 
+[Table: sales]
+Data Types:
+sale_id                   int64
+customer_id               int64
+product_id                int64
+sale_date        datetime64[ns]
+quantity                  int64
+employee_id               int64
+supplier_id               int64
+sales_channel            object
+dispatch_date    datetime64[ns]
+dtype: object
+
 [Table: sales_commission]
-✅ No null values found.
-✅ No exact duplicate rows found.
 Data Types:
 commission_id          int64
 employee_id            int64
@@ -95,4 +80,4 @@ Total Profit: $158,284.70
 3       94 2025-04-27  Robert Rollis   60   Ken Walters    SALES             Phone      Electronics   1600.0
 4       95 2025-09-12    David Green   38    Betty Lang    SALES  Wireless Speaker      Electronics    389.7
 
---- RETAIL ANALYSIS LOG FINISHED: 2025-12-11 20:50:20.806522 ---
+--- RETAIL ANALYSIS LOG FINISHED: 2025-12-15 12:04:55.887810 ---
