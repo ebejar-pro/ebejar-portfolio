@@ -53,8 +53,7 @@ This project demonstrates how Python can be used to deliver **end-to-end busines
     . 30-39 (Early Career)
     . 40-49 (Mid-Career)
     . 50-59 (Pre-Retirement)
-    . 60+ (Seniors) - Visualize demographic trends
-
+    . 60+ (Seniors)
 - **Business Impact:** Enables targeted marketing and channel optimization.
 
 ---
@@ -81,7 +80,7 @@ This project demonstrates how Python can be used to deliver **end-to-end busines
 
 ## 📈 Example Visualizations
 - **Profitability Analysis:** Bar chart of top products by profit
-- **Employee Performance:** Grouped bar chart comparing salary, commission, and sales
+- **Employee Performance:** Sales vs Commission by Salesmen scatter chart, Total Sales by Salesmen cplumn chart, Employee Compensation Structiure stacked column chart, and Commission as % of sales column chart
 - **Customer Trends:** Line chart of sales volume by age group
 - **Supplier Risk:** Pie chart of revenue share by supplier
 - **Dispatch Efficiency:** Histogram of dispatch delays
@@ -90,8 +89,16 @@ This project demonstrates how Python can be used to deliver **end-to-end busines
 
 ## 🗂 Project Structure
 
-├── data/                # Synthetic datasets ├── notebooks/           # Jupyter notebooks for each scenario ├── visuals/             # Saved charts and plots ├── README.md            # Project documentation
-
+```
+02_Phyton_Analysis/
+│
+├── python project.md
+├── Requirements.txt
+├── 02_Python_Analysis/
+│   ├── notebooks/
+|   ├── data/
+│   ├── src/
+│   └── requirements.txt
 
 ---
 
