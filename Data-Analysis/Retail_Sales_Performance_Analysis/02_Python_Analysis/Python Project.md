@@ -93,12 +93,10 @@ This project demonstrates how Python can be used to deliver **end-to-end busines
 02_Phyton_Analysis/
 │
 ├── python project.md
-├── Requirements.txt
-├── 02_Python_Analysis/
-│   ├── notebooks/
-|   ├── data/
-│   ├── src/
-│   └── requirements.txt
+├── requirements.txt
+├── notebooks/
+├── data/
+├── src/
 
 ---
 
@@ -110,5 +108,5 @@ This project demonstrates how Python can be used to deliver **end-to-end busines
 ---
 
 ## 📬 Contact
-**Edmundo**  
-Data Analyst | Business Intelligence | Python, SQL, Power BI  
+**Edmundo Bejar**  
+Data Analyst | Business Intelligence | Python, SQL, Power BI  | ebejar3@gmail.com
