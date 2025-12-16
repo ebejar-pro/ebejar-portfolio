@@ -21,7 +21,6 @@ A complete data-driven project designed to mimic a real retail analytics workflo
 ```
 Retail_Sales_Performance_Analysis/
 │
-├── README.md
 ├── Data Warehouse Architecture.png
 │
 ├── 01_SQL_Extraction/
@@ -57,6 +56,8 @@ Retail_Sales_Performance_Analysis/
 * Data validation & integrity checks
 * Business scenario analysis (employee performance, inventory, customer segmentation)
 
+[View MD File](Data-Analysis/Retail_Sales_Performance_Analysis/01_SQL_Extraction/Data_Engineering_Process.md)
+
 ---
 
 # 🐍 Python Analysis (Pandas, Visualisation, KPI Extraction)
@@ -68,6 +69,9 @@ Python scripts and Jupyter notebooks covering:
 * Employee Performance & Commission
 * Customer Demographics & Sales Trends
 * Supplier Contribution & Dispatch Efficiency
+
+[View MD File](Data-Analysis/Retail_Sales_Performance_Analysis/02_Phyton_Analysis/Python_Project.md)
+
 
 ---
 
@@ -83,6 +87,7 @@ Includes:
 * Customer Demographics & Purchasing Behavior Dashboard
 * Inventory Efficiency Dashboard
 
+[View MD File](Data-Analysis/Retail_Sales_Performance_Analysis/03_PowerBI_Reporting/PowerBI_Reporting.md)
 
 ---
 
