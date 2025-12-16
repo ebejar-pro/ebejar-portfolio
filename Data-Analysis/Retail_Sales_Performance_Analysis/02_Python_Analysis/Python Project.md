@@ -7,41 +7,41 @@ This project demonstrates how Python can be used to deliver **end-to-end busines
 ## 🚀 Project Overview
 - **Languages & Tools:** Python V3.10.19 (Pandas, Matplotlib, Numpy, Seaborn), Jupyter Notebook V7.5.0
 - **Data Model:** Synthetic dataset designed to simulate a retail business environment
-- **Objective:** Provide recruiter-facing case studies that highlight data preparation, analysis, and visualization skills
+- **Objective:** Provide recruiter-facing case studies that highlight data preparation, analysis, and visualisation skills
 
 ---
 
 ## ⚙️ Quick Start
-1.  Clone Repository
-    git clone https://github.com/ebejar/python-bi-project.git
-    cd python-bi-project
+1.  Clone Repository:
+    git clone https://github.com/ebejar-pro/ebejar-portfolio.git
+    - cd ebejar-portfolio
 
 2.  Install dependencies:
-    pip install -r requirements.txt
+    - pip install -r requirements.txt
 
-3.  Launch Jupyter Notebook
-    jupyter notebook notebooks/
+3.  Launch Jupyter Notebook:
+    - jupyter notebook notebooks/
 
 4.  Run the notebook cells in order to reproduce the analysis and visualisations.
 
 ## 📦 Requirements
-pandas==2.2.2
-numpy==1.26.4
-matplotlib==3.9.0
-seaborn==0.13.2
-jupyter==1.0.0
+- pandas==2.2.2
+- numpy==1.26.4
+- matplotlib==3.9.0
+- seaborn==0.13.2
+- jupyter==1.0.0
 
 Install with:
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ## 📂 Data Schema
 Synthetic tables simulate a retail business environment:
-• 	Customers: customer_id, name, age, email, age
-• 	Employees: employee_id, name, salary, job_code, commission
-• 	Products: product_id, product_name, price, supplier_id, stock_level, category
-• 	Sales: sale_id, customer_id, product_id, sale_date, quantity, employee_id, supplier_id, sales_channel, dispatch_date
-• 	Suppliers: supplier_id, name, contact_email, phone, country
-• 	Sales_Commission: commission_id, employee_id, sale_id, commission_amount, created_at 
+- 	**Customers:** customer_id, name, age, email, age
+- 	**Employees:** employee_id, name, salary, job_code, commission
+- 	**Products:** product_id, product_name, price, supplier_id, stock_level, category
+- 	**Sales:** sale_id, customer_id, product_id, sale_date, quantity, employee_id, supplier_id, sales_channel, dispatch_date
+- 	**Suppliers:** supplier_id, name, contact_email, phone, country
+- 	**Sales_Commission:** commission_id, employee_id, sale_id, commission_amount, created_at 
 
 ## 🧪 Test Scenarios
 
@@ -95,11 +95,11 @@ Synthetic tables simulate a retail business environment:
   - Convert the age variable into categorical "buckets" to make the data analysable.
   - Calculate revenue by product 
   - Define customer segments (Used Pandas pd.cut() function for dynamic binning) :
-    . 18-29 (Young Adults)
-    . 30-39 (Early Career)
-    . 40-49 (Mid-Career)
-    . 50-59 (Pre-Retirement)
-    . 60+ (Seniors)
+    - 18-29 (Young Adults)
+    - 30-39 (Early Career)
+    - 40-49 (Mid-Career)
+    - 50-59 (Pre-Retirement)
+    - 60+ (Seniors)
   - Visualise stacked bar chart of total revenue by age group and sales channel ('Online or 'Retail')
 - **Business Impact:** Enables targeted marketing and channel optimization.
 
@@ -129,15 +129,15 @@ Synthetic tables simulate a retail business environment:
 ├── data/
 ├── src/
 
----
-
+```
+----
 ## 🎯 Key Takeaways
 - Demonstrates **Python workflow automation** and **business storytelling with data**
 - Complements SQL and Power BI projects by showing **cross-platform consistency**
 - Provides recruiter-facing case studies with **clear business relevance**
 
----
 
 ## 📬 Contact
 **Edmundo Bejar**  
 Data Analyst | Business Intelligence | Python, SQL, Power BI  | ebejar3@gmail.com | http://www.linkedin.com/in/edmundo-bejar-3400691b
+----

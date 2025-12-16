@@ -34,6 +34,7 @@ Retail_Sales_Performance_Analysis/
 ├── 02_Python_Analysis/
 │   ├── notebooks/
 │   ├── src/
+|   ├── data/ 
 │   └── requirements.txt
 │
 ├── 03_PowerBI_Reporting/
@@ -66,8 +67,6 @@ Python scripts and Jupyter notebooks covering:
 * Customer segmentation
 * Feature engineering
 * Exporting clean datasets to Power BI
-
-(This section is under development.)
 
 ---
 
