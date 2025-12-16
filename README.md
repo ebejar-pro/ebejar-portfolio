@@ -35,6 +35,7 @@ Retail_Sales_Performance_Analysis/
 │   ├── notebooks/
 │   ├── src/
 |   ├── data/ 
+│   └── Phyton_Project.md
 │   └── requirements.txt
 │
 ├── 03_PowerBI_Reporting/
@@ -85,7 +86,7 @@ Includes:
 See folder:
 
 ```
-03_PowerBI_Reporting/dashboards
+**03_PowerBI_Reporting/dashboards**
 ```
 
 ---
