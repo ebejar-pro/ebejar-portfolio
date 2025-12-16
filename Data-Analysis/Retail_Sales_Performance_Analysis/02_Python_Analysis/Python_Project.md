@@ -137,8 +137,15 @@ Synthetic tables simulate a retail business environment:
 - Provides recruiter-facing case studies with **clear business relevance**
 
 
-## 📬 Contact
-- **Edmundo Bejar**  
-- Data Analyst | Business Intelligence | Python, SQL, Power BI  | ebejar3@gmail.com | http://www.linkedin.com/in/edmundo-bejar-3400691b
+---
 
-----
+# 📬 Contact
+
+If you're a hiring manager or recruiter, feel free to reach out.
+
+📧 **[ebejar3@gmail.com](mailto:ebejar3@gmail.com)**
+📍 Sydney, Australia
+LinkedIn: *(https://www.linkedin.com/in/edmundo-bejar-3400691b)*
+GitHub: *(https://github.com/ebejar-pro)*
+
+---
