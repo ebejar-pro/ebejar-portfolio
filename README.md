@@ -13,7 +13,7 @@ This repository showcases end-to-end projects across **SQL, Data Engineering, Py
 A complete data-driven project designed to mimic a real retail analytics workflow, including:
 
 * **PostgreSQL Data Engineering & Analytics**
-* **Python for Data Preparation & Statistical Insights (coming soon)**
+* **Python for Data Preparation & Statistical Insights**
 * **Power BI Dashboards for Executive Reporting**
 
 ## 📁 Project Structure
@@ -63,11 +63,11 @@ Retail_Sales_Performance_Analysis/
 
 Python scripts and Jupyter notebooks covering:
 
-* Data wrangling & transformation
-* Statistical summaries
-* Customer segmentation
-* Feature engineering
-* Exporting clean datasets to Power BI
+* Data Cleaning & Validation
+* Profitability Analysis by Product
+* Employee Performance & Commission
+* Customer Demographics & Sales Trends
+* Supplier Contribution & Dispatch Efficiency
 
 ---
 
@@ -77,17 +77,12 @@ Power BI dashboards that transform SQL & Python outputs into insights for retail
 
 Includes:
 
-* **Sales Performance Dashboard**
-* **Salesperson Performance Dashboard**
-* **Inventory & Stock Efficiency Dashboard**
-* **Customer Demographics & Purchasing Behavior Dashboard**
-* **Inventory Efficiency Dashboard**
+* Sales Performance Dashboard
+* Salesperson Performance Dashboard
+* Inventory & Stock Efficiency Dashboard
+* Customer Demographics & Purchasing Behavior Dashboard
+* Inventory Efficiency Dashboard
 
-See folder:
-
-```
-**03_PowerBI_Reporting/dashboards**
-```
 
 ---
 

@@ -138,6 +138,7 @@ Synthetic tables simulate a retail business environment:
 
 
 ## 📬 Contact
-**Edmundo Bejar**  
-Data Analyst | Business Intelligence | Python, SQL, Power BI  | ebejar3@gmail.com | http://www.linkedin.com/in/edmundo-bejar-3400691b
+- **Edmundo Bejar**  
+- Data Analyst | Business Intelligence | Python, SQL, Power BI  | ebejar3@gmail.com | http://www.linkedin.com/in/edmundo-bejar-3400691b
+
 ----
