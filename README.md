@@ -70,7 +70,7 @@ Python scripts and Jupyter notebooks covering:
 * Customer Demographics & Sales Trends
 * Supplier Contribution & Dispatch Efficiency
 
-[View MD File](Data-Analysis/Retail_Sales_Performance_Analysis/02_Phyton_Analysis/Python_Project.md)
+[View MD File](Data-Analysis/Retail_Sales_Performance_Analysis/02_Python_Analysis/Python_Project.md)
 
 
 ---
