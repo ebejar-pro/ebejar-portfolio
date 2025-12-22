@@ -108,7 +108,7 @@ Follow these steps to replicate the environment and the data pipeline.
 - Power BI Desktop: To view and interact with the .pbix report.
 
 2. **Google Cloud Setup**
-  2.1 **Create a Service Account:**
+  - **Create a Service Account:**
 
         - Go to IAM & Admin > Service Accounts.
 
@@ -116,26 +116,25 @@ Follow these steps to replicate the environment and the data pipeline.
 
         - Generate a JSON Key and save it as service-account.json in the root folder.
 
-  2.2 **Enable APIs:** Ensure the BigQuery API is enabled for your project (bq-analysis-04).
+  - **Enable APIs:** Ensure the BigQuery API is enabled for your project (bq-analysis-04).
 
 3. **Local Environment Setup**
 
 - **Clone the repository**
-  git clone https://github.com/your-username/retail-gold-analysis.git
-  cd retail-gold-analysis
+  - git clone https://github.com/your-username/retail-gold-analysis.git
+  - cd retail-gold-analysis
 
-- Create a virtual environment
-  python -m venv venv
-  source venv/bin/bin/activate  # On Windows: venv\Scripts\activate
+- **Create a virtual environment**
+  - python -m venv venv
+  - source venv/bin/bin/activate  # On Windows: venv\Scripts\activate
 
 - Install dependencies
-  pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 4. **Run the Data Pipeline**
-- **Ingestion:** Run the Python script to load raw retail data into BigQuery.
-
-- python src/ingest_data.py
-- ML Model & Gold Layer: Run the SQL scripts in the /sql directory (or use the BigQuery console) to create the predictive model and the v_executive_summary view.
+   - **Ingestion:** Run the Python script to load raw retail data into BigQuery.
+     - python src/ingest_data.py
+   - **ML Model & Gold Layer:** Run the SQL scripts in the /sql directory (or use the BigQuery console) to create the predictive model and the v_executive_summary view.
 
 5. **Power BI Connection**
 - Open Retail_Gold_Executive.pbix.
