@@ -101,11 +101,11 @@ The Retail Gold Dashboard is designed for Store Managers and Executives to ident
 Follow these steps to replicate the environment and the data pipeline.
 
 1. **Prerequisites**
-- Google Cloud Project: Access to BigQuery and BigQuery ML.
+   - Google Cloud Project: Access to BigQuery and BigQuery ML.
 
-- Python 3.9+: For data ingestion scripts.
+   - Python 3.9+: For data ingestion scripts.
 
-- Power BI Desktop: To view and interact with the .pbix report.
+   - Power BI Desktop: To view and interact with the .pbix report.
 
 2. **Google Cloud Setup**
   - **Create a Service Account:**
@@ -120,16 +120,16 @@ Follow these steps to replicate the environment and the data pipeline.
 
 3. **Local Environment Setup**
 
-- **Clone the repository**
-  - git clone https://github.com/your-username/retail-gold-analysis.git
-  - cd retail-gold-analysis
+  - **Clone the repository**
+    - git clone https://github.com/your-username/retail-gold-analysis.git
+    - cd retail-gold-analysis
 
-- **Create a virtual environment**
-  - python -m venv venv
-  - source venv/bin/bin/activate  # On Windows: venv\Scripts\activate
+  - **Create a virtual environment**
+    - python -m venv venv
+    - source venv/bin/bin/activate  # On Windows: venv\Scripts\activate
 
-- Install dependencies
-  - pip install -r requirements.txt
+  - **Install dependencies**
+    - pip install -r requirements.txt
 
 4. **Run the Data Pipeline**
    - **Ingestion:** Run the Python script to load raw retail data into BigQuery.
@@ -137,12 +137,12 @@ Follow these steps to replicate the environment and the data pipeline.
    - **ML Model & Gold Layer:** Run the SQL scripts in the /sql directory (or use the BigQuery console) to create the predictive model and the v_executive_summary view.
 
 5. **Power BI Connection**
-- Open Retail_Gold_Executive.pbix.
+   - Open Retail_Gold_Executive.pbix.
 
-- When prompted for credentials, select Service Account Login.
+   - When prompted for credentials, select Service Account Login.
 
-- Service Account Email: Enter the client_email from your JSON key.
+   - Service Account Email: Enter the client_email from your JSON key.
 
-- JSON Key Contents: Paste the contents of your service-account.json.
+   - JSON Key Contents: Paste the contents of your service-account.json.
 
 **Note:** Ensure the JSON is minified into a single line for successful pasting.
