@@ -1,9 +1,4 @@
 # 📊 Retail Data Pipeline: Cloud Analytics & ML on BigQuery
-** Project ID: bq-analysis-04
-
-** Tools: Python, Google BigQuery, BigQuery ML, Power BI
-
-** Architecture: Medallion (Bronze $\rightarrow$ Silver $\rightarrow$ Gold)
 
 ## 📊 Project Overview
 This project demonstrates a production-grade data pipeline that automates the ingestion, transformation, and analysis of retail transaction data. It moves data from a synthetic Python-based "source" into Google BigQuery, applies data modeling best practices, and delivers predictive insights via BigQuery ML.
@@ -29,6 +24,7 @@ This project demonstrates a production-grade data pipeline that automates the in
 
 4. ML Layer: Logistic Regression model predicting customer lifetime value.
 
+----
 ## 🚀 Project Phases
 **Phase 1: Automated Ingestion**
 A Python script generates synthetic retail data (orders, customers, stores) and streams it directly to BigQuery using the google-cloud-bigquery library.
@@ -48,8 +44,7 @@ Connected **Power BI** to the Gold layer to visualize:
 - Real-time sales performance vs. Forecast.
 - Customer segment health (using ML churn scores).
 - Store-level inventory alerts.
-
-
+----
 # 🚀 How to Run
 ## Run upload_sales.py to push raw data to BigQuery.
 
