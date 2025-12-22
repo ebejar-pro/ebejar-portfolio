@@ -27,17 +27,17 @@ This project demonstrates a production-grade data pipeline that automates the in
 ----
 ## 🚀 Project Phases
 **Phase 1: Automated Ingestion**
-A Python script generates synthetic retail data (orders, customers, stores) and streams it directly to BigQuery using the google-cloud-bigquery library.
+- A Python script generates synthetic retail data (orders, customers, stores) and streams it directly to BigQuery using the google-cloud-bigquery library.
 
 **Phase 2: SQL Modeling & Deduplication**
-Implemented a robust MERGE logic to ensure the Silver layer remains the "Single Source of Truth."
+- Implemented a robust MERGE logic to ensure the Silver layer remains the "Single Source of Truth."
 
-Partitioning: Tables are partitioned by transaction_date to optimize cost and performance.
+- Partitioning: Tables are partitioned by transaction_date to optimize cost and performance.
 
-Clustering: Clustered by store_id for faster filtering in regional reports.
+- Clustering: Clustered by store_id for faster filtering in regional reports.
 
 **Phase 3: Machine Learning (Predictive Analytics)**
-Using only SQL, I trained a BigQuery ML model to predict customer churn risk based on purchasing frequency and total spend.
+- Using only SQL, I trained a BigQuery ML model to predict customer churn risk based on purchasing frequency and total spend.
 
 **Phase 4: Interactive Dashboard**
 Connected **Power BI** to the Gold layer to visualize:
