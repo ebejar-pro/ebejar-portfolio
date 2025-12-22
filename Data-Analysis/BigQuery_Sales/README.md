@@ -1,16 +1,54 @@
-# 📊 Retail Data Engineering & ML Pipeline
-##   Tools: Python, Google BigQuery, BigQuery ML, Power BI
+# 📊 Retail Data Pipeline: Cloud Analytics & ML on BigQuery
+** Project ID: bq-analysis-04
 
-## Architecture: Medallion (Bronze, Silver, Gold)
+** Tools: Python, Google BigQuery, BigQuery ML, Power BI
 
-# 🏗️ Project Architecture
-## Bronze Layer: Raw synthetic sales data uploaded via Python.
+** Architecture: Medallion (Bronze $\rightarrow$ Silver $\rightarrow$ Gold)
 
-## Silver Layer: Cleaned and deduplicated tables partitioned by date.
+## 📊 Project Overview
+This project demonstrates a production-grade data pipeline that automates the ingestion, transformation, and analysis of retail transaction data. It moves data from a synthetic Python-based "source" into Google BigQuery, applies data modeling best practices, and delivers predictive insights via BigQuery ML.
 
-## Gold Layer: Business-ready views joined with Store and Product metadata.
+## 🛠️ Tech Stack
+- Ingestion: Python (Pandas, Faker API)
 
-## ML Layer: Logistic Regression model predicting customer lifetime value.
+- Data Warehouse: Google BigQuery
+
+- Transformation: SQL (DDL, DML, MERGE statements)
+
+- Predictive Analytics: BigQuery ML (Logistic Regression / Time-Series)
+
+- Visualization: Power BI (DirectQuery connection)
+
+
+## 🏗️ Data Architecture
+1. Bronze Layer (Raw): Landing zone for raw JSON/CSV data streamed via Python. Includes full history and ingestion timestamps.
+
+2. Silver Layer (Cleaned): De-duplicated and validated data. SQL MERGE is used here to handle updates and inserts (Upserts).
+
+3. Gold Layer (Business Ready): Final reporting layer. Features "Nested and Repeated" fields for optimized querying of transaction line items.
+
+4. ML Layer: Logistic Regression model predicting customer lifetime value.
+
+## 🚀 Project Phases
+**Phase 1: Automated Ingestion**
+A Python script generates synthetic retail data (orders, customers, stores) and streams it directly to BigQuery using the google-cloud-bigquery library.
+
+**Phase 2: SQL Modeling & Deduplication**
+Implemented a robust MERGE logic to ensure the Silver layer remains the "Single Source of Truth."
+
+Partitioning: Tables are partitioned by transaction_date to optimize cost and performance.
+
+Clustering: Clustered by store_id for faster filtering in regional reports.
+
+**Phase 3: Machine Learning (Predictive Analytics)**
+Using only SQL, I trained a BigQuery ML model to predict customer churn risk based on purchasing frequency and total spend.
+
+**Phase 4: Interactive Dashboard**
+Connected **Power BI** to the Gold layer to visualize:
+- Real-time sales performance vs. Forecast.
+- Customer segment health (using ML churn scores).
+- Store-level inventory alerts.
+
 
 # 🚀 How to Run
 ## Run upload_sales.py to push raw data to BigQuery.
