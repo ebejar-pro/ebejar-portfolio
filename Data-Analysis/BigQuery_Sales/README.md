@@ -97,19 +97,53 @@ The Retail Gold Dashboard is designed for Store Managers and Executives to ident
 
 ----
 
-# 🚀 How to Run
-## Run upload_sales.py to push raw data to BigQuery.
+## 🚀 How to Run
+Follow these steps to replicate the environment and the data pipeline.
 
-# Execute transformations.sql to build the Silver and Gold layers.
+1. **Prerequisites**
+- Google Cloud Project: Access to BigQuery and BigQuery ML.
 
-## Open dashboard.pbix to view live insights.
+- Python 3.9+: For data ingestion scripts.
 
-graph LR
-    A[Python Script] -->|ETL / Ingestion| B[(BigQuery)]
-    B -->|BigQuery ML| C[Gold View: Executive Summary]
-    C -->|Secure Service Account| D[Power BI Desktop]
-    D -->|Data Visualization| E[Stakeholder Dashboard]
+- Power BI Desktop: To view and interact with the .pbix report.
 
-    style C fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#dfd,stroke:#333
+2. **Google Cloud Setup**
+  2.1 **Create a Service Account:**
 
+        - Go to IAM & Admin > Service Accounts.
+
+        - Assign roles: BigQuery Data Viewer and BigQuery Job User.
+
+        - Generate a JSON Key and save it as service-account.json in the root folder.
+
+  2.2 **Enable APIs:** Ensure the BigQuery API is enabled for your project (bq-analysis-04).
+
+3. **Local Environment Setup**
+
+- **Clone the repository**
+  git clone https://github.com/your-username/retail-gold-analysis.git
+  cd retail-gold-analysis
+
+- Create a virtual environment
+  python -m venv venv
+  source venv/bin/bin/activate  # On Windows: venv\Scripts\activate
+
+- Install dependencies
+  pip install -r requirements.txt
+
+4. **Run the Data Pipeline**
+- **Ingestion:** Run the Python script to load raw retail data into BigQuery.
+
+- python src/ingest_data.py
+- ML Model & Gold Layer: Run the SQL scripts in the /sql directory (or use the BigQuery console) to create the predictive model and the v_executive_summary view.
+
+5. **Power BI Connection**
+- Open Retail_Gold_Executive.pbix.
+
+- When prompted for credentials, select Service Account Login.
+
+- Service Account Email: Enter the client_email from your JSON key.
+
+- JSON Key Contents: Paste the contents of your service-account.json.
+
+**Note:** Ensure the JSON is minified into a single line for successful pasting.
