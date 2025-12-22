@@ -1,8 +1,8 @@
 # 📊 Retail Data Pipeline: Cloud Analytics & ML on BigQuery
 
-## 📊 Project Overview
 This project demonstrates a production-grade data pipeline that automates the ingestion, transformation, and analysis of retail transaction data. It moves data from a synthetic Python-based "source" into Google BigQuery, applies data modeling best practices, and delivers predictive insights via BigQuery ML.
 
+----
 ## 🛠️ Tech Stack
 - Ingestion: Python (Pandas, Faker API)
 
@@ -14,7 +14,7 @@ This project demonstrates a production-grade data pipeline that automates the in
 
 - Visualization: Power BI (DirectQuery connection)
 
-
+----
 ## 🏗️ Data Architecture
 1. Bronze Layer (Raw): Landing zone for raw JSON/CSV data streamed via Python. Includes full history and ingestion timestamps.
 
@@ -44,6 +44,31 @@ Connected **Power BI** to the Gold layer to visualize:
 - Real-time sales performance vs. Forecast.
 - Customer segment health (using ML churn scores).
 - Store-level inventory alerts.
+----
+
+## 🔒 Security & Architecture: BigQuery + Power BI Integration
+Rather than using a personal user login, this project implements a Service Account architecture to manage data flow between the Google Cloud Gold Layer and the Power BI Desktop environment.
+
+### 🏛️ Architecture Overview
+- Data Source: BigQuery View (retail_gold.v_executive_summary)
+
+- Connection Method: Power BI BigQuery Connector (Import Mode)
+
+- Authentication: JSON Service Account Key
+
+- Permissions (IAM):
+
+- BigQuery Data Viewer: Ability to read the view's schema and data.
+
+- BigQuery Job User: Ability to execute the SQL queries required to refresh the report.
+
+### 🛡️ Why This Matters
+Non-Interactive Refresh: By using a Service Account, the dashboard can be updated in the Power BI Service without requiring a user to be physically logged in or MFA-challenged.
+
+Credential Isolation: The project code includes a .gitignore to prevent the key.json from ever being pushed to public repositories, ensuring that project secrets are never exposed.
+
+Governance: Permissions are restricted only to the retail_gold dataset, following the Principle of Least Privilege.
+
 ----
 # 🚀 How to Run
 ## Run upload_sales.py to push raw data to BigQuery.
