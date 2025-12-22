@@ -70,6 +70,33 @@ Rather than using a personal user login, this project implements a Service Accou
 3. **Governance:** Permissions are restricted only to the retail_gold dataset, following the Principle of Least Privilege.
 
 ----
+
+## 🧭 Dashboard User Guide: Executive Insights
+The Retail Gold Dashboard is designed for Store Managers and Executives to identify high-value opportunities at a glance.
+
+1. **Identifying "VIP Potential" (Growth)**
+    - Visual: Scatter Chart (Revenue vs. AI Probability)
+
+    - How to use: Focus on the bottom-right quadrant. These are customers with a high AI Confidence Score but low current spend.
+ 
+    - Action: Export this list for a targeted "VIP Welcome" email campaign.
+
+2. **Monitoring Regional Performance**
+    - Visual: Map / Slicer (State/Store Type)
+
+    - How to use: Select "NSW" or "Suburban" from the slicers.
+
+    - Action: Observe if the AI Confidence Score drops. A lower confidence score in specific regions suggests those stores need a different marketing strategy.
+
+3. **Understanding Value Drivers**
+    - Visual: Key Influencers AI Visual
+
+    - How to use: Click on "What influences Predicted_is_High_Value to be 1".
+
+    - Action: This reveals which store types or locations are most likely to breed high-value customers, guiding future store expansion plans.
+
+----
+
 # 🚀 How to Run
 ## Run upload_sales.py to push raw data to BigQuery.
 
