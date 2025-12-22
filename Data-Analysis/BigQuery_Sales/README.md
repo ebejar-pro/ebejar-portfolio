@@ -130,8 +130,9 @@ Follow these steps to replicate the environment and the data pipeline.
 3. **Local Environment Setup**
 
   - **Clone the repository**
-    - git clone https://github.com/your-username/retail-gold-analysis.git
-    - cd retail-gold-analysis
+    - git clone https://github.com/ebejar-pro/ebejar-portfolio.git
+    
+    - cd data_analysis/bigquery_sales
 
   - **Create a virtual environment**
     - python -m venv venv
