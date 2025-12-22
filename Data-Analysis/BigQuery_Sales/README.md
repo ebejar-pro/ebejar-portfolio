@@ -50,24 +50,24 @@ Connected **Power BI** to the Gold layer to visualize:
 Rather than using a personal user login, this project implements a Service Account architecture to manage data flow between the Google Cloud Gold Layer and the Power BI Desktop environment.
 
 ### 🏛️ Architecture Overview
-- Data Source: BigQuery View (retail_gold.v_executive_summary)
+- **Data Source:** BigQuery View (retail_gold.v_executive_summary)
 
-- Connection Method: Power BI BigQuery Connector (Import Mode)
+- **Connection Method:** Power BI BigQuery Connector (Import Mode)
 
-- Authentication: JSON Service Account Key
+- **Authentication:** JSON Service Account Key
 
-- Permissions (IAM):
+- **Permissions (IAM):**
 
-- BigQuery Data Viewer: Ability to read the view's schema and data.
+    - BigQuery Data Viewer: Ability to read the view's schema and data.
 
-- BigQuery Job User: Ability to execute the SQL queries required to refresh the report.
+    - BigQuery Job User: Ability to execute the SQL queries required to refresh the report.
 
 ### 🛡️ Why This Matters
-Non-Interactive Refresh: By using a Service Account, the dashboard can be updated in the Power BI Service without requiring a user to be physically logged in or MFA-challenged.
+1. **Non-Interactive Refresh:** By using a Service Account, the dashboard can be updated in the Power BI Service without requiring a user to be physically logged in or MFA-challenged.
 
-Credential Isolation: The project code includes a .gitignore to prevent the key.json from ever being pushed to public repositories, ensuring that project secrets are never exposed.
+2. **Credential Isolation:** The project code includes a .gitignore to prevent the key.json from ever being pushed to public repositories, ensuring that project secrets are never exposed.
 
-Governance: Permissions are restricted only to the retail_gold dataset, following the Principle of Least Privilege.
+3. **Governance:** Permissions are restricted only to the retail_gold dataset, following the Principle of Least Privilege.
 
 ----
 # 🚀 How to Run
