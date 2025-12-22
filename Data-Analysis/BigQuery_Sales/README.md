@@ -96,6 +96,13 @@ The Retail Gold Dashboard is designed for Store Managers and Executives to ident
     - Action: This reveals which store types or locations are most likely to breed high-value customers, guiding future store expansion plans.
 
 ----
+## 🧠 Technical Challenges & Solutions
+
+Challenge	Impact	Resolution												
+JSON Key Authentication	The Power BI BigQuery connector failed to paste/accept the Service Account JSON key.	JSON Minification: Discovered that Power BI's input field is incompatible with multi-line strings. Used a minifier to flatten the JSON into a single line, allowing successful authentication.												
+ML View Performance	Power BI "Preview Truncation" warnings and slow load times due to live ML.PREDICT calls.	Data Materialization: Created a static "Gold" table (fact_executive_summary) from the dynamic ML view. This shifted the compute load to BigQuery's engine and ensured instant loading in the BI layer.												
+Join Integrity (NULLs)	Synthetic IDs in the silver layer caused empty results in the final Executive Summary join.	SQL ID Alignment: Conducted a data audit using EXCEPT and INTERSECT queries to identify mismatched keys. Re-mapped the synthetic customer_id keys during the ingestion phase to ensure 100% join coverage.												
+Connectivity Deadlocks	The "Load" button remained greyed out in the Navigator despite valid credentials.	Power Query Bypass: Identified a validation hang-up in the UI. Used the "Transform Data" button to force entry into the Power Query Editor, which successfully triggered the data refresh.																							
 
 ## 🚀 How to Run
 Follow these steps to replicate the environment and the data pipeline.
