@@ -16,12 +16,14 @@ This project demonstrates a production-grade data pipeline that automates the in
 
 - Version control and documentation: GitHub, BigQuery
 
+-----
+
 ## 🗄️Repository Structure
 
 bigquery_sales/
 │
 ├── python/
-│   └── UploadToBigQuery.ipynb (populate bronze data)
+│   └── UploadToBigQuery.ipynb        # Populates Bronze layer with synthetic data
 │
 ├── powerbi/
 │   └── PredictingHighValueRetailCustomers.pbix
@@ -31,12 +33,13 @@ bigquery_sales/
 │   │   └── CreateBronzeData.sql
 │   │
 │   ├── 02_silver/
-│   |   ├── CreateSilverFactSales.sql
+│   │   ├── CreateSilverFactSales.sql
 │   │   ├── CreateSilverDimStore.sql
 │   │   ├── CreateSilverDimProducts.sql
 │   │   ├── CreateRegressionSilverModel.sql
 │   │   ├── EvaluateCustomerValueModel.sql
-|   |   └── PredictHighValueCustomers.sql
+│   │   └── PredictHighValueCustomers.sql
+│   │
 │   └── 03_gold/
 │       ├── CreateGoldDataSet.sql
 │       ├── CreateGoldExecutiveView.sql
@@ -47,7 +50,7 @@ bigquery_sales/
 │   ├── BigQuery_Project_artifacts.png
 │   └── powerbi_model.png
 │
-├──  README.md
+├── README.md
 │
 └── .gitignore
 ----
