@@ -4,7 +4,7 @@ This project demonstrates a production-grade data pipeline that automates the in
 
 ----
 ## 🛠️ Tech Stack
-- Ingestion: Python (Pandas, Faker API)
+- Data Generation and Ingestion: Python (Pandas, Faker API)
 
 - Data Warehouse: Google BigQuery
 
@@ -14,6 +14,42 @@ This project demonstrates a production-grade data pipeline that automates the in
 
 - Visualization: Power BI (DirectQuery connection)
 
+- Version control and documentation: GitHub, BigQuery
+
+## 🗄️Repository Structure
+
+bigquery_sales/
+│
+├── python/
+│   └── UploadToBigQuery.ipynb (populate bronze data)
+│
+├── powerbi/
+│   └── PredictingHighValueRetailCustomers.pbix
+│
+├── sql/
+│   ├── 01_bronze/
+│   │   └── CreateBronzeData.sql
+│   │
+│   ├── 02_silver/
+│   |   ├── CreateSilverFactSales.sql
+│   │   ├── CreateSilverDimStore.sql
+│   │   ├── CreateSilverDimProducts.sql
+│   │   ├── CreateRegressionSilverModel.sql
+│   │   ├── EvaluateCustomerValueModel.sql
+|   |   └── PredictHighValueCustomers.sql
+│   └── 03_gold/
+│       ├── CreateGoldDataSet.sql
+│       ├── CreateGoldExecutiveView.sql
+│       └── V_Executive_Summary_Dictionary.md
+│
+├── images/
+│   ├── v_executive_summary.png
+│   ├── BigQuery_Project_artifacts.png
+│   └── powerbi_model.png
+│
+├──  README.md
+│
+└── .gitignore
 ----
 ## 🏗️ Data Architecture
 1. Bronze Layer (Raw): Landing zone for raw JSON/CSV data streamed via Python. Includes full history and ingestion timestamps.
@@ -25,7 +61,7 @@ This project demonstrates a production-grade data pipeline that automates the in
 4. ML Layer: Logistic Regression model predicting customer lifetime value.
 
 ----
-## 🚀 Project Phases
+## 🧩 Project Phases
 **Phase 1: Automated Ingestion**
 - A Python script generates synthetic retail data (orders, customers, stores) and streams it directly to BigQuery using the google-cloud-bigquery library.
 
