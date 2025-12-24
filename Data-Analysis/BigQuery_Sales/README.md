@@ -21,7 +21,39 @@ This project demonstrates a production-grade data pipeline that automates the in
 ## 🗄️Repository Structure
 
 ```
-bigquery_sales/ │ ├── python/ │   └── UploadToBigQuery.ipynb              # Populates Bronze layer with synthetic data │ ├── powerbi/ │   └── PredictingHighValueRetailCustomers.pbix │ ├── sql/ │   ├── 01_bronze/ │   │   └── CreateBronzeData.sql │   │ │   ├── 02_silver/ │   │   ├── CreateSilverFactSales.sql │   │   ├── CreateSilverDimStore.sql │   │   ├── CreateSilverDimProducts.sql │   │   ├── CreateRegressionSilverModel.sql │   │   ├── EvaluateCustomerValueModel.sql │   │   └── PredictHighValueCustomers.sql │   │ │   └── 03_gold/ │       ├── CreateGoldDataSet.sql │       ├── CreateGoldExecutiveView.sql │       └── V_Executive_Summary_Dictionary.md │ ├── images/ │   ├── v_executive_summary.png │   ├── BigQuery_Project_artifacts.png │   └── powerbi_model.png │ ├── README.md │ └── .gitignore
+bigquery_sales/
+│
+├── python/
+│   └── UploadToBigQuery.ipynb        # Populates Bronze layer with synthetic data
+│
+├── powerbi/
+│   └── PredictingHighValueRetailCustomers.pbix
+│
+├── sql/
+│   ├── 01_bronze/
+│   │   └── CreateBronzeData.sql
+│   │
+│   ├── 02_silver/
+│   │   ├── CreateSilverFactSales.sql
+│   │   ├── CreateSilverDimStore.sql
+│   │   ├── CreateSilverDimProducts.sql
+│   │   ├── CreateRegressionSilverModel.sql
+│   │   ├── EvaluateCustomerValueModel.sql
+│   │   └── PredictHighValueCustomers.sql
+│   │
+│   └── 03_gold/
+│       ├── CreateGoldDataSet.sql
+│       ├── CreateGoldExecutiveView.sql
+│       └── V_Executive_Summary_Dictionary.md
+│
+├── images/
+│   ├── v_executive_summary.png
+│   ├── BigQuery_Project_artifacts.png
+│   └── powerbi_model.png
+│
+├── README.md
+│
+└── .gitignore
 
 ```
 
