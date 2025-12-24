@@ -104,6 +104,7 @@ Includes:
 This project demonstrates a complete cloud‑based analytics pipeline using Python, Google BigQuery, SQL (Bronze → Silver → Gold), BigQuery ML, and Power BI.
 It simulates a real retail environment where synthetic sales data is ingested, transformed, enriched with ML predictions, and visualised to identify high‑value customers.
 
+[View MD File](Data-Analysis/Retail_Sales_Performance_Analysis/04_BigQuery_Sales/BigQuery_Sales.md)
 
 # 🧪 E-Commerce Test Automation Framework (Selenium POM) - under development
 
