@@ -43,6 +43,13 @@ Retail_Sales_Performance_Analysis/
 │   ├── DAX files/
 │   ├── data/
 │   └── PowerBI_Reporting.md
+|
+├── 04_BigQuery_Sales/
+│   ├── python/
+│   ├── sql/
+│   ├── powerbi/
+│   ├── images/
+│   └── BigQuery_Sales.md
 │
 └── data/
     └── Retail_Sales_Data_Backup.sql
