@@ -15,6 +15,7 @@ A complete data-driven project designed to mimic a real retail analytics workflo
 * **PostgreSQL Data Engineering & Analytics**
 * **Python for Data Preparation & Statistical Insights**
 * **Power BI Dashboards for Executive Reporting**
+* **BigQuery Cloud & ML Data Analytics**
 
 ## 📁 Project Structure
 
@@ -97,6 +98,12 @@ Includes:
 [View MD File](Data-Analysis/Retail_Sales_Performance_Analysis/03_PowerBI_Reporting/PowerBI_Reporting.md)
 
 ---
+
+# 🧠 BigQuery Cloud & ML Data Analytics
+
+This project demonstrates a complete cloud‑based analytics pipeline using Python, Google BigQuery, SQL (Bronze → Silver → Gold), BigQuery ML, and Power BI.
+It simulates a real retail environment where synthetic sales data is ingested, transformed, enriched with ML predictions, and visualised to identify high‑value customers.
+
 
 # 🧪 E-Commerce Test Automation Framework (Selenium POM) - under development
 
