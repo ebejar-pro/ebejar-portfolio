@@ -51,7 +51,7 @@ bigquery_sales/
 │   ├── BigQuery_Project_artifacts.png
 │   └── powerbi_model.png
 │
-├── README.md
+├── BigQuery_Sales.md
 │
 └── .gitignore
 
