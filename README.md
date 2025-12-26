@@ -162,7 +162,7 @@ E_Commerce_Test_Automation/
 
 ### **QA & Automation**
 
-* Functional testing (10+ years)
+* Functional testing
 * Selenium WebDriver (Java)
 * TestNG, POM Structure
 * API testing with Postman
