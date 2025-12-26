@@ -151,6 +151,7 @@ E_Commerce_Test_Automation/
 * SQL for BI: window functions, CTEs, KPI queries
 * Python (Pandas, NumPy, Matplotlib)
 * Data modelling: star schema, surrogate keys
+* Predictive Analytics: BigQuery ML (Logistic Regression / Time-Series)
 
 ### **BI & Reporting**
 
