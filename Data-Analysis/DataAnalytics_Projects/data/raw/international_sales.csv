@@ -1,0 +1,11 @@
+sales_id,sales_person,Country,sales_amount,sales_date
+1,Avon,South Africa,1500,15-02-2024
+2,Moses,Turkey,800,17-01-2024
+3,Peter,South Africa,1200,20-01-2024
+4,Charlie,Turkey,1800,01-02-2024
+5,Assat,Turkey,900,05-02-2024
+6,Afet,Turkey,2500,10-02-2024
+7,Luke,South Africa,1200,12-02-2024
+8,John,South Africa,1100,16-02-2024
+9,Matt,South Africa,1600,20-02-2024
+10,Ken,Turkey,2500,25-02-2024

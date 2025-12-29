@@ -1,0 +1,31 @@
+employee_id, employee_name, department, incident_date, incident_type, days_lost, injury_severity
+1,John Doe,Manufacturing,2023-01-05,Slip,3,Minor
+2,Jane Smith,Maintenance,,Fall,5,Moderate
+3,Jim Brown,Manufacturing,2023-02-12,Slip,1,Minor
+4,Mary Johnson,Quality Control,2023-03-15,,2,Minor
+5,Robert Wilson,Maintenance,2023-04-22,Machine Accident,10,Severe
+6,Patricia Taylor,Manufacturing,2023-05-01,Slip,,Moderate
+7,Michael Davis,Logistics,2023-05-23,Vehicle Accident,7,Severe
+8,Linda Martinez,Manufacturing,2023-06-02,Slip,4,Minor
+9,William Hernandez,Quality Control,2023-06-18,Fall,3,Moderate
+10,Barbara Clark,Maintenance,2023-07-09,,2,Minor
+11,Christopher Lewis,Logistics,2023-08-01,Vehicle Accident,5,Severe
+12,Susan Walker,Quality Control,2023-08-15,Fall,,Moderate
+13,Daniel Hall,Maintenance,2023-09-03,Machine Accident,8,Severe
+14,Jessica Allen,Manufacturing,2023-09-21,Slip,1,Minor
+15,Paul Young,Logistics,2023-10-11,Vehicle Accident,6,Severe
+16,Nancy King,Maintenance,2023-11-05,Fall,4,Moderate
+17,David Wright,Quality Control,,Machine Accident,7,Severe
+18,Kimberly Scott,Logistics,2023-11-19,Vehicle Accident,5,Severe
+19,Jason Green,Manufacturing,2023-12-02,Slip,,Minor
+20,Elizabeth Adams,Maintenance,2023-12-15,Machine Accident,9,Severe
+21,Joshua Nelson,Quality Control,2024-01-07,Fall,3,Moderate
+22,Amanda Baker,Logistics,2024-01-20,Vehicle Accident,6,Severe
+23,Matthew Perez,Manufacturing,,Slip,2,Minor
+24,Stephanie Roberts,Maintenance,2024-02-15,Machine Accident,8,Severe
+25,Andrew Turner,Quality Control,2024-03-05,Fall,4,Moderate
+26,Karen Phillips,Logistics,2024-03-21,Vehicle Accident,7,Severe
+27,George Campbell,Manufacturing,2024-04-10,Slip,3,Minor
+28,Emily Parker,Maintenance,2024-04-25,Machine Accident,,Severe
+29,Kevin Evans,Quality Control,2024-05-14,Fall,2,Moderate
+30,Laura Edwards,Logistics,2024-05-30,Vehicle Accident,6,Severe

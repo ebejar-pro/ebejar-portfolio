@@ -1,0 +1,23 @@
+library_card_number,borrower_name,age_group,book_title,author,genre,due_date,borrowed_date
+1000,Alice Green,Child,The Very Hungry Caterpillar,Eric Carle,Picture Book,2020-02-15,2020-01-20
+1001,Bob Brown,Teen,Percy Jackson & the Olympians: The Lightning Thief,Rick Riordan,Fantasy,2020-02-25,2020-02-10
+1002,Charlie White,Teen,To Kill a Mockingbird,Harper Lee,Classic,2020-03-10,2020-02-05
+1003,David Miller,Adult,The Martian,Andy Weir,Science Fiction,2020-02-20,2020-02-02
+1004,Emily Jones,Adult,Pride and Prejudice,Jane Austen,Classic,2020-02-18,2020-01-30
+1005,Frank Green,Adult,Project Hail Mary,Andy Weir,Science Fiction,2020-03-05,2020-02-01
+1006,Gregory Brown,Child,Where the Wild Things Are,Maurice Sendak,Picture Book,2020-02-28,2020-02-14
+1007,Henry Williams,Teen,The Hunger Games,Suzanne Collins,Dystopian,2020-02-22,2020-02-08
+1008,Isabella Jones,Adult,The Lord of the Rings: The Fellowship of the Ring,J.R.R. Tolkien,Fantasy,2020-03-02,2020-01-25
+1009,James Green,Adult,A Brief History of Time,Stephen Hawking,Science,2020-02-16,2020-01-23
+1010,Jennifer Brown,Child,The Cat in the Hat,Dr. Seuss,Picture Book,2020-02-23,2020-02-09
+1011,Jessica Williams,Adult,The Handmaid's Tale,Margaret Atwood,Dystopian,2020-03-08,2020-02-03
+1012,John Jones,Adult,The Hitchhiker's Guide to the Galaxy,Douglas Adams,Science Fiction,2020-02-27,2020-02-13
+1013,Katie Green,Teen,Divergent,Veronica Roth,Dystopian,2020-02-19,2020-01-31
+1014,Laura Brown,Adult,Little Women,Louisa May Alcott,Classic,2020-02-21,2020-02-07
+1015,Luke Williams,Child,Goodnight Moon,Margaret Wise Brown,Picture Book,2020-03-07,2020-02-02
+1016,Michelle Jones,Adult,Becoming,Michelle Obama,Biography,2020-03-01,2020-01-24
+1017,Natalie Green,Teen,The Giver,Lois Lowry,Dystopian,2020-02-24,2020-02-10
+1018,Olivia Brown,Adult,The Book Thief,Markus Zusak,Historical Fiction,2020-03-09,2020-02-04
+1019,Paula Williams,Adult,The Alchemist,Paulo Coelho,Fiction,2020-02-29,2020-02-15
+1020,Peter Jones,Adult,The Count of Monte Cristo,Alexandre Dumas,Classic,2020-02-17,2020-01-29
+1021,Rachel Green,Adult,Jane Eyre,Charlotte Brontë,Classic,2020-03-04,2020-01-27

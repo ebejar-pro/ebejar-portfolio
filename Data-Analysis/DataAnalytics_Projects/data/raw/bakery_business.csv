@@ -1,0 +1,29 @@
+order_id,order_date,customer_name,order_items,order_total
+1,2020-10-05,Alice Smith,Cake,25
+2,2020-10-06,Bob Johnson,Chocolate Chip Cookies,12
+3,2020-10-07,Charlie Brown,Strawberry Cupcakes,18
+4,2020-10-08,David Williams,Vanilla Muffin,15
+5,2020-10-09,Emily Jones,Chocolate Cake,30
+6,2020-10-10,Frank Green,Lemon Meringue Pie,22
+7,2020-10-11,Gregory Brown,Danish,8
+8,2020-10-12,Henry Williams,Chocolate Donut,6
+9,2020-10-13,Isabella Jones,Pancake Syrup,4
+10,2020-10-14,James Green,Ham and Cheese Croissant,14
+11,2020-10-15,Jennifer Brown,Fruit Salad,6
+12,2020-10-16,Jessica Williams,Orange Juice,4
+13,2020-10-17,John Jones,Milk,3
+14,2020-10-18,Katie Green,Scones,10
+15,2020-10-19,Laura Brown,Chocolate Chip Cookies,11
+16,2020-10-20,Luke Williams,Cupcakes,16
+17,2020-10-21,Michelle Jones,Coffee Cake,8
+18,2020-10-22,Natalie Green,Ice Cream Cone,12
+19,2020-10-23,Olivia Brown,Ice Cream,7
+20,2020-10-24,Paula Williams,Hot Chocolate,10
+21,2020-10-25,Peter Jones,Latte,11
+22,2020-10-26,Rachel Green,Espresso,8
+23,2020-10-27,Sarah Smith,Flat White,7
+24,2020-10-28,David Williams,Cappuccino with Extra Foam,12
+25,2020-10-29,Emily Jones,Espresso with Two Sugars,9
+26,2020-10-30,Michael Brown,Flat White with Cinnamon,6
+27,2020-10-31,John Williams,Cappuccino with Chocolate Sauce,5
+28,2020-11-01,Jessica Jones,Espresso with Vanilla Syrup,13

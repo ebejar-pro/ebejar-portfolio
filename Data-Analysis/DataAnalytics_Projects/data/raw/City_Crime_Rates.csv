@@ -1,0 +1,29 @@
+city,year,violent_crime_rate,property_crime_rate
+New York City,2020,610.1,686.8
+New York City,2021,588.8,574.1
+Los Angeles,2020,572.2,184.8
+Los Angeles,2021,546.5,926.8
+Chicago,2020,648.3,320.7
+Chicago,2021,611.5,138.2
+Houston,2020,479.8,578.8
+Houston,2021,456.2,523.7
+Philadelphia,2020,571,251.7
+Philadelphia,2021,542.3,164.5
+Phoenix,2020,297.8,886.9
+Phoenix,2021,285.1,745.3
+San Antonio,2020,448.2,923.4
+San Antonio,2021,432.5,791.2
+San Diego,2020,322.3,542.7
+San Diego,2021,309.6,381.5
+Dallas,2020,473.1,834.9
+Dallas,2021,459.4,692.2
+San Jose,2020,278.9,213.7
+San Jose,2021,266.2,92.5
+Jacksonville,2020,408.5,412.8
+Jacksonville,2021,395.8,265.1
+Indianapolis,2020,512.7,298.4
+Indianapolis,2021,490,146.7
+Columbus,2020,463.9,214.2
+Columbus,2021,442.2,62.5
+Fort Worth,2020,342.7,135.9
+Fort Worth,2021,329,3.7

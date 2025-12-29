@@ -1,0 +1,23 @@
+customer_id,customer_name,contact_number,purchase_date,product_type,product_name,quantity,price
+1,Alice Smith,123-456-7890,2023-01-05,Instruments,Guitar,13,200
+2,Bob Johnson,987-654-3210,2023-10-07,Instruments,Keyboard,20,300
+3,Charlie Brown,567-890-1234,2023-02-07,Accessories,Strings,18,50
+4,David Williams,789-012-3456,2023-02-09,Accessories,Pedals,21,80
+5,Emily Jones,345-678-9012,2023-03-09,Music Books,Theory Book,19,100
+6,Frank Green,456-789-0123,2023-03-10,Music Books,Guitar Technique,16,150
+7,Gregory Brown,678-901-2345,2023-04-11,Merchandise,T-Shirt,7,25
+8,Henry Williams,901-234-5678,2023-05-05,Merchandise,Mugs,14,15
+9,Isabella Jones,012-345-6789,2023-05-13,Merchandise,Stickers,20,5
+10,James Green,123-456-7890,2023-05-26,Instruments,Drums,10,500
+11,Jennifer Brown,987-654-3210,2023-06-15,Instruments,Bass Guitar,11,350
+12,Jessica Williams,567-890-1234,2023-07-15,Accessories,Amps,12,400
+13,John Jones,789-012-3456,2023-08-17,Accessories,Cases,4,75
+14,Katie Green,345-678-9012,2023-08-18,Music Books,Chord Book,14,80
+15,Laura Brown,456-789-0123,2023-09-19,Music Books,Tablature Book,15,100
+16,Luke Williams,678-901-2345,2023-10-21,Merchandise,Hats,16,15
+17,Michelle Jones,901-234-5678,2023-11-21,Merchandise,Keychains,17,5
+18,Natalie Green,012-345-6789,2023-11-22,Instruments,Synthesizer,18,600
+19,Olivia Brown,123-456-7890,2023-11-23,Accessories,Drumsticks,19,20
+20,Paula Williams,987-654-3210,2023-11-24,Accessories,Picks,20,5
+21,Peter Jones,567-890-1234,2023-12-02,Music Books,Playalong Book,21,60
+22,Rachel Green,789-012-3456,2024-01-15,,,,

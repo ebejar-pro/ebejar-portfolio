@@ -1,0 +1,28 @@
+sneaker_id,model,price,release_date,colorway,size
+1,Air Jordan 1 Retro High OG,160.00,2022-09-17,Black/White,10.5
+2,Nike Air Force 1 '07 LV8,100.00,2022-09-17,White/Black,8.5
+3,Adidas Yeezy Boost 350 V2,220.00,2022-09-18,Cream White,10.0
+4,New Balance 990v5,160.00,2022-09-18,Grey/Black/White,11.5
+5,Converse Chuck Taylor All-Star,70.00,2022-09-19,White/Black,9.5
+6,Vans Old Skool,80.00,2022-09-20,Black/White,8.0
+7,Nike Dunk Low,110.00,2022-09-21,University Red/University Gold,10.5
+8,Adidas Stan Smith,85.00,2022-09-22,Triple White,9.0
+9,Puma Suede Classic,75.00,2022-09-23,Black/White/Red,11.5
+10,Reebok Club C 85,90.00,2022-09-24,White/Navy,10.0
+11,On Cloud 9,130.00,2022-09-25,Grey/Orange,8.5
+12,Hoka One One Bondi 7,150.00,2022-09-26,Black/Grey,11.0
+13,ASICS Gel-Kayano 28,140.00,2022-09-27,Grey/Green,9.5
+14,Brooks Ghost 14,135.00,2022-09-28,Black/Blue,10.0
+15,Saucony Kinvara 13,110.00,2022-09-29,Navy/Yellow,8.5
+16,Under Armour HOVR Machina 3,155.00,2022-10-01,Black/White,11.0
+17,Nike Air Zoom Pegasus 39,125.00,2022-10-02,Grey/Purple,9.5
+18,Adidas Ultraboost 23,180.00,2022-10-03,Black/White,10.0
+19,Puma Velocity Nitro,140.00,2022-10-04,White/Red,8.5
+20,Reebok Floatride Run Fast 3,120.00,2022-10-05,Black/Orange,11.0
+21,On Cloud X,145.00,2022-10-06,White/Purple,9.5
+22,Hoka One One Speedgoat 5,165.00,2022-10-07,Black/Red,10.0
+23,ASICS MetaSpeed Sky,190.00,2022-10-08,Grey/Blue,8.5
+24,Brooks Hyperion Tempo,150.00,2022-10-09,Black/White,11.0
+25,Saucony Speed 10,125.00,2022-10-10,Navy/Yellow,9.5
+26,Under Armour HOVR Infinite 3,170.00,2022-10-11,Black/White,10.0
+27,Nike Air Zoom Pegasus Turbo 3,135.00

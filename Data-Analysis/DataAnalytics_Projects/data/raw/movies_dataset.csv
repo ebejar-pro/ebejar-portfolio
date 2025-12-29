@@ -1,0 +1,30 @@
+rank,title,year,director,genre,imdb_rating,academy_awards,box_office_gross
+1,The Shawshank Redemption,1994,Frank Darabont,Drama,9.3,7,58.7
+2,The Godfather,1972,Francis Ford Coppola,Crime,9.2,7,245.7
+3,The Dark Knight,2008,Christopher Nolan,Action,9,8,534.8
+4,12 Angry Men,1957,Sidney Lumet,Drama,8.9,3,4.5
+5,Schindler's List,1993,Steven Spielberg,Historical Drama,8.9,7,321.2
+6,Pulp Fiction,1994,Quentin Tarantino,Crime,8.9,7,213.9
+7,The Lord of the Rings: The Return of the King,2003,Peter Jackson,Fantasy,8.9,11,555.8
+8,Fight Club,1999,David Fincher,Thriller,8.8,2,109.5
+9,The Good the Bad and the Ugly,1966,Sergio Leone,Western,8.8,2,161
+10,Citizen Kane,1941,Orson Welles,Drama,8.7,9,5.9
+11,Forrest Gump,1994,Robert Zemeckis,Drama,8.8,6,329.7
+12,Whiplash,2014,Damien Chazelle,Drama,8.8,3,48.9
+13,Inception,2010,Christopher Nolan,Thriller,8.8,4,828.3
+14,The Silence of the Lambs,1991,Jonathan Demme,Thriller,8.6,5,272.9
+15,Casablanca,1942,Michael Curtiz,Romance,8.6,3,3.4
+17,Seven Samurai,1954,Akira Kurosawa,Action,8.6,0,2.6
+18,Rear Window,1954,Alfred Hitchcock,Thriller,8.6,4,18
+19,Psycho,1960,Alfred Hitchcock,Thriller,8.6,4,32.2
+20,2001: A Space Odyssey,1968,Stanley Kubrick,Sci-Fi,8.3,1,64.3
+21,North by Northwest,1959,Alfred Hitchcock,Thriller,8.3,4,19.8
+22,Vertigo,1958,Alfred Hitchcock,Mystery,8.3,2,6.1
+23,Double Indemnity,1944,Billy Wilder,Film Noir,8.3,7,6.6
+24,Sunset Boulevard,1950,Billy Wilder,Film Noir,8.3,3,1.1
+25,Singin' in the Rain,1952,Gene Kelly & Stanley Donen,Musical,8.3,3,7.8
+26,Some Like It Hot,1959,Billy Wilder,Comedy,8.2,1,5.8
+27,Rashomon,1950,Akira Kurosawa,Drama,8.2,0,6.7
+28,The Bridge on the River Kwai,1957,David Lean,War,8.2,7,18.2
+29,12 Monkeys,1995,Terry Gilliam,Sci-Fi,8.1,2,168.8
+30,The Apartment,1960,Billy Wilder,Romance,8.1,5,29.6

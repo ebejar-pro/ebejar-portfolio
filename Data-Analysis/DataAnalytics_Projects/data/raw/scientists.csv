@@ -1,0 +1,41 @@
+scientist_id, name, birth_year, nationality, accomplishment
+1, albert einstein,1879, German, Theory of Relativity
+2, marie curie,1867, Polish, Radioactivity
+3, isaac newton,1643, English, Laws of Motion
+4, charles darwin,1809, English, Theory of Evolution
+5, nikola tesla,1856, Serbian, AC Electricity
+6, galileo galilei,1564, Italian, Heliocentric Theory
+7, leonardo da vinci,1452, Italian, Anatomical Studies
+8, stephen hawking,1942, British, Black Hole Theory
+9, michael faraday,1791, English, Electromagnetism
+10, james clerk maxwell,1831, Scottish, Electromagnetic Theory
+11, alexander fleming,1881, Scottish, Penicillin
+12, gregor mendel,1822, Austrian, Genetics
+13, niels bohr,1885, Danish, Bohr Model of Atom
+14, dmitri mendeleev,1834, Russian, Periodic Table
+15, richard feynman,1918, American, Quantum Electrodynamics
+16, max planck,1858, German, Quantum Theory
+17, ernest rutherford,1871, New Zealander, Nuclear Physics
+18, werner heisenberg,1901, German, Quantum Mechanics
+19, louis pasteur,1822, French, Pasteurization
+20, enrico fermi,1901, Italian, Nuclear Reactor
+21, alan turing,1912, British, Computer Science
+22, carl sagan,1934, American, Cosmos
+23, robert hooke,1635, English, Hooke's Law
+24, joseph lister,1827, British, Antiseptic Surgery
+25, edwin hubble,1889, American, Expanding Universe
+26, lise meitner,1878, Austrian, Nuclear Fission
+27, rosalind franklin,1920, British, DNA Structure
+28, john von neumann,1903, Hungarian, Computer Architecture
+29, barbara mcclintock,1902, American, Genetic Transposition
+30, ada lovelace,1815, British, Computer Programming
+31, heinrich hertz,1857, German, Electromagnetic Waves
+32, arthur eddington,1882, British, General Relativity
+33, paul dirac,1902, British, Quantum Mechanics
+34, henry moseley,1887, British, Atomic Number
+35, francis crick,1916, British, DNA Structure
+36, jocelyn bell burnell,1943, British, Pulsars
+37, hans bethe,1906, German, Nuclear Astrophysics
+38, william herschel,1738, German-British, Infrared Radiation
+39, erwin schrã¶dinger,1887, Austrian, Wave Mechanics
+40, katherine johnson,1918, American, Space Calculations

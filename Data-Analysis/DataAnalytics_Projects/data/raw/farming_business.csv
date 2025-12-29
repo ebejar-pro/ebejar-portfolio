@@ -1,0 +1,26 @@
+date,crop,quantity_harvested,price_per_unit,expenses,sold,unsold,location,weather
+10 01 2019,Wheat,1000,0.5,800,750,250,Sunnyside Meadows,Sunny
+15 01 2019,Lettuce,500,1.25,300,400,100,Windmill Ridge,Rainy
+20 01 2019,Tomatoes,250,2,400,150,100,Sunnyside Meadows,Snowy
+25 01 2019,Potatoes,800,0.75,500,600,200,Windmill Ridge,Cloudy
+1 02 2019,Corn,1500,0.4,900,1200,300,Sunnyside Meadows,Sunny
+5 02 2019,Carrots,300,1.5,200,250,50,Windmill Ridge,Windy
+10 02 2019,Apples,750,1.75,500,650,100,Sunnyside Meadows,Foggy
+15 02 2019,Strawberries,125,3,200,75,50,Windmill Ridge,Sunny
+20 02 2019,Spinach,400,1,250,300,100,Sunnyside Meadows,Rainy
+25 02 2019,Bell Peppers,200,2.5,300,150,50,Windmill Ridge,Cloudy
+1 03 2019,Broccoli,350,1.1,200,275,75,Sunnyside Meadows,Sunny
+5 03 2019,Onions,500,0.8,300,400,100,Windmill Ridge,Windy
+10 03 2019,Grapes,600,2,400,500,100,Sunnyside Meadows,Foggy
+15 03 2019,Blueberries,100,4,150,75,25,Windmill Ridge,Sunny
+20 03 2019,Kale,250,1.25,150,200,50,Sunnyside Meadows,Rainy
+25 03 2019,Cucumbers,150,2.25,200,100,50,Windmill Ridge,Cloudy
+1 04 2019,Peas,400,1,250,300,100,Sunnyside Meadows,Sunny
+5 04 2019,Asparagus,200,3.5,150,125,75,Windmill Ridge,Windy
+10 04 2019,Watermelon,500,2.75,350,400,100,Sunnyside Meadows,Foggy
+15 04 2019,Cherries,75,5,100,50,25,Windmill Ridge,Sunny
+20 04 2019,Lettuce,550,1.15,325,425,125,Sunnyside Meadows,Rainy
+25 04 2019,Carrots,325,1.4,225,275,50,Windmill Ridge,Cloudy
+1 05 2019,Tomatoes,275,1.85,425,175,100,Sunnyside Meadows,Sunny
+5 05 2019,Strawberries,150,2.8,250,85,65,Windmill Ridge,Windy
+10 05 2019,Bell Peppers,225,2.35,350,175,50,Sunnyside Meadows,Foggy

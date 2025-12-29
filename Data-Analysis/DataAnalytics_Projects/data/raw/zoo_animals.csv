@@ -1,0 +1,17 @@
+animal_id,animal_name,species,gender,age,weight,height,length,diet,habitat,acquisition_date,acquisition_method,acquisition_location,conservation_status
+1,Fiona,Hippopotamus,Female,10,3200,56,12,Herbivore,African Savanna,2012-05-24,Rescue,Nile River,Endangered
+2,Leo,Lion,Male,12,420,60,84,Carnivore,African Savanna,2015-06-01,Donation,Kruger National Park,Vulnerable
+3,Maya,Jaguar,Female,8,200,60,72,Carnivore,Central American Rainforest,2018-04-15,Captive Breeding,Belize Zoo,Least Concern
+4,Nala,Giraffe,Female,14,2400,14,18,Herbivore,African Savanna,2010-03-12,Wild Capture,Masai Mara National Reserve,Not Threatened
+5,Oscar,Orangutan,Male,15,280,60,96,Omnivore,Bornean Rainforest,2009-11-07,Rescue,Sumatran Orangutan Rehabilitation Center,Critically Endangered
+6,Penny,Polar Bear,Female,7,600,72,96,Carnivore,Arctic Tundra,2016-08-23,Rescue,Orphaned in the Wild,Vulnerable
+7,Quincy,Quokka,Male,4,14,16,36,Herbivore,Australian Shrubland,2021-09-30,Donation,Perth Zoo,Least Concern
+8,Ruby,Red Panda,Female,5,12,24,48,Omnivore,Eastern Himalayan Forests,2019-02-14,Transfer,Bronx Zoo,Vulnerable
+9,Sammy,Sea Lion,Male,9,350,72,84,Carnivore,Pacific Coast,2013-10-02,Rescue,Injured in Fishing Net,Least Concern
+10,Tristan,Tiger,Male,16,500,84,112,Carnivore,Indian Subcontinent,2007-12-25,Donation,Ranthambore National Park,Endangered
+11,Uma,Uakari,Female,3,6,16,24,Omnivore,Amazon Rainforest,2020-01-08,Captive Breeding,Bioparc Valencia,Least Concern
+12,Vinny,Vervet Monkey,Male,6,12,36,50,Omnivore,African Savanna,2014-07-11,Donation,Nairobi National Park,Least Concern
+13,Willow,Wallaby,Female,2,20,12,36,Herbivore,Australian Grassland,2022-04-22,Rescue,Orphaned in the Wild,Least Concern
+14,Xavier,Xerus,Male,4,2,20,36,Omnivore,African Savanna,2017-03-06,Donation,Etosha National Park,Least Concern
+15,Yara,Yellow-Tailed Black Cockatoo,Female,8,1,24,48,Omnivore,Australian Woodland,2011-08-19,Donation,Adelaide Zoo,Least Concern
+16,Zoe,Zebra,Female,9,700,140,180,Herbivore,African Savanna,2008-05-03,Wild Capture,Kruger National Park,Near Threatened

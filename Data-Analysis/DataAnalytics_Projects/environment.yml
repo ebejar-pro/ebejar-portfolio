@@ -1,0 +1,33 @@
+name: DataAnalytics_Projects
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - scipy
+  - statsmodels
+  - sqlalchemy
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - openpyxl
+  - xlrd
+  - pyarrow
+  - fastparquet
+  - pip
+
+  - pip:
+      - sqlite-utils
+      - tabulate
+      - click
+      - click-default-group
+      - faker
+      - polars
+      - duckdb
+      - pyodbc

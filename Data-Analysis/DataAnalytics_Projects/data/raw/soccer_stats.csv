@@ -1,0 +1,25 @@
+player_name,position,nationality,club,league,goals_scored,assists,shots_on_target,minutes_played,clean_sheets,yellow_cards,red_cards
+Lionel Messi,Forward,Argentina,Paris Saint-Germain,Ligue 1,40,24,46,3420,0,10,0
+Robert Lewandowski,Forward,Poland,Bayern Munich,Bundesliga,50,10,66,3240,0,7,0
+Kylian Mbappé,Forward,France,Paris Saint-Germain,Ligue 1,28,17,41,2790,0,9,0
+Kevin De Bruyne,Midfielder,Belgium,Manchester City,Premier League,15,14,30,2880,0,4,0
+Mohamed Salah,Forward,Egypt,Liverpool,Premier League,32,14,42,3060,0,3,0
+Jorginho,Midfielder,Italy,Chelsea,Premier League,7,4,18,2520,0,5,0
+Luis Suarez,Forward,Uruguay,Barcelona,La Liga,27,12,33,2940,0,8,0
+Virgil van Dijk,Defender,Netherlands,Liverpool,Premier League,5,0,12,3180,10,3,0
+Erling Haaland,Forward,Norway,Borussia Dortmund,Bundesliga,22,8,31,2520,0,9,0
+Trent Alexander-Arnold,Defender,England,Liverpool,Premier League,2,12,22,2940,0,1,0
+Luka Modrić,Midfielder,Croatia,Real Madrid,La Liga,3,7,14,2700,0,2,0
+Mason Mount,Midfielder,England,Chelsea,Premier League,8,13,20,2640,0,4,0
+Thiago Alcântara,Midfielder,Spain,Liverpool,Premier League,0,4,5,2400,0,2,0
+Joshua Kimmich,Midfielder,Germany,Bayern Munich,Bundesliga,2,12,21,2880,0,6,0
+Bruno Fernandes,Midfielder,Portugal,Manchester United,Premier League,9,14,24,2760,0,8,0
+João Cancelo,Defender,Portugal,Manchester City,Premier League,1,3,14,2700,10,2,0
+Casemiro,Midfielder,Brazil,Real Madrid,La Liga,2,2,6,2400,0,8,0
+Robert Lewandowski,Forward,Poland,Bayern Munich,Bundesliga,33,9,41,3000,0,6,0
+Kylian Mbappé,Forward,France,Paris Saint-Germain,Ligue 1,34,20,40,3120,0,9,0
+Kevin De Bruyne,Midfielder,Belgium,Manchester City,Premier League,12,12,25,2640,0,4,0
+Mohamed Salah,Forward,Egypt,Liverpool,Premier League,28,10,39,2820,0,2,0
+Jorginho,Midfielder,Italy,Chelsea,Premier League,5,3,11,2340,0,4,0
+Karim Benzema,Forward,France,Real Madrid,La Liga,24,10,35,2700,0,7,0
+Erling Haaland,Forward,Norway,Borussia Dortmund,Bundesliga,16,7,29,2400,0,8,0

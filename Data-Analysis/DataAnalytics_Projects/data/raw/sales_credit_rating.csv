@@ -1,0 +1,8 @@
+CreditID,CreditDescription,MinFICO,MaxFICO,Comments
+1,Extremely Poor,300.00,499.00,Cannot extend credit
+2,Very Poor,500.00,580.00,Owner approval required to extend credit
+3,Poor,580.00,619.00,Credit extended at extremely high interest rates
+4,Fair,620.00,679.00,Credit extended at high interest rates
+5,Good,680.00,699.00,Credit extended at normal interest rates
+6,Very Good,700.00,850.00,Credit extended at low interest rates
+7,Unknown,,,Paid cash without looking into financing options

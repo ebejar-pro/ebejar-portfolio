@@ -1,0 +1,22 @@
+name,platform,age,gender,profession,daily_usage_minutes,top_used_features,most_frequent_interactions,average_posts_per_day,average_comments_per_day,average_likes_per_day,preferred_content_type,most_followed_categories,privacy_settings,data_sharing_habits,advertising_preferences,concerns_about_social_media
+Alice,Facebook,28,Female,Marketing Manager,60,News Feed,Messaging,5,10,20,Images,Celebrities,Public,Frequent,Targeted,Privacy breach
+Bob,Instagram,32,Male,Software Engineer,30,Stories,Direct Messaging,3,5,15,Videos,Sports,Private,Limited,Opt-out,Addiction
+Charlie,TikTok,24,Non-binary,Student,90,Challenges,Duets,10,25,30,Funny/Humor,Science,Public,Frequent,Personalized,None
+Diana,Twitter,45,Female,Doctor,45,Newsfeed,Hashtags,5,12,18,Text/Articles,Politics,Open,Rare,Contextual,Misinformation
+Ethan,YouTube,20,Male,Student,120,Watching Videos,Commenting,8,15,10,Gaming,Tech,Private,Limited,Opt-out,Time wasted
+Fiona,LinkedIn,35,Female,Entrepreneur,15,Connecting with professionals,Sharing articles,2,8,12,Professional Development,Business,Open,Occasional,Targeted,None
+Gabriel,Snapchat,18,Male,High School Student,40,Filters/Lenses,Snapstreaks,7,12,15,Funny/Humor,Friends,Private,Frequent,Opt-out,Cyberbullying
+Hannah,Reddit,26,Female,Graphic Designer,20,Browsing subreddits,Commenting,3,10,5,News/Information,Art & Design,Open,Limited,Opt-out,Echo chambers
+Iris,Pinterest,50,Female,Retired Teacher,60,Searching for recipes,Saving ideas,5,8,15,DIY/Crafts,Recipes,Private,Frequent,Opt-out,None
+Jack,Twitch,22,Male,College Student,80,Watching streams,Chatting with streamers,5,10,15,Gaming,Esports,Public,Frequent,Targeted,Addiction
+Kim,WhatsApp,38,Female,Lawyer,30,Messaging with groups,Sharing photos,3,8,10,Memes/Quotes,Family & Friends,Private,Frequent,Opt-out,None
+Leo,Telegram,42,Male,Journalist,25,Reading news channels,Sharing articles,2,5,8,Text/Articles,News & Politics,Public,Occasional,Opt-out,None
+Mia,Discord,16,Female,High School Student,50,Chatting with friends,Joining voice channels,4,12,8,Gaming,Music,Private,Frequent,Opt-out,None
+Noah,Spotify,28,Male,Web Developer,90,Listening to music,Creating playlists,3,2,5,Music,Tech,Private,Frequent,Opt-out,None
+Olivia,Messenger,30,Female,Accountant,40,Messaging with family,Sharing memes,4,10,12,Memes/Quotes,Family & Friends,Private,Frequent,Opt-out,None
+Pablo,WeChat,45,Male,Businessman,60,Messaging with colleagues,Sharing news,5,15,20,Text/Articles,Business & Finance,Private,Frequent,Targeted,None
+Quinn,Tumblr,23,Non-binary,Artist,30,Browsing blogs,Creating content,8,15,10,Images/GIFs,Art & Design,Public,Frequent,Opt-out,None
+Rachel,VK,55,Female,Doctor,20,Connecting with classmates,Sharing news,3,8,12,Text/Articles,News & Politics,Open,Occasional,Opt-out,Fake news
+Sam,Weibo,33,Male,Engineer,40,Reading news,Commenting on posts,4,10,15,Text/Articles,Tech & Science,Public,Frequent,Targeted,Limited freedom
+Thomas,Line,21,Male,College Student,50,Messaging with friends,Sharing photos,7,12,18,Images/GIFs,Entertainment,Private,Frequent,Targeted,None
+Umaima,Clubhouse,25,Female,Activist,40,Connecting with classmates,Sharing news,5,8,16,Images/GIFs,Tech,Private,Occasional,Targeted,None
