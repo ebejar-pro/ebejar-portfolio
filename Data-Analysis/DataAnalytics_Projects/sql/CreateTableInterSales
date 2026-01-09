@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS inter_sales(
+    sales_id INTEGER PRIMARY KEY,
+    sales_person TEXT,
+    country TEXT,
+    sales_amount REAL,
+    date DATE);
