@@ -8,51 +8,51 @@ A production‑grade ETL pipeline implementing Medallion Architecture, internati
 ---
 
 ### 🚀 Project Overview
-- **
+
 This project demonstrates a complete end‑to‑end ETL pipeline built in Python to process messy, real‑world CSV data.
 The dataset includes:
 
-- **malformed rows
+- malformed rows
 
-- **inconsistent date formats
+- inconsistent date formats
 
-- **invalid phone numbers
+- invalid phone numbers
 
-- **corrupted address fields
+- corrupted address fields
 
-- **missing values
+- missing values
 
-- **duplicate records
+- duplicate records
 
-- **unrealistic ages
+- unrealistic ages
 
-- **non‑ISO country names
+- non‑ISO country names
 
 The pipeline uses a Bronze → Silver → Gold Medallion Architecture and includes:
 Data ingestion with error tolerance
 
-- **Data cleaning & standardisation
+- Data cleaning & standardisation
 
-- **International standards (E.164, ISO 3166‑1)
+- International standards (E.164, ISO 3166‑1)
 
-- **Data Quality validation
+- Data Quality validation
 
-- **Quarantine of invalid records
+- Quarantine of invalid records
 
-- **Business enrichment (age, salary band)
+- Business enrichment (age, salary band)
 
 This project showcases your strengths in:
-Data Engineering
+- Data Engineering
 
-- **Data Quality & Validation
+- Data Quality & Validation
 
-- **ETL Pipeline Design
+- ETL Pipeline Design
 
-- **Python (Pandas, Regex, phonenumbers, pycountry)
+- Python (Pandas, Regex, phonenumbers, pycountry)
 
-- **Real‑world messy data remediation
+- Real‑world messy data remediation
 
-- **Analytics‑ready dataset creation
+- Analytics‑ready dataset creation
 ---
 
 
@@ -85,11 +85,11 @@ etl_python_sql/
 
 The pipeline ingests the raw CSV exactly as received, using:
  
-- **tolerant parsing (on_bad_lines='warn')
+- tolerant parsing (on_bad_lines='warn')
 
-- **all fields loaded as strings
+- all fields loaded as strings
 
-- **no schema enforcement
+- no schema enforcement
 
 This ensures ingestion never fails, even with corrupted rows.
 
@@ -98,21 +98,21 @@ This ensures ingestion never fails, even with corrupted rows.
 ### 🥈 Silver Layer — Cleaning & Standardisation
 This layer applies transformations such as:
 
-- **lower‑casing and normalising column names
+- lower‑casing and normalising column names
 
-- **trimming whitespace
+- trimming whitespace
 
-- **fixing multi‑line addresses
+- fixing multi‑line addresses
 
-- **converting date formats (dd/mm/yyyy → ISO 8601)
+- converting date formats (dd/mm/yyyy → ISO 8601)
 
-- **converting salary to numeric
+- converting salary to numeric
 
-- **removing duplicates
+- removing duplicates
 
-- **normalising phone numbers
+- normalising phone numbers
 
-- **validating country names
+- validating country names
 
 ---
 
@@ -123,26 +123,26 @@ The validation module enforces:
 - **Required fields must be present
 
 ✔ Validity
-- **Email regex validation
+- Email regex validation
 
-- **Phone number validation using E.164
+- Phone number validation using E.164
 
-- **Country validation using ISO 3166‑1
+- Country validation using ISO 3166‑1
 
-- **Date validation (supports dd/mm/yyyy and yyyy-mm-dd)
+- Date validation (supports dd/mm/yyyy and yyyy-mm-dd)
 
-- **Salary must be numeric
+- Salary must be numeric
 
 ✔ Plausibility
-- **Age must be between 0 and 110 years
+- Age must be between 0 and 110 years
 
 ✔ Consistency
-- **Address must not contain embedded records
+- Address must not contain embedded records
 
-- **Phone numbers must be normalised
+- Phone numbers must be normalised
 
 ✔ Uniqueness
-- **Email must be unique
+- Email must be unique
 
 Invalid rows are written to the quarantine folder for review.
 ---
@@ -150,30 +150,30 @@ Invalid rows are written to the quarantine folder for review.
 ### 🥇 Gold Layer — Enrichment
 The cleaned dataset is enriched with:
 
-- **Age (derived from Date of Birth)
+- Age (derived from Date of Birth)
 
-- **Salary Band (Low / Medium / High / Very High)
+- Salary Band (Low / Medium / High / Very High)
 
-- **Standardised phone numbers (E.164)
+- Standardised phone numbers (E.164)
 
-- **ISO‑validated country names
+- ISO‑validated country names
 
 The Gold dataset is analytics‑ready and suitable for dashboards, reporting, or SQL ingestion.
 
 ### 📊 Technologies Used
-- **Python 3.12
+- Python 3.12
 
-- **Pandas
+- Pandas
 
-- **NumPy
+- NumPy
 
-- **phonenumbers (E.164 validation)
+- phonenumbers (E.164 validation)
 
-- **pycountry (ISO 3166‑1 validation)
+- pycountry (ISO 3166‑1 validation)
 
-- **Regex
+- Regex
 
-- **VS Code / Jupyter
+- VS Code / Jupyter
 
 ### ▶️ How to Run the Pipeline
 Install dependencies:
@@ -184,9 +184,13 @@ Run ETL:
 
 Ouputs will be generated:
 data/bronze/
+
 data/silver/
+
 data/gold/
+
 data/quarantine/
+
 
 ### 📈 Data Quality Summary (Example)
 After running the pipeline, you may see something like:
@@ -202,29 +206,29 @@ After running the pipeline, you may see something like:
 ### 🎯 Why This Project Matters
 This project simulates real‑world challenges found in:
 
-- **CRM data ingestion
+- CRM data ingestion
 
-- **Customer master data cleanup
+- Customer master data cleanup
 
-- **Legacy system migrations
+- Legacy system migrations
 
-- **Data warehouse onboarding
+- Data warehouse onboarding
 
-- **Regulatory reporting
+- Regulatory reporting
 
-- **Data quality remediation
+- Data quality remediation
 
 It demonstrates your ability to:
 
-- **handle messy real‑world data
+- handle messy real‑world data
 
-- **design robust ETL pipelines
+- design robust ETL pipelines
 
-- **enforce international data standards
+- enforce international data standards
 
-- **produce clean, reliable datasets
+- produce clean, reliable datasets
 
-- **build scalable, modular code
+- build scalable, modular code
 
 ### 📌 Author
 
