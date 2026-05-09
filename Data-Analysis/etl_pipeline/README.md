@@ -29,7 +29,8 @@ The dataset includes:
 - non‑ISO country names
 
 The pipeline uses a Bronze → Silver → Gold Medallion Architecture and includes:
-Data ingestion with error tolerance
+
+- Data ingestion with error tolerance
 
 - Data cleaning & standardisation
 
@@ -42,6 +43,7 @@ Data ingestion with error tolerance
 - Business enrichment (age, salary band)
 
 This project showcases your strengths in:
+
 - Data Engineering
 
 - Data Quality & Validation
@@ -96,6 +98,7 @@ This ensures ingestion never fails, even with corrupted rows.
 ---
 
 ### 🥈 Silver Layer — Cleaning & Standardisation
+
 This layer applies transformations such as:
 
 - lower‑casing and normalising column names
@@ -117,10 +120,11 @@ This layer applies transformations such as:
 ---
 
 ### 🧪 Data Quality Framework
+
 The validation module enforces:
 
 ✔ Completeness
-- **Required fields must be present
+- Required fields must be present
 
 ✔ Validity
 - Email regex validation
@@ -148,6 +152,7 @@ Invalid rows are written to the quarantine folder for review.
 ---
 
 ### 🥇 Gold Layer — Enrichment
+
 The cleaned dataset is enriched with:
 
 - Age (derived from Date of Birth)
@@ -161,6 +166,7 @@ The cleaned dataset is enriched with:
 The Gold dataset is analytics‑ready and suitable for dashboards, reporting, or SQL ingestion.
 
 ### 📊 Technologies Used
+
 - Python 3.12
 
 - Pandas
@@ -177,12 +183,15 @@ The Gold dataset is analytics‑ready and suitable for dashboards, reporting, or
 
 ### ▶️ How to Run the Pipeline
 Install dependencies:
+
 > pip install -r requirements.txt
 
 Run ETL:
+
 > python main.py
 
 Ouputs will be generated:
+
 data/bronze/
 
 data/silver/
