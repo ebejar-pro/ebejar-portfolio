@@ -12,9 +12,15 @@ def validate_phone(phone):
 
 def is_valid_date(value):
     try:
-        datetime.strptime(value, "%Y-%m-%d")
-        return True
-    except:
+        # Accept both dd/mm/yyyy and yyyy-mm-dd formats
+        for fmt in ("%d/%m/%Y", "%Y-%m-%d"):
+            try:
+                datetime.strptime(str(value), fmt)
+                return True
+            except ValueError:
+                continue
+        return False
+    except Exception:
         return False
 
 def validate_row(row):
@@ -35,6 +41,7 @@ def validate_row(row):
         errors.append("Invalid phone")
 
     # 4. Date validation
+
     if not is_valid_date(str(row["date_of_birth"])):
         errors.append("Invalid date_of_birth")
 
