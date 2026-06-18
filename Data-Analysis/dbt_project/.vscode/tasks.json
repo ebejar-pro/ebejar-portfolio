@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open settings.json on startup",
+            "type": "shell",
+            "command": "code .vscode/settings.json",
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}

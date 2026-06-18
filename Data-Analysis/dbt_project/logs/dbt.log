@@ -1,0 +1,2169 @@
+==================== 2026-06-05T11:16:15.476789Z | 019e977f-7deb-7d22-8abb-ca31edfe3967 ====================
+11:16:15.478261 [info ]: dbt-fusion 2.0.0-preview.183
+11:16:15.482467 [info ]: Started loading project
+11:16:15.510271 [info ]: Finished loading project [  0.03s]
+11:16:15.515231 [error]: [InvalidConfig (dbt1005)]: no profiles.yml found (searched: ["C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\data\\profiles.yml", "C:\\Users\\elbej\\.dbt\\profiles.yml"]). Run `dbt init` to create one
+11:16:15.625177 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error [148ms]
+==================== 2026-06-05T11:19:42.505519Z | 019e9782-a6a3-7ce1-b412-300e3b37f375 ====================
+11:19:42.506022 [info ]: dbt-fusion 2.0.0-preview.183
+11:19:42.507416 [info ]: Started loading project
+11:19:42.515252 [info ]: Finished loading project [  0.01s]
+11:19:42.515637 [error]: [InvalidConfig (dbt1005)]: no profiles.yml found (searched: ["C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\profiles.yml", "C:\\Users\\elbej\\.dbt\\profiles.yml"]). Run `dbt init` to create one
+11:19:42.610611 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error [105ms]
+==================== 2026-06-05T11:32:53.319607Z | 019e978e-b7c1-7d13-9db9-4865ad8d4ecb ====================
+11:32:53.319781 [info ]: dbt-fusion 2.0.0-preview.183
+11:32:53.320575 [info ]: Started loading project
+11:32:53.325418 [info ]: Loading profiles.yml
+11:32:53.326112 [info ]: Finished loading project [  0.01s]
+11:32:53.326463 [error]: [InvalidConfig (dbt1005)]: Failed to parse profiles.yml: unknown variant `sqlite`, expected one of `redshift`, `snowflake`, `postgres`, `bigquery`, `trino`, `datafusion`, `spark`, `databricks`, `salesforce`, `duckdb`, `exasol`, `fabric`, `clickhouse`
+11:32:53.414929 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error [95ms]
+==================== 2026-06-05T11:48:13.086590Z | 019e979c-c099-7540-a724-c2cd00360ff8 ====================
+11:48:13.086833 [info ]: dbt-fusion 2.0.0-preview.183
+11:48:13.087857 [info ]: Started loading project
+11:48:13.092961 [info ]: Loading ~/.dbt/profiles.yml
+11:48:13.093974 [info ]: Finished loading project [  0.01s]
+11:48:13.094201 [info ]: Started debugging
+11:48:13.094403 [info ]: Debugging profile: dev
+11:48:13.094566 [info ]: Debugging dbt version: 2.0.0-preview.183
+11:48:13.094861 [info ]: Debugging platform: windows x86_64 (windows)
+11:48:13.095123 [info ]: Debugging adapter type: duckdb (remote)
+11:48:13.171759 [info ]: Debugging dependencies:
+  git: OK
+11:48:13.173166 [info ]: Debugging connection:
+  "database": "retail",
+  "schema": "main"
+11:48:14.410341 [debug]: Query executed on node unknown:
+select 1 as id
+11:48:14.413554 [info ]: Debugging connection test: OK
+11:48:14.417038 [info ]: Debugged All checks passed!
+11:48:14.417415 [info ]: Finished debugging [  1.32s]
+11:48:15.149327 [info ]: New version available 2.0.0-preview.184 (run `dbt system update`)
+11:48:15.160378 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [2.1s]
+==================== 2026-06-05T11:50:24.343625Z | 019e979e-c150-7d41-ac06-dbbac30b18cf ====================
+11:50:24.343815 [info ]: dbt-fusion 2.0.0-preview.183
+11:50:24.344583 [info ]: Started loading project
+11:50:24.350431 [info ]: Loading ~/.dbt/profiles.yml
+11:50:24.361558 [debug]:    Started loading packages
+11:50:24.371975 [debug]:     Loaded [  0.01s] packages
+11:50:24.374615 [info ]: Finished loading project [  0.03s]
+11:50:24.375672 [info ]: Started parsing
+11:50:24.413488 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+11:50:24.414281 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+11:50:24.417812 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+11:50:24.418613 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:50:24.419764 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:50:24.421111 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+11:50:24.422151 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+11:50:24.423282 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:50:24.424216 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+11:50:24.434594 [error]: [DbtYamlValidationError (dbt1159)]: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> ..\models\marts\marts.yml:22:22
+11:50:24.438235 [error]: [DbtYamlValidationError (dbt1159)]: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> ..\models\marts\marts.yml:27:22
+11:50:24.446221 [error]: [DbtYamlValidationError (dbt1159)]: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> ..\models\staging\staging.yml:35:22
+11:50:24.452769 [error]: [DbtYamlValidationError (dbt1159)]: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> ..\models\staging\staging.yml:40:22
+11:50:24.457903 [error]: [DbtYamlValidationError (dbt1159)]: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> ..\models\staging\staging.yml:25:22
+11:50:24.474242 [debug]: Finished parsing target\generic_tests\unique_dim_customers_customer_id.sql [  0.00s]
+11:50:24.476154 [debug]: Finished parsing target\generic_tests\not_null_dim_customers_customer_id.sql [  0.00s]
+11:50:24.477003 [debug]: Finished parsing target\generic_tests\unique_dim_products_product_id.sql [  0.00s]
+11:50:24.477741 [debug]: Finished parsing target\generic_tests\not_null_dim_products_product_id.sql [  0.00s]
+11:50:24.478873 [debug]: Finished parsing target\generic_tests\relationships_fct_orders_27eb9571f4345d54d25b7418370a8e08.sql [  0.00s]
+11:50:24.479722 [debug]: Finished parsing target\generic_tests\unique_fct_orders_order_item_id.sql [  0.00s]
+11:50:24.481040 [debug]: Finished parsing target\generic_tests\not_null_fct_orders_order_item_id.sql [  0.00s]
+11:50:24.482239 [debug]: Finished parsing target\generic_tests\relationships_fct_orders_9c38234a3e14d5d8021d8505461cf9b4.sql [  0.00s]
+11:50:24.483030 [debug]: Finished parsing target\generic_tests\unique_stg_customers_customer_id.sql [  0.00s]
+11:50:24.483829 [debug]: Finished parsing target\generic_tests\not_null_stg_customers_customer_id.sql [  0.00s]
+11:50:24.484706 [debug]: Finished parsing target\generic_tests\relationships_stg_order_items_b3d7cdbd08ebfad01e3226c01c10bba0.sql [  0.00s]
+11:50:24.485470 [debug]: Finished parsing target\generic_tests\unique_stg_order_items_order_item_id.sql [  0.00s]
+11:50:24.486180 [debug]: Finished parsing target\generic_tests\not_null_stg_order_items_order_item_id.sql [  0.00s]
+11:50:24.486904 [debug]: Finished parsing target\generic_tests\relationships_stg_order_items_85fcc371bcae46211ede4a7fca07283f.sql [  0.00s]
+11:50:24.487572 [debug]: Finished parsing target\generic_tests\relationships_stg_orders_96411fe0c89b49c3f4da955dfd358ba0.sql [  0.00s]
+11:50:24.488583 [debug]: Finished parsing target\generic_tests\unique_stg_orders_order_id.sql [  0.00s]
+11:50:24.489903 [debug]: Finished parsing target\generic_tests\not_null_stg_orders_order_id.sql [  0.00s]
+11:50:24.491303 [debug]: Finished parsing target\generic_tests\not_null_stg_products_price.sql [  0.00s]
+11:50:24.492257 [debug]: Finished parsing target\generic_tests\unique_stg_products_product_id.sql [  0.00s]
+11:50:24.493126 [debug]: Finished parsing target\generic_tests\not_null_stg_products_product_id.sql [  0.00s]
+11:50:24.505640 [info ]: Finished parsing [  0.13s]
+11:50:25.249326 [info ]: New version available 2.0.0-preview.184 (run `dbt system update`)
+11:50:25.261386 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+11:50:25.261386 [info ]: 
+==================== Execution Summary =====================
+Finished 'seed' with 5 errors for target 'dev' [917ms]
+==================== 2026-06-05T11:51:36.249673Z | 019e979f-da34-79d2-8d7e-7fbecfc3fae8 ====================
+11:51:36.249810 [info ]: dbt-fusion 2.0.0-preview.183
+11:51:36.250507 [info ]: Started loading project
+11:51:36.259741 [info ]: Loading ~/.dbt/profiles.yml
+11:51:36.273689 [debug]:    Started loading packages
+11:51:36.280870 [debug]:     Loaded [  0.01s] packages
+11:51:36.282469 [info ]: Finished loading project [  0.03s]
+11:51:36.283779 [info ]: Started parsing
+11:51:36.330601 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+11:51:36.331465 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+11:51:36.334869 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+11:51:36.336671 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:51:36.339037 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:51:36.340293 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+11:51:36.341483 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+11:51:36.342720 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:51:36.343832 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+11:51:36.354832 [error]: [DbtYamlValidationError (dbt1159)]: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> ..\models\marts\marts.yml:22:22
+11:51:36.361853 [error]: [DbtYamlValidationError (dbt1159)]: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> ..\models\marts\marts.yml:27:22
+11:51:36.367910 [error]: [DbtYamlValidationError (dbt1159)]: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> ..\models\staging\staging.yml:35:22
+11:51:36.374457 [error]: [DbtYamlValidationError (dbt1159)]: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> ..\models\staging\staging.yml:40:22
+11:51:36.378090 [error]: [DbtYamlValidationError (dbt1159)]: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> ..\models\staging\staging.yml:25:22
+11:51:36.389422 [debug]: Finished parsing target\generic_tests\unique_dim_customers_customer_id.sql [  0.00s]
+11:51:36.390601 [debug]: Finished parsing target\generic_tests\not_null_dim_customers_customer_id.sql [  0.00s]
+11:51:36.391549 [debug]: Finished parsing target\generic_tests\unique_dim_products_product_id.sql [  0.00s]
+11:51:36.392403 [debug]: Finished parsing target\generic_tests\not_null_dim_products_product_id.sql [  0.00s]
+11:51:36.393281 [debug]: Finished parsing target\generic_tests\relationships_fct_orders_27eb9571f4345d54d25b7418370a8e08.sql [  0.00s]
+11:51:36.394076 [debug]: Finished parsing target\generic_tests\unique_fct_orders_order_item_id.sql [  0.00s]
+11:51:36.394922 [debug]: Finished parsing target\generic_tests\not_null_fct_orders_order_item_id.sql [  0.00s]
+11:51:36.395742 [debug]: Finished parsing target\generic_tests\relationships_fct_orders_9c38234a3e14d5d8021d8505461cf9b4.sql [  0.00s]
+11:51:36.396478 [debug]: Finished parsing target\generic_tests\unique_stg_customers_customer_id.sql [  0.00s]
+11:51:36.397357 [debug]: Finished parsing target\generic_tests\not_null_stg_customers_customer_id.sql [  0.00s]
+11:51:36.398130 [debug]: Finished parsing target\generic_tests\relationships_stg_order_items_b3d7cdbd08ebfad01e3226c01c10bba0.sql [  0.00s]
+11:51:36.398911 [debug]: Finished parsing target\generic_tests\unique_stg_order_items_order_item_id.sql [  0.00s]
+11:51:36.399694 [debug]: Finished parsing target\generic_tests\not_null_stg_order_items_order_item_id.sql [  0.00s]
+11:51:36.400420 [debug]: Finished parsing target\generic_tests\relationships_stg_order_items_85fcc371bcae46211ede4a7fca07283f.sql [  0.00s]
+11:51:36.401428 [debug]: Finished parsing target\generic_tests\relationships_stg_orders_96411fe0c89b49c3f4da955dfd358ba0.sql [  0.00s]
+11:51:36.402339 [debug]: Finished parsing target\generic_tests\unique_stg_orders_order_id.sql [  0.00s]
+11:51:36.403211 [debug]: Finished parsing target\generic_tests\not_null_stg_orders_order_id.sql [  0.00s]
+11:51:36.404067 [debug]: Finished parsing target\generic_tests\not_null_stg_products_price.sql [  0.00s]
+11:51:36.404937 [debug]: Finished parsing target\generic_tests\unique_stg_products_product_id.sql [  0.00s]
+11:51:36.405857 [debug]: Finished parsing target\generic_tests\not_null_stg_products_product_id.sql [  0.00s]
+11:51:36.415027 [info ]: Finished parsing [  0.13s]
+11:51:37.155845 [info ]: New version available 2.0.0-preview.184 (run `dbt system update`)
+11:51:37.166807 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+11:51:37.166807 [info ]: 
+==================== Execution Summary =====================
+Finished 'seed' with 5 errors for target 'dev' [917ms]
+==================== 2026-06-05T11:57:18.675375Z | 019e97a5-13cd-71f1-8a2f-3d2d0d1434af ====================
+11:57:18.675538 [info ]: dbt-fusion 2.0.0-preview.183
+11:57:18.676201 [info ]: Started loading project
+11:57:18.680735 [info ]: Loading profiles.yml
+11:57:18.693021 [debug]:    Started loading packages
+11:57:18.705028 [debug]:     Loaded [  0.01s] packages
+11:57:18.706755 [info ]: Finished loading project [  0.03s]
+11:57:18.711243 [info ]: Started parsing
+11:57:18.748357 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+11:57:18.749263 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+11:57:18.752200 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+11:57:18.753170 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:57:18.754163 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:57:18.755342 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+11:57:18.756372 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+11:57:18.757360 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:57:18.758421 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+11:57:18.790173 [debug]: Finished parsing target\generic_tests\unique_dim_customers_customer_id.sql [  0.00s]
+11:57:18.791190 [debug]: Finished parsing target\generic_tests\not_null_dim_customers_customer_id.sql [  0.00s]
+11:57:18.792310 [debug]: Finished parsing target\generic_tests\unique_dim_products_product_id.sql [  0.00s]
+11:57:18.794211 [debug]: Finished parsing target\generic_tests\not_null_dim_products_product_id.sql [  0.00s]
+11:57:18.795914 [debug]: Finished parsing target\generic_tests\relationships_fct_orders_27eb9571f4345d54d25b7418370a8e08.sql [  0.00s]
+11:57:18.797215 [debug]: Finished parsing target\generic_tests\unique_fct_orders_order_item_id.sql [  0.00s]
+11:57:18.799077 [debug]: Finished parsing target\generic_tests\not_null_fct_orders_order_item_id.sql [  0.00s]
+11:57:18.801148 [debug]: Finished parsing target\generic_tests\relationships_fct_orders_9c38234a3e14d5d8021d8505461cf9b4.sql [  0.00s]
+11:57:18.803740 [debug]: Finished parsing target\generic_tests\unique_stg_customers_customer_id.sql [  0.00s]
+11:57:18.806183 [debug]: Finished parsing target\generic_tests\not_null_stg_customers_customer_id.sql [  0.00s]
+11:57:18.807660 [debug]: Finished parsing target\generic_tests\relationships_stg_order_items_b3d7cdbd08ebfad01e3226c01c10bba0.sql [  0.00s]
+11:57:18.809190 [debug]: Finished parsing target\generic_tests\unique_stg_order_items_order_item_id.sql [  0.00s]
+11:57:18.810266 [debug]: Finished parsing target\generic_tests\not_null_stg_order_items_order_item_id.sql [  0.00s]
+11:57:18.811156 [debug]: Finished parsing target\generic_tests\relationships_stg_order_items_85fcc371bcae46211ede4a7fca07283f.sql [  0.00s]
+11:57:18.812122 [debug]: Finished parsing target\generic_tests\relationships_stg_orders_96411fe0c89b49c3f4da955dfd358ba0.sql [  0.00s]
+11:57:18.812938 [debug]: Finished parsing target\generic_tests\unique_stg_orders_order_id.sql [  0.00s]
+11:57:18.813723 [debug]: Finished parsing target\generic_tests\not_null_stg_orders_order_id.sql [  0.00s]
+11:57:18.814487 [debug]: Finished parsing target\generic_tests\unique_stg_products_product_id.sql [  0.00s]
+11:57:18.815324 [debug]: Finished parsing target\generic_tests\not_null_stg_products_product_id.sql [  0.00s]
+11:57:18.827302 [info ]: Finished parsing [  0.12s]
+11:57:18.829846 [info ]: Started scheduling
+11:57:18.831071 [info ]: Finished scheduling [  0.00s]
+11:57:18.831495 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:57:18.840181 [info ]: License loaded from file C:\Users\elbej\.dbt\license.70506183139093
+11:57:19.586983 [info ]: New version available 2.0.0-preview.184 (run `dbt system update`)
+11:57:19.597808 [info ]: 
+==================== Execution Summary =====================
+Finished 'seed' with 1 warning for target 'dev' [922ms]
+==================== 2026-06-05T11:57:50.640796Z | 019e97a5-90ab-7ad0-8eae-49b2cd480514 ====================
+11:57:50.641020 [info ]: dbt-fusion 2.0.0-preview.183
+11:57:50.641688 [info ]: Started loading project
+11:57:50.648502 [info ]: Loading profiles.yml
+11:57:50.662404 [debug]:    Started loading packages
+11:57:50.675867 [debug]:     Loaded [  0.01s] packages
+11:57:50.677550 [info ]: Finished loading project [  0.04s]
+11:57:50.679001 [info ]: Started parsing
+11:57:50.724035 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+11:57:50.724760 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+11:57:50.727887 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+11:57:50.729040 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:57:50.729989 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:57:50.731303 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+11:57:50.732605 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+11:57:50.734047 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:57:50.735466 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+11:57:50.780376 [debug]: Finished parsing target\generic_tests\unique_dim_customers_customer_id.sql [  0.00s]
+11:57:50.781415 [debug]: Finished parsing target\generic_tests\not_null_dim_customers_customer_id.sql [  0.00s]
+11:57:50.782347 [debug]: Finished parsing target\generic_tests\unique_dim_products_product_id.sql [  0.00s]
+11:57:50.783240 [debug]: Finished parsing target\generic_tests\not_null_dim_products_product_id.sql [  0.00s]
+11:57:50.784385 [debug]: Finished parsing target\generic_tests\relationships_fct_orders_27eb9571f4345d54d25b7418370a8e08.sql [  0.00s]
+11:57:50.785685 [debug]: Finished parsing target\generic_tests\unique_fct_orders_order_item_id.sql [  0.00s]
+11:57:50.787091 [debug]: Finished parsing target\generic_tests\not_null_fct_orders_order_item_id.sql [  0.00s]
+11:57:50.788507 [debug]: Finished parsing target\generic_tests\relationships_fct_orders_9c38234a3e14d5d8021d8505461cf9b4.sql [  0.00s]
+11:57:50.789538 [debug]: Finished parsing target\generic_tests\unique_stg_customers_customer_id.sql [  0.00s]
+11:57:50.790394 [debug]: Finished parsing target\generic_tests\not_null_stg_customers_customer_id.sql [  0.00s]
+11:57:50.791268 [debug]: Finished parsing target\generic_tests\relationships_stg_order_items_b3d7cdbd08ebfad01e3226c01c10bba0.sql [  0.00s]
+11:57:50.791986 [debug]: Finished parsing target\generic_tests\unique_stg_order_items_order_item_id.sql [  0.00s]
+11:57:50.792705 [debug]: Finished parsing target\generic_tests\not_null_stg_order_items_order_item_id.sql [  0.00s]
+11:57:50.793759 [debug]: Finished parsing target\generic_tests\relationships_stg_order_items_85fcc371bcae46211ede4a7fca07283f.sql [  0.00s]
+11:57:50.794710 [debug]: Finished parsing target\generic_tests\relationships_stg_orders_96411fe0c89b49c3f4da955dfd358ba0.sql [  0.00s]
+11:57:50.795733 [debug]: Finished parsing target\generic_tests\unique_stg_orders_order_id.sql [  0.00s]
+11:57:50.796671 [debug]: Finished parsing target\generic_tests\not_null_stg_orders_order_id.sql [  0.00s]
+11:57:50.797484 [debug]: Finished parsing target\generic_tests\unique_stg_products_product_id.sql [  0.00s]
+11:57:50.798558 [debug]: Finished parsing target\generic_tests\not_null_stg_products_product_id.sql [  0.00s]
+11:57:50.811890 [info ]: Finished parsing [  0.13s]
+11:57:50.815187 [info ]: Started scheduling
+11:57:50.815787 [info ]: Finished scheduling [  0.00s]
+11:57:50.821887 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "products" }) and interval: None
+11:57:50.822041 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "orders" }) and interval: None
+11:57:50.822132 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "customers" }) and interval: None
+11:57:50.822205 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "order_items" }) and interval: None
+11:57:50.839389 [info ]: License loaded from file C:\Users\elbej\.dbt\license.70506183139093
+11:57:50.840794 [info ]: Started building task graph
+11:57:50.845632 [info ]: Finished building task graph [  0.00s]
+11:57:50.903622 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dbt_project", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"retail"'
+    
+  
+  
+11:57:50.909438 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dbt_project", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='retail'
+        and type='sqlite'
+    
+  
+11:57:50.911974 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dbt_project", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "retail"."main"
+    
+11:57:51.957080 [error]: [DbDriverFailed (dbt1308)]: Failed to create schema 'main' in database 'retail' in remote for model.dbt_project.stg_products: Binder Error: Catalog "retail" does not exist!
+11:57:51.957149 [info ]: New version available 2.0.0-preview.184 (run `dbt system update`)
+11:57:51.973544 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [1.3s]
+Processed: 7 models
+==================== 2026-06-05T12:29:18.627371Z | 019e97c2-5f9b-7ce2-a5fa-0017573fd9cc ====================
+12:29:18.628665 [info ]: dbt-fusion 2.0.0-preview.183
+12:29:18.638618 [info ]: Started loading project
+12:29:18.693258 [info ]: Loading profiles.yml
+12:29:18.711516 [info ]: Finished loading project [  0.07s]
+12:29:18.714994 [info ]: Started debugging
+12:29:18.716012 [info ]: Debugging profile: dev
+12:29:18.716381 [info ]: Debugging dbt version: 2.0.0-preview.183
+12:29:18.716602 [info ]: Debugging platform: windows x86_64 (windows)
+12:29:18.717687 [info ]: Debugging adapter type: duckdb (remote)
+12:29:18.793472 [info ]: Debugging dependencies:
+  git: OK
+12:29:18.799011 [info ]: Debugging connection:
+  "path": "C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\data\\retail.duckdb",
+  "schema": "main"
+12:29:18.936581 [info ]: Finished debugging [  0.22s]
+12:29:18.941032 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the specified database.
+The following error was returned:
+
+IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+12:29:19.771288 [info ]: New version available 2.0.0-preview.184 (run `dbt system update`)
+12:29:19.782281 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error for target 'dev' [1.2s]
+==================== 2026-06-05T12:30:01.556746Z | 019e97c3-074e-7e93-9826-2361aebacb5d ====================
+12:30:01.556954 [info ]: dbt-fusion 2.0.0-preview.183
+12:30:01.557972 [info ]: Started loading project
+12:30:01.566241 [info ]: Loading profiles.yml
+12:30:01.584524 [debug]:    Started loading packages
+12:30:01.598984 [debug]:     Loaded [  0.01s] packages
+12:30:01.608130 [info ]: Finished loading project [  0.05s]
+12:30:01.611807 [info ]: Started parsing
+12:30:01.699518 [debug]: Finished parsing models\marts\marts.yml [  0.01s]
+12:30:01.702004 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+12:30:01.735815 [debug]: Finished parsing models\marts\dim_customers.sql [  0.02s]
+12:30:01.737083 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+12:30:01.738340 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+12:30:01.739374 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+12:30:01.740265 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+12:30:01.741080 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+12:30:01.742426 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+12:30:01.804927 [debug]: Finished parsing target\generic_tests\unique_dim_customers_customer_id.sql [  0.00s]
+12:30:01.806199 [debug]: Finished parsing target\generic_tests\not_null_dim_customers_customer_id.sql [  0.00s]
+12:30:01.807186 [debug]: Finished parsing target\generic_tests\unique_dim_products_product_id.sql [  0.00s]
+12:30:01.808152 [debug]: Finished parsing target\generic_tests\not_null_dim_products_product_id.sql [  0.00s]
+12:30:01.809099 [debug]: Finished parsing target\generic_tests\relationships_fct_orders_27eb9571f4345d54d25b7418370a8e08.sql [  0.00s]
+12:30:01.810032 [debug]: Finished parsing target\generic_tests\unique_fct_orders_order_item_id.sql [  0.00s]
+12:30:01.810946 [debug]: Finished parsing target\generic_tests\not_null_fct_orders_order_item_id.sql [  0.00s]
+12:30:01.811773 [debug]: Finished parsing target\generic_tests\relationships_fct_orders_9c38234a3e14d5d8021d8505461cf9b4.sql [  0.00s]
+12:30:01.813312 [debug]: Finished parsing target\generic_tests\unique_stg_customers_customer_id.sql [  0.00s]
+12:30:01.815003 [debug]: Finished parsing target\generic_tests\not_null_stg_customers_customer_id.sql [  0.00s]
+12:30:01.816434 [debug]: Finished parsing target\generic_tests\relationships_stg_order_items_b3d7cdbd08ebfad01e3226c01c10bba0.sql [  0.00s]
+12:30:01.817340 [debug]: Finished parsing target\generic_tests\unique_stg_order_items_order_item_id.sql [  0.00s]
+12:30:01.818131 [debug]: Finished parsing target\generic_tests\not_null_stg_order_items_order_item_id.sql [  0.00s]
+12:30:01.818922 [debug]: Finished parsing target\generic_tests\relationships_stg_order_items_85fcc371bcae46211ede4a7fca07283f.sql [  0.00s]
+12:30:01.819665 [debug]: Finished parsing target\generic_tests\relationships_stg_orders_96411fe0c89b49c3f4da955dfd358ba0.sql [  0.00s]
+12:30:01.820290 [debug]: Finished parsing target\generic_tests\unique_stg_orders_order_id.sql [  0.00s]
+12:30:01.820961 [debug]: Finished parsing target\generic_tests\not_null_stg_orders_order_id.sql [  0.00s]
+12:30:01.821633 [debug]: Finished parsing target\generic_tests\unique_stg_products_product_id.sql [  0.00s]
+12:30:01.822310 [debug]: Finished parsing target\generic_tests\not_null_stg_products_product_id.sql [  0.00s]
+12:30:01.841015 [info ]: Finished parsing [  0.23s]
+12:30:01.850799 [info ]: Started scheduling
+12:30:01.858322 [info ]: Finished scheduling [  0.01s]
+12:30:01.874218 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "dim_customers" }) and interval: None
+12:30:01.874555 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "dim_products" }) and interval: None
+12:30:01.874627 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "stg_customers" }) and interval: None
+12:30:01.874662 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "stg_order_items" }) and interval: None
+12:30:01.874691 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "stg_orders" }) and interval: None
+12:30:01.874723 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "stg_products" }) and interval: None
+12:30:01.874752 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "fct_orders" }) and interval: None
+12:30:01.902946 [info ]: License loaded from file C:\Users\elbej\.dbt\license.70506183139093
+12:30:01.915251 [info ]: Started building task graph
+12:30:01.923385 [info ]: Finished building task graph [  0.01s]
+12:30:01.981996 [info ]: Started rendering (19 nodes)
+12:30:01.983562 [info ]: Started test main_dbt_test__audit.unique_stg_products_product_id
+12:30:01.983628 [debug]: Started rendering test main_dbt_test__audit.unique_stg_products_product_id
+12:30:01.984200 [info ]: Started test main_dbt_test__audit.unique_stg_orders_order_id
+12:30:01.984233 [debug]: Started rendering test main_dbt_test__audit.unique_stg_orders_order_id
+12:30:01.984311 [info ]: Started test main_dbt_test__audit.unique_stg_order_items_order_item_id
+12:30:01.984344 [debug]: Started rendering test main_dbt_test__audit.unique_stg_order_items_order_item_id
+12:30:01.984382 [info ]: Started test main_dbt_test__audit.unique_stg_customers_customer_id
+12:30:01.984401 [debug]: Started rendering test main_dbt_test__audit.unique_stg_customers_customer_id
+12:30:01.984437 [info ]: Started test main_dbt_test__audit.unique_fct_orders_order_item_id
+12:30:01.984456 [debug]: Started rendering test main_dbt_test__audit.unique_fct_orders_order_item_id
+12:30:01.984488 [info ]: Started test main_dbt_test__audit.unique_dim_products_product_id
+12:30:01.984516 [debug]: Started rendering test main_dbt_test__audit.unique_dim_products_product_id
+12:30:01.984548 [info ]: Started test main_dbt_test__audit.unique_dim_customers_customer_id
+12:30:01.984567 [debug]: Started rendering test main_dbt_test__audit.unique_dim_customers_customer_id
+12:30:01.984661 [info ]: Started test main_dbt_test__audit.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_
+12:30:01.984732 [debug]: Started rendering test main_dbt_test__audit.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_
+12:30:01.984795 [info ]: Started test main_dbt_test__audit.relationships_stg_order_items_product_id__product_id__ref_stg_products_
+12:30:01.984812 [debug]: Started rendering test main_dbt_test__audit.relationships_stg_order_items_product_id__product_id__ref_stg_products_
+12:30:01.984835 [info ]: Started test main_dbt_test__audit.relationships_stg_order_items_order_id__order_id__ref_stg_orders_
+12:30:01.984878 [debug]: Started rendering test main_dbt_test__audit.relationships_stg_order_items_order_id__order_id__ref_stg_orders_
+12:30:01.984917 [info ]: Started test main_dbt_test__audit.relationships_fct_orders_product_id__product_id__ref_dim_products_
+12:30:01.984945 [debug]: Started rendering test main_dbt_test__audit.relationships_fct_orders_product_id__product_id__ref_dim_products_
+12:30:01.984973 [info ]: Started test main_dbt_test__audit.relationships_fct_orders_order_id__customer_id__ref_dim_customers_
+12:30:01.985008 [debug]: Started rendering test main_dbt_test__audit.relationships_fct_orders_order_id__customer_id__ref_dim_customers_
+12:30:01.985039 [info ]: Started test main_dbt_test__audit.not_null_stg_products_product_id
+12:30:01.985056 [debug]: Started rendering test main_dbt_test__audit.not_null_stg_products_product_id
+12:30:01.985086 [info ]: Started test main_dbt_test__audit.not_null_stg_orders_order_id
+12:30:01.985130 [debug]: Started rendering test main_dbt_test__audit.not_null_stg_orders_order_id
+12:30:01.985144 [info ]: Started test main_dbt_test__audit.not_null_stg_order_items_order_item_id
+12:30:01.985154 [debug]: Started rendering test main_dbt_test__audit.not_null_stg_order_items_order_item_id
+12:30:01.985170 [info ]: Started test main_dbt_test__audit.not_null_stg_customers_customer_id
+12:30:01.985177 [debug]: Started rendering test main_dbt_test__audit.not_null_stg_customers_customer_id
+12:30:01.985190 [info ]: Started test main_dbt_test__audit.not_null_fct_orders_order_item_id
+12:30:01.985231 [debug]: Started rendering test main_dbt_test__audit.not_null_fct_orders_order_item_id
+12:30:01.985265 [info ]: Started test main_dbt_test__audit.not_null_dim_products_product_id
+12:30:01.985278 [debug]: Started rendering test main_dbt_test__audit.not_null_dim_products_product_id
+12:30:01.985304 [info ]: Started test main_dbt_test__audit.not_null_dim_customers_customer_id
+12:30:01.985316 [debug]: Started rendering test main_dbt_test__audit.not_null_dim_customers_customer_id
+12:30:02.054958 [debug]: Compiled SQL for node test.dbt_project.unique_stg_products_product_id.7d950a1467 at target\compiled\dbt_project\target\generic_tests\unique_stg_products_product_id.sql
+12:30:02.054559 [debug]: Compiled SQL for node test.dbt_project.not_null_stg_order_items_order_item_id.26a7e2bc35 at target\compiled\dbt_project\target\generic_tests\not_null_stg_order_items_order_item_id.sql
+12:30:02.054560 [debug]: Compiled SQL for node test.dbt_project.not_null_dim_customers_customer_id.dd91cd1c8d at target\compiled\dbt_project\target\generic_tests\not_null_dim_customers_customer_id.sql
+12:30:02.058468 [debug]: Finished rendering [  0.07s] test main_dbt_test__audit.not_null_stg_order_items_order_item_id [success]
+12:30:02.061688 [info ]: Started analyzing (19 nodes)
+12:30:02.062384 [debug]: Started analyzing test main_dbt_test__audit.not_null_stg_order_items_order_item_id
+12:30:02.062471 [debug]: Finished rendering [  0.08s] test main_dbt_test__audit.unique_stg_products_product_id [success]
+12:30:02.063546 [debug]: Started analyzing test main_dbt_test__audit.unique_stg_products_product_id
+12:30:02.063633 [debug]: Finished rendering [  0.08s] test main_dbt_test__audit.not_null_dim_customers_customer_id [success]
+12:30:02.064633 [debug]: Started analyzing test main_dbt_test__audit.not_null_dim_customers_customer_id
+12:30:02.073184 [debug]: Compiled SQL for node test.dbt_project.not_null_dim_products_product_id.c8aba288d1 at target\compiled\dbt_project\target\generic_tests\not_null_dim_products_product_id.sql
+12:30:02.073233 [debug]: Compiled SQL for node test.dbt_project.relationships_fct_orders_order_id__customer_id__ref_dim_customers_.3cc61ce483 at target\compiled\dbt_project\target\generic_tests\relationships_fct_orders_27eb9571f4345d54d25b7418370a8e08.sql
+12:30:02.073599 [debug]: Compiled SQL for node test.dbt_project.unique_stg_order_items_order_item_id.90e333a108 at target\compiled\dbt_project\target\generic_tests\unique_stg_order_items_order_item_id.sql
+12:30:02.074098 [debug]: Compiled SQL for node test.dbt_project.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54 at target\compiled\dbt_project\target\generic_tests\relationships_stg_order_items_b3d7cdbd08ebfad01e3226c01c10bba0.sql
+12:30:02.074221 [debug]: Compiled SQL for node test.dbt_project.relationships_fct_orders_product_id__product_id__ref_dim_products_.a5a3203898 at target\compiled\dbt_project\target\generic_tests\relationships_fct_orders_9c38234a3e14d5d8021d8505461cf9b4.sql
+12:30:02.074973 [debug]: Compiled SQL for node test.dbt_project.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c at target\compiled\dbt_project\target\generic_tests\relationships_stg_order_items_85fcc371bcae46211ede4a7fca07283f.sql
+12:30:02.075046 [debug]: Compiled SQL for node test.dbt_project.not_null_fct_orders_order_item_id.d90f190d94 at target\compiled\dbt_project\target\generic_tests\not_null_fct_orders_order_item_id.sql
+12:30:02.073876 [debug]: Finished rendering [  0.09s] test main_dbt_test__audit.relationships_fct_orders_order_id__customer_id__ref_dim_customers_ [success]
+12:30:02.075691 [debug]: Started analyzing test main_dbt_test__audit.relationships_fct_orders_order_id__customer_id__ref_dim_customers_
+12:30:02.075829 [debug]: Compiled SQL for node test.dbt_project.not_null_stg_products_product_id.6373b0acf3 at target\compiled\dbt_project\target\generic_tests\not_null_stg_products_product_id.sql
+12:30:02.075776 [debug]: Finished rendering [  0.09s] test main_dbt_test__audit.not_null_dim_products_product_id [success]
+12:30:02.076836 [debug]: Started analyzing test main_dbt_test__audit.not_null_dim_products_product_id
+12:30:02.076904 [debug]: Compiled SQL for node test.dbt_project.unique_dim_products_product_id.ef7b2a9985 at target\compiled\dbt_project\target\generic_tests\unique_dim_products_product_id.sql
+12:30:02.077028 [debug]: Compiled SQL for node test.dbt_project.not_null_stg_customers_customer_id.e2cfb1f9aa at target\compiled\dbt_project\target\generic_tests\not_null_stg_customers_customer_id.sql
+12:30:02.077426 [debug]: Compiled SQL for node test.dbt_project.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500 at target\compiled\dbt_project\target\generic_tests\relationships_stg_orders_96411fe0c89b49c3f4da955dfd358ba0.sql
+12:30:02.078085 [debug]: Compiled SQL for node test.dbt_project.unique_stg_customers_customer_id.c7614daada at target\compiled\dbt_project\target\generic_tests\unique_stg_customers_customer_id.sql
+12:30:02.079034 [debug]: Compiled SQL for node test.dbt_project.unique_fct_orders_order_item_id.0719ca0ce7 at target\compiled\dbt_project\target\generic_tests\unique_fct_orders_order_item_id.sql
+12:30:02.079261 [debug]: Compiled SQL for node test.dbt_project.unique_dim_customers_customer_id.15c9f1e2fd at target\compiled\dbt_project\target\generic_tests\unique_dim_customers_customer_id.sql
+12:30:02.076929 [debug]: Finished rendering [  0.09s] test main_dbt_test__audit.unique_stg_order_items_order_item_id [success]
+12:30:02.079465 [debug]: Compiled SQL for node test.dbt_project.not_null_stg_orders_order_id.81cfe2fe64 at target\compiled\dbt_project\target\generic_tests\not_null_stg_orders_order_id.sql
+12:30:02.079465 [debug]: Started analyzing test main_dbt_test__audit.unique_stg_order_items_order_item_id
+12:30:02.079769 [debug]: Compiled SQL for node test.dbt_project.unique_stg_orders_order_id.e3b841c71a at target\compiled\dbt_project\target\generic_tests\unique_stg_orders_order_id.sql
+12:30:02.079539 [debug]: Finished rendering [  0.09s] test main_dbt_test__audit.relationships_fct_orders_product_id__product_id__ref_dim_products_ [success]
+12:30:02.080277 [debug]: Started analyzing test main_dbt_test__audit.relationships_fct_orders_product_id__product_id__ref_dim_products_
+12:30:02.080374 [debug]: Finished rendering [  0.10s] test main_dbt_test__audit.relationships_stg_order_items_order_id__order_id__ref_stg_orders_ [success]
+12:30:02.082475 [debug]: Started analyzing test main_dbt_test__audit.relationships_stg_order_items_order_id__order_id__ref_stg_orders_
+12:30:02.082578 [debug]: Finished rendering [  0.10s] test main_dbt_test__audit.relationships_stg_order_items_product_id__product_id__ref_stg_products_ [success]
+12:30:02.083380 [debug]: Started analyzing test main_dbt_test__audit.relationships_stg_order_items_product_id__product_id__ref_stg_products_
+12:30:02.083491 [debug]: Finished rendering [  0.10s] test main_dbt_test__audit.not_null_fct_orders_order_item_id [success]
+12:30:02.084781 [debug]: Started analyzing test main_dbt_test__audit.not_null_fct_orders_order_item_id
+12:30:02.084897 [debug]: Finished rendering [  0.10s] test main_dbt_test__audit.not_null_stg_products_product_id [success]
+12:30:02.085835 [debug]: Started analyzing test main_dbt_test__audit.not_null_stg_products_product_id
+12:30:02.085922 [debug]: Finished rendering [  0.10s] test main_dbt_test__audit.unique_dim_products_product_id [success]
+12:30:02.086715 [debug]: Started analyzing test main_dbt_test__audit.unique_dim_products_product_id
+12:30:02.086801 [debug]: Finished rendering [  0.10s] test main_dbt_test__audit.not_null_stg_customers_customer_id [success]
+12:30:02.087560 [debug]: Started analyzing test main_dbt_test__audit.not_null_stg_customers_customer_id
+12:30:02.087686 [debug]: Finished rendering [  0.10s] test main_dbt_test__audit.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_ [success]
+12:30:02.088890 [debug]: Started analyzing test main_dbt_test__audit.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_
+12:30:02.089240 [debug]: Finished rendering [  0.10s] test main_dbt_test__audit.unique_stg_customers_customer_id [success]
+12:30:02.089978 [debug]: Started analyzing test main_dbt_test__audit.unique_stg_customers_customer_id
+12:30:02.090114 [debug]: Finished rendering [  0.11s] test main_dbt_test__audit.unique_fct_orders_order_item_id [success]
+12:30:02.090798 [debug]: Started analyzing test main_dbt_test__audit.unique_fct_orders_order_item_id
+12:30:02.090906 [debug]: Finished rendering [  0.11s] test main_dbt_test__audit.unique_dim_customers_customer_id [success]
+12:30:02.091461 [debug]: Started analyzing test main_dbt_test__audit.unique_dim_customers_customer_id
+12:30:02.091540 [debug]: Finished rendering [  0.11s] test main_dbt_test__audit.not_null_stg_orders_order_id [success]
+12:30:02.092066 [debug]: Started analyzing test main_dbt_test__audit.not_null_stg_orders_order_id
+12:30:02.092142 [debug]: Finished rendering [  0.11s] test main_dbt_test__audit.unique_stg_orders_order_id [success]
+12:30:02.092678 [info ]: Finished rendering [  0.11s] (19 nodes, 0 skipped, 0 errors)
+12:30:02.094368 [debug]: Started analyzing test main_dbt_test__audit.unique_stg_orders_order_id
+12:30:02.135738 [debug]: Finished analyzing [  0.07s] test main_dbt_test__audit.not_null_stg_order_items_order_item_id [success]
+12:30:02.142916 [info ]: Started running (19 nodes)
+12:30:02.143232 [info ]: Started running test main_dbt_test__audit.not_null_stg_order_items_order_item_id
+12:30:02.143311 [debug]: Finished analyzing [  0.08s] test main_dbt_test__audit.not_null_dim_customers_customer_id [success]
+12:30:02.143502 [info ]: Started running test main_dbt_test__audit.not_null_dim_customers_customer_id
+12:30:02.143558 [debug]: Finished analyzing [  0.07s] test main_dbt_test__audit.not_null_dim_products_product_id [success]
+12:30:02.143760 [info ]: Started running test main_dbt_test__audit.not_null_dim_products_product_id
+12:30:02.143809 [debug]: Finished analyzing [  0.08s] test main_dbt_test__audit.unique_stg_products_product_id [success]
+12:30:02.143982 [info ]: Started running test main_dbt_test__audit.unique_stg_products_product_id
+12:30:02.144028 [debug]: Finished analyzing [  0.06s] test main_dbt_test__audit.unique_stg_order_items_order_item_id [success]
+12:30:02.144221 [info ]: Started running test main_dbt_test__audit.unique_stg_order_items_order_item_id
+12:30:02.144279 [debug]: Finished analyzing [  0.06s] test main_dbt_test__audit.not_null_fct_orders_order_item_id [success]
+12:30:02.144460 [info ]: Started running test main_dbt_test__audit.not_null_fct_orders_order_item_id
+12:30:02.144619 [debug]: Finished analyzing [  0.06s] test main_dbt_test__audit.unique_dim_products_product_id [success]
+12:30:02.145196 [info ]: Started running test main_dbt_test__audit.unique_dim_products_product_id
+12:30:02.145316 [debug]: Finished analyzing [  0.06s] test main_dbt_test__audit.not_null_stg_products_product_id [success]
+12:30:02.150520 [info ]: Started running test main_dbt_test__audit.not_null_stg_products_product_id
+12:30:02.150688 [debug]: Finished analyzing [  0.06s] test main_dbt_test__audit.not_null_stg_customers_customer_id [success]
+12:30:02.158336 [info ]: Started running test main_dbt_test__audit.not_null_stg_customers_customer_id
+12:30:02.158450 [debug]: Finished analyzing [  0.07s] test main_dbt_test__audit.not_null_stg_orders_order_id [success]
+12:30:02.159199 [info ]: Started running test main_dbt_test__audit.not_null_stg_orders_order_id
+12:30:02.161372 [debug]: Writing runtime sql for node "test.dbt_project.not_null_dim_products_product_id.c8aba288d1"
+12:30:02.161372 [debug]: Writing runtime sql for node "test.dbt_project.unique_dim_products_product_id.ef7b2a9985"
+12:30:02.161811 [debug]: Writing runtime sql for node "test.dbt_project.not_null_stg_order_items_order_item_id.26a7e2bc35"
+12:30:02.163085 [debug]: Writing runtime sql for node "test.dbt_project.not_null_dim_customers_customer_id.dd91cd1c8d"
+12:30:02.163361 [debug]: Writing runtime sql for node "test.dbt_project.not_null_stg_products_product_id.6373b0acf3"
+12:30:02.164122 [debug]: Writing runtime sql for node "test.dbt_project.unique_stg_products_product_id.7d950a1467"
+12:30:02.164306 [debug]: Writing runtime sql for node "test.dbt_project.not_null_fct_orders_order_item_id.d90f190d94"
+12:30:02.164817 [debug]: Writing runtime sql for node "test.dbt_project.not_null_stg_customers_customer_id.e2cfb1f9aa"
+12:30:02.164932 [debug]: Writing runtime sql for node "test.dbt_project.unique_stg_order_items_order_item_id.90e333a108"
+12:30:02.167615 [debug]: Writing runtime sql for node "test.dbt_project.not_null_stg_orders_order_id.81cfe2fe64"
+12:30:02.159268 [debug]: Finished analyzing [  0.07s] test main_dbt_test__audit.unique_dim_customers_customer_id [success]
+12:30:02.170097 [info ]: Started running test main_dbt_test__audit.unique_dim_customers_customer_id
+12:30:02.170293 [debug]: Finished analyzing [  0.08s] test main_dbt_test__audit.unique_stg_customers_customer_id [success]
+12:30:02.170872 [info ]: Started running test main_dbt_test__audit.unique_stg_customers_customer_id
+12:30:02.170976 [debug]: Finished analyzing [  0.08s] test main_dbt_test__audit.unique_stg_orders_order_id [success]
+12:30:02.172251 [info ]: Started running test main_dbt_test__audit.unique_stg_orders_order_id
+12:30:02.174655 [debug]: Writing runtime sql for node "test.dbt_project.unique_dim_customers_customer_id.15c9f1e2fd"
+12:30:02.175727 [debug]: Writing runtime sql for node "test.dbt_project.unique_stg_customers_customer_id.c7614daada"
+12:30:02.178308 [debug]: Writing runtime sql for node "test.dbt_project.unique_stg_orders_order_id.e3b841c71a"
+12:30:02.172337 [debug]: Finished analyzing [  0.08s] test main_dbt_test__audit.unique_fct_orders_order_item_id [success]
+12:30:02.180775 [info ]: Started running test main_dbt_test__audit.unique_fct_orders_order_item_id
+12:30:02.181992 [debug]: Finished analyzing [  0.09s] test main_dbt_test__audit.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_ [success]
+12:30:02.189525 [info ]: Started running test main_dbt_test__audit.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_
+12:30:02.189619 [debug]: Finished analyzing [  0.11s] test main_dbt_test__audit.relationships_fct_orders_order_id__customer_id__ref_dim_customers_ [success]
+12:30:02.190051 [info ]: Started running test main_dbt_test__audit.relationships_fct_orders_order_id__customer_id__ref_dim_customers_
+12:30:02.190124 [debug]: Finished analyzing [  0.11s] test main_dbt_test__audit.relationships_stg_order_items_product_id__product_id__ref_stg_products_ [success]
+12:30:02.190561 [info ]: Started running test main_dbt_test__audit.relationships_stg_order_items_product_id__product_id__ref_stg_products_
+12:30:02.191372 [debug]: Writing runtime sql for node "test.dbt_project.unique_fct_orders_order_item_id.0719ca0ce7"
+12:30:02.190638 [debug]: Finished analyzing [  0.11s] test main_dbt_test__audit.relationships_fct_orders_product_id__product_id__ref_dim_products_ [success]
+12:30:02.193039 [info ]: Started running test main_dbt_test__audit.relationships_fct_orders_product_id__product_id__ref_dim_products_
+12:30:02.194016 [debug]: Writing runtime sql for node "test.dbt_project.relationships_fct_orders_order_id__customer_id__ref_dim_customers_.3cc61ce483"
+12:30:02.193968 [debug]: Writing runtime sql for node "test.dbt_project.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+12:30:02.195128 [debug]: Writing runtime sql for node "test.dbt_project.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+12:30:02.198222 [debug]: Writing runtime sql for node "test.dbt_project.relationships_fct_orders_product_id__product_id__ref_dim_products_.a5a3203898"
+12:30:02.193125 [debug]: Finished analyzing [  0.11s] test main_dbt_test__audit.relationships_stg_order_items_order_id__order_id__ref_stg_orders_ [success]
+12:30:02.201279 [info ]: Finished analyzing [  0.14s] (19 nodes, 0 skipped, 0 errors)
+12:30:02.214564 [info ]: Started running test main_dbt_test__audit.relationships_stg_order_items_order_id__order_id__ref_stg_orders_
+12:30:02.221534 [debug]: Writing runtime sql for node "test.dbt_project.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+12:30:02.240597 [error]: Error materializing test test.dbt_project.not_null_stg_customers_customer_id.e2cfb1f9aa (target\run\dbt_project\target\generic_tests\not_null_stg_customers_customer_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\not_null_stg_customers_customer_id.sql:1:1). Treating as failing test.
+12:30:02.245531 [info ]: Finished running [  0.09s] test main_dbt_test__audit.not_null_stg_customers_customer_id [fail]
+12:30:02.249204 [info ]:     Failed [  0.25s] test  not_null_stg_customers_customer_id (models\staging\staging.yml:15:25)
+12:30:02.260971 [error]: Error materializing test test.dbt_project.unique_stg_customers_customer_id.c7614daada (target\run\dbt_project\target\generic_tests\unique_stg_customers_customer_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\unique_stg_customers_customer_id.sql:1:1). Treating as failing test.
+12:30:02.261334 [info ]: Finished running [  0.09s] test main_dbt_test__audit.unique_stg_customers_customer_id [fail]
+12:30:02.262233 [info ]:     Failed [  0.27s] test  unique_stg_customers_customer_id (models\staging\staging.yml:15:17)
+12:30:02.282146 [error]: Error materializing test test.dbt_project.not_null_stg_products_product_id.6373b0acf3 (target\run\dbt_project\target\generic_tests\not_null_stg_products_product_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\not_null_stg_products_product_id.sql:1:1). Treating as failing test.
+12:30:02.282467 [info ]: Finished running [  0.13s] test main_dbt_test__audit.not_null_stg_products_product_id [fail]
+12:30:02.282746 [info ]:     Failed [  0.29s] test  not_null_stg_products_product_id (models\staging\staging.yml:48:25)
+12:30:02.302738 [error]: Error materializing test test.dbt_project.not_null_stg_order_items_order_item_id.26a7e2bc35 (target\run\dbt_project\target\generic_tests\not_null_stg_order_items_order_item_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\not_null_stg_order_items_order_item_id.sql:1:1). Treating as failing test.
+12:30:02.303045 [info ]: Finished running [  0.16s] test main_dbt_test__audit.not_null_stg_order_items_order_item_id [fail]
+12:30:02.304171 [info ]:     Failed [  0.30s] test  not_null_stg_order_items_order_item_id (models\staging\staging.yml:31:25)
+12:30:02.324627 [error]: Error materializing test test.dbt_project.not_null_fct_orders_order_item_id.d90f190d94 (target\run\dbt_project\target\generic_tests\not_null_fct_orders_order_item_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\not_null_fct_orders_order_item_id.sql:1:1). Treating as failing test.
+12:30:02.324892 [info ]: Finished running [  0.18s] test main_dbt_test__audit.not_null_fct_orders_order_item_id [fail]
+12:30:02.325146 [info ]:     Failed [  0.34s] test  not_null_fct_orders_order_item_id (models\marts\marts.yml:17:25)
+12:30:02.344169 [error]: Error materializing test test.dbt_project.relationships_fct_orders_product_id__product_id__ref_dim_products_.a5a3203898 (target\run\dbt_project\target\generic_tests\relationships_fct_orders_9c38234a3e14d5d8021d8505461cf9b4.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\relationships_fct_orders_9c38234a3e14d5d8021d8505461cf9b4.sql:1:1). Treating as failing test.
+12:30:02.344539 [info ]: Finished running [  0.15s] test main_dbt_test__audit.relationships_fct_orders_product_id__product_id__ref_dim_products_ [fail]
+12:30:02.345008 [info ]:     Failed [  0.35s] test  relationships_fct_orders_product_id__product_id__ref_dim_products_ (models\marts\marts.yml:26:13)
+12:30:02.357770 [error]: Error materializing test test.dbt_project.not_null_dim_customers_customer_id.dd91cd1c8d (target\run\dbt_project\target\generic_tests\not_null_dim_customers_customer_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\not_null_dim_customers_customer_id.sql:1:1). Treating as failing test.
+12:30:02.357978 [info ]: Finished running [  0.21s] test main_dbt_test__audit.not_null_dim_customers_customer_id [fail]
+12:30:02.358437 [info ]:     Failed [  0.37s] test  not_null_dim_customers_customer_id (models\marts\marts.yml:7:25)
+12:30:02.374191 [error]: Error materializing test test.dbt_project.relationships_fct_orders_order_id__customer_id__ref_dim_customers_.3cc61ce483 (target\run\dbt_project\target\generic_tests\relationships_fct_orders_27eb9571f4345d54d25b7418370a8e08.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\relationships_fct_orders_27eb9571f4345d54d25b7418370a8e08.sql:1:1). Treating as failing test.
+12:30:02.374526 [info ]: Finished running [  0.18s] test main_dbt_test__audit.relationships_fct_orders_order_id__customer_id__ref_dim_customers_ [fail]
+12:30:02.374815 [info ]:     Failed [  0.39s] test  relationships_fct_orders_order_id__customer_id__ref_dim_customers_ (models\marts\marts.yml:20:13)
+12:30:02.391268 [error]: Error materializing test test.dbt_project.unique_fct_orders_order_item_id.0719ca0ce7 (target\run\dbt_project\target\generic_tests\unique_fct_orders_order_item_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\unique_fct_orders_order_item_id.sql:1:1). Treating as failing test.
+12:30:02.392199 [info ]: Finished running [  0.21s] test main_dbt_test__audit.unique_fct_orders_order_item_id [fail]
+12:30:02.392492 [info ]:     Failed [  0.40s] test  unique_fct_orders_order_item_id (models\marts\marts.yml:17:17)
+12:30:02.405574 [error]: Error materializing test test.dbt_project.unique_dim_customers_customer_id.15c9f1e2fd (target\run\dbt_project\target\generic_tests\unique_dim_customers_customer_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\unique_dim_customers_customer_id.sql:1:1). Treating as failing test.
+12:30:02.405804 [info ]: Finished running [  0.24s] test main_dbt_test__audit.unique_dim_customers_customer_id [fail]
+12:30:02.406291 [info ]:     Failed [  0.41s] test  unique_dim_customers_customer_id (models\marts\marts.yml:7:17)
+12:30:02.423395 [error]: Error materializing test test.dbt_project.unique_stg_orders_order_id.e3b841c71a (target\run\dbt_project\target\generic_tests\unique_stg_orders_order_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\unique_stg_orders_order_id.sql:1:1). Treating as failing test.
+12:30:02.423702 [info ]: Finished running [  0.25s] test main_dbt_test__audit.unique_stg_orders_order_id [fail]
+12:30:02.423941 [info ]:     Failed [  0.43s] test  unique_stg_orders_order_id (models\staging\staging.yml:20:17)
+12:30:02.439926 [error]: Error materializing test test.dbt_project.unique_stg_products_product_id.7d950a1467 (target\run\dbt_project\target\generic_tests\unique_stg_products_product_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\unique_stg_products_product_id.sql:1:1). Treating as failing test.
+12:30:02.440223 [info ]: Finished running [  0.30s] test main_dbt_test__audit.unique_stg_products_product_id [fail]
+12:30:02.440481 [info ]:     Failed [  0.45s] test  unique_stg_products_product_id (models\staging\staging.yml:48:17)
+12:30:02.457304 [error]: Error materializing test test.dbt_project.not_null_stg_orders_order_id.81cfe2fe64 (target\run\dbt_project\target\generic_tests\not_null_stg_orders_order_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\not_null_stg_orders_order_id.sql:1:1). Treating as failing test.
+12:30:02.457575 [info ]: Finished running [  0.30s] test main_dbt_test__audit.not_null_stg_orders_order_id [fail]
+12:30:02.458110 [info ]:     Failed [  0.47s] test  not_null_stg_orders_order_id (models\staging\staging.yml:20:25)
+12:30:02.477458 [error]: Error materializing test test.dbt_project.unique_stg_order_items_order_item_id.90e333a108 (target\run\dbt_project\target\generic_tests\unique_stg_order_items_order_item_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\unique_stg_order_items_order_item_id.sql:1:1). Treating as failing test.
+12:30:02.478264 [info ]: Finished running [  0.33s] test main_dbt_test__audit.unique_stg_order_items_order_item_id [fail]
+12:30:02.478869 [info ]:     Failed [  0.49s] test  unique_stg_order_items_order_item_id (models\staging\staging.yml:31:17)
+12:30:02.492300 [error]: Error materializing test test.dbt_project.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c (target\run\dbt_project\target\generic_tests\relationships_stg_order_items_85fcc371bcae46211ede4a7fca07283f.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\relationships_stg_order_items_85fcc371bcae46211ede4a7fca07283f.sql:1:1). Treating as failing test.
+12:30:02.492754 [info ]: Finished running [  0.30s] test main_dbt_test__audit.relationships_stg_order_items_product_id__product_id__ref_stg_products_ [fail]
+12:30:02.493054 [info ]:     Failed [  0.51s] test  relationships_stg_order_items_product_id__product_id__ref_stg_products_ (models\staging\staging.yml:40:13)
+12:30:02.509104 [error]: Error materializing test test.dbt_project.not_null_dim_products_product_id.c8aba288d1 (target\run\dbt_project\target\generic_tests\not_null_dim_products_product_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\not_null_dim_products_product_id.sql:1:1). Treating as failing test.
+12:30:02.509452 [info ]: Finished running [  0.37s] test main_dbt_test__audit.not_null_dim_products_product_id [fail]
+12:30:02.510165 [info ]:     Failed [  0.52s] test  not_null_dim_products_product_id (models\marts\marts.yml:12:25)
+12:30:02.528432 [error]: Error materializing test test.dbt_project.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500 (target\run\dbt_project\target\generic_tests\relationships_stg_orders_96411fe0c89b49c3f4da955dfd358ba0.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\relationships_stg_orders_96411fe0c89b49c3f4da955dfd358ba0.sql:1:1). Treating as failing test.
+12:30:02.529309 [info ]: Finished running [  0.34s] test main_dbt_test__audit.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_ [fail]
+12:30:02.529832 [info ]:     Failed [  0.53s] test  relationships_stg_orders_customer_id__customer_id__ref_stg_customers_ (models\staging\staging.yml:23:13)
+12:30:02.553255 [error]: Error materializing test test.dbt_project.unique_dim_products_product_id.ef7b2a9985 (target\run\dbt_project\target\generic_tests\unique_dim_products_product_id.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\unique_dim_products_product_id.sql:1:1). Treating as failing test.
+12:30:02.553586 [info ]: Finished running [  0.41s] test main_dbt_test__audit.unique_dim_products_product_id [fail]
+12:30:02.554141 [info ]:     Failed [  0.57s] test  unique_dim_products_product_id (models\marts\marts.yml:12:17)
+12:30:02.573661 [error]: Error materializing test test.dbt_project.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54 (target\run\dbt_project\target\generic_tests\relationships_stg_order_items_b3d7cdbd08ebfad01e3226c01c10bba0.sql)
+  IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+  (in compiled\dbt_project\target\generic_tests\relationships_stg_order_items_b3d7cdbd08ebfad01e3226c01c10bba0.sql:1:1). Treating as failing test.
+12:30:02.573976 [info ]: Finished running [  0.36s] test main_dbt_test__audit.relationships_stg_order_items_order_id__order_id__ref_stg_orders_ [fail]
+12:30:02.574229 [info ]: Finished running [  0.43s] (19 nodes, 0 skipped, 19 errors)
+12:30:02.574870 [info ]:     Failed [  0.56s] test  relationships_stg_order_items_order_id__order_id__ref_stg_orders_ (models\staging\staging.yml:34:13)
+12:30:02.685708 [info ]: New version available 2.0.0-preview.184 (run `dbt system update`)
+12:30:02.699594 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 38 errors for target 'dev' [1.1s]
+Processed: 19 tests
+Summary: 19 total | 19 error
+[0m13:41:13.172709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B54EDBD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B54BA4610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B54E2AD10>]}
+
+
+============================== 13:41:13.181162 | 1cd6fbe5-dd3c-4170-9cc8-14ebe9537ed9 ==============================
+[0m13:41:13.181162 [info ] [MainThread]: Running with dbt=1.11.11
+[0m13:41:13.181162 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\logs'}
+[0m13:41:13.244284 [info ] [MainThread]: dbt version: 1.11.11
+[0m13:41:13.245283 [info ] [MainThread]: python version: 3.11.15
+[0m13:41:13.247286 [info ] [MainThread]: python path: C:\Users\elbej\miniconda3\envs\dbt_env\python.exe
+[0m13:41:13.248287 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m13:41:13.508575 [info ] [MainThread]: Using profiles dir at C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project
+[0m13:41:13.510581 [info ] [MainThread]: Using profiles.yml file at C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\profiles.yml
+[0m13:41:13.510581 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\dbt_project.yml
+[0m13:41:13.516501 [info ] [MainThread]: adapter type: duckdb
+[0m13:41:13.520395 [info ] [MainThread]: adapter version: 1.10.1
+[0m13:41:13.675018 [info ] [MainThread]: Configuration:
+[0m13:41:13.675018 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:41:13.675018 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:41:13.675018 [info ] [MainThread]: Required dependencies:
+[0m13:41:13.675018 [debug] [MainThread]: Executing "git --help"
+[0m13:41:13.759354 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:41:13.764599 [debug] [MainThread]: STDERR: "b''"
+[0m13:41:13.764599 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:41:13.764599 [info ] [MainThread]: Connection:
+[0m13:41:13.764599 [info ] [MainThread]:   database: retail
+[0m13:41:13.764599 [info ] [MainThread]:   schema: main
+[0m13:41:13.764599 [info ] [MainThread]:   path: C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb
+[0m13:41:13.764599 [info ] [MainThread]:   config_options: None
+[0m13:41:13.773795 [info ] [MainThread]:   extensions: None
+[0m13:41:13.776815 [info ] [MainThread]:   settings: {}
+[0m13:41:13.778811 [info ] [MainThread]:   external_root: .
+[0m13:41:13.780810 [info ] [MainThread]:   use_credential_provider: None
+[0m13:41:13.781812 [info ] [MainThread]:   attach: None
+[0m13:41:13.783816 [info ] [MainThread]:   filesystems: None
+[0m13:41:13.784856 [info ] [MainThread]:   remote: None
+[0m13:41:13.785815 [info ] [MainThread]:   plugins: None
+[0m13:41:13.787812 [info ] [MainThread]:   disable_transactions: False
+[0m13:41:13.790818 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m13:41:14.333543 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m13:41:14.628313 [debug] [MainThread]: Using duckdb connection "debug"
+[0m13:41:14.628313 [debug] [MainThread]: On debug: select 1 as id
+[0m13:41:14.628313 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:41:14.636660 [debug] [MainThread]: DuckDB adapter: duckdb error: IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+[0m13:41:14.636660 [debug] [MainThread]: DuckDB adapter: Error running SQL: select 1 as id
+[0m13:41:14.636660 [debug] [MainThread]: DuckDB adapter: Rolling back transaction.
+[0m13:41:14.649928 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:41:14.656746 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m13:41:14.658756 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:41:14.658756 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >IO Error: The file "C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb" exists, but it is not a valid DuckDB database file!
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:41:14.658756 [debug] [MainThread]: Command `dbt debug` failed at 13:41:14.658756 after 1.62 seconds
+[0m13:41:14.658756 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:41:14.658756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B5619BC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B54E2A290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B54E2AED0>]}
+[0m13:41:14.665634 [debug] [MainThread]: Flushing usage events
+[0m13:41:15.596771 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:53:45.011692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002398B804D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002398CB97350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002398BB5AA90>]}
+
+
+============================== 13:53:45.021775 | ed0d7c5f-5894-463c-bdbf-f78c78f1673b ==============================
+[0m13:53:45.021775 [info ] [MainThread]: Running with dbt=1.11.11
+[0m13:53:45.023515 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\logs'}
+[0m13:53:45.057366 [info ] [MainThread]: dbt version: 1.11.11
+[0m13:53:45.057366 [info ] [MainThread]: python version: 3.11.15
+[0m13:53:45.057366 [info ] [MainThread]: python path: C:\Users\elbej\miniconda3\envs\dbt_env\python.exe
+[0m13:53:45.057366 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m13:53:45.217604 [info ] [MainThread]: Using profiles dir at C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project
+[0m13:53:45.217604 [info ] [MainThread]: Using profiles.yml file at C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\profiles.yml
+[0m13:53:45.217604 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\dbt_project.yml
+[0m13:53:45.230232 [info ] [MainThread]: adapter type: duckdb
+[0m13:53:45.233530 [info ] [MainThread]: adapter version: 1.10.1
+[0m13:53:45.401510 [info ] [MainThread]: Configuration:
+[0m13:53:45.404249 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:53:45.405386 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:53:45.407438 [info ] [MainThread]: Required dependencies:
+[0m13:53:45.409384 [debug] [MainThread]: Executing "git --help"
+[0m13:53:45.488064 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:53:45.488064 [debug] [MainThread]: STDERR: "b''"
+[0m13:53:45.488064 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:53:45.488064 [info ] [MainThread]: Connection:
+[0m13:53:45.488064 [info ] [MainThread]:   database: retail
+[0m13:53:45.488064 [info ] [MainThread]:   schema: main
+[0m13:53:45.488064 [info ] [MainThread]:   path: C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb
+[0m13:53:45.488064 [info ] [MainThread]:   config_options: None
+[0m13:53:45.488064 [info ] [MainThread]:   extensions: None
+[0m13:53:45.498806 [info ] [MainThread]:   settings: {}
+[0m13:53:45.500826 [info ] [MainThread]:   external_root: .
+[0m13:53:45.502020 [info ] [MainThread]:   use_credential_provider: None
+[0m13:53:45.503741 [info ] [MainThread]:   attach: None
+[0m13:53:45.504887 [info ] [MainThread]:   filesystems: None
+[0m13:53:45.505884 [info ] [MainThread]:   remote: None
+[0m13:53:45.507716 [info ] [MainThread]:   plugins: None
+[0m13:53:45.508779 [info ] [MainThread]:   disable_transactions: False
+[0m13:53:45.510795 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m13:53:45.963735 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m13:53:46.110439 [debug] [MainThread]: Using duckdb connection "debug"
+[0m13:53:46.110439 [debug] [MainThread]: On debug: select 1 as id
+[0m13:53:46.110439 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:53:46.138952 [debug] [MainThread]: SQL status: OK in 0.030 seconds
+[0m13:53:46.138952 [debug] [MainThread]: On debug: Close
+[0m13:53:46.138952 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:53:46.138952 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:53:46.138952 [debug] [MainThread]: Command `dbt debug` succeeded at 13:53:46.138952 after 1.26 seconds
+[0m13:53:46.155107 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:53:46.155107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023985063350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002398CC6F390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002398BB58C50>]}
+[0m13:53:46.155107 [debug] [MainThread]: Flushing usage events
+[0m13:53:47.077603 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:31:01.199110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFABAF28D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFB0EB6E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFAFE27510>]}
+
+
+============================== 16:31:01.199110 | 56ee5a6d-5fdc-4db8-be11-24ba79c948a2 ==============================
+[0m16:31:01.199110 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:31:01.199110 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt seed', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\logs'}
+[0m16:31:01.667788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '56ee5a6d-5fdc-4db8-be11-24ba79c948a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFB0F1DA50>]}
+[0m16:31:01.753571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '56ee5a6d-5fdc-4db8-be11-24ba79c948a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFAEDFEC50>]}
+[0m16:31:01.757620 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m16:31:02.216783 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:31:02.216783 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:31:02.216783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '56ee5a6d-5fdc-4db8-be11-24ba79c948a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFB1125F50>]}
+[0m16:31:04.046868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '56ee5a6d-5fdc-4db8-be11-24ba79c948a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFB16F5F10>]}
+[0m16:31:04.161817 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\manifest.json
+[0m16:31:04.161817 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\semantic_manifest.json
+[0m16:31:04.193635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '56ee5a6d-5fdc-4db8-be11-24ba79c948a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFB17F0B90>]}
+[0m16:31:04.193635 [info ] [MainThread]: Found 7 models, 19 data tests, 4 sources, 485 macros
+[0m16:31:04.193635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '56ee5a6d-5fdc-4db8-be11-24ba79c948a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFAC8BDCD0>]}
+[0m16:31:04.210942 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:31:04.210942 [debug] [MainThread]: Command end result
+[0m16:31:04.398480 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\manifest.json
+[0m16:31:04.405374 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\semantic_manifest.json
+[0m16:31:04.413369 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\run_results.json
+[0m16:31:04.414372 [info ] [MainThread]: 
+[0m16:31:04.416371 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:31:04.417369 [info ] [MainThread]: 
+[0m16:31:04.419671 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=0
+[0m16:31:04.424464 [debug] [MainThread]: Command `dbt seed` succeeded at 16:31:04.423447 after 3.33 seconds
+[0m16:31:04.425459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFA9000D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFA92D7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFB0E13FD0>]}
+[0m16:31:04.427462 [debug] [MainThread]: Flushing usage events
+[0m16:31:05.388134 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:03:47.902172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6972981D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A69734BD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A69729AAD0>]}
+
+
+============================== 20:03:47.918209 | 3a3b1093-5bff-4b1a-bd15-b052d9f6b96c ==============================
+[0m20:03:47.918209 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:03:47.918209 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\logs'}
+[0m20:03:47.972577 [info ] [MainThread]: dbt version: 1.11.11
+[0m20:03:47.974694 [info ] [MainThread]: python version: 3.11.15
+[0m20:03:47.976795 [info ] [MainThread]: python path: C:\Users\elbej\miniconda3\envs\dbt_env\python.exe
+[0m20:03:47.978845 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m20:03:48.228283 [info ] [MainThread]: Using profiles dir at C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project
+[0m20:03:48.230034 [info ] [MainThread]: Using profiles.yml file at C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\profiles.yml
+[0m20:03:48.230034 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\dbt_project.yml
+[0m20:03:48.230034 [info ] [MainThread]: adapter type: duckdb
+[0m20:03:48.237435 [info ] [MainThread]: adapter version: 1.10.1
+[0m20:03:48.373719 [info ] [MainThread]: Configuration:
+[0m20:03:48.373719 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:03:48.373719 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:03:48.373719 [info ] [MainThread]: Required dependencies:
+[0m20:03:48.373719 [debug] [MainThread]: Executing "git --help"
+[0m20:03:48.458282 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:03:48.461405 [debug] [MainThread]: STDERR: "b''"
+[0m20:03:48.461405 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:03:48.461405 [info ] [MainThread]: Connection:
+[0m20:03:48.461405 [info ] [MainThread]:   database: retail
+[0m20:03:48.461405 [info ] [MainThread]:   schema: main
+[0m20:03:48.461405 [info ] [MainThread]:   path: C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\data\retail.duckdb
+[0m20:03:48.461405 [info ] [MainThread]:   config_options: None
+[0m20:03:48.470531 [info ] [MainThread]:   extensions: None
+[0m20:03:48.472545 [info ] [MainThread]:   settings: {}
+[0m20:03:48.474264 [info ] [MainThread]:   external_root: .
+[0m20:03:48.476471 [info ] [MainThread]:   use_credential_provider: None
+[0m20:03:48.478466 [info ] [MainThread]:   attach: None
+[0m20:03:48.480283 [info ] [MainThread]:   filesystems: None
+[0m20:03:48.481278 [info ] [MainThread]:   remote: None
+[0m20:03:48.483278 [info ] [MainThread]:   plugins: None
+[0m20:03:48.484773 [info ] [MainThread]:   disable_transactions: False
+[0m20:03:48.487522 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:03:48.985715 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m20:03:49.306923 [debug] [MainThread]: Using duckdb connection "debug"
+[0m20:03:49.307572 [debug] [MainThread]: On debug: select 1 as id
+[0m20:03:49.307572 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:03:49.342164 [debug] [MainThread]: SQL status: OK in 0.035 seconds
+[0m20:03:49.347830 [debug] [MainThread]: On debug: Close
+[0m20:03:49.347830 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:03:49.347830 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:03:49.347830 [debug] [MainThread]: Command `dbt debug` succeeded at 20:03:49.347830 after 1.55 seconds
+[0m20:03:49.347830 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:03:49.353450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6970148D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A698AF80D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6908B7650>]}
+[0m20:03:49.353450 [debug] [MainThread]: Flushing usage events
+[0m20:03:50.256620 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:04:19.126159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BE1E6D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BE02D710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BE289A50>]}
+
+
+============================== 20:04:19.126159 | 65383300-cc99-402a-9ff9-80b670c08122 ==============================
+[0m20:04:19.126159 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:04:19.126159 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt seed', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\logs'}
+[0m20:04:19.454694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '65383300-cc99-402a-9ff9-80b670c08122', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BF373450>]}
+[0m20:04:19.518341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '65383300-cc99-402a-9ff9-80b670c08122', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BD26DC90>]}
+[0m20:04:19.518341 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:04:19.970359 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m20:04:20.235104 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 0 files changed.
+[0m20:04:20.235104 [debug] [MainThread]: Partial parsing: added file: dbt_project://seeds\products.csv
+[0m20:04:20.235104 [debug] [MainThread]: Partial parsing: added file: dbt_project://seeds\order_items.csv
+[0m20:04:20.235104 [debug] [MainThread]: Partial parsing: added file: dbt_project://seeds\customers.csv
+[0m20:04:20.235104 [debug] [MainThread]: Partial parsing: added file: dbt_project://seeds\orders.csv
+[0m20:04:20.643433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '65383300-cc99-402a-9ff9-80b670c08122', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BF43C8D0>]}
+[0m20:04:20.793075 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\manifest.json
+[0m20:04:20.806000 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\semantic_manifest.json
+[0m20:04:20.826795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '65383300-cc99-402a-9ff9-80b670c08122', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BF51C490>]}
+[0m20:04:20.826795 [info ] [MainThread]: Found 7 models, 19 data tests, 4 seeds, 4 sources, 485 macros
+[0m20:04:20.826795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65383300-cc99-402a-9ff9-80b670c08122', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BFA938D0>]}
+[0m20:04:20.826795 [info ] [MainThread]: 
+[0m20:04:20.826795 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:04:20.843690 [info ] [MainThread]: 
+[0m20:04:20.845702 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:04:20.859310 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail'
+[0m20:04:21.008015 [debug] [ThreadPool]: Using duckdb connection "list_retail"
+[0m20:04:21.008015 [debug] [ThreadPool]: On list_retail: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_retail"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"retail"'
+    
+  
+  
+[0m20:04:21.008015 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:04:21.040073 [debug] [ThreadPool]: SQL status: OK in 0.026 seconds
+[0m20:04:21.040073 [debug] [ThreadPool]: On list_retail: Close
+[0m20:04:21.049709 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail, now create_retail_main)
+[0m20:04:21.049709 [debug] [ThreadPool]: Creating schema "database: "retail"
+schema: "main"
+"
+[0m20:04:21.055861 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:04:21.055861 [debug] [ThreadPool]: On create_retail_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_retail_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='retail'
+        and type='sqlite'
+    
+  
+[0m20:04:21.055861 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:04:21.055861 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m20:04:21.055861 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:04:21.055861 [debug] [ThreadPool]: On create_retail_main: BEGIN
+[0m20:04:21.055861 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:04:21.055861 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:04:21.071976 [debug] [ThreadPool]: On create_retail_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_retail_main"} */
+
+    
+    
+        create schema if not exists "retail"."main"
+    
+[0m20:04:21.071976 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:04:21.071976 [debug] [ThreadPool]: On create_retail_main: COMMIT
+[0m20:04:21.071976 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:04:21.071976 [debug] [ThreadPool]: On create_retail_main: COMMIT
+[0m20:04:21.071976 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:04:21.071976 [debug] [ThreadPool]: On create_retail_main: Close
+[0m20:04:21.071976 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail_main'
+[0m20:04:21.087835 [debug] [ThreadPool]: Using duckdb connection "list_retail_main"
+[0m20:04:21.087835 [debug] [ThreadPool]: On list_retail_main: BEGIN
+[0m20:04:21.087835 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:04:21.087835 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:04:21.087835 [debug] [ThreadPool]: Using duckdb connection "list_retail_main"
+[0m20:04:21.087835 [debug] [ThreadPool]: On list_retail_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_retail_main"} */
+select
+      'retail' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'retail'
+  
+[0m20:04:21.103559 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m20:04:21.103559 [debug] [ThreadPool]: On list_retail_main: ROLLBACK
+[0m20:04:21.103559 [debug] [ThreadPool]: Failed to rollback 'list_retail_main'
+[0m20:04:21.103559 [debug] [ThreadPool]: On list_retail_main: Close
+[0m20:04:21.103559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65383300-cc99-402a-9ff9-80b670c08122', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BFE7E790>]}
+[0m20:04:21.103559 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:04:21.103559 [debug] [MainThread]: On master: BEGIN
+[0m20:04:21.103559 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:04:21.103559 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:04:21.103559 [debug] [MainThread]: On master: COMMIT
+[0m20:04:21.103559 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:04:21.103559 [debug] [MainThread]: On master: COMMIT
+[0m20:04:21.103559 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:04:21.103559 [debug] [MainThread]: On master: Close
+[0m20:04:21.126546 [debug] [Thread-1 (]: Began running node seed.dbt_project.customers
+[0m20:04:21.127569 [debug] [Thread-2 (]: Began running node seed.dbt_project.order_items
+[0m20:04:21.128543 [debug] [Thread-3 (]: Began running node seed.dbt_project.orders
+[0m20:04:21.128543 [debug] [Thread-4 (]: Began running node seed.dbt_project.products
+[0m20:04:21.129574 [info ] [Thread-1 (]: 1 of 4 START seed file main.customers .......................................... [RUN]
+[0m20:04:21.131547 [info ] [Thread-2 (]: 2 of 4 START seed file main.order_items ........................................ [RUN]
+[0m20:04:21.132549 [info ] [Thread-3 (]: 3 of 4 START seed file main.orders ............................................. [RUN]
+[0m20:04:21.134549 [info ] [Thread-4 (]: 4 of 4 START seed file main.products ........................................... [RUN]
+[0m20:04:21.135546 [debug] [Thread-1 (]: Acquiring new duckdb connection 'seed.dbt_project.customers'
+[0m20:04:21.136549 [debug] [Thread-2 (]: Acquiring new duckdb connection 'seed.dbt_project.order_items'
+[0m20:04:21.138808 [debug] [Thread-3 (]: Acquiring new duckdb connection 'seed.dbt_project.orders'
+[0m20:04:21.139813 [debug] [Thread-4 (]: Acquiring new duckdb connection 'seed.dbt_project.products'
+[0m20:04:21.140410 [debug] [Thread-1 (]: Began compiling node seed.dbt_project.customers
+[0m20:04:21.142129 [debug] [Thread-2 (]: Began compiling node seed.dbt_project.order_items
+[0m20:04:21.143732 [debug] [Thread-3 (]: Began compiling node seed.dbt_project.orders
+[0m20:04:21.144881 [debug] [Thread-4 (]: Began compiling node seed.dbt_project.products
+[0m20:04:21.144881 [debug] [Thread-1 (]: Began executing node seed.dbt_project.customers
+[0m20:04:21.144881 [debug] [Thread-2 (]: Began executing node seed.dbt_project.order_items
+[0m20:04:21.144881 [debug] [Thread-3 (]: Began executing node seed.dbt_project.orders
+[0m20:04:21.144881 [debug] [Thread-4 (]: Began executing node seed.dbt_project.products
+[0m20:04:21.208665 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_project.customers"
+[0m20:04:21.208665 [debug] [Thread-2 (]: Using duckdb connection "seed.dbt_project.order_items"
+[0m20:04:21.224675 [debug] [Thread-3 (]: Using duckdb connection "seed.dbt_project.orders"
+[0m20:04:21.224675 [debug] [Thread-1 (]: On seed.dbt_project.customers: BEGIN
+[0m20:04:21.240764 [debug] [Thread-4 (]: Using duckdb connection "seed.dbt_project.products"
+[0m20:04:21.240764 [debug] [Thread-2 (]: On seed.dbt_project.order_items: BEGIN
+[0m20:04:21.240764 [debug] [Thread-3 (]: On seed.dbt_project.orders: BEGIN
+[0m20:04:21.240764 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:04:21.240764 [debug] [Thread-4 (]: On seed.dbt_project.products: BEGIN
+[0m20:04:21.240764 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:04:21.240764 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:04:21.240764 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m20:04:21.240764 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:04:21.240764 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m20:04:21.240764 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m20:04:21.240764 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_project.customers"
+[0m20:04:21.240764 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m20:04:21.240764 [debug] [Thread-2 (]: Using duckdb connection "seed.dbt_project.order_items"
+[0m20:04:21.256641 [debug] [Thread-3 (]: Using duckdb connection "seed.dbt_project.orders"
+[0m20:04:21.256641 [debug] [Thread-1 (]: On seed.dbt_project.customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.dbt_project.customers"} */
+
+    create table "retail"."main"."customers" ("id" integer,"name" text,"email" text,"phone" integer,"address" text,"suburb" text,"state" text,"postcode" integer)
+  
+[0m20:04:21.256641 [debug] [Thread-4 (]: Using duckdb connection "seed.dbt_project.products"
+[0m20:04:21.256641 [debug] [Thread-2 (]: On seed.dbt_project.order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.dbt_project.order_items"} */
+
+    create table "retail"."main"."order_items" ("id" integer,"order_id" integer,"product_id" integer,"quantity" integer)
+  
+[0m20:04:21.256641 [debug] [Thread-3 (]: On seed.dbt_project.orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.dbt_project.orders"} */
+
+    create table "retail"."main"."orders" ("id" integer,"customer_id" integer,"date" date,"sales_channel" text,"total_order" float8)
+  
+[0m20:04:21.256641 [debug] [Thread-4 (]: On seed.dbt_project.products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "seed.dbt_project.products"} */
+
+    create table "retail"."main"."products" ("id" integer,"name" text,"price" float8,"current_stock_level" integer,"minimum_stock_level" integer)
+  
+[0m20:04:21.256641 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m20:04:21.256641 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m20:04:21.256641 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m20:04:21.272494 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_project.customers"
+[0m20:04:21.272494 [debug] [Thread-4 (]: SQL status: OK in 0.014 seconds
+[0m20:04:21.272494 [debug] [Thread-2 (]: Using duckdb connection "seed.dbt_project.order_items"
+[0m20:04:21.272494 [debug] [Thread-3 (]: Using duckdb connection "seed.dbt_project.orders"
+[0m20:04:21.272494 [debug] [Thread-1 (]: On seed.dbt_project.customers: 
+          COPY "retail"."main"."customers" FROM 'C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\seeds\customers.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m20:04:21.272494 [debug] [Thread-4 (]: Using duckdb connection "seed.dbt_project.products"
+[0m20:04:21.272494 [debug] [Thread-2 (]: On seed.dbt_project.order_items: 
+          COPY "retail"."main"."order_items" FROM 'C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\seeds\order_items.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m20:04:21.288280 [debug] [Thread-3 (]: On seed.dbt_project.orders: 
+          COPY "retail"."main"."orders" FROM 'C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\seeds\orders.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m20:04:21.288280 [debug] [Thread-4 (]: On seed.dbt_project.products: 
+          COPY "retail"."main"."products" FROM 'C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\seeds\products.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m20:04:21.304363 [debug] [Thread-2 (]: SQL status: OK in 0.020 seconds
+[0m20:04:21.304363 [debug] [Thread-4 (]: SQL status: OK in 0.019 seconds
+[0m20:04:21.304363 [debug] [Thread-1 (]: SQL status: OK in 0.023 seconds
+[0m20:04:21.320187 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_project.order_items"
+[0m20:04:21.320187 [debug] [Thread-3 (]: SQL status: OK in 0.030 seconds
+[0m20:04:21.320187 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_project.products"
+[0m20:04:21.320187 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_project.customers"
+[0m20:04:21.320187 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.dbt_project.orders"
+[0m20:04:21.336203 [debug] [Thread-2 (]: On seed.dbt_project.order_items: COMMIT
+[0m20:04:21.336203 [debug] [Thread-4 (]: On seed.dbt_project.products: COMMIT
+[0m20:04:21.352235 [debug] [Thread-1 (]: On seed.dbt_project.customers: COMMIT
+[0m20:04:21.352235 [debug] [Thread-2 (]: Using duckdb connection "seed.dbt_project.order_items"
+[0m20:04:21.352235 [debug] [Thread-3 (]: On seed.dbt_project.orders: COMMIT
+[0m20:04:21.352235 [debug] [Thread-4 (]: Using duckdb connection "seed.dbt_project.products"
+[0m20:04:21.352235 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_project.customers"
+[0m20:04:21.352235 [debug] [Thread-2 (]: On seed.dbt_project.order_items: COMMIT
+[0m20:04:21.352235 [debug] [Thread-3 (]: Using duckdb connection "seed.dbt_project.orders"
+[0m20:04:21.352235 [debug] [Thread-4 (]: On seed.dbt_project.products: COMMIT
+[0m20:04:21.352235 [debug] [Thread-1 (]: On seed.dbt_project.customers: COMMIT
+[0m20:04:21.352235 [debug] [Thread-3 (]: On seed.dbt_project.orders: COMMIT
+[0m20:04:21.352235 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m20:04:21.367950 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m20:04:21.367950 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m20:04:21.367950 [debug] [Thread-2 (]: On seed.dbt_project.order_items: Close
+[0m20:04:21.367950 [debug] [Thread-4 (]: On seed.dbt_project.products: Close
+[0m20:04:21.367950 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m20:04:21.367950 [debug] [Thread-1 (]: On seed.dbt_project.customers: Close
+[0m20:04:21.367950 [debug] [Thread-3 (]: On seed.dbt_project.orders: Close
+[0m20:04:21.383791 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '65383300-cc99-402a-9ff9-80b670c08122', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BFE902D0>]}
+[0m20:04:21.383791 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '65383300-cc99-402a-9ff9-80b670c08122', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BFF70F10>]}
+[0m20:04:21.383791 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '65383300-cc99-402a-9ff9-80b670c08122', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BFF734D0>]}
+[0m20:04:21.383791 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '65383300-cc99-402a-9ff9-80b670c08122', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BFE47310>]}
+[0m20:04:21.383791 [info ] [Thread-2 (]: 2 of 4 OK loaded seed file main.order_items .................................... [[32mINSERT 500[0m in 0.23s]
+[0m20:04:21.383791 [info ] [Thread-4 (]: 4 of 4 OK loaded seed file main.products ....................................... [[32mINSERT 50[0m in 0.23s]
+[0m20:04:21.383791 [info ] [Thread-1 (]: 1 of 4 OK loaded seed file main.customers ...................................... [[32mINSERT 100[0m in 0.23s]
+[0m20:04:21.383791 [info ] [Thread-3 (]: 3 of 4 OK loaded seed file main.orders ......................................... [[32mINSERT 200[0m in 0.25s]
+[0m20:04:21.383791 [debug] [Thread-2 (]: Finished running node seed.dbt_project.order_items
+[0m20:04:21.395405 [debug] [Thread-4 (]: Finished running node seed.dbt_project.products
+[0m20:04:21.397401 [debug] [Thread-1 (]: Finished running node seed.dbt_project.customers
+[0m20:04:21.399398 [debug] [Thread-3 (]: Finished running node seed.dbt_project.orders
+[0m20:04:21.404437 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:04:21.405879 [debug] [MainThread]: On master: BEGIN
+[0m20:04:21.405879 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:04:21.410489 [debug] [MainThread]: SQL status: OK in 0.003 seconds
+[0m20:04:21.411239 [debug] [MainThread]: On master: COMMIT
+[0m20:04:21.411239 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:04:21.411239 [debug] [MainThread]: On master: COMMIT
+[0m20:04:21.411239 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:04:21.411239 [debug] [MainThread]: On master: Close
+[0m20:04:21.411239 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:04:21.411239 [debug] [MainThread]: Connection 'create_retail_main' was properly closed.
+[0m20:04:21.411239 [debug] [MainThread]: Connection 'list_retail_main' was properly closed.
+[0m20:04:21.411239 [debug] [MainThread]: Connection 'seed.dbt_project.customers' was properly closed.
+[0m20:04:21.425215 [debug] [MainThread]: Connection 'seed.dbt_project.order_items' was properly closed.
+[0m20:04:21.426420 [debug] [MainThread]: Connection 'seed.dbt_project.orders' was properly closed.
+[0m20:04:21.426420 [debug] [MainThread]: Connection 'seed.dbt_project.products' was properly closed.
+[0m20:04:21.428448 [info ] [MainThread]: 
+[0m20:04:21.429413 [info ] [MainThread]: Finished running 4 seeds in 0 hours 0 minutes and 0.58 seconds (0.58s).
+[0m20:04:21.431411 [debug] [MainThread]: Command end result
+[0m20:04:21.482084 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\manifest.json
+[0m20:04:21.486096 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\semantic_manifest.json
+[0m20:04:21.495347 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\run_results.json
+[0m20:04:21.496338 [info ] [MainThread]: 
+[0m20:04:21.497332 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:04:21.498320 [info ] [MainThread]: 
+[0m20:04:21.499326 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m20:04:21.502325 [debug] [MainThread]: Command `dbt seed` succeeded at 20:04:21.501320 after 2.48 seconds
+[0m20:04:21.502325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292BF322410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292B77A7650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292B77260D0>]}
+[0m20:04:21.503320 [debug] [MainThread]: Flushing usage events
+[0m20:04:22.389389 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:04:46.259906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023257877910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232578772D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023257877450>]}
+
+
+============================== 20:04:46.269811 | 25b7a3af-acc7-40ea-97c2-56588cf54adc ==============================
+[0m20:04:46.269811 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:04:46.269811 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\logs'}
+[0m20:04:46.582366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '25b7a3af-acc7-40ea-97c2-56588cf54adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232588CFC10>]}
+[0m20:04:46.646670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '25b7a3af-acc7-40ea-97c2-56588cf54adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023253F9D010>]}
+[0m20:04:46.662777 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:04:47.083402 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m20:04:47.301443 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:04:47.301443 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m20:04:47.301443 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:04:47.383598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '25b7a3af-acc7-40ea-97c2-56588cf54adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023258EF3150>]}
+[0m20:04:47.566959 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\manifest.json
+[0m20:04:47.584490 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\semantic_manifest.json
+[0m20:04:47.600707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '25b7a3af-acc7-40ea-97c2-56588cf54adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023258DB7C90>]}
+[0m20:04:47.600707 [info ] [MainThread]: Found 7 models, 19 data tests, 4 seeds, 4 sources, 485 macros
+[0m20:04:47.600707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '25b7a3af-acc7-40ea-97c2-56588cf54adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023258BB3790>]}
+[0m20:04:47.600707 [info ] [MainThread]: 
+[0m20:04:47.600707 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:04:47.616400 [info ] [MainThread]: 
+[0m20:04:47.619416 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:04:47.632490 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail'
+[0m20:04:47.780654 [debug] [ThreadPool]: Using duckdb connection "list_retail"
+[0m20:04:47.780654 [debug] [ThreadPool]: On list_retail: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_retail"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"retail"'
+    
+  
+  
+[0m20:04:47.780654 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:04:47.812584 [debug] [ThreadPool]: SQL status: OK in 0.026 seconds
+[0m20:04:47.812584 [debug] [ThreadPool]: On list_retail: Close
+[0m20:04:47.812584 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail, now create_retail_main)
+[0m20:04:47.812584 [debug] [ThreadPool]: Creating schema "database: "retail"
+schema: "main"
+"
+[0m20:04:47.834288 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:04:47.836296 [debug] [ThreadPool]: On create_retail_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_retail_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='retail'
+        and type='sqlite'
+    
+  
+[0m20:04:47.836296 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:04:47.836296 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m20:04:47.836296 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:04:47.836296 [debug] [ThreadPool]: On create_retail_main: BEGIN
+[0m20:04:47.836296 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:04:47.836296 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:04:47.843943 [debug] [ThreadPool]: On create_retail_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_retail_main"} */
+
+    
+    
+        create schema if not exists "retail"."main"
+    
+[0m20:04:47.843943 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:04:47.843943 [debug] [ThreadPool]: On create_retail_main: COMMIT
+[0m20:04:47.843943 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:04:47.843943 [debug] [ThreadPool]: On create_retail_main: COMMIT
+[0m20:04:47.843943 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:04:47.843943 [debug] [ThreadPool]: On create_retail_main: Close
+[0m20:04:47.851821 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail_main'
+[0m20:04:47.859673 [debug] [ThreadPool]: Using duckdb connection "list_retail_main"
+[0m20:04:47.859673 [debug] [ThreadPool]: On list_retail_main: BEGIN
+[0m20:04:47.859673 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:04:47.859673 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:04:47.859673 [debug] [ThreadPool]: Using duckdb connection "list_retail_main"
+[0m20:04:47.859673 [debug] [ThreadPool]: On list_retail_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_retail_main"} */
+select
+      'retail' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'retail'
+  
+[0m20:04:47.859673 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m20:04:47.859673 [debug] [ThreadPool]: On list_retail_main: ROLLBACK
+[0m20:04:47.859673 [debug] [ThreadPool]: Failed to rollback 'list_retail_main'
+[0m20:04:47.859673 [debug] [ThreadPool]: On list_retail_main: Close
+[0m20:04:47.875623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '25b7a3af-acc7-40ea-97c2-56588cf54adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232542FDA10>]}
+[0m20:04:47.875623 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:04:47.875623 [debug] [MainThread]: On master: BEGIN
+[0m20:04:47.875623 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:04:47.875623 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:04:47.875623 [debug] [MainThread]: On master: COMMIT
+[0m20:04:47.875623 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:04:47.875623 [debug] [MainThread]: On master: COMMIT
+[0m20:04:47.875623 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:04:47.875623 [debug] [MainThread]: On master: Close
+[0m20:04:47.875623 [debug] [Thread-1 (]: Began running node model.dbt_project.stg_customers
+[0m20:04:47.891358 [debug] [Thread-2 (]: Began running node model.dbt_project.stg_order_items
+[0m20:04:47.891358 [debug] [Thread-3 (]: Began running node model.dbt_project.stg_orders
+[0m20:04:47.891358 [debug] [Thread-4 (]: Began running node model.dbt_project.stg_products
+[0m20:04:47.891358 [info ] [Thread-1 (]: 1 of 7 START sql view model main.stg_customers ................................. [RUN]
+[0m20:04:47.891358 [info ] [Thread-2 (]: 2 of 7 START sql view model main.stg_order_items ............................... [RUN]
+[0m20:04:47.891358 [info ] [Thread-3 (]: 3 of 7 START sql view model main.stg_orders .................................... [RUN]
+[0m20:04:47.891358 [info ] [Thread-4 (]: 4 of 7 START sql view model main.stg_products .................................. [RUN]
+[0m20:04:47.899922 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbt_project.stg_customers'
+[0m20:04:47.902746 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.dbt_project.stg_order_items'
+[0m20:04:47.903743 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.dbt_project.stg_orders'
+[0m20:04:47.905378 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.dbt_project.stg_products'
+[0m20:04:47.906535 [debug] [Thread-1 (]: Began compiling node model.dbt_project.stg_customers
+[0m20:04:47.908376 [debug] [Thread-2 (]: Began compiling node model.dbt_project.stg_order_items
+[0m20:04:47.908869 [debug] [Thread-3 (]: Began compiling node model.dbt_project.stg_orders
+[0m20:04:47.911314 [debug] [Thread-4 (]: Began compiling node model.dbt_project.stg_products
+[0m20:04:47.918194 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.stg_customers"
+[0m20:04:47.918194 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_project.stg_order_items"
+[0m20:04:47.936754 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_project.stg_orders"
+[0m20:04:47.939755 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_project.stg_products"
+[0m20:04:47.946962 [debug] [Thread-2 (]: Began executing node model.dbt_project.stg_order_items
+[0m20:04:47.947965 [debug] [Thread-3 (]: Began executing node model.dbt_project.stg_orders
+[0m20:04:47.964579 [debug] [Thread-1 (]: Began executing node model.dbt_project.stg_customers
+[0m20:04:47.982563 [debug] [Thread-4 (]: Began executing node model.dbt_project.stg_products
+[0m20:04:47.982563 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_project.stg_order_items"
+[0m20:04:47.982563 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_project.stg_orders"
+[0m20:04:47.998453 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.stg_customers"
+[0m20:04:48.000536 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_project.stg_products"
+[0m20:04:48.000536 [debug] [Thread-2 (]: Using duckdb connection "model.dbt_project.stg_order_items"
+[0m20:04:48.000536 [debug] [Thread-4 (]: Using duckdb connection "model.dbt_project.stg_products"
+[0m20:04:48.000536 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: BEGIN
+[0m20:04:48.014121 [debug] [Thread-3 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m20:04:48.014121 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_customers"
+[0m20:04:48.014121 [debug] [Thread-4 (]: On model.dbt_project.stg_products: BEGIN
+[0m20:04:48.014121 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:04:48.014121 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: BEGIN
+[0m20:04:48.014121 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: BEGIN
+[0m20:04:48.014121 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:04:48.014121 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m20:04:48.014121 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:04:48.014121 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:04:48.014121 [debug] [Thread-4 (]: SQL status: OK in 0.005 seconds
+[0m20:04:48.014121 [debug] [Thread-2 (]: Using duckdb connection "model.dbt_project.stg_order_items"
+[0m20:04:48.014121 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m20:04:48.014121 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m20:04:48.014121 [debug] [Thread-4 (]: Using duckdb connection "model.dbt_project.stg_products"
+[0m20:04:48.014121 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_order_items"} */
+
+  
+  create view "retail"."main"."stg_order_items__dbt_tmp" as (
+    
+
+select
+    id as order_item_id,
+    order_id,
+    product_id,
+    quantity
+from "retail"."raw"."order_items"
+  );
+
+[0m20:04:48.030041 [debug] [Thread-3 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m20:04:48.030041 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_customers"
+[0m20:04:48.030041 [debug] [Thread-4 (]: On model.dbt_project.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_products"} */
+
+  
+  create view "retail"."main"."stg_products__dbt_tmp" as (
+    
+
+select
+    id as product_id,
+    name as product_name,
+    price,
+    current_stock_level,
+    minimum_stock_level
+from "retail"."raw"."products"
+  );
+
+[0m20:04:48.030041 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_orders"} */
+
+  
+  create view "retail"."main"."stg_orders__dbt_tmp" as (
+    
+
+select
+    id as order_id,
+    customer_id,
+    date as order_date,
+    sales_channel,
+    total_order
+from "retail"."raw"."orders"
+  );
+
+[0m20:04:48.034921 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_customers"} */
+
+  
+  create view "retail"."main"."stg_customers__dbt_tmp" as (
+    l
+
+select
+    id as customer_id,
+    name as customer_name,
+    email,
+    phone,
+    address,
+    suburb,
+    state,
+    postcode
+from "retail"."raw"."customers"
+  );
+
+[0m20:04:48.034921 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Parser Error: syntax error at or near "l"
+
+LINE 5:     l
+            ^
+[0m20:04:48.034921 [debug] [Thread-4 (]: DuckDB adapter: duckdb error: Catalog Error: Table with name "raw.products" does not exist because schema "raw" does not exist.
+
+LINE 13: from "retail"."raw"."products"
+              ^
+[0m20:04:48.034921 [debug] [Thread-3 (]: DuckDB adapter: duckdb error: Catalog Error: Table with name "raw.orders" does not exist because schema "raw" does not exist.
+
+LINE 13: from "retail"."raw"."orders"
+              ^
+[0m20:04:48.043333 [debug] [Thread-2 (]: DuckDB adapter: duckdb error: Catalog Error: Table with name "raw.order_items" does not exist because schema "raw" does not exist.
+
+LINE 12: from "retail"."raw"."order_items"
+              ^
+[0m20:04:48.043333 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_customers"} */
+
+  
+  create view "retail"."main"."stg_customers__dbt_tmp" as (
+    l
+
+select
+    id as customer_id,
+    name as customer_name,
+    email,
+    phone,
+    address,
+    suburb,
+    state,
+    postcode
+from "retail"."raw"."customers"
+  );
+
+[0m20:04:48.043333 [debug] [Thread-4 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_products"} */
+
+  
+  create view "retail"."main"."stg_products__dbt_tmp" as (
+    
+
+select
+    id as product_id,
+    name as product_name,
+    price,
+    current_stock_level,
+    minimum_stock_level
+from "retail"."raw"."products"
+  );
+
+[0m20:04:48.045702 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_orders"} */
+
+  
+  create view "retail"."main"."stg_orders__dbt_tmp" as (
+    
+
+select
+    id as order_id,
+    customer_id,
+    date as order_date,
+    sales_channel,
+    total_order
+from "retail"."raw"."orders"
+  );
+
+[0m20:04:48.045702 [debug] [Thread-2 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_order_items"} */
+
+  
+  create view "retail"."main"."stg_order_items__dbt_tmp" as (
+    
+
+select
+    id as order_item_id,
+    order_id,
+    product_id,
+    quantity
+from "retail"."raw"."order_items"
+  );
+
+[0m20:04:48.045702 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m20:04:48.045702 [debug] [Thread-4 (]: DuckDB adapter: Rolling back transaction.
+[0m20:04:48.045702 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m20:04:48.045702 [debug] [Thread-2 (]: DuckDB adapter: Rolling back transaction.
+[0m20:04:48.045702 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: ROLLBACK
+[0m20:04:48.045702 [debug] [Thread-4 (]: On model.dbt_project.stg_products: ROLLBACK
+[0m20:04:48.045702 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: ROLLBACK
+[0m20:04:48.045702 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: ROLLBACK
+[0m20:04:48.045702 [debug] [Thread-4 (]: Failed to rollback 'model.dbt_project.stg_products'
+[0m20:04:48.045702 [debug] [Thread-1 (]: Failed to rollback 'model.dbt_project.stg_customers'
+[0m20:04:48.061883 [debug] [Thread-3 (]: Failed to rollback 'model.dbt_project.stg_orders'
+[0m20:04:48.061883 [debug] [Thread-2 (]: Failed to rollback 'model.dbt_project.stg_order_items'
+[0m20:04:48.061883 [debug] [Thread-4 (]: On model.dbt_project.stg_products: Close
+[0m20:04:48.061883 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: Close
+[0m20:04:48.061883 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: Close
+[0m20:04:48.061883 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: Close
+[0m20:04:48.077653 [debug] [Thread-3 (]: Runtime Error in model stg_orders (models\staging\stg_orders.sql)
+  Catalog Error: Table with name "raw.orders" does not exist because schema "raw" does not exist.
+  
+  LINE 13: from "retail"."raw"."orders"
+                ^
+[0m20:04:48.095177 [debug] [Thread-1 (]: Runtime Error in model stg_customers (models\staging\stg_customers.sql)
+  Parser Error: syntax error at or near "l"
+  
+  LINE 5:     l
+              ^
+[0m20:04:48.077653 [debug] [Thread-2 (]: Runtime Error in model stg_order_items (models\staging\stg_order_items.sql)
+  Catalog Error: Table with name "raw.order_items" does not exist because schema "raw" does not exist.
+  
+  LINE 12: from "retail"."raw"."order_items"
+                ^
+[0m20:04:48.095177 [debug] [Thread-4 (]: Runtime Error in model stg_products (models\staging\stg_products.sql)
+  Catalog Error: Table with name "raw.products" does not exist because schema "raw" does not exist.
+  
+  LINE 13: from "retail"."raw"."products"
+                ^
+[0m20:04:48.095177 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25b7a3af-acc7-40ea-97c2-56588cf54adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023258DB3ED0>]}
+[0m20:04:48.095177 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25b7a3af-acc7-40ea-97c2-56588cf54adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023258DB1A90>]}
+[0m20:04:48.095177 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25b7a3af-acc7-40ea-97c2-56588cf54adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232593785D0>]}
+[0m20:04:48.095177 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25b7a3af-acc7-40ea-97c2-56588cf54adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023259456C10>]}
+[0m20:04:48.095177 [error] [Thread-3 (]: 3 of 7 ERROR creating sql view model main.stg_orders ........................... [[31mERROR[0m in 0.19s]
+[0m20:04:48.095177 [error] [Thread-1 (]: 1 of 7 ERROR creating sql view model main.stg_customers ........................ [[31mERROR[0m in 0.20s]
+[0m20:04:48.110305 [error] [Thread-2 (]: 2 of 7 ERROR creating sql view model main.stg_order_items ...................... [[31mERROR[0m in 0.19s]
+[0m20:04:48.110305 [error] [Thread-4 (]: 4 of 7 ERROR creating sql view model main.stg_products ......................... [[31mERROR[0m in 0.19s]
+[0m20:04:48.115808 [debug] [Thread-3 (]: Finished running node model.dbt_project.stg_orders
+[0m20:04:48.118904 [debug] [Thread-1 (]: Finished running node model.dbt_project.stg_customers
+[0m20:04:48.120228 [debug] [Thread-2 (]: Finished running node model.dbt_project.stg_order_items
+[0m20:04:48.122345 [debug] [Thread-4 (]: Finished running node model.dbt_project.stg_products
+[0m20:04:48.123315 [debug] [Thread-7 (]: Marking all children of 'model.dbt_project.stg_orders' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_orders (models\staging\stg_orders.sql)
+  Catalog Error: Table with name "raw.orders" does not exist because schema "raw" does not exist.
+  
+  LINE 13: from "retail"."raw"."orders"
+                ^.
+[0m20:04:48.130275 [debug] [Thread-7 (]: Marking all children of 'model.dbt_project.stg_customers' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_customers (models\staging\stg_customers.sql)
+  Parser Error: syntax error at or near "l"
+  
+  LINE 5:     l
+              ^.
+[0m20:04:48.132813 [debug] [Thread-7 (]: Marking all children of 'model.dbt_project.stg_order_items' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_order_items (models\staging\stg_order_items.sql)
+  Catalog Error: Table with name "raw.order_items" does not exist because schema "raw" does not exist.
+  
+  LINE 12: from "retail"."raw"."order_items"
+                ^.
+[0m20:04:48.134827 [debug] [Thread-3 (]: Began running node model.dbt_project.dim_customers
+[0m20:04:48.135822 [debug] [Thread-7 (]: Marking all children of 'model.dbt_project.stg_products' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_products (models\staging\stg_products.sql)
+  Catalog Error: Table with name "raw.products" does not exist because schema "raw" does not exist.
+  
+  LINE 13: from "retail"."raw"."products"
+                ^.
+[0m20:04:48.136850 [info ] [Thread-3 (]: 5 of 7 SKIP relation main.dim_customers ........................................ [[33mSKIP[0m]
+[0m20:04:48.140189 [debug] [Thread-2 (]: Began running node model.dbt_project.dim_products
+[0m20:04:48.140189 [debug] [Thread-4 (]: Began running node model.dbt_project.fct_orders
+[0m20:04:48.140189 [debug] [Thread-3 (]: Finished running node model.dbt_project.dim_customers
+[0m20:04:48.140189 [info ] [Thread-2 (]: 6 of 7 SKIP relation main.dim_products ......................................... [[33mSKIP[0m]
+[0m20:04:48.140189 [info ] [Thread-4 (]: 7 of 7 SKIP relation main.fct_orders ........................................... [[33mSKIP[0m]
+[0m20:04:48.150017 [debug] [Thread-2 (]: Finished running node model.dbt_project.dim_products
+[0m20:04:48.151019 [debug] [Thread-4 (]: Finished running node model.dbt_project.fct_orders
+[0m20:04:48.155015 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:04:48.155015 [debug] [MainThread]: On master: BEGIN
+[0m20:04:48.157675 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:04:48.160382 [debug] [MainThread]: SQL status: OK in 0.003 seconds
+[0m20:04:48.161339 [debug] [MainThread]: On master: COMMIT
+[0m20:04:48.163338 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:04:48.163338 [debug] [MainThread]: On master: COMMIT
+[0m20:04:48.167062 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:04:48.168055 [debug] [MainThread]: On master: Close
+[0m20:04:48.169059 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:04:48.170061 [debug] [MainThread]: Connection 'create_retail_main' was properly closed.
+[0m20:04:48.172055 [debug] [MainThread]: Connection 'list_retail_main' was properly closed.
+[0m20:04:48.173054 [debug] [MainThread]: Connection 'model.dbt_project.stg_customers' was properly closed.
+[0m20:04:48.174013 [debug] [MainThread]: Connection 'model.dbt_project.stg_order_items' was properly closed.
+[0m20:04:48.174013 [debug] [MainThread]: Connection 'model.dbt_project.stg_orders' was properly closed.
+[0m20:04:48.174013 [debug] [MainThread]: Connection 'model.dbt_project.stg_products' was properly closed.
+[0m20:04:48.174013 [info ] [MainThread]: 
+[0m20:04:48.174013 [info ] [MainThread]: Finished running 3 table models, 4 view models in 0 hours 0 minutes and 0.55 seconds (0.55s).
+[0m20:04:48.183843 [debug] [MainThread]: Command end result
+[0m20:04:48.246544 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\manifest.json
+[0m20:04:48.250467 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\semantic_manifest.json
+[0m20:04:48.259445 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\run_results.json
+[0m20:04:48.259445 [info ] [MainThread]: 
+[0m20:04:48.261444 [info ] [MainThread]: [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+[0m20:04:48.262442 [info ] [MainThread]: 
+[0m20:04:48.263460 [error] [MainThread]: [31mFailure in model stg_orders (models\staging\stg_orders.sql)[0m
+[0m20:04:48.266180 [error] [MainThread]:   Runtime Error in model stg_orders (models\staging\stg_orders.sql)
+  Catalog Error: Table with name "raw.orders" does not exist because schema "raw" does not exist.
+  
+  LINE 13: from "retail"."raw"."orders"
+                ^
+[0m20:04:48.267191 [info ] [MainThread]: 
+[0m20:04:48.269190 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\staging\stg_orders.sql
+[0m20:04:48.270196 [info ] [MainThread]: 
+[0m20:04:48.272190 [error] [MainThread]: [31mFailure in model stg_customers (models\staging\stg_customers.sql)[0m
+[0m20:04:48.274191 [error] [MainThread]:   Runtime Error in model stg_customers (models\staging\stg_customers.sql)
+  Parser Error: syntax error at or near "l"
+  
+  LINE 5:     l
+              ^
+[0m20:04:48.277216 [info ] [MainThread]: 
+[0m20:04:48.278195 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\staging\stg_customers.sql
+[0m20:04:48.279438 [info ] [MainThread]: 
+[0m20:04:48.281420 [error] [MainThread]: [31mFailure in model stg_order_items (models\staging\stg_order_items.sql)[0m
+[0m20:04:48.281420 [error] [MainThread]:   Runtime Error in model stg_order_items (models\staging\stg_order_items.sql)
+  Catalog Error: Table with name "raw.order_items" does not exist because schema "raw" does not exist.
+  
+  LINE 12: from "retail"."raw"."order_items"
+                ^
+[0m20:04:48.281420 [info ] [MainThread]: 
+[0m20:04:48.281420 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\staging\stg_order_items.sql
+[0m20:04:48.281420 [info ] [MainThread]: 
+[0m20:04:48.281420 [error] [MainThread]: [31mFailure in model stg_products (models\staging\stg_products.sql)[0m
+[0m20:04:48.281420 [error] [MainThread]:   Runtime Error in model stg_products (models\staging\stg_products.sql)
+  Catalog Error: Table with name "raw.products" does not exist because schema "raw" does not exist.
+  
+  LINE 13: from "retail"."raw"."products"
+                ^
+[0m20:04:48.297576 [info ] [MainThread]: 
+[0m20:04:48.299330 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\staging\stg_products.sql
+[0m20:04:48.299330 [info ] [MainThread]: 
+[0m20:04:48.303308 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=4 SKIP=3 NO-OP=0 TOTAL=7
+[0m20:04:48.303308 [debug] [MainThread]: Command `dbt run` failed at 20:04:48.303308 after 2.15 seconds
+[0m20:04:48.306528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023250D57590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002325786E590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002325786CE50>]}
+[0m20:04:48.308542 [debug] [MainThread]: Flushing usage events
+[0m20:04:49.182377 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:12:42.751989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CE0E72550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CE0E72AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CE0E724D0>]}
+
+
+============================== 20:12:42.751989 | c3237cd2-d3db-4375-82e5-98c55a32e768 ==============================
+[0m20:12:42.751989 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:12:42.751989 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\logs'}
+[0m20:12:43.061014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c3237cd2-d3db-4375-82e5-98c55a32e768', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CE0E0F590>]}
+[0m20:12:43.127278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c3237cd2-d3db-4375-82e5-98c55a32e768', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CDC51CFD0>]}
+[0m20:12:43.141203 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:12:43.577615 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m20:12:43.767061 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:12:43.782797 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\stg_order_items.sql
+[0m20:12:43.782797 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\stg_orders.sql
+[0m20:12:43.782797 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\marts\fct_orders.sql
+[0m20:12:43.782797 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\staging.yml
+[0m20:12:44.416343 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_project.stg_orders' (models\staging\stg_orders.sql) depends on a source named 'raw.orders' which was not found
+[0m20:12:44.416343 [debug] [MainThread]: Command `dbt run` failed at 20:12:44.416343 after 1.78 seconds
+[0m20:12:44.416343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CDFDDCE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CE0E43C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CD9246150>]}
+[0m20:12:44.416343 [debug] [MainThread]: Flushing usage events
+[0m20:12:45.304861 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:35:07.229930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D6C82990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D234C750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D58979D0>]}
+
+
+============================== 20:35:07.245753 | a674735a-1a1f-4d11-9198-e28b6f284c41 ==============================
+[0m20:35:07.245753 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:35:07.245753 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\logs'}
+[0m20:35:07.606963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D6CF3C50>]}
+[0m20:35:07.692536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D23665D0>]}
+[0m20:35:07.696537 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:35:08.116609 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m20:35:08.336839 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 5 files changed.
+[0m20:35:08.336839 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\stg_order_items.sql
+[0m20:35:08.336839 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\stg_orders.sql
+[0m20:35:08.341527 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\marts\fct_orders.sql
+[0m20:35:08.344094 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\staging.yml
+[0m20:35:08.344094 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\stg_customers.sql
+[0m20:35:08.346108 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\stg_order_items.sql
+[0m20:35:08.346108 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\stg_products.sql
+[0m20:35:08.346108 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\stg_orders.sql
+[0m20:35:09.130184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D75444D0>]}
+[0m20:35:09.278803 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\manifest.json
+[0m20:35:09.278803 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\semantic_manifest.json
+[0m20:35:09.298561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D7467950>]}
+[0m20:35:09.298561 [info ] [MainThread]: Found 4 seeds, 7 models, 19 data tests, 4 sources, 485 macros
+[0m20:35:09.303095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D7416B90>]}
+[0m20:35:09.303095 [info ] [MainThread]: 
+[0m20:35:09.303095 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:35:09.303095 [info ] [MainThread]: 
+[0m20:35:09.313410 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:35:09.318828 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail'
+[0m20:35:09.460335 [debug] [ThreadPool]: Using duckdb connection "list_retail"
+[0m20:35:09.476288 [debug] [ThreadPool]: On list_retail: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_retail"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"retail"'
+    
+  
+  
+[0m20:35:09.476288 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:35:09.492087 [debug] [ThreadPool]: SQL status: OK in 0.024 seconds
+[0m20:35:09.492087 [debug] [ThreadPool]: On list_retail: Close
+[0m20:35:09.492087 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail, now create_retail_main)
+[0m20:35:09.492087 [debug] [ThreadPool]: Creating schema "database: "retail"
+schema: "main"
+"
+[0m20:35:09.507782 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:35:09.507782 [debug] [ThreadPool]: On create_retail_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_retail_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='retail'
+        and type='sqlite'
+    
+  
+[0m20:35:09.507782 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:35:09.507782 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m20:35:09.507782 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:35:09.507782 [debug] [ThreadPool]: On create_retail_main: BEGIN
+[0m20:35:09.507782 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:35:09.507782 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:35:09.507782 [debug] [ThreadPool]: On create_retail_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_retail_main"} */
+
+    
+    
+        create schema if not exists "retail"."main"
+    
+[0m20:35:09.523513 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:35:09.523513 [debug] [ThreadPool]: On create_retail_main: COMMIT
+[0m20:35:09.523513 [debug] [ThreadPool]: Using duckdb connection "create_retail_main"
+[0m20:35:09.523513 [debug] [ThreadPool]: On create_retail_main: COMMIT
+[0m20:35:09.523513 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:35:09.523513 [debug] [ThreadPool]: On create_retail_main: Close
+[0m20:35:09.523513 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail_main'
+[0m20:35:09.523513 [debug] [ThreadPool]: Using duckdb connection "list_retail_main"
+[0m20:35:09.539274 [debug] [ThreadPool]: On list_retail_main: BEGIN
+[0m20:35:09.539274 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:35:09.539274 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:35:09.539274 [debug] [ThreadPool]: Using duckdb connection "list_retail_main"
+[0m20:35:09.539274 [debug] [ThreadPool]: On list_retail_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_retail_main"} */
+select
+      'retail' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'retail'
+  
+[0m20:35:09.539274 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m20:35:09.539274 [debug] [ThreadPool]: On list_retail_main: ROLLBACK
+[0m20:35:09.539274 [debug] [ThreadPool]: Failed to rollback 'list_retail_main'
+[0m20:35:09.539274 [debug] [ThreadPool]: On list_retail_main: Close
+[0m20:35:09.555033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D7466E10>]}
+[0m20:35:09.555033 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:35:09.557715 [debug] [MainThread]: On master: BEGIN
+[0m20:35:09.557715 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:35:09.557715 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:35:09.557715 [debug] [MainThread]: On master: COMMIT
+[0m20:35:09.557715 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:35:09.557715 [debug] [MainThread]: On master: COMMIT
+[0m20:35:09.557715 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:35:09.557715 [debug] [MainThread]: On master: Close
+[0m20:35:09.557715 [debug] [Thread-1 (]: Began running node model.dbt_project.stg_customers
+[0m20:35:09.557715 [debug] [Thread-2 (]: Began running node model.dbt_project.stg_order_items
+[0m20:35:09.571085 [debug] [Thread-3 (]: Began running node model.dbt_project.stg_orders
+[0m20:35:09.571085 [debug] [Thread-4 (]: Began running node model.dbt_project.stg_products
+[0m20:35:09.571085 [info ] [Thread-1 (]: 1 of 7 START sql view model main.stg_customers ................................. [RUN]
+[0m20:35:09.571085 [info ] [Thread-2 (]: 2 of 7 START sql view model main.stg_order_items ............................... [RUN]
+[0m20:35:09.571085 [info ] [Thread-3 (]: 3 of 7 START sql view model main.stg_orders .................................... [RUN]
+[0m20:35:09.576815 [info ] [Thread-4 (]: 4 of 7 START sql view model main.stg_products .................................. [RUN]
+[0m20:35:09.576815 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbt_project.stg_customers'
+[0m20:35:09.580660 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.dbt_project.stg_order_items'
+[0m20:35:09.583282 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.dbt_project.stg_orders'
+[0m20:35:09.584293 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.dbt_project.stg_products'
+[0m20:35:09.585299 [debug] [Thread-1 (]: Began compiling node model.dbt_project.stg_customers
+[0m20:35:09.585664 [debug] [Thread-2 (]: Began compiling node model.dbt_project.stg_order_items
+[0m20:35:09.585664 [debug] [Thread-3 (]: Began compiling node model.dbt_project.stg_orders
+[0m20:35:09.585664 [debug] [Thread-4 (]: Began compiling node model.dbt_project.stg_products
+[0m20:35:09.598973 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.stg_customers"
+[0m20:35:09.598973 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_project.stg_order_items"
+[0m20:35:09.615047 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_project.stg_orders"
+[0m20:35:09.619039 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_project.stg_products"
+[0m20:35:09.621016 [debug] [Thread-1 (]: Began executing node model.dbt_project.stg_customers
+[0m20:35:09.622012 [debug] [Thread-2 (]: Began executing node model.dbt_project.stg_order_items
+[0m20:35:09.642804 [debug] [Thread-3 (]: Began executing node model.dbt_project.stg_orders
+[0m20:35:09.661801 [debug] [Thread-4 (]: Began executing node model.dbt_project.stg_products
+[0m20:35:09.661801 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.stg_customers"
+[0m20:35:09.661801 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_project.stg_order_items"
+[0m20:35:09.673175 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_project.stg_orders"
+[0m20:35:09.679839 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_project.stg_products"
+[0m20:35:09.679839 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_customers"
+[0m20:35:09.679839 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: BEGIN
+[0m20:35:09.679839 [debug] [Thread-2 (]: Using duckdb connection "model.dbt_project.stg_order_items"
+[0m20:35:09.679839 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:35:09.679839 [debug] [Thread-3 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m20:35:09.693622 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: BEGIN
+[0m20:35:09.679839 [debug] [Thread-4 (]: Using duckdb connection "model.dbt_project.stg_products"
+[0m20:35:09.694829 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m20:35:09.694829 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: BEGIN
+[0m20:35:09.694829 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:35:09.694829 [debug] [Thread-4 (]: On model.dbt_project.stg_products: BEGIN
+[0m20:35:09.694829 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_customers"
+[0m20:35:09.694829 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:35:09.694829 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m20:35:09.694829 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:35:09.694829 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_customers"} */
+
+  
+  create view "retail"."main"."stg_customers__dbt_tmp" as (
+    -- models/staging/stg_customers.sql
+
+with source as (
+    select * from "retail"."main"."customers"
+),
+
+renamed as (
+    select
+        id as customer_id,
+        name,
+        email,
+        phone,
+        address,
+        suburb,
+        state,
+        postcode
+    from source
+)
+
+select * from renamed
+  );
+
+[0m20:35:09.694829 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m20:35:09.694829 [debug] [Thread-2 (]: Using duckdb connection "model.dbt_project.stg_order_items"
+[0m20:35:09.694829 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m20:35:09.712119 [debug] [Thread-3 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m20:35:09.712119 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_order_items"} */
+
+  
+  create view "retail"."main"."stg_order_items__dbt_tmp" as (
+    -- models/staging/stg_order_items.sql
+
+with source as (
+    select * from "retail"."main"."order_items"
+),
+
+renamed as (
+    select
+        id as order_item_id,
+        order_id,
+        product_id,
+        quantity
+    from source
+)
+
+select * from renamed
+  );
+
+[0m20:35:09.712119 [debug] [Thread-4 (]: Using duckdb connection "model.dbt_project.stg_products"
+[0m20:35:09.712119 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m20:35:09.712119 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_orders"} */
+
+  
+  create view "retail"."main"."stg_orders__dbt_tmp" as (
+    -- models/staging/stg_orders.sql
+
+with source as (
+    select * from "retail"."main"."orders"
+),
+
+renamed as (
+    select
+        id as order_id,
+        customer_id,
+        date,
+        sales_channel,
+        total_order
+    from source
+)
+
+select * from renamed
+  );
+
+[0m20:35:09.712119 [debug] [Thread-4 (]: On model.dbt_project.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_products"} */
+
+  
+  create view "retail"."main"."stg_products__dbt_tmp" as (
+    -- models/staging/stg_products.sql
+
+with source as (
+    select * from "retail"."main"."products"
+),
+
+renamed as (
+    select
+        id as product_id,
+        name,
+        price,
+        current_stock_level,
+        minimum_stock_level
+    from source
+)
+
+select * from renamed
+  );
+
+[0m20:35:09.712119 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m20:35:09.724939 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_customers"
+[0m20:35:09.724939 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m20:35:09.724939 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m20:35:09.738554 [debug] [Thread-2 (]: Using duckdb connection "model.dbt_project.stg_order_items"
+[0m20:35:09.738554 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_customers"} */
+alter view "retail"."main"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m20:35:09.742570 [debug] [Thread-3 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m20:35:09.744577 [debug] [Thread-4 (]: Using duckdb connection "model.dbt_project.stg_products"
+[0m20:35:09.744577 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_order_items"} */
+alter view "retail"."main"."stg_order_items__dbt_tmp" rename to "stg_order_items"
+[0m20:35:09.744577 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_orders"} */
+alter view "retail"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m20:35:09.744577 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:35:09.744577 [debug] [Thread-4 (]: On model.dbt_project.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_products"} */
+alter view "retail"."main"."stg_products__dbt_tmp" rename to "stg_products"
+[0m20:35:09.744577 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m20:35:09.744577 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m20:35:09.756198 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: COMMIT
+[0m20:35:09.771864 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: COMMIT
+[0m20:35:09.771864 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m20:35:09.771864 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: COMMIT
+[0m20:35:09.771864 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_customers"
+[0m20:35:09.771864 [debug] [Thread-2 (]: Using duckdb connection "model.dbt_project.stg_order_items"
+[0m20:35:09.771864 [debug] [Thread-4 (]: On model.dbt_project.stg_products: COMMIT
+[0m20:35:09.779461 [debug] [Thread-3 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m20:35:09.779461 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: COMMIT
+[0m20:35:09.779461 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: COMMIT
+[0m20:35:09.779461 [debug] [Thread-4 (]: Using duckdb connection "model.dbt_project.stg_products"
+[0m20:35:09.779461 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: COMMIT
+[0m20:35:09.779461 [debug] [Thread-4 (]: On model.dbt_project.stg_products: COMMIT
+[0m20:35:09.788398 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m20:35:09.788753 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m20:35:09.788753 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m20:35:09.788753 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m20:35:09.799140 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_customers"
+[0m20:35:09.803137 [debug] [Thread-2 (]: Using duckdb connection "model.dbt_project.stg_order_items"
+[0m20:35:09.807153 [debug] [Thread-3 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m20:35:09.811163 [debug] [Thread-4 (]: Using duckdb connection "model.dbt_project.stg_products"
+[0m20:35:09.811727 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_customers"} */
+
+      drop view if exists "retail"."main"."stg_customers__dbt_backup" cascade
+    
+[0m20:35:09.811727 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_order_items"} */
+
+      drop view if exists "retail"."main"."stg_order_items__dbt_backup" cascade
+    
+[0m20:35:09.811727 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_orders"} */
+
+      drop view if exists "retail"."main"."stg_orders__dbt_backup" cascade
+    
+[0m20:35:09.811727 [debug] [Thread-4 (]: On model.dbt_project.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_products"} */
+
+      drop view if exists "retail"."main"."stg_products__dbt_backup" cascade
+    
+[0m20:35:09.811727 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:35:09.811727 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m20:35:09.811727 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m20:35:09.811727 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m20:35:09.811727 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: Close
+[0m20:35:09.827074 [debug] [Thread-2 (]: On model.dbt_project.stg_order_items: Close
+[0m20:35:09.827074 [debug] [Thread-3 (]: On model.dbt_project.stg_orders: Close
+[0m20:35:09.827074 [debug] [Thread-4 (]: On model.dbt_project.stg_products: Close
+[0m20:35:09.827074 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D7B16D10>]}
+[0m20:35:09.827074 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D75B4810>]}
+[0m20:35:09.827074 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D7B29D90>]}
+[0m20:35:09.827074 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D7AB7910>]}
+[0m20:35:09.827074 [info ] [Thread-1 (]: 1 of 7 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.25s]
+[0m20:35:09.827074 [info ] [Thread-2 (]: 2 of 7 OK created sql view model main.stg_order_items .......................... [[32mOK[0m in 0.25s]
+[0m20:35:09.841000 [info ] [Thread-3 (]: 3 of 7 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.24s]
+[0m20:35:09.842738 [info ] [Thread-4 (]: 4 of 7 OK created sql view model main.stg_products ............................. [[32mOK[0m in 0.24s]
+[0m20:35:09.846186 [debug] [Thread-1 (]: Finished running node model.dbt_project.stg_customers
+[0m20:35:09.848541 [debug] [Thread-2 (]: Finished running node model.dbt_project.stg_order_items
+[0m20:35:09.849538 [debug] [Thread-3 (]: Finished running node model.dbt_project.stg_orders
+[0m20:35:09.851612 [debug] [Thread-4 (]: Finished running node model.dbt_project.stg_products
+[0m20:35:09.852574 [debug] [Thread-1 (]: Began running node model.dbt_project.dim_customers
+[0m20:35:09.852574 [debug] [Thread-2 (]: Began running node model.dbt_project.dim_products
+[0m20:35:09.852574 [debug] [Thread-3 (]: Began running node model.dbt_project.fct_orders
+[0m20:35:09.852574 [info ] [Thread-1 (]: 5 of 7 START sql table model main.dim_customers ................................ [RUN]
+[0m20:35:09.862553 [info ] [Thread-2 (]: 6 of 7 START sql table model main.dim_products ................................. [RUN]
+[0m20:35:09.865565 [info ] [Thread-3 (]: 7 of 7 START sql table model main.fct_orders ................................... [RUN]
+[0m20:35:09.867628 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project.stg_customers, now model.dbt_project.dim_customers)
+[0m20:35:09.870333 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_project.stg_order_items, now model.dbt_project.dim_products)
+[0m20:35:09.871558 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_project.stg_orders, now model.dbt_project.fct_orders)
+[0m20:35:09.872590 [debug] [Thread-1 (]: Began compiling node model.dbt_project.dim_customers
+[0m20:35:09.873554 [debug] [Thread-2 (]: Began compiling node model.dbt_project.dim_products
+[0m20:35:09.874559 [debug] [Thread-3 (]: Began compiling node model.dbt_project.fct_orders
+[0m20:35:09.881158 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.dim_customers"
+[0m20:35:09.885560 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_project.dim_products"
+[0m20:35:09.896639 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_project.fct_orders"
+[0m20:35:09.896639 [debug] [Thread-1 (]: Began executing node model.dbt_project.dim_customers
+[0m20:35:09.928522 [debug] [Thread-2 (]: Began executing node model.dbt_project.dim_products
+[0m20:35:09.928522 [debug] [Thread-3 (]: Began executing node model.dbt_project.fct_orders
+[0m20:35:09.933612 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.dim_customers"
+[0m20:35:09.938609 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_project.dim_products"
+[0m20:35:09.944609 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_project.fct_orders"
+[0m20:35:09.944609 [debug] [Thread-2 (]: Using duckdb connection "model.dbt_project.dim_products"
+[0m20:35:09.944609 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.dim_customers"
+[0m20:35:09.944609 [debug] [Thread-3 (]: Using duckdb connection "model.dbt_project.fct_orders"
+[0m20:35:09.944609 [debug] [Thread-2 (]: On model.dbt_project.dim_products: BEGIN
+[0m20:35:09.951858 [debug] [Thread-1 (]: On model.dbt_project.dim_customers: BEGIN
+[0m20:35:09.951858 [debug] [Thread-3 (]: On model.dbt_project.fct_orders: BEGIN
+[0m20:35:09.951858 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:35:09.951858 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:35:09.951858 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:35:09.951858 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m20:35:09.951858 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m20:35:09.960672 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m20:35:09.960672 [debug] [Thread-2 (]: Using duckdb connection "model.dbt_project.dim_products"
+[0m20:35:09.960672 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.dim_customers"
+[0m20:35:09.960672 [debug] [Thread-3 (]: Using duckdb connection "model.dbt_project.fct_orders"
+[0m20:35:09.960672 [debug] [Thread-2 (]: On model.dbt_project.dim_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dim_products"} */
+
+  
+    
+    
+
+    create  table
+      "retail"."main"."dim_products__dbt_tmp"
+  
+    as (
+      
+
+select
+    product_id,
+    product_name,
+    price,
+    current_stock_level,
+    minimum_stock_level
+from "retail"."main"."stg_products"
+    );
+  
+  
+[0m20:35:09.960672 [debug] [Thread-1 (]: On model.dbt_project.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dim_customers"} */
+
+  
+    
+    
+
+    create  table
+      "retail"."main"."dim_customers__dbt_tmp"
+  
+    as (
+      
+
+select
+    customer_id,
+    customer_name,
+    email,
+    phone,
+    address,
+    suburb,
+    state,
+    postcode
+from "retail"."main"."stg_customers"
+    );
+  
+  
+[0m20:35:09.960672 [debug] [Thread-3 (]: On model.dbt_project.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_orders"} */
+
+  
+    
+    
+
+    create  table
+      "retail"."main"."fct_orders__dbt_tmp"
+  
+    as (
+      
+
+select
+    oi.order_item_id,
+    o.order_id,
+    o.customer_id,
+    o.order_date,
+    o.sales_channel,
+    o.total_order,
+    oi.product_id,
+    oi.quantity,
+    p.price,
+    oi.quantity * p.price as line_total
+from "retail"."main"."stg_order_items" oi
+left join "retail"."main"."stg_orders" o
+    on oi.order_id = o.order_id
+left join "retail"."main"."stg_products" p
+    on oi.product_id = p.product_id
+    );
+  
+  
+[0m20:35:09.960672 [debug] [Thread-3 (]: DuckDB adapter: duckdb error: Binder Error: Values list "o" does not have a column named "order_date"
+
+LINE 17:     o.order_date,
+             ^
+[0m20:35:09.960672 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Binder Error: Referenced column "customer_name" not found in FROM clause!
+Candidate bindings: "customer_id", "state", "postcode", "name", "phone"
+
+LINE 15:     customer_name,
+             ^
+[0m20:35:09.960672 [debug] [Thread-2 (]: DuckDB adapter: duckdb error: Binder Error: Referenced column "product_name" not found in FROM clause!
+Candidate bindings: "product_id", "price", "minimum_stock_level", "current_stock_level"
+
+LINE 15:     product_name,
+             ^
+[0m20:35:09.960672 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_orders"} */
+
+  
+    
+    
+
+    create  table
+      "retail"."main"."fct_orders__dbt_tmp"
+  
+    as (
+      
+
+select
+    oi.order_item_id,
+    o.order_id,
+    o.customer_id,
+    o.order_date,
+    o.sales_channel,
+    o.total_order,
+    oi.product_id,
+    oi.quantity,
+    p.price,
+    oi.quantity * p.price as line_total
+from "retail"."main"."stg_order_items" oi
+left join "retail"."main"."stg_orders" o
+    on oi.order_id = o.order_id
+left join "retail"."main"."stg_products" p
+    on oi.product_id = p.product_id
+    );
+  
+  
+[0m20:35:09.960672 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dim_customers"} */
+
+  
+    
+    
+
+    create  table
+      "retail"."main"."dim_customers__dbt_tmp"
+  
+    as (
+      
+
+select
+    customer_id,
+    customer_name,
+    email,
+    phone,
+    address,
+    suburb,
+    state,
+    postcode
+from "retail"."main"."stg_customers"
+    );
+  
+  
+[0m20:35:09.976378 [debug] [Thread-2 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dim_products"} */
+
+  
+    
+    
+
+    create  table
+      "retail"."main"."dim_products__dbt_tmp"
+  
+    as (
+      
+
+select
+    product_id,
+    product_name,
+    price,
+    current_stock_level,
+    minimum_stock_level
+from "retail"."main"."stg_products"
+    );
+  
+  
+[0m20:35:09.976378 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m20:35:09.978813 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m20:35:09.978813 [debug] [Thread-2 (]: DuckDB adapter: Rolling back transaction.
+[0m20:35:09.978813 [debug] [Thread-3 (]: On model.dbt_project.fct_orders: ROLLBACK
+[0m20:35:09.978813 [debug] [Thread-1 (]: On model.dbt_project.dim_customers: ROLLBACK
+[0m20:35:09.978813 [debug] [Thread-2 (]: On model.dbt_project.dim_products: ROLLBACK
+[0m20:35:09.978813 [debug] [Thread-3 (]: Failed to rollback 'model.dbt_project.fct_orders'
+[0m20:35:09.978813 [debug] [Thread-1 (]: Failed to rollback 'model.dbt_project.dim_customers'
+[0m20:35:09.978813 [debug] [Thread-3 (]: On model.dbt_project.fct_orders: Close
+[0m20:35:09.992185 [debug] [Thread-2 (]: Failed to rollback 'model.dbt_project.dim_products'
+[0m20:35:09.993005 [debug] [Thread-1 (]: On model.dbt_project.dim_customers: Close
+[0m20:35:09.993005 [debug] [Thread-2 (]: On model.dbt_project.dim_products: Close
+[0m20:35:10.007878 [debug] [Thread-1 (]: Runtime Error in model dim_customers (models\marts\dim_customers.sql)
+  Binder Error: Referenced column "customer_name" not found in FROM clause!
+  Candidate bindings: "customer_id", "state", "postcode", "name", "phone"
+  
+  LINE 15:     customer_name,
+               ^
+[0m20:35:10.007878 [debug] [Thread-3 (]: Runtime Error in model fct_orders (models\marts\fct_orders.sql)
+  Binder Error: Values list "o" does not have a column named "order_date"
+  
+  LINE 17:     o.order_date,
+               ^
+[0m20:35:10.007878 [debug] [Thread-2 (]: Runtime Error in model dim_products (models\marts\dim_products.sql)
+  Binder Error: Referenced column "product_name" not found in FROM clause!
+  Candidate bindings: "product_id", "price", "minimum_stock_level", "current_stock_level"
+  
+  LINE 15:     product_name,
+               ^
+[0m20:35:10.007878 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D8CD2E50>]}
+[0m20:35:10.007878 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D7B1B590>]}
+[0m20:35:10.007878 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a674735a-1a1f-4d11-9198-e28b6f284c41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D7B0E6D0>]}
+[0m20:35:10.007878 [error] [Thread-1 (]: 5 of 7 ERROR creating sql table model main.dim_customers ....................... [[31mERROR[0m in 0.14s]
+[0m20:35:10.007878 [error] [Thread-3 (]: 7 of 7 ERROR creating sql table model main.fct_orders .......................... [[31mERROR[0m in 0.14s]
+[0m20:35:10.007878 [error] [Thread-2 (]: 6 of 7 ERROR creating sql table model main.dim_products ........................ [[31mERROR[0m in 0.14s]
+[0m20:35:10.007878 [debug] [Thread-1 (]: Finished running node model.dbt_project.dim_customers
+[0m20:35:10.007878 [debug] [Thread-3 (]: Finished running node model.dbt_project.fct_orders
+[0m20:35:10.023624 [debug] [Thread-2 (]: Finished running node model.dbt_project.dim_products
+[0m20:35:10.026297 [debug] [Thread-7 (]: Marking all children of 'model.dbt_project.dim_customers' to be skipped because of status 'error'.  Reason: Runtime Error in model dim_customers (models\marts\dim_customers.sql)
+  Binder Error: Referenced column "customer_name" not found in FROM clause!
+  Candidate bindings: "customer_id", "state", "postcode", "name", "phone"
+  
+  LINE 15:     customer_name,
+               ^.
+[0m20:35:10.029167 [debug] [Thread-7 (]: Marking all children of 'model.dbt_project.fct_orders' to be skipped because of status 'error'.  Reason: Runtime Error in model fct_orders (models\marts\fct_orders.sql)
+  Binder Error: Values list "o" does not have a column named "order_date"
+  
+  LINE 17:     o.order_date,
+               ^.
+[0m20:35:10.031166 [debug] [Thread-7 (]: Marking all children of 'model.dbt_project.dim_products' to be skipped because of status 'error'.  Reason: Runtime Error in model dim_products (models\marts\dim_products.sql)
+  Binder Error: Referenced column "product_name" not found in FROM clause!
+  Candidate bindings: "product_id", "price", "minimum_stock_level", "current_stock_level"
+  
+  LINE 15:     product_name,
+               ^.
+[0m20:35:10.033335 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:35:10.034361 [debug] [MainThread]: On master: BEGIN
+[0m20:35:10.035777 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:35:10.035777 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m20:35:10.035777 [debug] [MainThread]: On master: COMMIT
+[0m20:35:10.035777 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:35:10.035777 [debug] [MainThread]: On master: COMMIT
+[0m20:35:10.045355 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:35:10.045355 [debug] [MainThread]: On master: Close
+[0m20:35:10.045355 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:35:10.051199 [debug] [MainThread]: Connection 'create_retail_main' was properly closed.
+[0m20:35:10.051199 [debug] [MainThread]: Connection 'list_retail_main' was properly closed.
+[0m20:35:10.051199 [debug] [MainThread]: Connection 'model.dbt_project.dim_customers' was properly closed.
+[0m20:35:10.051199 [debug] [MainThread]: Connection 'model.dbt_project.dim_products' was properly closed.
+[0m20:35:10.051199 [debug] [MainThread]: Connection 'model.dbt_project.fct_orders' was properly closed.
+[0m20:35:10.051199 [debug] [MainThread]: Connection 'model.dbt_project.stg_products' was properly closed.
+[0m20:35:10.051199 [info ] [MainThread]: 
+[0m20:35:10.051199 [info ] [MainThread]: Finished running 3 table models, 4 view models in 0 hours 0 minutes and 0.74 seconds (0.74s).
+[0m20:35:10.062066 [debug] [MainThread]: Command end result
+[0m20:35:10.206665 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\manifest.json
+[0m20:35:10.212248 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\semantic_manifest.json
+[0m20:35:10.231824 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\target\run_results.json
+[0m20:35:10.233110 [info ] [MainThread]: 
+[0m20:35:10.234120 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m20:35:10.235010 [info ] [MainThread]: 
+[0m20:35:10.237039 [error] [MainThread]: [31mFailure in model dim_customers (models\marts\dim_customers.sql)[0m
+[0m20:35:10.238033 [error] [MainThread]:   Runtime Error in model dim_customers (models\marts\dim_customers.sql)
+  Binder Error: Referenced column "customer_name" not found in FROM clause!
+  Candidate bindings: "customer_id", "state", "postcode", "name", "phone"
+  
+  LINE 15:     customer_name,
+               ^
+[0m20:35:10.240033 [info ] [MainThread]: 
+[0m20:35:10.242036 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\marts\dim_customers.sql
+[0m20:35:10.243045 [info ] [MainThread]: 
+[0m20:35:10.245033 [error] [MainThread]: [31mFailure in model fct_orders (models\marts\fct_orders.sql)[0m
+[0m20:35:10.247038 [error] [MainThread]:   Runtime Error in model fct_orders (models\marts\fct_orders.sql)
+  Binder Error: Values list "o" does not have a column named "order_date"
+  
+  LINE 17:     o.order_date,
+               ^
+[0m20:35:10.248074 [info ] [MainThread]: 
+[0m20:35:10.249037 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\marts\fct_orders.sql
+[0m20:35:10.251031 [info ] [MainThread]: 
+[0m20:35:10.252044 [error] [MainThread]: [31mFailure in model dim_products (models\marts\dim_products.sql)[0m
+[0m20:35:10.254220 [error] [MainThread]:   Runtime Error in model dim_products (models\marts\dim_products.sql)
+  Binder Error: Referenced column "product_name" not found in FROM clause!
+  Candidate bindings: "product_id", "price", "minimum_stock_level", "current_stock_level"
+  
+  LINE 15:     product_name,
+               ^
+[0m20:35:10.255230 [info ] [MainThread]: 
+[0m20:35:10.256234 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\marts\dim_products.sql
+[0m20:35:10.258232 [info ] [MainThread]: 
+[0m20:35:10.260233 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=3 SKIP=0 NO-OP=0 TOTAL=7
+[0m20:35:10.263377 [debug] [MainThread]: Command `dbt run` failed at 20:35:10.263377 after 3.15 seconds
+[0m20:35:10.265376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247CEDE0E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D4D1E350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247CEDE0D50>]}
+[0m20:35:10.266378 [debug] [MainThread]: Flushing usage events
+[0m20:35:11.360962 [debug] [MainThread]: An error was encountered while trying to flush usage events

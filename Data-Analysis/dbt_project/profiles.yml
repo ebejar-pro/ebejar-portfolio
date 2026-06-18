@@ -1,0 +1,9 @@
+dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "C:\\Users\\elbej\\OneDrive\\Documents\\GitHub\\ebejar-portfolio\\Data-Analysis\\dbt_project\\data\\retail.duckdb"
+      threads: 4
+      schema: main
+

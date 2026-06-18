@@ -1,0 +1,2438 @@
+==================== 2026-06-05T11:13:37.657663Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-05T11:13:37.658233Z | 829fb2f4-b873-45c5-a7de-2a790108076d ====================
+11:13:37.658343 [info ]: Starting dbt LSP server
+11:13:37.658439 [info ]: Connecting to LSP client on port 8000
+11:13:37.662130 [info ]: Successfully connected to LSP client
+11:13:37.662178 [info ]: Creating LSP service...
+11:13:37.782204 [info ]: Creating LSP server...
+11:13:37.782234 [info ]: Starting LSP server...
+11:30:56.330294 [info ]: Loading ~/.dbt/profiles.yml
+11:31:00.943110 [info ]: Loading ~/.dbt/profiles.yml
+11:31:47.889803 [info ]: Loading profiles.yml
+11:31:48.008133 [info ]: Started loading project
+11:31:48.010344 [info ]: Loading profiles.yml
+11:31:48.015770 [info ]: Finished loading project [  0.01s]
+11:31:48.394684 [info ]: Loading profiles.yml
+11:31:48.915890 [info ]: Loading profiles.yml
+11:31:52.396361 [info ]: Loading profiles.yml
+11:31:52.526372 [info ]: Started loading project
+11:31:52.530039 [info ]: Loading profiles.yml
+11:31:52.532078 [info ]: Finished loading project [  0.01s]
+11:31:52.896576 [info ]: Loading profiles.yml
+11:31:53.328008 [info ]: Loading profiles.yml
+11:32:53.814743 [info ]: Loading profiles.yml
+11:32:54.493364 [info ]: Loading profiles.yml
+11:39:25.662653 [info ]: Loading profiles.yml
+11:40:51.287753 [info ]: Loading profiles.yml
+11:40:51.340986 [info ]: Started loading project
+11:40:51.342047 [info ]: Loading profiles.yml
+11:40:51.342655 [info ]: Finished loading project [  0.00s]
+11:40:51.701456 [info ]: Loading profiles.yml
+11:40:52.241891 [info ]: Loading profiles.yml
+11:41:23.461678 [info ]: Loading profiles.yml
+11:41:23.508467 [info ]: Started loading project
+11:41:23.509603 [info ]: Loading profiles.yml
+11:41:23.510125 [info ]: Finished loading project [  0.00s]
+11:41:23.880795 [info ]: Loading profiles.yml
+11:41:24.518515 [info ]: Loading profiles.yml
+11:41:26.583884 [info ]: Loading profiles.yml
+11:41:26.681499 [info ]: Started loading project
+11:41:26.682627 [info ]: Loading profiles.yml
+11:41:26.727484 [debug]:    Started loading packages
+11:41:26.752466 [debug]:     Loaded [  0.02s] packages
+11:41:26.768719 [info ]: Finished loading project [  0.09s]
+11:41:26.778082 [info ]: Started parsing
+11:41:26.944090 [debug]: Finished parsing models\marts\marts.yml [  0.01s]
+11:41:26.950563 [debug]: Finished parsing models\staging\staging.yml [  0.01s]
+11:41:27.030173 [debug]: Finished parsing models\marts\dim_customers.sql [  0.05s]
+11:41:27.033990 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:41:27.037754 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:41:27.041407 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+11:41:27.048238 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.01s]
+11:41:27.051670 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:41:27.057340 [debug]: Finished parsing models\staging\stg_products.sql [  0.01s]
+11:41:27.103675 [info ]: Finished parsing [  0.33s]
+11:41:27.115497 [info ]: Cached model count updated: 7 models (estimate)
+11:41:27.115556 [info ]: Cached model count updated: 7 models (accurate)
+11:41:27.119587 [info ]: Started scheduling
+11:41:27.127019 [info ]: Finished scheduling [  0.01s]
+11:41:27.127418 [debug]: Compilation - 0 nodes selected: {}
+11:41:27.128795 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+11:41:27.129182 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:41:27.129757 [info ]: Started scheduling
+11:41:27.132211 [info ]: Finished scheduling [  0.00s]
+11:41:27.136936 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "orders" }) and interval: None
+11:41:27.137731 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "customers" }) and interval: None
+11:41:27.137853 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "order_items" }) and interval: None
+11:41:27.137927 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "products" }) and interval: None
+11:41:27.199341 [debug]: Requesting license from https://qz729.us1.dbt.com/api/private/accounts/70506183139093/feature-licenses/ with 1 key IDs: ["fusion-prod-2025-11-20"]
+11:41:27.973468 [debug]: License successfully retrieved from remote
+11:41:27.977075 [info ]: License loaded from remote server qz729.us1.dbt.com
+11:41:27.978310 [debug]: License cached to file for account 70506183139093
+11:41:27.992516 [info ]: Started building task graph
+11:41:27.995750 [info ]: Finished building task graph [  0.00s]
+11:41:28.079752 [info ]: Started scheduling
+11:41:28.079849 [info ]: Finished scheduling [  0.00s]
+11:41:28.081838 [info ]: Cached model count updated: 7 models (accurate)
+11:41:29.762973 [info ]: Started loading project
+11:41:29.764691 [info ]: Loading profiles.yml
+11:41:29.832931 [info ]: Cached model count updated: 7 models (estimate)
+11:41:29.833001 [info ]: Cached model count updated: 7 models (accurate)
+11:41:29.833082 [info ]: Started scheduling
+11:41:29.833284 [info ]: Finished scheduling [  0.00s]
+11:41:29.833326 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:41:29.838152 [info ]: Started building task graph
+11:41:29.842326 [info ]: Finished building task graph [  0.00s]
+11:41:29.846764 [info ]: Started rendering (7 nodes)
+11:41:29.848297 [info ]: Started model main.fct_orders
+11:41:29.848613 [debug]: Started rendering model main.fct_orders
+11:41:29.849153 [info ]: Started model main.stg_orders
+11:41:29.849180 [debug]: Started rendering model main.stg_orders
+11:41:29.849184 [info ]: Finished loading project [  0.09s]
+11:41:29.849219 [info ]: Started model main.stg_order_items
+11:41:29.849237 [debug]: Started rendering model main.stg_order_items
+11:41:29.849261 [info ]: Started model main.dim_products
+11:41:29.849278 [debug]: Started rendering model main.dim_products
+11:41:29.849344 [info ]: Started model main.stg_products
+11:41:29.849367 [debug]: Started rendering model main.stg_products
+11:41:29.849395 [info ]: Started model main.dim_customers
+11:41:29.849415 [debug]: Started rendering model main.dim_customers
+11:41:29.849710 [info ]: Started model main.stg_customers
+11:41:29.849772 [debug]: Started rendering model main.stg_customers
+11:41:29.880315 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:41:29.881582 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:41:29.881870 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:41:29.882944 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:41:29.882991 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:41:29.883132 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:41:29.883299 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:41:29.884865 [debug]: Finished rendering [  0.04s] model main.stg_customers [success]
+11:41:29.886165 [info ]: Started analyzing (7 nodes)
+11:41:29.886215 [debug]: Started analyzing model main.stg_customers
+11:41:29.886298 [debug]: Finished rendering [  0.04s] model main.fct_orders [success]
+11:41:29.886347 [debug]: Started analyzing model main.fct_orders
+11:41:29.886405 [debug]: Finished rendering [  0.04s] model main.dim_products [success]
+11:41:29.886426 [debug]: Started analyzing model main.dim_products
+11:41:29.886460 [debug]: Finished rendering [  0.04s] model main.stg_products [success]
+11:41:29.886481 [debug]: Started analyzing model main.stg_products
+11:41:29.886518 [debug]: Finished rendering [  0.04s] model main.stg_orders [success]
+11:41:29.886546 [debug]: Started analyzing model main.stg_orders
+11:41:29.886580 [debug]: Finished rendering [  0.04s] model main.dim_customers [success]
+11:41:29.886604 [debug]: Started analyzing model main.dim_customers
+11:41:29.886634 [debug]: Finished rendering [  0.04s] model main.stg_order_items [success]
+11:41:29.886657 [info ]: Finished rendering [  0.04s] (7 nodes, 0 skipped, 0 errors)
+11:41:29.887090 [debug]: Started analyzing model main.stg_order_items
+11:41:29.940188 [debug]: Finished analyzing [  0.05s] model main.dim_products [success]
+11:41:29.940264 [info ]:  Succeeded [  0.09s] model main.dim_products (table)
+11:41:29.940335 [debug]: Finished analyzing [  0.05s] model main.stg_products [success]
+11:41:29.940351 [info ]:  Succeeded [  0.09s] model main.stg_products (view)
+11:41:29.940394 [debug]: Finished analyzing [  0.05s] model main.stg_orders [success]
+11:41:29.940408 [info ]:  Succeeded [  0.09s] model main.stg_orders (view)
+11:41:29.940432 [debug]: Finished analyzing [  0.05s] model main.dim_customers [success]
+11:41:29.940444 [info ]:  Succeeded [  0.09s] model main.dim_customers (table)
+11:41:29.940474 [debug]: Finished analyzing [  0.05s] model main.stg_order_items [success]
+11:41:29.940489 [info ]:  Succeeded [  0.09s] model main.stg_order_items (view)
+11:41:29.940765 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:41:29.941613 [debug]: Finished analyzing [  0.06s] model main.stg_customers [success]
+11:41:29.941606 [info ]:  Succeeded [  0.09s] model main.stg_customers (view)
+11:41:29.942143 [debug]: Finished analyzing [  0.06s] model main.fct_orders [success]
+11:41:29.942196 [info ]: Finished analyzing [  0.06s] (7 nodes, 0 skipped, 0 errors)
+11:41:29.942215 [info ]:  Succeeded [  0.09s] model main.fct_orders (table)
+11:41:29.952632 [info ]: Started scheduling
+11:41:29.952749 [info ]: Finished scheduling [  0.00s]
+11:41:29.954066 [info ]: Cached model count updated: 7 models (accurate)
+11:41:35.749187 [info ]: Loading profiles.yml
+11:41:35.828047 [info ]: Started loading project
+11:41:35.828979 [info ]: Loading profiles.yml
+11:41:35.842457 [info ]: Started loading project
+11:41:35.843341 [info ]: Loading profiles.yml
+11:41:35.843431 [info ]: Finished loading project [  0.02s]
+11:41:35.850807 [debug]:    Started loading packages
+11:41:35.858542 [debug]:     Loaded [  0.01s] packages
+11:41:35.859511 [info ]: Finished loading project [  0.02s]
+11:41:35.859809 [info ]: Started parsing
+11:41:35.912259 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+11:41:35.913326 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+11:41:35.918323 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+11:41:35.922064 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:41:35.925732 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:41:35.927611 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+11:41:35.929122 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+11:41:35.930395 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:41:35.931628 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+11:41:35.944140 [info ]: Finished parsing [  0.08s]
+11:41:35.945643 [info ]: Cached model count updated: 7 models (estimate)
+11:41:35.945671 [info ]: Cached model count updated: 7 models (accurate)
+11:41:35.945715 [info ]: Started scheduling
+11:41:35.945766 [info ]: Finished scheduling [  0.00s]
+11:41:35.945784 [debug]: Compilation - 0 nodes selected: {}
+11:41:35.945802 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+11:41:35.945818 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:41:35.945826 [info ]: Started scheduling
+11:41:35.945921 [info ]: Finished scheduling [  0.00s]
+11:41:35.945969 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "products" }) and interval: None
+11:41:35.946041 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "order_items" }) and interval: None
+11:41:35.946078 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "customers" }) and interval: None
+11:41:35.946110 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "orders" }) and interval: None
+11:41:35.947314 [info ]: Started building task graph
+11:41:35.947349 [info ]: Finished building task graph [  0.00s]
+11:41:35.951422 [info ]: Started scheduling
+11:41:35.951487 [info ]: Finished scheduling [  0.00s]
+11:41:35.956713 [info ]: Cached model count updated: 7 models (accurate)
+11:41:37.604047 [info ]: Started loading project
+11:41:37.604921 [info ]: Loading profiles.yml
+11:41:37.635957 [info ]: Cached model count updated: 7 models (estimate)
+11:41:37.635988 [info ]: Cached model count updated: 7 models (accurate)
+11:41:37.636027 [info ]: Started scheduling
+11:41:37.636122 [info ]: Finished scheduling [  0.00s]
+11:41:37.636142 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:41:37.637181 [info ]: Started building task graph
+11:41:37.637275 [info ]: Finished building task graph [  0.00s]
+11:41:37.637675 [info ]: Started rendering (7 nodes)
+11:41:37.637700 [info ]: Started model main.fct_orders
+11:41:37.637711 [debug]: Started rendering model main.fct_orders
+11:41:37.637735 [info ]: Started model main.stg_orders
+11:41:37.637742 [debug]: Started rendering model main.stg_orders
+11:41:37.637751 [info ]: Started model main.stg_order_items
+11:41:37.637762 [debug]: Started rendering model main.stg_order_items
+11:41:37.637772 [info ]: Started model main.dim_products
+11:41:37.637778 [debug]: Started rendering model main.dim_products
+11:41:37.637787 [info ]: Started model main.stg_products
+11:41:37.637797 [debug]: Started rendering model main.stg_products
+11:41:37.637805 [info ]: Started model main.dim_customers
+11:41:37.637812 [debug]: Started rendering model main.dim_customers
+11:41:37.637821 [info ]: Started model main.stg_customers
+11:41:37.637833 [debug]: Started rendering model main.stg_customers
+11:41:37.637888 [info ]: Finished loading project [  0.03s]
+11:41:37.643250 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:41:37.643894 [debug]: Finished rendering [  0.01s] model main.dim_products [success]
+11:41:37.643977 [info ]: Started analyzing (7 nodes)
+11:41:37.644008 [debug]: Started analyzing model main.dim_products
+11:41:37.644012 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:41:37.644214 [debug]: Finished rendering [  0.01s] model main.dim_customers [success]
+11:41:37.644255 [debug]: Started analyzing model main.dim_customers
+11:41:37.644515 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:41:37.644554 [info ]:  Succeeded [  0.01s] model main.dim_products (table)
+11:41:37.644594 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:41:37.644612 [info ]:  Succeeded [  0.01s] model main.dim_customers (table)
+11:41:37.644854 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:41:37.645105 [debug]: Finished rendering [  0.01s] model main.fct_orders [success]
+11:41:37.645162 [debug]: Started analyzing model main.fct_orders
+11:41:37.645908 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:41:37.646157 [debug]: Finished rendering [  0.01s] model main.stg_order_items [success]
+11:41:37.646221 [debug]: Started analyzing model main.stg_order_items
+11:41:37.646650 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:41:37.646696 [info ]:  Succeeded [  0.01s] model main.stg_order_items (view)
+11:41:37.647044 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:41:37.647523 [debug]: Finished rendering [  0.01s] model main.stg_customers [success]
+11:41:37.647623 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:41:37.647631 [debug]: Started analyzing model main.stg_customers
+11:41:37.647663 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:41:37.647993 [debug]: Finished rendering [  0.01s] model main.stg_products [success]
+11:41:37.648053 [debug]: Started analyzing model main.stg_products
+11:41:37.648108 [debug]: Finished rendering [  0.01s] model main.stg_orders [success]
+11:41:37.648131 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:41:37.648150 [debug]: Started analyzing model main.stg_orders
+11:41:37.648484 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:41:37.648541 [info ]:  Succeeded [  0.01s] model main.stg_products (view)
+11:41:37.648593 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:41:37.648620 [info ]:  Succeeded [  0.01s] model main.stg_orders (view)
+11:41:37.649072 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:41:37.649270 [info ]:  Succeeded [  0.01s] model main.stg_customers (view)
+11:41:37.649292 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:41:37.649340 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:41:37.649365 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:41:37.649391 [info ]:  Succeeded [  0.01s] model main.fct_orders (table)
+11:41:37.656936 [info ]: Started scheduling
+11:41:37.657032 [info ]: Finished scheduling [  0.00s]
+11:41:37.658297 [info ]: Cached model count updated: 7 models (accurate)
+11:54:31.232784 [info ]: Started loading project
+11:54:31.235702 [info ]: Loading profiles.yml
+11:54:31.254575 [info ]: Started parsing
+11:54:31.302884 [info ]: Finished loading project [  0.07s]
+11:54:31.303613 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+11:54:31.306357 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+11:54:31.307469 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+11:54:31.308493 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:54:31.309626 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+11:54:31.317370 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.customers' not found in project. Searched for 'customers'
+  --> models\staging\stg_customers.sql:12:6
+11:54:31.317770 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.order_items' not found in project. Searched for 'order_items'
+  --> models\staging\stg_order_items.sql:8:6
+11:54:31.317793 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.orders' not found in project. Searched for 'orders'
+  --> models\staging\stg_orders.sql:9:6
+11:54:31.317807 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.products' not found in project. Searched for 'products'
+  --> models\staging\stg_products.sql:9:6
+11:54:31.323640 [info ]: Cached model count updated: 7 models (estimate)
+11:54:31.323669 [info ]: Cached model count updated: 7 models (accurate)
+11:54:31.323765 [info ]: Started scheduling
+11:54:31.325794 [info ]: Finished scheduling [  0.00s]
+11:54:31.325825 [debug]: Compilation - 4 nodes selected: {"model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:54:31.327527 [info ]: Started building task graph
+11:54:31.327609 [info ]: Finished building task graph [  0.00s]
+11:54:31.328139 [info ]: Started rendering (4 nodes)
+11:54:31.328166 [info ]: Started model main.stg_products
+11:54:31.328179 [debug]: Started rendering model main.stg_products
+11:54:31.328202 [info ]: Started model main.stg_orders
+11:54:31.328208 [debug]: Started rendering model main.stg_orders
+11:54:31.328217 [info ]: Started model main.stg_order_items
+11:54:31.328228 [debug]: Started rendering model main.stg_order_items
+11:54:31.328238 [info ]: Started model main.stg_customers
+11:54:31.328245 [debug]: Started rendering model main.stg_customers
+11:54:31.328316 [info ]: Finished parsing [  0.07s]
+11:54:31.332037 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders
+(in models\staging\stg_orders.sql:9:6)
+  --> models\staging\stg_orders.sql:9:6
+11:54:31.333454 [info ]: Started analyzing (4 nodes)
+11:54:31.333483 [debug]: Started analyzing model main.stg_orders
+11:54:31.334266 [debug]: Finished analyzing [  0.00s] model main.stg_orders [skipped]
+11:54:31.334308 [info ]:     Failed [  0.00s] model main.stg_orders (view)
+11:54:31.334392 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: products
+(in models\staging\stg_products.sql:9:6)
+  --> models\staging\stg_products.sql:9:6
+11:54:31.334460 [debug]: Started analyzing model main.stg_products
+11:54:31.334462 [debug]: Finished rendering [  0.01s] model main.stg_orders [error]
+11:54:31.334533 [debug]: Finished analyzing [  0.00s] model main.stg_products [skipped]
+11:54:31.334555 [info ]:     Failed [  0.01s] model main.stg_products (view)
+11:54:31.334614 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: customers
+(in models\staging\stg_customers.sql:12:6)
+  --> models\staging\stg_customers.sql:12:6
+11:54:31.334670 [debug]: Started analyzing model main.stg_customers
+11:54:31.334694 [debug]: Finished analyzing [  0.00s] model main.stg_customers [skipped]
+11:54:31.334693 [debug]: Finished rendering [  0.01s] model main.stg_products [error]
+11:54:31.334712 [info ]:     Failed [  0.01s] model main.stg_customers (view)
+11:54:31.334760 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: order_items
+(in models\staging\stg_order_items.sql:8:6)
+  --> models\staging\stg_order_items.sql:8:6
+11:54:31.334799 [debug]: Started analyzing model main.stg_order_items
+11:54:31.334801 [debug]: Finished rendering [  0.01s] model main.stg_customers [error]
+11:54:31.334822 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [skipped]
+11:54:31.334838 [info ]: Finished analyzing [  0.00s] (4 nodes, 4 skipped, 0 errors)
+11:54:31.334858 [info ]:     Failed [  0.01s] model main.stg_order_items (view)
+11:54:31.344531 [info ]: Started scheduling
+11:54:31.344615 [info ]: Finished scheduling [  0.00s]
+11:54:31.345864 [info ]: Cached model count updated: 7 models (accurate)
+11:54:31.345928 [debug]: Finished rendering [  0.02s] model main.stg_order_items [error]
+11:54:31.345947 [info ]: Finished rendering [  0.02s] (4 nodes, 0 skipped, 4 errors)
+11:54:33.015104 [info ]: Started loading project
+11:54:33.016097 [info ]: Loading profiles.yml
+11:54:33.077293 [info ]: Cached model count updated: 7 models (estimate)
+11:54:33.077342 [info ]: Cached model count updated: 7 models (accurate)
+11:54:33.077400 [info ]: Started scheduling
+11:54:33.077572 [info ]: Finished scheduling [  0.00s]
+11:54:33.077618 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:54:33.081085 [info ]: Started building task graph
+11:54:33.081383 [info ]: Finished building task graph [  0.00s]
+11:54:33.083107 [info ]: Started rendering (7 nodes)
+11:54:33.083166 [info ]: Started model main.fct_orders
+11:54:33.083191 [debug]: Started rendering model main.fct_orders
+11:54:33.083251 [info ]: Started model main.stg_orders
+11:54:33.083291 [debug]: Started rendering model main.stg_orders
+11:54:33.083313 [info ]: Started model main.stg_order_items
+11:54:33.083338 [debug]: Started rendering model main.stg_order_items
+11:54:33.083352 [info ]: Finished loading project [  0.07s]
+11:54:33.083362 [info ]: Started model main.dim_products
+11:54:33.083376 [debug]: Started rendering model main.dim_products
+11:54:33.083404 [info ]: Started model main.stg_products
+11:54:33.083426 [debug]: Started rendering model main.stg_products
+11:54:33.083450 [info ]: Started model main.dim_customers
+11:54:33.084144 [debug]: Started rendering model main.dim_customers
+11:54:33.084204 [info ]: Started model main.stg_customers
+11:54:33.084236 [debug]: Started rendering model main.stg_customers
+11:54:33.084838 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: products
+(in models\staging\stg_products.sql:9:6)
+  --> models\staging\stg_products.sql:9:6
+11:54:33.084981 [info ]: Started analyzing (7 nodes)
+11:54:33.085014 [debug]: Started analyzing model main.stg_products
+11:54:33.085050 [debug]: Finished analyzing [  0.00s] model main.stg_products [skipped]
+11:54:33.085098 [info ]:     Failed [  0.00s] model main.stg_products (view)
+11:54:33.085170 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders
+(in models\staging\stg_orders.sql:9:6)
+  --> models\staging\stg_orders.sql:9:6
+11:54:33.085228 [debug]: Started analyzing model main.stg_orders
+11:54:33.085258 [debug]: Finished analyzing [  0.00s] model main.stg_orders [skipped]
+11:54:33.085285 [info ]:     Failed [  0.00s] model main.stg_orders (view)
+11:54:33.085342 [debug]: Finished rendering [  0.00s] model main.stg_orders [error]
+11:54:33.085339 [debug]: Finished rendering [  0.00s] model main.stg_products [error]
+11:54:33.085814 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: order_items
+(in models\staging\stg_order_items.sql:8:6)
+  --> models\staging\stg_order_items.sql:8:6
+11:54:33.085914 [debug]: Started analyzing model main.stg_order_items
+11:54:33.085963 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [skipped]
+11:54:33.085994 [info ]:     Failed [  0.00s] model main.stg_order_items (view)
+11:54:33.086017 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:54:33.086022 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:54:33.086072 [debug]: Finished rendering [  0.00s] model main.stg_order_items [error]
+11:54:33.086082 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:54:33.086154 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+11:54:33.086194 [debug]: Started analyzing model main.dim_products
+11:54:33.086235 [debug]: Finished rendering [  0.00s] model main.fct_orders [success]
+11:54:33.086258 [debug]: Started analyzing model main.fct_orders
+11:54:33.086285 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+11:54:33.086304 [debug]: Started analyzing model main.dim_customers
+11:54:33.086803 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:54:33.086844 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+11:54:33.086899 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:54:33.086914 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+11:54:33.086985 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: customers
+(in models\staging\stg_customers.sql:12:6)
+  --> models\staging\stg_customers.sql:12:6
+11:54:33.087061 [debug]: Started analyzing model main.stg_customers
+11:54:33.087096 [debug]: Finished analyzing [  0.00s] model main.stg_customers [skipped]
+11:54:33.087117 [info ]:     Failed [  0.00s] model main.stg_customers (view)
+11:54:33.087209 [debug]: Finished rendering [  0.00s] model main.stg_customers [error]
+11:54:33.087227 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 4 errors)
+11:54:33.089994 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:54:33.090076 [info ]: Finished analyzing [  0.01s] (7 nodes, 4 skipped, 0 errors)
+11:54:33.090105 [info ]:  Succeeded [  0.01s] model main.fct_orders (table)
+11:54:33.098368 [info ]: Started scheduling
+11:54:33.098486 [info ]: Finished scheduling [  0.00s]
+11:54:33.100788 [info ]: Cached model count updated: 7 models (accurate)
+11:54:41.598081 [info ]: Started loading project
+11:54:41.599044 [info ]: Loading profiles.yml
+11:54:41.616582 [info ]: Started parsing
+11:54:41.665727 [info ]: Finished loading project [  0.07s]
+11:54:41.668134 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+11:54:41.672566 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+11:54:41.673674 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+11:54:41.674794 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:54:41.676357 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+11:54:41.683232 [info ]: Finished parsing [  0.07s]
+11:54:41.686010 [info ]: Cached model count updated: 7 models (estimate)
+11:54:41.686049 [info ]: Cached model count updated: 7 models (accurate)
+11:54:41.686582 [info ]: Started scheduling
+11:54:41.686861 [info ]: Finished scheduling [  0.00s]
+11:54:41.686899 [debug]: Compilation - 4 nodes selected: {"model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:54:41.689947 [info ]: Started building task graph
+11:54:41.690202 [info ]: Finished building task graph [  0.00s]
+11:54:41.690786 [info ]: Started rendering (4 nodes)
+11:54:41.690822 [info ]: Started model main.stg_products
+11:54:41.690835 [debug]: Started rendering model main.stg_products
+11:54:41.690865 [info ]: Started model main.stg_orders
+11:54:41.690873 [debug]: Started rendering model main.stg_orders
+11:54:41.690886 [info ]: Started model main.stg_order_items
+11:54:41.690894 [debug]: Started rendering model main.stg_order_items
+11:54:41.690905 [info ]: Started model main.stg_customers
+11:54:41.690912 [debug]: Started rendering model main.stg_customers
+11:54:41.698347 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:54:41.698454 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:54:41.698508 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:54:41.698584 [debug]: Finished rendering [  0.01s] model main.stg_order_items [success]
+11:54:41.698641 [info ]: Started analyzing (4 nodes)
+11:54:41.698661 [debug]: Started analyzing model main.stg_order_items
+11:54:41.698703 [debug]: Finished rendering [  0.01s] model main.stg_customers [success]
+11:54:41.698739 [debug]: Started analyzing model main.stg_customers
+11:54:41.698766 [debug]: Finished rendering [  0.01s] model main.stg_products [success]
+11:54:41.698793 [debug]: Started analyzing model main.stg_products
+11:54:41.699005 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:54:41.699206 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:54:41.699265 [info ]:  Succeeded [  0.01s] model main.stg_products (view)
+11:54:41.699321 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:54:41.699368 [info ]:  Succeeded [  0.01s] model main.stg_order_items (view)
+11:54:41.699410 [debug]: Finished rendering [  0.01s] model main.stg_orders [success]
+11:54:41.699436 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+11:54:41.699464 [debug]: Started analyzing model main.stg_orders
+11:54:41.699811 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:54:41.699841 [info ]:  Succeeded [  0.01s] model main.stg_orders (view)
+11:54:41.700008 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:54:41.700127 [info ]:  Succeeded [  0.01s] model main.stg_customers (view)
+11:54:41.700169 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:54:41.700198 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+11:54:41.705272 [info ]: Started scheduling
+11:54:41.705530 [info ]: Finished scheduling [  0.00s]
+11:54:41.708005 [info ]: Cached model count updated: 7 models (accurate)
+11:54:43.393974 [info ]: Started loading project
+11:54:43.394901 [info ]: Loading profiles.yml
+11:54:43.435968 [info ]: Cached model count updated: 7 models (estimate)
+11:54:43.436004 [info ]: Cached model count updated: 7 models (accurate)
+11:54:43.436065 [info ]: Started scheduling
+11:54:43.436217 [info ]: Finished scheduling [  0.00s]
+11:54:43.436253 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:54:43.439432 [info ]: Started building task graph
+11:54:43.439569 [info ]: Finished building task graph [  0.00s]
+11:54:43.440183 [info ]: Started rendering (7 nodes)
+11:54:43.440224 [info ]: Started model main.fct_orders
+11:54:43.440241 [debug]: Started rendering model main.fct_orders
+11:54:43.440298 [info ]: Started model main.stg_orders
+11:54:43.440310 [debug]: Started rendering model main.stg_orders
+11:54:43.440329 [info ]: Started model main.stg_order_items
+11:54:43.440340 [debug]: Started rendering model main.stg_order_items
+11:54:43.440356 [info ]: Started model main.dim_products
+11:54:43.440357 [info ]: Finished loading project [  0.05s]
+11:54:43.440370 [debug]: Started rendering model main.dim_products
+11:54:43.440389 [info ]: Started model main.stg_products
+11:54:43.440400 [debug]: Started rendering model main.stg_products
+11:54:43.440418 [info ]: Started model main.dim_customers
+11:54:43.440430 [debug]: Started rendering model main.dim_customers
+11:54:43.440447 [info ]: Started model main.stg_customers
+11:54:43.440459 [debug]: Started rendering model main.stg_customers
+11:54:43.441077 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:54:43.441077 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:54:43.441080 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:54:43.441098 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:54:43.441210 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:54:43.441295 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:54:43.441301 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:54:43.441355 [info ]: Started analyzing (7 nodes)
+11:54:43.441388 [debug]: Started analyzing model main.stg_products
+11:54:43.441436 [debug]: Finished rendering [  0.00s] model main.fct_orders [success]
+11:54:43.441466 [debug]: Started analyzing model main.fct_orders
+11:54:43.441499 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+11:54:43.441521 [debug]: Started analyzing model main.dim_products
+11:54:43.441642 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:54:43.441642 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:54:43.441679 [debug]: Started analyzing model main.stg_order_items
+11:54:43.441705 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+11:54:43.441723 [debug]: Started analyzing model main.dim_customers
+11:54:43.441755 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:54:43.441780 [debug]: Started analyzing model main.stg_orders
+11:54:43.441805 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:54:43.441827 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:54:43.441844 [debug]: Started analyzing model main.stg_customers
+11:54:43.441870 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:54:43.441895 [info ]:  Succeeded [-------] model main.stg_products (view)
+11:54:43.441938 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:54:43.441954 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+11:54:43.441988 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:54:43.442007 [info ]:  Succeeded [  0.00s] model main.stg_order_items (view)
+11:54:43.442031 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:54:43.442044 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+11:54:43.442072 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:54:43.442095 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:54:43.443329 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:54:43.443566 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+11:54:43.443587 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:54:43.445004 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:54:43.445052 [info ]: Finished analyzing [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:54:43.445068 [info ]:  Succeeded [  0.00s] model main.fct_orders (table)
+11:54:43.450936 [info ]: Started scheduling
+11:54:43.451008 [info ]: Finished scheduling [  0.00s]
+11:54:43.452033 [info ]: Cached model count updated: 7 models (accurate)
+11:56:13.509650 [info ]: Started loading project
+11:56:13.510580 [info ]: Loading profiles.yml
+11:56:13.525860 [info ]: Started parsing
+11:56:13.593114 [info ]: Finished loading project [  0.08s]
+11:56:13.593567 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+11:56:13.596565 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+11:56:13.598720 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:56:13.600680 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:56:13.610201 [info ]: Finished parsing [  0.08s]
+11:56:13.612944 [info ]: Cached model count updated: 7 models (estimate)
+11:56:13.612969 [info ]: Cached model count updated: 7 models (accurate)
+11:56:13.613035 [info ]: Started scheduling
+11:56:13.613289 [info ]: Finished scheduling [  0.00s]
+11:56:13.613331 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:56:13.615859 [info ]: Started building task graph
+11:56:13.616074 [info ]: Finished building task graph [  0.00s]
+11:56:13.616696 [info ]: Started rendering (7 nodes)
+11:56:13.616729 [info ]: Started model main.fct_orders
+11:56:13.616741 [debug]: Started rendering model main.fct_orders
+11:56:13.616768 [info ]: Started model main.stg_orders
+11:56:13.616778 [debug]: Started rendering model main.stg_orders
+11:56:13.616792 [info ]: Started model main.stg_order_items
+11:56:13.616801 [debug]: Started rendering model main.stg_order_items
+11:56:13.616813 [info ]: Started model main.dim_products
+11:56:13.616820 [debug]: Started rendering model main.dim_products
+11:56:13.616831 [info ]: Started model main.stg_products
+11:56:13.616839 [debug]: Started rendering model main.stg_products
+11:56:13.616851 [info ]: Started model main.dim_customers
+11:56:13.616862 [debug]: Started rendering model main.dim_customers
+11:56:13.616886 [info ]: Started model main.stg_customers
+11:56:13.616900 [debug]: Started rendering model main.stg_customers
+11:56:13.617988 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:56:13.618140 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:56:13.618224 [info ]: Started analyzing (7 nodes)
+11:56:13.618248 [debug]: Started analyzing model main.stg_orders
+11:56:13.618392 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:56:13.618399 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:56:13.618520 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:56:13.618580 [debug]: Started analyzing model main.stg_order_items
+11:56:13.618623 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:56:13.618650 [debug]: Started analyzing model main.stg_products
+11:56:13.618849 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:56:13.618904 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:56:13.619025 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:56:13.619065 [info ]:  Succeeded [  0.00s] model main.stg_order_items (view)
+11:56:13.619085 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:56:13.619105 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:56:13.619122 [info ]:  Succeeded [  0.00s] model main.stg_products (view)
+11:56:13.619173 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:56:13.619210 [debug]: Started analyzing model main.stg_customers
+11:56:13.620419 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:56:13.620647 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+11:56:13.620681 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:56:13.622235 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:56:13.622212 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:56:13.622517 [debug]: Finished rendering [  0.01s] model main.fct_orders [success]
+11:56:13.622586 [debug]: Started analyzing model main.fct_orders
+11:56:13.622652 [debug]: Finished rendering [  0.01s] model main.dim_customers [success]
+11:56:13.622683 [debug]: Started analyzing model main.dim_customers
+11:56:13.623058 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:56:13.623109 [info ]:  Succeeded [  0.01s] model main.dim_customers (table)
+11:56:13.623316 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:56:13.623535 [debug]: Finished rendering [  0.01s] model main.dim_products [success]
+11:56:13.623568 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:56:13.623592 [debug]: Started analyzing model main.dim_products
+11:56:13.623876 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:56:13.623910 [info ]:  Succeeded [  0.01s] model main.dim_products (table)
+11:56:13.626028 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:56:13.626081 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:56:13.626099 [info ]:  Succeeded [  0.01s] model main.fct_orders (table)
+11:56:13.631213 [info ]: Started scheduling
+11:56:13.631331 [info ]: Finished scheduling [  0.00s]
+11:56:13.633739 [info ]: Cached model count updated: 7 models (accurate)
+11:56:15.306366 [info ]: Started loading project
+11:56:15.307405 [info ]: Loading profiles.yml
+11:56:15.350205 [info ]: Cached model count updated: 7 models (estimate)
+11:56:15.350238 [info ]: Cached model count updated: 7 models (accurate)
+11:56:15.350285 [info ]: Started scheduling
+11:56:15.350428 [info ]: Finished scheduling [  0.00s]
+11:56:15.350453 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:56:15.351977 [info ]: Started building task graph
+11:56:15.352080 [info ]: Finished building task graph [  0.00s]
+11:56:15.352623 [info ]: Started rendering (7 nodes)
+11:56:15.352658 [info ]: Started model main.fct_orders
+11:56:15.352670 [debug]: Started rendering model main.fct_orders
+11:56:15.352703 [info ]: Started model main.stg_orders
+11:56:15.352743 [debug]: Started rendering model main.stg_orders
+11:56:15.352759 [info ]: Started model main.stg_order_items
+11:56:15.352769 [debug]: Started rendering model main.stg_order_items
+11:56:15.352784 [info ]: Started model main.dim_products
+11:56:15.352786 [info ]: Finished loading project [  0.05s]
+11:56:15.352793 [debug]: Started rendering model main.dim_products
+11:56:15.352810 [info ]: Started model main.stg_products
+11:56:15.352832 [debug]: Started rendering model main.stg_products
+11:56:15.352852 [info ]: Started model main.dim_customers
+11:56:15.352864 [debug]: Started rendering model main.dim_customers
+11:56:15.352879 [info ]: Started model main.stg_customers
+11:56:15.352894 [debug]: Started rendering model main.stg_customers
+11:56:15.353575 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:56:15.353575 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:56:15.353575 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:56:15.353713 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:56:15.353724 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:56:15.353778 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:56:15.353840 [info ]: Started analyzing (7 nodes)
+11:56:15.353893 [debug]: Started analyzing model main.stg_order_items
+11:56:15.353906 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:56:15.353932 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:56:15.353954 [debug]: Started analyzing model main.stg_orders
+11:56:15.354001 [debug]: Finished rendering [  0.00s] model main.fct_orders [success]
+11:56:15.354027 [debug]: Started analyzing model main.fct_orders
+11:56:15.354063 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+11:56:15.354082 [debug]: Started analyzing model main.dim_products
+11:56:15.354104 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:56:15.354121 [debug]: Started analyzing model main.stg_customers
+11:56:15.354154 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:56:15.354322 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+11:56:15.354385 [debug]: Started analyzing model main.dim_customers
+11:56:15.354436 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:56:15.354464 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:56:15.354508 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:56:15.354548 [info ]:  Succeeded [-------] model main.stg_order_items (view)
+11:56:15.354582 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:56:15.354599 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+11:56:15.354658 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:56:15.354685 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:56:15.354707 [debug]: Started analyzing model main.stg_products
+11:56:15.354745 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:56:15.354774 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+11:56:15.355027 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:56:15.355094 [info ]:  Succeeded [  0.00s] model main.stg_products (view)
+11:56:15.355590 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:56:15.355768 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+11:56:15.355799 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:56:15.357190 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:56:15.357254 [info ]: Finished analyzing [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:56:15.357285 [info ]:  Succeeded [  0.00s] model main.fct_orders (table)
+11:56:15.366132 [info ]: Started scheduling
+11:56:15.366278 [info ]: Finished scheduling [  0.00s]
+11:56:15.367642 [info ]: Cached model count updated: 7 models (accurate)
+11:56:25.061559 [info ]: Started loading project
+11:56:25.062526 [info ]: Loading profiles.yml
+11:56:25.080995 [info ]: Started parsing
+11:56:25.164684 [info ]: Finished loading project [  0.10s]
+11:56:25.165963 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+11:56:25.169081 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+11:56:25.170996 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:56:25.172229 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:56:25.178522 [info ]: Finished parsing [  0.10s]
+11:56:25.180999 [info ]: Cached model count updated: 7 models (estimate)
+11:56:25.181024 [info ]: Cached model count updated: 7 models (accurate)
+11:56:25.181067 [info ]: Started scheduling
+11:56:25.181233 [info ]: Finished scheduling [  0.00s]
+11:56:25.181252 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:56:25.182266 [info ]: Started building task graph
+11:56:25.182353 [info ]: Finished building task graph [  0.00s]
+11:56:25.182768 [info ]: Started rendering (7 nodes)
+11:56:25.182793 [info ]: Started model main.fct_orders
+11:56:25.182805 [debug]: Started rendering model main.fct_orders
+11:56:25.182827 [info ]: Started model main.stg_orders
+11:56:25.182835 [debug]: Started rendering model main.stg_orders
+11:56:25.182845 [info ]: Started model main.stg_order_items
+11:56:25.182850 [debug]: Started rendering model main.stg_order_items
+11:56:25.182858 [info ]: Started model main.dim_products
+11:56:25.182864 [debug]: Started rendering model main.dim_products
+11:56:25.182873 [info ]: Started model main.stg_products
+11:56:25.182879 [debug]: Started rendering model main.stg_products
+11:56:25.182892 [info ]: Started model main.dim_customers
+11:56:25.182901 [debug]: Started rendering model main.dim_customers
+11:56:25.182924 [info ]: Started model main.stg_customers
+11:56:25.182930 [debug]: Started rendering model main.stg_customers
+11:56:25.183631 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:56:25.183676 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:56:25.183767 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:56:25.183781 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:56:25.183851 [info ]: Started analyzing (7 nodes)
+11:56:25.183867 [debug]: Started analyzing model main.stg_order_items
+11:56:25.183914 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:56:25.183994 [debug]: Started analyzing model main.stg_customers
+11:56:25.184001 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:56:25.184032 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:56:25.184053 [debug]: Started analyzing model main.stg_orders
+11:56:25.184079 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:56:25.184096 [debug]: Started analyzing model main.stg_products
+11:56:25.184319 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:56:25.184359 [info ]:  Succeeded [-------] model main.stg_order_items (view)
+11:56:25.184400 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:56:25.184416 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:56:25.184444 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:56:25.184465 [info ]:  Succeeded [  0.00s] model main.stg_products (view)
+11:56:25.185475 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:56:25.185719 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+11:56:25.185746 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:56:25.189521 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:56:25.189552 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:56:25.189861 [debug]: Finished rendering [  0.01s] model main.dim_customers [success]
+11:56:25.189883 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:56:25.189935 [debug]: Started analyzing model main.dim_customers
+11:56:25.189988 [debug]: Finished rendering [  0.01s] model main.dim_products [success]
+11:56:25.190020 [debug]: Started analyzing model main.dim_products
+11:56:25.190083 [debug]: Finished rendering [  0.01s] model main.fct_orders [success]
+11:56:25.190115 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:56:25.190138 [debug]: Started analyzing model main.fct_orders
+11:56:25.190411 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:56:25.190471 [info ]:  Succeeded [  0.01s] model main.dim_products (table)
+11:56:25.190506 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:56:25.190521 [info ]:  Succeeded [  0.01s] model main.dim_customers (table)
+11:56:25.193461 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:56:25.193513 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:56:25.193539 [info ]:  Succeeded [  0.01s] model main.fct_orders (table)
+11:56:25.198666 [info ]: Started scheduling
+11:56:25.198743 [info ]: Finished scheduling [  0.00s]
+11:56:25.199845 [info ]: Cached model count updated: 7 models (accurate)
+11:56:26.832280 [info ]: Started loading project
+11:56:26.833143 [info ]: Loading profiles.yml
+11:56:26.876889 [info ]: Cached model count updated: 7 models (estimate)
+11:56:26.876923 [info ]: Cached model count updated: 7 models (accurate)
+11:56:26.876976 [info ]: Started scheduling
+11:56:26.877091 [info ]: Finished scheduling [  0.00s]
+11:56:26.877115 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:56:26.878705 [info ]: Started building task graph
+11:56:26.878841 [info ]: Finished building task graph [  0.00s]
+11:56:26.879299 [info ]: Started rendering (7 nodes)
+11:56:26.879329 [info ]: Started model main.fct_orders
+11:56:26.879341 [debug]: Started rendering model main.fct_orders
+11:56:26.879370 [info ]: Started model main.stg_orders
+11:56:26.879382 [debug]: Started rendering model main.stg_orders
+11:56:26.879391 [info ]: Started model main.stg_order_items
+11:56:26.879399 [debug]: Started rendering model main.stg_order_items
+11:56:26.879410 [info ]: Started model main.dim_products
+11:56:26.879419 [debug]: Started rendering model main.dim_products
+11:56:26.879430 [info ]: Started model main.stg_products
+11:56:26.879436 [debug]: Started rendering model main.stg_products
+11:56:26.879447 [info ]: Started model main.dim_customers
+11:56:26.879453 [debug]: Started rendering model main.dim_customers
+11:56:26.879490 [info ]: Started model main.stg_customers
+11:56:26.879487 [info ]: Finished loading project [  0.05s]
+11:56:26.879497 [debug]: Started rendering model main.stg_customers
+11:56:26.880279 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:56:26.880279 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:56:26.880289 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:56:26.880301 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:56:26.880343 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:56:26.880343 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:56:26.880350 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:56:26.880427 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:56:26.880498 [info ]: Started analyzing (7 nodes)
+11:56:26.880516 [debug]: Started analyzing model main.stg_products
+11:56:26.880562 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:56:26.880619 [debug]: Started analyzing model main.stg_order_items
+11:56:26.880654 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+11:56:26.880681 [debug]: Started analyzing model main.dim_products
+11:56:26.880711 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:56:26.880735 [debug]: Started analyzing model main.stg_customers
+11:56:26.880776 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:56:26.880806 [debug]: Started analyzing model main.stg_orders
+11:56:26.880836 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+11:56:26.880855 [debug]: Started analyzing model main.dim_customers
+11:56:26.880884 [debug]: Finished rendering [  0.00s] model main.fct_orders [success]
+11:56:26.880904 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:56:26.880928 [debug]: Started analyzing model main.fct_orders
+11:56:26.880963 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:56:26.880988 [info ]:  Succeeded [-------] model main.stg_products (view)
+11:56:26.881027 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:56:26.881048 [info ]:  Succeeded [  0.00s] model main.stg_order_items (view)
+11:56:26.881076 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:56:26.881100 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+11:56:26.881127 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:56:26.881141 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:56:26.881175 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:56:26.881201 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+11:56:26.881797 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:56:26.881975 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+11:56:26.882011 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:56:26.883518 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:56:26.883603 [info ]: Finished analyzing [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:56:26.883623 [info ]:  Succeeded [  0.00s] model main.fct_orders (table)
+11:56:26.889618 [info ]: Started scheduling
+11:56:26.889703 [info ]: Finished scheduling [  0.00s]
+11:56:26.890517 [info ]: Cached model count updated: 7 models (accurate)
+11:56:46.376407 [info ]: Started loading project
+11:56:46.377360 [info ]: Loading profiles.yml
+11:56:46.403589 [info ]: Started parsing
+11:56:46.487242 [info ]: Finished loading project [  0.11s]
+11:56:46.491099 [error]: [SerializationError (dbt1013)]: YAML error: could not find expected ':' at line 31 column 1, while scanning a simple key at line 30 column 1
+  --> models\marts\marts.yml:31:1
+11:56:46.493721 [debug]: Finished parsing models\marts\marts.yml [  0.01s]
+11:56:46.494900 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+11:56:46.496134 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:56:46.497681 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:56:46.507335 [info ]: Finished parsing [  0.10s]
+11:56:46.510557 [info ]: Cached model count updated: 7 models (estimate)
+11:56:46.510617 [info ]: Cached model count updated: 7 models (accurate)
+11:56:46.510678 [info ]: Started scheduling
+11:56:46.510863 [info ]: Finished scheduling [  0.00s]
+11:56:46.510890 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:56:46.512879 [info ]: Started building task graph
+11:56:46.513112 [info ]: Finished building task graph [  0.00s]
+11:56:46.513978 [info ]: Started rendering (7 nodes)
+11:56:46.514041 [info ]: Started model main.fct_orders
+11:56:46.514064 [debug]: Started rendering model main.fct_orders
+11:56:46.514122 [info ]: Started model main.stg_orders
+11:56:46.514139 [debug]: Started rendering model main.stg_orders
+11:56:46.514162 [info ]: Started model main.stg_order_items
+11:56:46.514178 [debug]: Started rendering model main.stg_order_items
+11:56:46.514198 [info ]: Started model main.dim_products
+11:56:46.514215 [debug]: Started rendering model main.dim_products
+11:56:46.514241 [info ]: Started model main.stg_products
+11:56:46.514261 [debug]: Started rendering model main.stg_products
+11:56:46.514288 [info ]: Started model main.dim_customers
+11:56:46.514309 [debug]: Started rendering model main.dim_customers
+11:56:46.514334 [info ]: Started model main.stg_customers
+11:56:46.514357 [debug]: Started rendering model main.stg_customers
+11:56:46.515619 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:56:46.516357 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:56:46.516459 [info ]: Started analyzing (7 nodes)
+11:56:46.516468 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:56:46.516490 [debug]: Started analyzing model main.stg_order_items
+11:56:46.516587 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:56:46.516633 [debug]: Started analyzing model main.stg_orders
+11:56:46.516994 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:56:46.517054 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:56:46.517100 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:56:46.517117 [info ]:  Succeeded [  0.00s] model main.stg_order_items (view)
+11:56:46.517135 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:56:46.517266 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:56:46.517326 [debug]: Started analyzing model main.stg_products
+11:56:46.517838 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:56:46.517914 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:56:46.517906 [info ]:  Succeeded [  0.00s] model main.stg_products (view)
+11:56:46.518019 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:56:46.518068 [debug]: Started analyzing model main.stg_customers
+11:56:46.519946 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:56:46.520203 [info ]:  Succeeded [  0.01s] model main.stg_customers (view)
+11:56:46.520312 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:56:46.520855 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:56:46.521138 [debug]: Finished rendering [  0.01s] model main.fct_orders [success]
+11:56:46.521206 [debug]: Started analyzing model main.fct_orders
+11:56:46.524046 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:56:46.524050 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:56:46.524341 [debug]: Finished rendering [  0.01s] model main.dim_products [success]
+11:56:46.524408 [debug]: Started analyzing model main.dim_products
+11:56:46.524470 [debug]: Finished rendering [  0.01s] model main.dim_customers [success]
+11:56:46.524490 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:56:46.524510 [debug]: Started analyzing model main.dim_customers
+11:56:46.524825 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:56:46.524870 [info ]:  Succeeded [  0.01s] model main.dim_customers (table)
+11:56:46.524910 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:56:46.524926 [info ]:  Succeeded [  0.01s] model main.dim_products (table)
+11:56:46.524964 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:56:46.524985 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:56:46.525000 [info ]:  Succeeded [  0.01s] model main.fct_orders (table)
+11:56:46.532637 [info ]: Started scheduling
+11:56:46.532733 [info ]: Finished scheduling [  0.00s]
+11:56:46.534130 [info ]: Cached model count updated: 7 models (accurate)
+11:56:48.290876 [info ]: Started loading project
+11:56:48.292116 [info ]: Loading profiles.yml
+11:56:48.341999 [info ]: Cached model count updated: 7 models (estimate)
+11:56:48.342048 [info ]: Cached model count updated: 7 models (accurate)
+11:56:48.342131 [info ]: Started scheduling
+11:56:48.342339 [info ]: Finished scheduling [  0.00s]
+11:56:48.342379 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:56:48.344019 [info ]: Started building task graph
+11:56:48.344147 [info ]: Finished building task graph [  0.00s]
+11:56:48.344926 [info ]: Started rendering (7 nodes)
+11:56:48.344972 [info ]: Started model main.fct_orders
+11:56:48.344990 [debug]: Started rendering model main.fct_orders
+11:56:48.345026 [info ]: Started model main.stg_orders
+11:56:48.345043 [debug]: Started rendering model main.stg_orders
+11:56:48.345064 [info ]: Started model main.stg_order_items
+11:56:48.345078 [debug]: Started rendering model main.stg_order_items
+11:56:48.345082 [info ]: Finished loading project [  0.05s]
+11:56:48.345101 [info ]: Started model main.dim_products
+11:56:48.345114 [debug]: Started rendering model main.dim_products
+11:56:48.345136 [info ]: Started model main.stg_products
+11:56:48.345152 [debug]: Started rendering model main.stg_products
+11:56:48.345174 [info ]: Started model main.dim_customers
+11:56:48.345188 [debug]: Started rendering model main.dim_customers
+11:56:48.345287 [info ]: Started model main.stg_customers
+11:56:48.345309 [debug]: Started rendering model main.stg_customers
+11:56:48.345853 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:56:48.345853 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:56:48.346001 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:56:48.346033 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:56:48.346047 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:56:48.346273 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:56:48.346371 [info ]: Started analyzing (7 nodes)
+11:56:48.346408 [debug]: Started analyzing model main.stg_orders
+11:56:48.346467 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:56:48.346498 [debug]: Started analyzing model main.stg_products
+11:56:48.346529 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:56:48.346553 [debug]: Started analyzing model main.stg_customers
+11:56:48.346574 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:56:48.346585 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+11:56:48.346610 [debug]: Started analyzing model main.dim_customers
+11:56:48.346670 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+11:56:48.346686 [debug]: Started analyzing model main.dim_products
+11:56:48.346715 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:56:48.346733 [debug]: Started analyzing model main.stg_order_items
+11:56:48.346746 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:56:48.346853 [debug]: Finished rendering [  0.00s] model main.fct_orders [success]
+11:56:48.346892 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:56:48.346922 [debug]: Started analyzing model main.fct_orders
+11:56:48.346960 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:56:48.346982 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:56:48.347029 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:56:48.347044 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+11:56:48.347071 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:56:48.347086 [info ]:  Succeeded [  0.00s] model main.stg_products (view)
+11:56:48.347109 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:56:48.347127 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+11:56:48.347155 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:56:48.347171 [info ]:  Succeeded [  0.00s] model main.stg_order_items (view)
+11:56:48.348059 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:56:48.348254 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+11:56:48.348281 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:56:48.350365 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:56:48.350441 [info ]: Finished analyzing [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:56:48.350472 [info ]:  Succeeded [  0.00s] model main.fct_orders (table)
+11:56:48.358819 [info ]: Started scheduling
+11:56:48.358950 [info ]: Finished scheduling [  0.00s]
+11:56:48.360307 [info ]: Cached model count updated: 7 models (accurate)
+11:56:53.854120 [info ]: Started loading project
+11:56:53.855209 [info ]: Loading profiles.yml
+11:56:53.873143 [info ]: Started parsing
+11:56:53.965994 [info ]: Finished loading project [  0.11s]
+11:56:53.967251 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+11:56:53.970921 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+11:56:53.971980 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:56:53.973259 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:56:53.982641 [info ]: Finished parsing [  0.11s]
+11:56:53.986284 [info ]: Cached model count updated: 7 models (estimate)
+11:56:53.986309 [info ]: Cached model count updated: 7 models (accurate)
+11:56:53.986359 [info ]: Started scheduling
+11:56:53.986513 [info ]: Finished scheduling [  0.00s]
+11:56:53.986557 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:56:53.987769 [info ]: Started building task graph
+11:56:53.987911 [info ]: Finished building task graph [  0.00s]
+11:56:53.988420 [info ]: Started rendering (7 nodes)
+11:56:53.988455 [info ]: Started model main.fct_orders
+11:56:53.988469 [debug]: Started rendering model main.fct_orders
+11:56:53.988505 [info ]: Started model main.stg_orders
+11:56:53.988523 [debug]: Started rendering model main.stg_orders
+11:56:53.988541 [info ]: Started model main.stg_order_items
+11:56:53.988555 [debug]: Started rendering model main.stg_order_items
+11:56:53.988571 [info ]: Started model main.dim_products
+11:56:53.988584 [debug]: Started rendering model main.dim_products
+11:56:53.988604 [info ]: Started model main.stg_products
+11:56:53.988614 [debug]: Started rendering model main.stg_products
+11:56:53.988630 [info ]: Started model main.dim_customers
+11:56:53.988640 [debug]: Started rendering model main.dim_customers
+11:56:53.989234 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:56:53.989320 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:56:53.989345 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:56:53.989462 [info ]: Started model main.stg_customers
+11:56:53.989651 [debug]: Started rendering model main.stg_customers
+11:56:53.989756 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:56:53.989823 [info ]: Started analyzing (7 nodes)
+11:56:53.989847 [debug]: Started analyzing model main.stg_orders
+11:56:53.989931 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:56:53.989989 [debug]: Started analyzing model main.stg_order_items
+11:56:53.990123 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:56:53.990477 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:56:53.990794 [debug]: Started analyzing model main.stg_products
+11:56:53.990885 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:56:53.990916 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:56:53.990972 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:56:53.991459 [debug]: Started analyzing model main.stg_customers
+11:56:53.991625 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:56:53.991680 [info ]:  Succeeded [  0.00s] model main.stg_order_items (view)
+11:56:53.991736 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:56:53.991753 [info ]:  Succeeded [  0.00s] model main.stg_products (view)
+11:56:53.993591 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:56:53.993830 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+11:56:53.993968 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:56:53.995502 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:56:53.995513 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:56:53.995562 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:56:53.995836 [debug]: Finished rendering [  0.01s] model main.dim_customers [success]
+11:56:53.995911 [debug]: Started analyzing model main.dim_customers
+11:56:53.995974 [debug]: Finished rendering [  0.01s] model main.dim_products [success]
+11:56:53.996005 [debug]: Started analyzing model main.dim_products
+11:56:53.996043 [debug]: Finished rendering [  0.01s] model main.fct_orders [success]
+11:56:53.996067 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:56:53.996088 [debug]: Started analyzing model main.fct_orders
+11:56:53.996412 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:56:53.996482 [info ]:  Succeeded [  0.01s] model main.dim_products (table)
+11:56:53.996530 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:56:53.996558 [info ]:  Succeeded [  0.01s] model main.dim_customers (table)
+11:56:53.999211 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:56:53.999257 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:56:53.999278 [info ]:  Succeeded [  0.01s] model main.fct_orders (table)
+11:56:54.003986 [info ]: Started scheduling
+11:56:54.004113 [info ]: Finished scheduling [  0.00s]
+11:56:54.006581 [info ]: Cached model count updated: 7 models (accurate)
+11:56:55.684387 [info ]: Started loading project
+11:56:55.685474 [info ]: Loading profiles.yml
+11:56:55.728252 [info ]: Cached model count updated: 7 models (estimate)
+11:56:55.728282 [info ]: Cached model count updated: 7 models (accurate)
+11:56:55.728353 [info ]: Started scheduling
+11:56:55.728477 [info ]: Finished scheduling [  0.00s]
+11:56:55.728503 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:56:55.729794 [info ]: Started building task graph
+11:56:55.729889 [info ]: Finished building task graph [  0.00s]
+11:56:55.730449 [info ]: Started rendering (7 nodes)
+11:56:55.730491 [info ]: Started model main.fct_orders
+11:56:55.730506 [debug]: Started rendering model main.fct_orders
+11:56:55.730535 [info ]: Started model main.stg_orders
+11:56:55.730548 [debug]: Started rendering model main.stg_orders
+11:56:55.730563 [info ]: Started model main.stg_order_items
+11:56:55.730573 [debug]: Started rendering model main.stg_order_items
+11:56:55.730584 [info ]: Started model main.dim_products
+11:56:55.730576 [info ]: Finished loading project [  0.05s]
+11:56:55.730598 [debug]: Started rendering model main.dim_products
+11:56:55.730618 [info ]: Started model main.stg_products
+11:56:55.730636 [debug]: Started rendering model main.stg_products
+11:56:55.730657 [info ]: Started model main.dim_customers
+11:56:55.730673 [debug]: Started rendering model main.dim_customers
+11:56:55.730694 [info ]: Started model main.stg_customers
+11:56:55.730710 [debug]: Started rendering model main.stg_customers
+11:56:55.731320 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:56:55.731333 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:56:55.731348 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:56:55.731360 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:56:55.731356 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:56:55.731404 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:56:55.731480 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:56:55.731532 [info ]: Started analyzing (7 nodes)
+11:56:55.731557 [debug]: Started analyzing model main.stg_order_items
+11:56:55.731562 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:56:55.731594 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:56:55.731617 [debug]: Started analyzing model main.stg_products
+11:56:55.731640 [debug]: Finished rendering [  0.00s] model main.fct_orders [success]
+11:56:55.731657 [debug]: Started analyzing model main.fct_orders
+11:56:55.731685 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:56:55.731703 [debug]: Started analyzing model main.stg_customers
+11:56:55.731745 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:56:55.731761 [debug]: Started analyzing model main.stg_orders
+11:56:55.731789 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+11:56:55.731806 [debug]: Started analyzing model main.dim_customers
+11:56:55.731832 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+11:56:55.731852 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:56:55.731871 [debug]: Started analyzing model main.dim_products
+11:56:55.731991 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:56:55.732026 [info ]:  Succeeded [-------] model main.stg_order_items (view)
+11:56:55.732099 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:56:55.732120 [info ]:  Succeeded [-------] model main.stg_products (view)
+11:56:55.732149 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:56:55.732162 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:56:55.732187 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:56:55.732199 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+11:56:55.732221 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:56:55.732235 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+11:56:55.732869 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:56:55.733045 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+11:56:55.733067 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:56:55.734840 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:56:55.734896 [info ]: Finished analyzing [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:56:55.734917 [info ]:  Succeeded [  0.00s] model main.fct_orders (table)
+11:56:55.741359 [info ]: Started scheduling
+11:56:55.741428 [info ]: Finished scheduling [  0.00s]
+11:56:55.742529 [info ]: Cached model count updated: 7 models (accurate)
+11:56:58.181488 [info ]: Started loading project
+11:56:58.182901 [info ]: Loading profiles.yml
+11:56:58.213146 [info ]: Started parsing
+11:56:58.364778 [info ]: Finished loading project [  0.18s]
+11:56:58.366575 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+11:56:58.371659 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+11:56:58.374599 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+11:56:58.378520 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:56:58.385769 [info ]: Finished parsing [  0.17s]
+11:56:58.393035 [info ]: Cached model count updated: 7 models (estimate)
+11:56:58.393132 [info ]: Cached model count updated: 7 models (accurate)
+11:56:58.393350 [info ]: Started scheduling
+11:56:58.393857 [info ]: Finished scheduling [  0.00s]
+11:56:58.393968 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:56:58.396654 [info ]: Started building task graph
+11:56:58.396838 [info ]: Finished building task graph [  0.00s]
+11:56:58.397373 [info ]: Started rendering (7 nodes)
+11:56:58.397406 [info ]: Started model main.fct_orders
+11:56:58.397421 [debug]: Started rendering model main.fct_orders
+11:56:58.397504 [info ]: Started model main.stg_orders
+11:56:58.397512 [debug]: Started rendering model main.stg_orders
+11:56:58.397524 [info ]: Started model main.stg_order_items
+11:56:58.397540 [debug]: Started rendering model main.stg_order_items
+11:56:58.397551 [info ]: Started model main.dim_products
+11:56:58.397558 [debug]: Started rendering model main.dim_products
+11:56:58.397570 [info ]: Started model main.stg_products
+11:56:58.397587 [debug]: Started rendering model main.stg_products
+11:56:58.397606 [info ]: Started model main.dim_customers
+11:56:58.397618 [debug]: Started rendering model main.dim_customers
+11:56:58.397637 [info ]: Started model main.stg_customers
+11:56:58.397657 [debug]: Started rendering model main.stg_customers
+11:56:58.398208 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:56:58.398324 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:56:58.398382 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:56:58.398409 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:56:58.398438 [info ]: Started analyzing (7 nodes)
+11:56:58.398477 [debug]: Started analyzing model main.stg_products
+11:56:58.398565 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:56:58.398606 [debug]: Started analyzing model main.stg_orders
+11:56:58.398749 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:56:58.398802 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:56:58.398826 [debug]: Started analyzing model main.stg_order_items
+11:56:58.398900 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:56:58.398935 [debug]: Started analyzing model main.stg_customers
+11:56:58.398978 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:56:58.399007 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:56:58.399047 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:56:58.399069 [info ]:  Succeeded [-------] model main.stg_products (view)
+11:56:58.399105 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:56:58.399123 [info ]:  Succeeded [  0.00s] model main.stg_order_items (view)
+11:56:58.400027 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:56:58.400193 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+11:56:58.400213 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:56:58.403423 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:56:58.403422 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:56:58.404103 [debug]: Finished rendering [  0.01s] model main.dim_customers [success]
+11:56:58.404403 [debug]: Started analyzing model main.dim_customers
+11:56:58.404541 [debug]: Finished rendering [  0.01s] model main.dim_products [success]
+11:56:58.404670 [debug]: Started analyzing model main.dim_products
+11:56:58.405227 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:56:58.405542 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:56:58.405594 [info ]:  Succeeded [  0.01s] model main.dim_customers (table)
+11:56:58.406435 [debug]: Finished rendering [  0.01s] model main.fct_orders [success]
+11:56:58.406520 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:56:58.406663 [debug]: Started analyzing model main.fct_orders
+11:56:58.406821 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:56:58.406859 [info ]:  Succeeded [  0.01s] model main.dim_products (table)
+11:56:58.411867 [debug]: Finished analyzing [  0.01s] model main.fct_orders [success]
+11:56:58.412078 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:56:58.412168 [info ]:  Succeeded [  0.01s] model main.fct_orders (table)
+11:56:58.417673 [info ]: Started scheduling
+11:56:58.417761 [info ]: Finished scheduling [  0.00s]
+11:56:58.419170 [info ]: Cached model count updated: 7 models (accurate)
+11:57:00.079420 [info ]: Started loading project
+11:57:00.080298 [info ]: Loading profiles.yml
+11:57:00.125760 [info ]: Cached model count updated: 7 models (estimate)
+11:57:00.125789 [info ]: Cached model count updated: 7 models (accurate)
+11:57:00.125828 [info ]: Started scheduling
+11:57:00.125968 [info ]: Finished scheduling [  0.00s]
+11:57:00.125992 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+11:57:00.127252 [info ]: Started building task graph
+11:57:00.127352 [info ]: Finished building task graph [  0.00s]
+11:57:00.127816 [info ]: Started rendering (7 nodes)
+11:57:00.127846 [info ]: Started model main.fct_orders
+11:57:00.127858 [debug]: Started rendering model main.fct_orders
+11:57:00.127887 [info ]: Started model main.stg_orders
+11:57:00.127894 [debug]: Started rendering model main.stg_orders
+11:57:00.127933 [info ]: Started model main.stg_order_items
+11:57:00.127947 [debug]: Started rendering model main.stg_order_items
+11:57:00.127968 [info ]: Started model main.dim_products
+11:57:00.127970 [info ]: Finished loading project [  0.05s]
+11:57:00.127990 [debug]: Started rendering model main.dim_products
+11:57:00.128012 [info ]: Started model main.stg_products
+11:57:00.128022 [debug]: Started rendering model main.stg_products
+11:57:00.128042 [info ]: Started model main.dim_customers
+11:57:00.128054 [debug]: Started rendering model main.dim_customers
+11:57:00.128070 [info ]: Started model main.stg_customers
+11:57:00.128085 [debug]: Started rendering model main.stg_customers
+11:57:00.128696 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+11:57:00.128696 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+11:57:00.128703 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+11:57:00.128734 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+11:57:00.128734 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+11:57:00.128739 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+11:57:00.128813 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+11:57:00.128877 [info ]: Started analyzing (7 nodes)
+11:57:00.128906 [debug]: Started analyzing model main.stg_order_items
+11:57:00.128956 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+11:57:00.128985 [debug]: Started analyzing model main.dim_products
+11:57:00.129023 [debug]: Finished rendering [  0.00s] model main.fct_orders [success]
+11:57:00.129047 [debug]: Started analyzing model main.fct_orders
+11:57:00.129079 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+11:57:00.129096 [debug]: Started analyzing model main.stg_orders
+11:57:00.129119 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+11:57:00.129138 [debug]: Started analyzing model main.dim_customers
+11:57:00.129166 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+11:57:00.129189 [debug]: Started analyzing model main.stg_products
+11:57:00.129273 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+11:57:00.129396 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+11:57:00.129426 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:57:00.129452 [debug]: Started analyzing model main.stg_customers
+11:57:00.129497 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+11:57:00.129519 [info ]:  Succeeded [-------] model main.dim_products (table)
+11:57:00.129611 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+11:57:00.129642 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+11:57:00.129677 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+11:57:00.129694 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+11:57:00.129723 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+11:57:00.129763 [info ]:  Succeeded [-------] model main.stg_order_items (view)
+11:57:00.129795 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+11:57:00.129819 [info ]:  Succeeded [  0.00s] model main.stg_products (view)
+11:57:00.130646 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+11:57:00.130819 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+11:57:00.130847 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+11:57:00.131872 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+11:57:00.131930 [info ]: Finished analyzing [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:57:00.131942 [info ]:  Succeeded [  0.00s] model main.fct_orders (table)
+11:57:00.138762 [info ]: Started scheduling
+11:57:00.138858 [info ]: Finished scheduling [  0.00s]
+11:57:00.139982 [info ]: Cached model count updated: 7 models (accurate)
+12:00:39.557354 [info ]: Loading profiles.yml
+12:00:39.612522 [info ]: Started loading project
+12:00:39.614025 [info ]: Loading profiles.yml
+12:00:39.627905 [info ]: Started loading project
+12:00:39.628944 [info ]: Loading profiles.yml
+12:00:39.629062 [info ]: Finished loading project [  0.02s]
+12:00:39.635532 [debug]:    Started loading packages
+12:00:39.647571 [debug]:     Loaded [  0.01s] packages
+12:00:39.648410 [info ]: Finished loading project [  0.02s]
+12:00:39.648709 [info ]: Started parsing
+12:00:39.683636 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+12:00:39.684389 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+12:00:39.689438 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+12:00:39.691070 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+12:00:39.692907 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+12:00:39.694212 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+12:00:39.695577 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+12:00:39.696658 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+12:00:39.697832 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+12:00:39.707827 [info ]: Finished parsing [  0.06s]
+12:00:39.709689 [info ]: Cached model count updated: 7 models (estimate)
+12:00:39.709713 [info ]: Cached model count updated: 7 models (accurate)
+12:00:39.709763 [info ]: Started scheduling
+12:00:39.709812 [info ]: Finished scheduling [  0.00s]
+12:00:39.709827 [debug]: Compilation - 0 nodes selected: {}
+12:00:39.709871 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+12:00:39.709889 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+12:00:39.709899 [info ]: Started scheduling
+12:00:39.709969 [info ]: Finished scheduling [  0.00s]
+12:00:39.710044 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "customers" }) and interval: None
+12:00:39.710121 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "orders" }) and interval: None
+12:00:39.710166 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "products" }) and interval: None
+12:00:39.710209 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "order_items" }) and interval: None
+12:00:39.711439 [info ]: Started building task graph
+12:00:39.711477 [info ]: Finished building task graph [  0.00s]
+12:00:39.715208 [info ]: Started scheduling
+12:00:39.715275 [info ]: Finished scheduling [  0.00s]
+12:00:39.718394 [info ]: Cached model count updated: 7 models (accurate)
+12:00:41.366631 [info ]: Started loading project
+12:00:41.368101 [info ]: Loading profiles.yml
+12:00:41.424788 [info ]: Cached model count updated: 7 models (estimate)
+12:00:41.424818 [info ]: Cached model count updated: 7 models (accurate)
+12:00:41.424867 [info ]: Started scheduling
+12:00:41.425014 [info ]: Finished scheduling [  0.00s]
+12:00:41.425035 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+12:00:41.426409 [info ]: Started building task graph
+12:00:41.426542 [info ]: Finished building task graph [  0.00s]
+12:00:41.427110 [info ]: Started rendering (7 nodes)
+12:00:41.427145 [info ]: Started model main.fct_orders
+12:00:41.427159 [debug]: Started rendering model main.fct_orders
+12:00:41.427190 [info ]: Started model main.stg_orders
+12:00:41.427201 [debug]: Started rendering model main.stg_orders
+12:00:41.427212 [info ]: Started model main.stg_order_items
+12:00:41.427219 [debug]: Started rendering model main.stg_order_items
+12:00:41.427230 [info ]: Started model main.dim_products
+12:00:41.427238 [debug]: Started rendering model main.dim_products
+12:00:41.427249 [info ]: Started model main.stg_products
+12:00:41.427263 [debug]: Started rendering model main.stg_products
+12:00:41.427281 [info ]: Started model main.dim_customers
+12:00:41.427291 [debug]: Started rendering model main.dim_customers
+12:00:41.427305 [info ]: Started model main.stg_customers
+12:00:41.427321 [debug]: Started rendering model main.stg_customers
+12:00:41.427313 [info ]: Finished loading project [  0.06s]
+12:00:41.435730 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+12:00:41.435994 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+12:00:41.436215 [debug]: Finished rendering [  0.01s] model main.stg_customers [success]
+12:00:41.436280 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+12:00:41.436303 [info ]: Started analyzing (7 nodes)
+12:00:41.436328 [debug]: Started analyzing model main.stg_customers
+12:00:41.436379 [debug]: Finished rendering [  0.01s] model main.stg_products [success]
+12:00:41.436405 [debug]: Started analyzing model main.stg_products
+12:00:41.436473 [debug]: Finished rendering [  0.01s] model main.fct_orders [success]
+12:00:41.436521 [debug]: Started analyzing model main.fct_orders
+12:00:41.437105 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+12:00:41.437154 [info ]:  Succeeded [  0.01s] model main.stg_products (view)
+12:00:41.437561 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+12:00:41.437776 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+12:00:41.437876 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+12:00:41.438413 [debug]: Finished rendering [  0.01s] model main.dim_products [success]
+12:00:41.438501 [debug]: Started analyzing model main.dim_products
+12:00:41.439100 [debug]: Finished rendering [  0.01s] model main.stg_orders [success]
+12:00:41.439172 [debug]: Started analyzing model main.stg_orders
+12:00:41.439232 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+12:00:41.439254 [info ]:  Succeeded [  0.01s] model main.dim_products (table)
+12:00:41.439297 [debug]: Finished rendering [  0.01s] model main.stg_order_items [success]
+12:00:41.439316 [debug]: Started analyzing model main.stg_order_items
+12:00:41.439599 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+12:00:41.439628 [info ]:  Succeeded [  0.01s] model main.stg_order_items (view)
+12:00:41.439663 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+12:00:41.439677 [info ]:  Succeeded [  0.01s] model main.stg_orders (view)
+12:00:41.440001 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+12:00:41.440263 [debug]: Finished rendering [  0.01s] model main.dim_customers [success]
+12:00:41.440306 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+12:00:41.440340 [debug]: Started analyzing model main.dim_customers
+12:00:41.440864 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+12:00:41.441016 [info ]:  Succeeded [  0.01s] model main.dim_customers (table)
+12:00:41.441103 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+12:00:41.441145 [info ]:  Succeeded [  0.01s] model main.fct_orders (table)
+12:00:41.444292 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+12:00:41.444540 [info ]:  Succeeded [  0.02s] model main.stg_customers (view)
+12:00:41.444578 [debug]: Finished analyzing [  0.01s] model main.stg_customers [success]
+12:00:41.444604 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+12:00:41.452360 [info ]: Started scheduling
+12:00:41.452484 [info ]: Finished scheduling [  0.00s]
+12:00:41.453646 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-06-05T12:01:48.874665Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-05T12:01:48.875130Z | f1566ec9-5b44-4651-9c3a-6d78c3c32dcf ====================
+12:01:48.875215 [info ]: Starting dbt LSP server
+12:01:48.875293 [info ]: Connecting to LSP client on port 8000
+12:01:48.878502 [info ]: Successfully connected to LSP client
+12:01:48.878555 [info ]: Creating LSP service...
+12:01:48.994823 [info ]: Creating LSP server...
+12:01:48.994854 [info ]: Starting LSP server...
+==================== 2026-06-05T12:22:51.127906Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-05T12:22:51.132909Z | a8bb1ad0-0543-4ffd-a594-e302ec2a0cb5 ====================
+12:22:51.134288 [info ]: Starting dbt LSP server
+12:22:51.135683 [info ]: Connecting to LSP client on port 8000
+12:22:51.141133 [info ]: Successfully connected to LSP client
+12:22:51.141188 [info ]: Creating LSP service...
+12:22:51.305774 [info ]: Creating LSP server...
+12:22:51.305803 [info ]: Starting LSP server...
+==================== 2026-06-05T12:24:31.093349Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-05T12:24:31.093917Z | 24d4a297-b03e-433d-b271-281ffd669a8e ====================
+12:24:31.094011 [info ]: Starting dbt LSP server
+12:24:31.094105 [info ]: Connecting to LSP client on port 8000
+12:24:31.104442 [info ]: Successfully connected to LSP client
+12:24:31.105321 [info ]: Creating LSP service...
+12:24:31.282960 [info ]: Creating LSP server...
+12:24:31.282996 [info ]: Starting LSP server...
+12:29:18.971637 [info ]: Loading profiles.yml
+==================== 2026-06-07T03:32:13.119728Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T03:32:13.132512Z | 4e39a3d6-a5b3-4f05-b7a0-0b94208bcb55 ====================
+03:32:13.133639 [info ]: Starting dbt LSP server
+03:32:13.135569 [info ]: Connecting to LSP client on port 8000
+03:32:13.143280 [info ]: Successfully connected to LSP client
+03:32:13.143706 [info ]: Creating LSP service...
+03:32:13.454540 [info ]: Creating LSP server...
+03:32:13.454605 [info ]: Starting LSP server...
+03:34:20.663565 [info ]: Loading profiles.yml
+03:34:20.847740 [info ]: Started loading project
+03:34:20.861680 [info ]: Loading profiles.yml
+03:34:20.909066 [debug]:    Started loading packages
+03:34:20.930307 [debug]:     Loaded [  0.02s] packages
+03:34:20.943667 [info ]: Finished loading project [  0.10s]
+03:34:20.952682 [info ]: Started parsing
+03:34:21.070517 [debug]: Finished parsing models\marts\marts.yml [  0.01s]
+03:34:21.073896 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+03:34:21.124524 [debug]: Finished parsing models\marts\dim_customers.sql [  0.03s]
+03:34:21.126783 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+03:34:21.129699 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+03:34:21.132525 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+03:34:21.135526 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+03:34:21.138352 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+03:34:21.141967 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+03:34:21.180800 [info ]: Finished parsing [  0.23s]
+03:34:21.190001 [info ]: Cached model count updated: 7 models (estimate)
+03:34:21.190043 [info ]: Cached model count updated: 7 models (accurate)
+03:34:21.193675 [info ]: Started scheduling
+03:34:21.200963 [info ]: Finished scheduling [  0.01s]
+03:34:21.201658 [debug]: Compilation - 0 nodes selected: {}
+03:34:21.203457 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+03:34:21.204685 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+03:34:21.205083 [info ]: Started scheduling
+03:34:21.206620 [info ]: Finished scheduling [  0.00s]
+03:34:21.209433 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "products" }) and interval: None
+03:34:21.209732 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "orders" }) and interval: None
+03:34:21.209772 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "customers" }) and interval: None
+03:34:21.209800 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "order_items" }) and interval: None
+03:34:21.241985 [info ]: License loaded from file C:\Users\elbej\.dbt\license.70506183139093 is invalid (License expired; try running dbt login or downloading dbt_cloud.yml), skipping
+03:34:21.249456 [debug]: Requesting license from https://qz729.us1.dbt.com/api/private/accounts/70506183139093/feature-licenses/ with 1 key IDs: ["fusion-prod-2025-11-20"]
+03:34:22.064966 [debug]: License successfully retrieved from remote
+03:34:22.065354 [info ]: License loaded from remote server qz729.us1.dbt.com
+03:34:22.066948 [debug]: License cached to file for account 70506183139093
+03:34:22.080162 [info ]: Started building task graph
+03:34:22.084696 [info ]: Finished building task graph [  0.00s]
+03:34:22.146755 [info ]: Started scheduling
+03:34:22.146824 [info ]: Finished scheduling [  0.00s]
+03:34:22.148590 [info ]: Cached model count updated: 7 models (accurate)
+03:34:23.800827 [info ]: Started loading project
+03:34:23.801716 [info ]: Loading profiles.yml
+03:34:23.830675 [info ]: Cached model count updated: 7 models (estimate)
+03:34:23.830703 [info ]: Cached model count updated: 7 models (accurate)
+03:34:23.830737 [info ]: Started scheduling
+03:34:23.830821 [info ]: Finished scheduling [  0.00s]
+03:34:23.830834 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+03:34:23.834834 [info ]: Started building task graph
+03:34:23.838794 [info ]: Finished building task graph [  0.00s]
+03:34:23.841976 [info ]: Started rendering (7 nodes)
+03:34:23.843534 [info ]: Started model main.fct_orders
+03:34:23.843762 [debug]: Started rendering model main.fct_orders
+03:34:23.844352 [info ]: Started model main.stg_orders
+03:34:23.844368 [debug]: Started rendering model main.stg_orders
+03:34:23.844386 [info ]: Finished loading project [  0.04s]
+03:34:23.844391 [info ]: Started model main.stg_order_items
+03:34:23.844402 [debug]: Started rendering model main.stg_order_items
+03:34:23.844417 [info ]: Started model main.dim_products
+03:34:23.844457 [debug]: Started rendering model main.dim_products
+03:34:23.844785 [info ]: Started model main.stg_products
+03:34:23.844832 [debug]: Started rendering model main.stg_products
+03:34:23.844867 [info ]: Started model main.dim_customers
+03:34:23.844888 [debug]: Started rendering model main.dim_customers
+03:34:23.844913 [info ]: Started model main.stg_customers
+03:34:23.844933 [debug]: Started rendering model main.stg_customers
+03:34:23.863254 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+03:34:23.863254 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+03:34:23.863315 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+03:34:23.863902 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+03:34:23.863904 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+03:34:23.864252 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+03:34:23.864728 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+03:34:23.867935 [debug]: Finished rendering [  0.02s] model main.dim_customers [success]
+03:34:23.869551 [info ]: Started analyzing (7 nodes)
+03:34:23.869583 [debug]: Started analyzing model main.dim_customers
+03:34:23.869631 [debug]: Finished rendering [  0.03s] model main.dim_products [success]
+03:34:23.869649 [debug]: Started analyzing model main.dim_products
+03:34:23.869663 [debug]: Finished rendering [  0.03s] model main.stg_order_items [success]
+03:34:23.869674 [debug]: Started analyzing model main.stg_order_items
+03:34:23.869686 [debug]: Finished rendering [  0.02s] model main.stg_products [success]
+03:34:23.869694 [debug]: Started analyzing model main.stg_products
+03:34:23.869706 [debug]: Finished rendering [  0.03s] model main.fct_orders [success]
+03:34:23.869714 [debug]: Started analyzing model main.fct_orders
+03:34:23.869727 [debug]: Finished rendering [  0.02s] model main.stg_customers [success]
+03:34:23.869734 [debug]: Started analyzing model main.stg_customers
+03:34:23.869750 [debug]: Finished rendering [  0.03s] model main.stg_orders [success]
+03:34:23.869760 [info ]: Finished rendering [  0.03s] (7 nodes, 0 skipped, 0 errors)
+03:34:23.870096 [debug]: Started analyzing model main.stg_orders
+03:34:23.915881 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+03:34:23.916034 [debug]: Finished analyzing [  0.05s] model main.dim_customers [success]
+03:34:23.916078 [info ]:  Succeeded [  0.07s] model main.dim_customers (table)
+03:34:23.916129 [debug]: Finished analyzing [  0.05s] model main.stg_products [success]
+03:34:23.916149 [info ]:  Succeeded [  0.07s] model main.stg_products (view)
+03:34:23.916177 [debug]: Finished analyzing [  0.05s] model main.stg_orders [success]
+03:34:23.916194 [info ]:  Succeeded [  0.07s] model main.stg_orders (view)
+03:34:23.916238 [debug]: Finished analyzing [  0.05s] model main.stg_order_items [success]
+03:34:23.916283 [info ]:  Succeeded [  0.07s] model main.stg_order_items (view)
+03:34:23.916303 [debug]: Finished analyzing [  0.05s] model main.dim_products [success]
+03:34:23.916318 [info ]:  Succeeded [  0.07s] model main.dim_products (table)
+03:34:23.916340 [debug]: Finished analyzing [  0.05s] model main.fct_orders [success]
+03:34:23.916356 [info ]:  Succeeded [  0.07s] model main.fct_orders (table)
+03:34:23.916377 [debug]: Finished analyzing [  0.05s] model main.stg_customers [success]
+03:34:23.916396 [info ]: Finished analyzing [  0.05s] (7 nodes, 0 skipped, 0 errors)
+03:34:23.916410 [info ]:  Succeeded [  0.07s] model main.stg_customers (view)
+03:34:23.923161 [info ]: Started scheduling
+03:34:23.923298 [info ]: Finished scheduling [  0.00s]
+03:34:23.924528 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-06-07T04:44:37.211056Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T04:44:37.225312Z | cb01ac90-bdcf-4057-a5c4-c71373d48485 ====================
+04:44:37.226435 [info ]: Starting dbt LSP server
+04:44:37.228244 [info ]: Connecting to LSP client on port 8000
+04:44:37.239082 [info ]: Successfully connected to LSP client
+04:44:37.239517 [info ]: Creating LSP service...
+04:44:37.423400 [info ]: Creating LSP server...
+04:44:37.423430 [info ]: Starting LSP server...
+==================== 2026-06-07T04:50:40.221347Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T04:50:40.222267Z | eb1e1544-9aa5-43ef-a04d-9f2ff90981dd ====================
+04:50:40.222398 [info ]: Starting dbt LSP server
+04:50:40.222464 [info ]: Connecting to LSP client on port 8000
+04:50:40.226778 [info ]: Successfully connected to LSP client
+04:50:40.226860 [info ]: Creating LSP service...
+04:50:40.475864 [info ]: Creating LSP server...
+04:50:40.475898 [info ]: Starting LSP server...
+04:53:55.984662 [info ]: Loading profiles.yml
+==================== 2026-06-07T05:05:58.461163Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T05:05:58.462205Z | 67cfb1ad-326b-4671-81fb-ac528ce24437 ====================
+05:05:58.462410 [info ]: Starting dbt LSP server
+05:05:58.462553 [info ]: Connecting to LSP client on port 8000
+05:05:58.471201 [info ]: Successfully connected to LSP client
+05:05:58.471262 [info ]: Creating LSP service...
+05:05:58.727383 [info ]: Creating LSP server...
+05:05:58.727439 [info ]: Starting LSP server...
+==================== 2026-06-07T05:08:03.169127Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T05:08:03.169805Z | 07672085-fc20-4739-942f-7a601a524428 ====================
+05:08:03.169953 [info ]: Starting dbt LSP server
+05:08:03.170026 [info ]: Connecting to LSP client on port 8000
+05:08:03.180172 [info ]: Successfully connected to LSP client
+05:08:03.180292 [info ]: Creating LSP service...
+05:08:03.562538 [info ]: Creating LSP server...
+05:08:03.562602 [info ]: Starting LSP server...
+==================== 2026-06-07T05:21:42.942333Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T05:21:42.942776Z | eb9beeeb-0db9-4833-9f44-270d8c6276d6 ====================
+05:21:42.942833 [info ]: Starting dbt LSP server
+05:21:42.942876 [info ]: Connecting to LSP client on port 8000
+05:21:42.946018 [info ]: Successfully connected to LSP client
+05:21:42.946079 [info ]: Creating LSP service...
+05:21:43.117901 [info ]: Creating LSP server...
+05:21:43.117939 [info ]: Starting LSP server...
+==================== 2026-06-07T05:46:11.766018Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T05:46:11.776910Z | 16c1a8d1-a1ca-4172-92e9-0035a6e908fd ====================
+05:46:11.777388 [info ]: Starting dbt LSP server
+05:46:11.778167 [info ]: Connecting to LSP client on port 8000
+05:46:11.784520 [info ]: Successfully connected to LSP client
+05:46:11.784948 [info ]: Creating LSP service...
+05:46:12.031315 [info ]: Creating LSP server...
+05:46:12.031845 [info ]: Starting LSP server...
+==================== 2026-06-07T05:48:50.542599Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T05:48:50.543050Z | f4ef42cb-9e05-4223-b7c4-160b4d2e926e ====================
+05:48:50.543132 [info ]: Starting dbt LSP server
+05:48:50.543207 [info ]: Connecting to LSP client on port 8000
+05:48:50.546594 [info ]: Successfully connected to LSP client
+05:48:50.546649 [info ]: Creating LSP service...
+05:48:50.694806 [info ]: Creating LSP server...
+05:48:50.694864 [info ]: Starting LSP server...
+06:17:05.304453 [info ]: Loading profiles.yml
+==================== 2026-06-07T06:47:28.766029Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T06:47:28.770700Z | 6cac6b4b-df62-4c64-83b2-06ed12f9e0ca ====================
+06:47:28.771268 [info ]: Starting dbt LSP server
+06:47:28.771764 [info ]: Connecting to LSP client on port 8000
+06:47:28.775714 [info ]: Successfully connected to LSP client
+06:47:28.775758 [info ]: Creating LSP service...
+06:47:28.894992 [info ]: Creating LSP server...
+06:47:28.895017 [info ]: Starting LSP server...
+09:31:23.969502 [info ]: Loading profiles.yml
+09:31:24.130276 [info ]: Started loading project
+09:31:24.144451 [info ]: Loading profiles.yml
+09:31:24.184634 [debug]:    Started loading packages
+09:31:24.209957 [debug]:     Loaded [  0.03s] packages
+09:31:24.223793 [info ]: Finished loading project [  0.09s]
+09:31:24.233328 [info ]: Started parsing
+09:31:24.324002 [debug]: Finished parsing models\marts\marts.yml [  0.01s]
+09:31:24.326671 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+09:31:24.374202 [debug]: Finished parsing models\marts\dim_customers.sql [  0.03s]
+09:31:24.375808 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+09:31:24.377813 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+09:31:24.379292 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+09:31:24.381046 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+09:31:24.383023 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+09:31:24.384565 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+09:31:24.410964 [info ]: Finished parsing [  0.18s]
+09:31:24.416396 [info ]: Cached model count updated: 7 models (estimate)
+09:31:24.416435 [info ]: Cached model count updated: 7 models (accurate)
+09:31:24.419400 [info ]: Started scheduling
+09:31:24.425811 [info ]: Finished scheduling [  0.01s]
+09:31:24.426260 [debug]: Compilation - 1 nodes selected: {"model.dbt_project.stg_customers"}
+09:31:24.427062 [info ]: Started scheduling
+09:31:24.427792 [info ]: Finished scheduling [  0.00s]
+09:31:24.430886 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "order_items" }) and interval: None
+09:31:24.431594 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "products" }) and interval: None
+09:31:24.431649 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "customers" }) and interval: None
+09:31:24.431686 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "raw", table: "orders" }) and interval: None
+09:31:25.267469 [info ]: License from file C:\Users\elbej\.dbt\license.70506183139093 is in refresh window, attempting remote refresh
+09:31:25.273156 [debug]: Requesting license from https://qz729.us1.dbt.com/api/private/accounts/70506183139093/feature-licenses/ with 1 key IDs: ["fusion-prod-2025-11-20"]
+09:31:25.982088 [debug]: License successfully retrieved from remote
+09:31:25.982423 [info ]: License loaded from remote server qz729.us1.dbt.com
+09:31:25.983837 [debug]: License cached to file for account 70506183139093
+09:31:26.009827 [info ]: Started building task graph
+09:31:26.018448 [info ]: Finished building task graph [  0.01s]
+09:31:26.088676 [info ]: Started rendering (1 nodes)
+09:31:26.090523 [info ]: Started model main.stg_customers
+09:31:26.090810 [debug]: Started rendering model main.stg_customers
+09:31:26.107041 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+09:31:26.111994 [debug]: Finished rendering [  0.02s] model main.stg_customers [success]
+09:31:26.112024 [info ]: Finished rendering [  0.02s] (1 nodes, 0 skipped, 0 errors)
+09:31:26.113853 [info ]: Started analyzing (1 nodes)
+09:31:26.113896 [debug]: Started analyzing model main.stg_customers
+09:31:26.169830 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+09:31:26.173623 [debug]: Finished analyzing [  0.06s] model main.stg_customers [success]
+09:31:26.173725 [info ]: Finished analyzing [  0.06s] (1 nodes, 0 skipped, 0 errors)
+09:31:26.173740 [info ]:  Succeeded [  0.08s] model main.stg_customers (view)
+09:31:26.188377 [info ]: Started scheduling
+09:31:26.188452 [info ]: Finished scheduling [  0.00s]
+09:31:26.190123 [info ]: Cached model count updated: 7 models (accurate)
+09:31:27.798894 [info ]: Started loading project
+09:31:27.799895 [info ]: Loading profiles.yml
+09:31:27.836233 [info ]: Cached model count updated: 7 models (estimate)
+09:31:27.836260 [info ]: Cached model count updated: 7 models (accurate)
+09:31:27.836337 [info ]: Started scheduling
+09:31:27.836460 [info ]: Finished scheduling [  0.00s]
+09:31:27.836476 [debug]: Compilation - 2 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.stg_customers"}
+09:31:27.838595 [info ]: Started building task graph
+09:31:27.838694 [info ]: Finished building task graph [  0.00s]
+09:31:27.839194 [info ]: Started rendering (2 nodes)
+09:31:27.839220 [info ]: Started model main.dim_customers
+09:31:27.839232 [debug]: Started rendering model main.dim_customers
+09:31:27.839257 [info ]: Started model main.stg_customers
+09:31:27.839264 [debug]: Started rendering model main.stg_customers
+09:31:27.839294 [info ]: Finished loading project [  0.04s]
+09:31:27.840894 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+09:31:27.841450 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+09:31:27.841504 [info ]: Started analyzing (2 nodes)
+09:31:27.841519 [debug]: Started analyzing model main.stg_customers
+09:31:27.842431 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+09:31:27.842571 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+09:31:27.842630 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+09:31:27.843695 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+09:31:27.843927 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+09:31:27.844000 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+09:31:27.844024 [debug]: Started analyzing model main.dim_customers
+09:31:27.846535 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+09:31:27.846572 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+09:31:27.846586 [info ]:  Succeeded [  0.01s] model main.dim_customers (table)
+09:31:27.851554 [info ]: Started scheduling
+09:31:27.851633 [info ]: Finished scheduling [  0.00s]
+09:31:27.852439 [info ]: Cached model count updated: 7 models (accurate)
+09:31:29.487782 [info ]: Started loading project
+09:31:29.488698 [info ]: Loading profiles.yml
+09:31:29.518797 [info ]: Cached model count updated: 7 models (estimate)
+09:31:29.518825 [info ]: Cached model count updated: 7 models (accurate)
+09:31:29.518897 [info ]: Started scheduling
+09:31:29.518988 [info ]: Finished scheduling [  0.00s]
+09:31:29.519007 [debug]: Compilation - 7 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products"}
+09:31:29.520164 [info ]: Started building task graph
+09:31:29.520288 [info ]: Finished building task graph [  0.00s]
+09:31:29.521031 [info ]: Started rendering (7 nodes)
+09:31:29.521061 [info ]: Started model main.fct_orders
+09:31:29.521073 [debug]: Started rendering model main.fct_orders
+09:31:29.521099 [info ]: Started model main.stg_orders
+09:31:29.521107 [debug]: Started rendering model main.stg_orders
+09:31:29.521118 [info ]: Started model main.stg_order_items
+09:31:29.521125 [debug]: Started rendering model main.stg_order_items
+09:31:29.521135 [info ]: Started model main.dim_products
+09:31:29.521146 [debug]: Started rendering model main.dim_products
+09:31:29.521157 [info ]: Started model main.stg_products
+09:31:29.521163 [debug]: Started rendering model main.stg_products
+09:31:29.521176 [info ]: Started model main.dim_customers
+09:31:29.521190 [debug]: Started rendering model main.dim_customers
+09:31:29.521217 [info ]: Started model main.stg_customers
+09:31:29.521211 [info ]: Finished loading project [  0.03s]
+09:31:29.521227 [debug]: Started rendering model main.stg_customers
+09:31:29.522826 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+09:31:29.523226 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+09:31:29.523292 [info ]: Started analyzing (7 nodes)
+09:31:29.523325 [debug]: Started analyzing model main.dim_customers
+09:31:29.523407 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+09:31:29.523559 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+09:31:29.523623 [debug]: Started analyzing model main.stg_customers
+09:31:29.523832 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+09:31:29.523871 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+09:31:29.524883 [warn ]: [SyntaxInvalid (dbt0101)]: extraneous input 'l' expecting one of <EOF>, 'ABORT', 'ALTER', 'ANALYZE', 'ATTACH', 'BEGIN', 'CALL' ...
+  --> models\staging\stg_customers.sql:1:1 (target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql:1:1)
+09:31:29.525077 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+09:31:29.525118 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+09:31:29.527648 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+09:31:29.527913 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+09:31:29.527926 [debug]: Finished rendering [  0.01s] model main.stg_orders [success]
+09:31:29.527989 [debug]: Started analyzing model main.stg_orders
+09:31:29.528098 [debug]: Finished rendering [  0.01s] model main.fct_orders [success]
+09:31:29.528147 [debug]: Started analyzing model main.fct_orders
+09:31:29.528263 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+09:31:29.528486 [debug]: Finished rendering [  0.01s] model main.stg_products [success]
+09:31:29.528548 [debug]: Started analyzing model main.stg_products
+09:31:29.529184 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+09:31:29.529261 [info ]:  Succeeded [  0.01s] model main.stg_products (view)
+09:31:29.529361 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+09:31:29.529542 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+09:31:29.529588 [info ]:  Succeeded [  0.01s] model main.stg_orders (view)
+09:31:29.529651 [debug]: Finished rendering [  0.01s] model main.stg_order_items [success]
+09:31:29.529693 [debug]: Started analyzing model main.stg_order_items
+09:31:29.530025 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+09:31:29.530210 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+09:31:29.530278 [info ]:  Succeeded [  0.01s] model main.stg_order_items (view)
+09:31:29.530357 [debug]: Finished rendering [  0.01s] model main.dim_products [success]
+09:31:29.530392 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+09:31:29.530425 [debug]: Started analyzing model main.dim_products
+09:31:29.530853 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+09:31:29.530902 [info ]:  Succeeded [  0.01s] model main.dim_products (table)
+09:31:29.538681 [debug]: Finished analyzing [  0.01s] model main.fct_orders [success]
+09:31:29.538732 [info ]: Finished analyzing [  0.02s] (7 nodes, 0 skipped, 0 errors)
+09:31:29.538751 [info ]:  Succeeded [  0.02s] model main.fct_orders (table)
+09:31:29.543921 [info ]: Started scheduling
+09:31:29.544007 [info ]: Finished scheduling [  0.00s]
+09:31:29.544717 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-06-07T09:36:31.511715Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T09:36:31.514356Z | 0721ad33-8ec3-4b35-8bde-dac12dee8789 ====================
+09:36:31.514663 [info ]: Starting dbt LSP server
+09:36:31.514727 [info ]: Connecting to LSP client on port 8000
+09:36:31.517640 [info ]: Successfully connected to LSP client
+09:36:31.517675 [info ]: Creating LSP service...
+09:36:31.676971 [info ]: Creating LSP server...
+09:36:31.676999 [info ]: Starting LSP server...
+09:41:24.226483 [info ]: Loading profiles.yml
+==================== 2026-06-07T09:43:44.094711Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T09:43:44.095463Z | e094edd9-f4f6-4e7b-8c1a-8400d1b73492 ====================
+09:43:44.095552 [info ]: Starting dbt LSP server
+09:43:44.095611 [info ]: Connecting to LSP client on port 8000
+09:43:44.099354 [info ]: Successfully connected to LSP client
+09:43:44.099413 [info ]: Creating LSP service...
+09:43:44.291729 [info ]: Creating LSP server...
+09:43:44.291782 [info ]: Starting LSP server...
+==================== 2026-06-07T09:51:52.284972Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T09:51:52.285507Z | 44e11e65-bf23-4ad2-bfcc-8c8580475975 ====================
+09:51:52.285629 [info ]: Starting dbt LSP server
+09:51:52.285700 [info ]: Connecting to LSP client on port 8000
+09:51:52.289076 [info ]: Successfully connected to LSP client
+09:51:52.289130 [info ]: Creating LSP service...
+09:51:52.482145 [info ]: Creating LSP server...
+09:51:52.482204 [info ]: Starting LSP server...
+==================== 2026-06-07T10:34:42.376415Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-07T10:34:42.386326Z | e9aa2222-6447-46de-b83c-283e534aff5c ====================
+10:34:42.386998 [info ]: Starting dbt LSP server
+10:34:42.388107 [info ]: Connecting to LSP client on port 8000
+10:34:42.395587 [info ]: Successfully connected to LSP client
+10:34:42.395999 [info ]: Creating LSP service...
+10:34:42.527321 [info ]: Creating LSP server...
+10:34:42.527346 [info ]: Starting LSP server...
+10:35:10.733758 [info ]: Loading profiles.yml
+10:38:59.932694 [info ]: Started loading project
+10:38:59.960879 [info ]: Loading profiles.yml
+10:39:00.037384 [debug]:    Started loading packages
+10:39:00.078515 [debug]:     Loaded [  0.04s] packages
+10:39:00.144853 [info ]: Finished loading project [  0.21s]
+10:39:00.163814 [info ]: Started parsing
+10:39:00.343894 [debug]: Finished parsing models\marts\marts.yml [  0.01s]
+10:39:00.347620 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+10:39:00.450989 [debug]: Finished parsing models\marts\dim_customers.sql [  0.03s]
+10:39:00.453416 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+10:39:00.455228 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+10:39:00.456464 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+10:39:00.457685 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+10:39:00.458927 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+10:39:00.460190 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+10:39:00.492472 [info ]: Finished parsing [  0.33s]
+10:39:00.502581 [info ]: Cached model count updated: 7 models (estimate)
+10:39:00.502631 [info ]: Cached model count updated: 7 models (accurate)
+10:39:00.509451 [info ]: Started scheduling
+10:39:00.517247 [info ]: Finished scheduling [  0.01s]
+10:39:00.518471 [debug]: Compilation - 2 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.stg_customers"}
+10:39:00.520071 [info ]: Started scheduling
+10:39:00.521147 [info ]: Finished scheduling [  0.00s]
+10:39:00.525326 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "orders" }) and interval: None
+10:39:00.526003 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "customers" }) and interval: None
+10:39:00.526068 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "order_items" }) and interval: None
+10:39:00.526120 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "products" }) and interval: None
+10:39:00.578020 [info ]: License from file C:\Users\elbej\.dbt\license.70506183139093 is in refresh window, attempting remote refresh
+10:39:00.590934 [debug]: Requesting license from https://qz729.us1.dbt.com/api/private/accounts/70506183139093/feature-licenses/ with 1 key IDs: ["fusion-prod-2025-11-20"]
+10:39:01.407759 [debug]: License successfully retrieved from remote
+10:39:01.408079 [info ]: License loaded from remote server qz729.us1.dbt.com
+10:39:01.409176 [debug]: License cached to file for account 70506183139093
+10:39:01.427742 [info ]: Started building task graph
+10:39:01.439884 [info ]: Finished building task graph [  0.01s]
+10:39:01.511010 [info ]: Started rendering (2 nodes)
+10:39:01.512965 [info ]: Started model main.dim_customers
+10:39:01.513649 [debug]: Started rendering model main.dim_customers
+10:39:01.514889 [info ]: Started model main.stg_customers
+10:39:01.514913 [debug]: Started rendering model main.stg_customers
+10:39:01.531403 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+10:39:01.531403 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+10:39:01.537331 [debug]: Finished rendering [  0.02s] model main.dim_customers [success]
+10:39:01.539514 [info ]: Started analyzing (2 nodes)
+10:39:01.539560 [debug]: Started analyzing model main.dim_customers
+10:39:01.539667 [debug]: Finished rendering [  0.02s] model main.stg_customers [success]
+10:39:01.539698 [info ]: Finished rendering [  0.03s] (2 nodes, 0 skipped, 0 errors)
+10:39:01.540104 [debug]: Started analyzing model main.stg_customers
+10:39:01.600883 [debug]: Finished analyzing [  0.06s] model main.stg_customers [success]
+10:39:01.600997 [info ]:  Succeeded [  0.08s] model main.stg_customers (view)
+10:39:01.601887 [debug]: Finished analyzing [  0.06s] model main.dim_customers [success]
+10:39:01.601967 [info ]: Finished analyzing [  0.06s] (2 nodes, 0 skipped, 0 errors)
+10:39:01.601999 [info ]:  Succeeded [  0.09s] model main.dim_customers (table)
+10:39:01.617408 [info ]: Started scheduling
+10:39:01.617548 [info ]: Finished scheduling [  0.00s]
+10:39:01.619371 [info ]: Cached model count updated: 7 models (accurate)
+10:39:03.243201 [info ]: Started loading project
+10:39:03.244150 [info ]: Loading profiles.yml
+10:39:03.279165 [info ]: Cached model count updated: 7 models (estimate)
+10:39:03.279194 [info ]: Cached model count updated: 7 models (accurate)
+10:39:03.279238 [info ]: Started scheduling
+10:39:03.279362 [info ]: Finished scheduling [  0.00s]
+10:39:03.279378 [debug]: Compilation - 2 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.stg_customers"}
+10:39:03.281717 [info ]: Started building task graph
+10:39:03.281843 [info ]: Finished building task graph [  0.00s]
+10:39:03.282549 [info ]: Started rendering (2 nodes)
+10:39:03.283046 [info ]: Started model main.dim_customers
+10:39:03.283087 [debug]: Started rendering model main.dim_customers
+10:39:03.283146 [info ]: Started model main.stg_customers
+10:39:03.283157 [debug]: Started rendering model main.stg_customers
+10:39:03.283200 [info ]: Finished loading project [  0.04s]
+10:39:03.286240 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+10:39:03.286249 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+10:39:03.286377 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+10:39:03.286424 [info ]: Started analyzing (2 nodes)
+10:39:03.286447 [debug]: Started analyzing model main.dim_customers
+10:39:03.286506 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+10:39:03.286515 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+10:39:03.286530 [debug]: Started analyzing model main.stg_customers
+10:39:03.286813 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+10:39:03.286843 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+10:39:03.286876 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+10:39:03.286886 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+10:39:03.286894 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+10:39:03.290136 [info ]: Started scheduling
+10:39:03.290199 [info ]: Finished scheduling [  0.00s]
+10:39:03.291163 [info ]: Cached model count updated: 7 models (accurate)
+10:39:04.941555 [info ]: Started loading project
+10:39:04.942502 [info ]: Loading profiles.yml
+10:39:04.984458 [info ]: Cached model count updated: 7 models (estimate)
+10:39:04.984487 [info ]: Cached model count updated: 7 models (accurate)
+10:39:04.984540 [info ]: Started scheduling
+10:39:04.984697 [info ]: Finished scheduling [  0.00s]
+10:39:04.984726 [debug]: Compilation - 11 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products", "seed.dbt_project.customers", "seed.dbt_project.order_items", "seed.dbt_project.orders", "seed.dbt_project.products"}
+10:39:04.986289 [info ]: Started building task graph
+10:39:04.986448 [info ]: Finished building task graph [  0.00s]
+10:39:04.986778 [info ]: Finished loading project [  0.05s]
+10:39:05.033965 [info ]: Started rendering (11 nodes)
+10:39:05.034026 [info ]: Started seed main.products
+10:39:05.034044 [debug]: Started rendering seed main.products
+10:39:05.034073 [info ]: Started seed main.orders
+10:39:05.034083 [debug]: Started rendering seed main.orders
+10:39:05.034096 [info ]: Started seed main.order_items
+10:39:05.034109 [debug]: Started rendering seed main.order_items
+10:39:05.034121 [info ]: Started seed main.customers
+10:39:05.034131 [debug]: Started rendering seed main.customers
+10:39:05.034151 [info ]: Started model main.fct_orders
+10:39:05.034169 [debug]: Started rendering model main.fct_orders
+10:39:05.034191 [info ]: Started model main.stg_orders
+10:39:05.034203 [debug]: Started rendering model main.stg_orders
+10:39:05.034225 [info ]: Started model main.stg_order_items
+10:39:05.034240 [debug]: Started rendering model main.stg_order_items
+10:39:05.034258 [info ]: Started model main.dim_products
+10:39:05.034271 [debug]: Started rendering model main.dim_products
+10:39:05.034291 [info ]: Started model main.stg_products
+10:39:05.034306 [debug]: Started rendering model main.stg_products
+10:39:05.034331 [info ]: Started model main.dim_customers
+10:39:05.034347 [debug]: Started rendering model main.dim_customers
+10:39:05.034366 [info ]: Started model main.stg_customers
+10:39:05.034381 [debug]: Started rendering model main.stg_customers
+10:39:05.034417 [debug]: Finished rendering [  0.00s] seed main.products [success]
+10:39:05.034444 [info ]:  Succeeded [-------] seed  main.products (table)
+10:39:05.034477 [debug]: Finished rendering [  0.00s] seed main.orders [success]
+10:39:05.034493 [info ]:  Succeeded [-------] seed  main.orders (table)
+10:39:05.034514 [debug]: Finished rendering [  0.00s] seed main.order_items [success]
+10:39:05.034526 [info ]:  Succeeded [-------] seed  main.order_items (table)
+10:39:05.034547 [debug]: Finished rendering [  0.00s] seed main.customers [success]
+10:39:05.034559 [info ]:  Succeeded [-------] seed  main.customers (table)
+10:39:05.036439 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+10:39:05.036517 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+10:39:05.036647 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+10:39:05.036731 [info ]: Started analyzing (7 nodes)
+10:39:05.036765 [debug]: Started analyzing model main.dim_customers
+10:39:05.036815 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+10:39:05.036838 [debug]: Started analyzing model main.stg_customers
+10:39:05.037313 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+10:39:05.037361 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+10:39:05.037410 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+10:39:05.037425 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+10:39:05.039890 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+10:39:05.040181 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+10:39:05.040201 [debug]: Finished rendering [  0.01s] model main.fct_orders [success]
+10:39:05.040258 [debug]: Started analyzing model main.fct_orders
+10:39:05.040359 [debug]: Finished rendering [  0.01s] model main.dim_products [success]
+10:39:05.040490 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+10:39:05.040414 [debug]: Started analyzing model main.dim_products
+10:39:05.040797 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+10:39:05.041151 [debug]: Finished rendering [  0.01s] model main.stg_orders [success]
+10:39:05.041222 [debug]: Started analyzing model main.stg_orders
+10:39:05.041342 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+10:39:05.041374 [info ]:  Succeeded [  0.01s] model main.dim_products (table)
+10:39:05.041461 [debug]: Finished rendering [  0.01s] model main.stg_order_items [success]
+10:39:05.041502 [debug]: Started analyzing model main.stg_order_items
+10:39:05.041963 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+10:39:05.042011 [info ]:  Succeeded [  0.01s] model main.stg_order_items (view)
+10:39:05.042386 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+10:39:05.042689 [debug]: Finished rendering [  0.01s] model main.stg_products [success]
+10:39:05.042746 [info ]: Finished rendering [  0.01s] (11 nodes, 0 skipped, 0 errors)
+10:39:05.042787 [debug]: Started analyzing model main.stg_products
+10:39:05.042845 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+10:39:05.042872 [info ]:  Succeeded [  0.01s] model main.stg_orders (view)
+10:39:05.043280 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+10:39:05.043333 [info ]:  Succeeded [  0.01s] model main.stg_products (view)
+10:39:05.047693 [debug]: Finished analyzing [  0.01s] model main.fct_orders [success]
+10:39:05.047726 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+10:39:05.047737 [info ]:  Succeeded [  0.01s] model main.fct_orders (table)
+10:39:05.051592 [info ]: Started scheduling
+10:39:05.051670 [info ]: Finished scheduling [  0.00s]
+10:39:05.052237 [info ]: Cached model count updated: 7 models (accurate)
+10:40:58.805441 [info ]: Started loading project
+10:40:58.806880 [info ]: Loading profiles.yml
+10:40:58.831496 [info ]: Started parsing
+10:40:58.889362 [info ]: Finished loading project [  0.08s]
+10:40:58.890991 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+10:40:58.894109 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+10:40:58.895352 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+10:40:58.896522 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+10:40:58.904765 [info ]: Finished parsing [  0.07s]
+10:40:58.907760 [info ]: Cached model count updated: 7 models (estimate)
+10:40:58.907786 [info ]: Cached model count updated: 7 models (accurate)
+10:40:58.907836 [info ]: Started scheduling
+10:40:58.907935 [info ]: Finished scheduling [  0.00s]
+10:40:58.907954 [debug]: Compilation - 2 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.stg_customers"}
+10:40:58.909096 [info ]: Started building task graph
+10:40:58.909152 [info ]: Finished building task graph [  0.00s]
+10:40:58.909543 [info ]: Started rendering (2 nodes)
+10:40:58.909568 [info ]: Started model main.dim_customers
+10:40:58.909582 [debug]: Started rendering model main.dim_customers
+10:40:58.909605 [info ]: Started model main.stg_customers
+10:40:58.909611 [debug]: Started rendering model main.stg_customers
+10:40:58.910309 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+10:40:58.910611 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+10:40:58.910715 [info ]: Started analyzing (2 nodes)
+10:40:58.910744 [debug]: Started analyzing model main.stg_customers
+10:40:58.911275 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+10:40:58.911315 [info ]:  Succeeded [-------] model main.stg_customers (view)
+10:40:58.912987 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+10:40:58.913204 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+10:40:58.913246 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+10:40:58.913277 [debug]: Started analyzing model main.dim_customers
+10:40:58.915004 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+10:40:58.915034 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+10:40:58.915047 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+10:40:58.919379 [info ]: Started scheduling
+10:40:58.919610 [info ]: Finished scheduling [  0.00s]
+10:40:58.921799 [info ]: Cached model count updated: 7 models (accurate)
+10:41:00.593897 [info ]: Started loading project
+10:41:00.594822 [info ]: Loading profiles.yml
+10:41:00.632439 [info ]: Cached model count updated: 7 models (estimate)
+10:41:00.632468 [info ]: Cached model count updated: 7 models (accurate)
+10:41:00.632515 [info ]: Started scheduling
+10:41:00.632610 [info ]: Finished scheduling [  0.00s]
+10:41:00.632628 [debug]: Compilation - 2 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.stg_customers"}
+10:41:00.634236 [info ]: Started building task graph
+10:41:00.634312 [info ]: Finished building task graph [  0.00s]
+10:41:00.634823 [info ]: Started rendering (2 nodes)
+10:41:00.634853 [info ]: Started model main.dim_customers
+10:41:00.634865 [debug]: Started rendering model main.dim_customers
+10:41:00.634891 [info ]: Started model main.stg_customers
+10:41:00.634898 [debug]: Started rendering model main.stg_customers
+10:41:00.634932 [info ]: Finished loading project [  0.04s]
+10:41:00.635588 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+10:41:00.635588 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+10:41:00.635701 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+10:41:00.635740 [info ]: Started analyzing (2 nodes)
+10:41:00.635785 [debug]: Started analyzing model main.dim_customers
+10:41:00.635812 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+10:41:00.635821 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+10:41:00.635832 [debug]: Started analyzing model main.stg_customers
+10:41:00.636131 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+10:41:00.636157 [info ]:  Succeeded [-------] model main.stg_customers (view)
+10:41:00.636563 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+10:41:00.636596 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+10:41:00.636612 [info ]:  Succeeded [-------] model main.dim_customers (table)
+10:41:00.641730 [info ]: Started scheduling
+10:41:00.641849 [info ]: Finished scheduling [  0.00s]
+10:41:00.642933 [info ]: Cached model count updated: 7 models (accurate)
+10:41:02.309801 [info ]: Started loading project
+10:41:02.310780 [info ]: Loading profiles.yml
+10:41:02.342369 [info ]: Cached model count updated: 7 models (estimate)
+10:41:02.342400 [info ]: Cached model count updated: 7 models (accurate)
+10:41:02.342491 [info ]: Started scheduling
+10:41:02.342640 [info ]: Finished scheduling [  0.00s]
+10:41:02.342661 [debug]: Compilation - 11 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products", "seed.dbt_project.customers", "seed.dbt_project.order_items", "seed.dbt_project.orders", "seed.dbt_project.products"}
+10:41:02.344027 [info ]: Started building task graph
+10:41:02.344176 [info ]: Finished building task graph [  0.00s]
+10:41:02.344450 [info ]: Finished loading project [  0.03s]
+10:41:02.351504 [info ]: Started rendering (11 nodes)
+10:41:02.351549 [info ]: Started seed main.products
+10:41:02.351563 [debug]: Started rendering seed main.products
+10:41:02.351593 [info ]: Started seed main.orders
+10:41:02.351602 [debug]: Started rendering seed main.orders
+10:41:02.351614 [info ]: Started seed main.order_items
+10:41:02.351621 [debug]: Started rendering seed main.order_items
+10:41:02.351635 [info ]: Started seed main.customers
+10:41:02.351643 [debug]: Started rendering seed main.customers
+10:41:02.351658 [info ]: Started model main.fct_orders
+10:41:02.351669 [debug]: Started rendering model main.fct_orders
+10:41:02.351688 [info ]: Started model main.stg_orders
+10:41:02.351699 [debug]: Started rendering model main.stg_orders
+10:41:02.351716 [info ]: Started model main.stg_order_items
+10:41:02.351739 [debug]: Started rendering model main.stg_order_items
+10:41:02.351759 [info ]: Started model main.dim_products
+10:41:02.351770 [debug]: Started rendering model main.dim_products
+10:41:02.351789 [info ]: Started model main.stg_products
+10:41:02.351810 [debug]: Started rendering model main.stg_products
+10:41:02.351838 [info ]: Started model main.dim_customers
+10:41:02.351851 [debug]: Started rendering model main.dim_customers
+10:41:02.351897 [info ]: Started model main.stg_customers
+10:41:02.351917 [debug]: Started rendering model main.stg_customers
+10:41:02.351958 [debug]: Finished rendering [  0.00s] seed main.products [success]
+10:41:02.351984 [info ]:  Succeeded [-------] seed  main.products (table)
+10:41:02.352018 [debug]: Finished rendering [  0.00s] seed main.order_items [success]
+10:41:02.352032 [info ]:  Succeeded [-------] seed  main.order_items (table)
+10:41:02.352054 [debug]: Finished rendering [  0.00s] seed main.orders [success]
+10:41:02.352067 [info ]:  Succeeded [-------] seed  main.orders (table)
+10:41:02.352088 [debug]: Finished rendering [  0.00s] seed main.customers [success]
+10:41:02.352101 [info ]:  Succeeded [-------] seed  main.customers (table)
+10:41:02.352414 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+10:41:02.352413 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+10:41:02.352546 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+10:41:02.352542 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+10:41:02.352602 [info ]: Started analyzing (7 nodes)
+10:41:02.352634 [debug]: Started analyzing model main.stg_orders
+10:41:02.352665 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+10:41:02.352676 [debug]: Finished rendering [  0.00s] model main.fct_orders [success]
+10:41:02.352696 [debug]: Started analyzing model main.fct_orders
+10:41:02.352907 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+10:41:02.352930 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+10:41:02.352946 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+10:41:02.352963 [debug]: Started analyzing model main.stg_order_items
+10:41:02.353059 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+10:41:02.353130 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+10:41:02.353162 [debug]: Started analyzing model main.dim_customers
+10:41:02.353214 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+10:41:02.353240 [debug]: Started analyzing model main.dim_products
+10:41:02.353270 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+10:41:02.353291 [debug]: Started analyzing model main.stg_products
+10:41:02.353318 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+10:41:02.353340 [info ]: Finished rendering [  0.00s] (11 nodes, 0 skipped, 0 errors)
+10:41:02.353359 [debug]: Started analyzing model main.stg_customers
+10:41:02.353395 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+10:41:02.353421 [info ]:  Succeeded [-------] model main.stg_orders (view)
+10:41:02.353455 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+10:41:02.353471 [info ]:  Succeeded [  0.00s] model main.stg_order_items (view)
+10:41:02.353535 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+10:41:02.353560 [info ]:  Succeeded [  0.00s] model main.stg_products (view)
+10:41:02.353586 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+10:41:02.353599 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+10:41:02.353669 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+10:41:02.353729 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+10:41:02.353767 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+10:41:02.353791 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+10:41:02.355832 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+10:41:02.355873 [info ]: Finished analyzing [  0.00s] (7 nodes, 0 skipped, 0 errors)
+10:41:02.355886 [info ]:  Succeeded [  0.00s] model main.fct_orders (table)
+10:41:02.359581 [info ]: Started scheduling
+10:41:02.359683 [info ]: Finished scheduling [  0.00s]
+10:41:02.360306 [info ]: Cached model count updated: 7 models (accurate)
+10:41:32.258705 [info ]: Started loading project
+10:41:32.259705 [info ]: Loading profiles.yml
+10:41:32.275200 [info ]: Started parsing
+10:41:32.324238 [info ]: Finished loading project [  0.07s]
+10:41:32.325499 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+10:41:32.328055 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+10:41:32.329388 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+10:41:32.330413 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+10:41:32.335442 [info ]: Finished parsing [  0.06s]
+10:41:32.340082 [info ]: Cached model count updated: 7 models (estimate)
+10:41:32.340113 [info ]: Cached model count updated: 7 models (accurate)
+10:41:32.340180 [info ]: Started scheduling
+10:41:32.340330 [info ]: Finished scheduling [  0.00s]
+10:41:32.340352 [debug]: Compilation - 2 nodes selected: {"model.dbt_project.dim_products", "model.dbt_project.stg_products"}
+10:41:32.341631 [info ]: Started building task graph
+10:41:32.341699 [info ]: Finished building task graph [  0.00s]
+10:41:32.342130 [info ]: Started rendering (2 nodes)
+10:41:32.342180 [info ]: Started model main.dim_products
+10:41:32.342192 [debug]: Started rendering model main.dim_products
+10:41:32.342218 [info ]: Started model main.stg_products
+10:41:32.342224 [debug]: Started rendering model main.stg_products
+10:41:32.342925 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+10:41:32.343106 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+10:41:32.343160 [info ]: Started analyzing (2 nodes)
+10:41:32.343175 [debug]: Started analyzing model main.stg_products
+10:41:32.343737 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+10:41:32.343781 [info ]:  Succeeded [-------] model main.stg_products (view)
+10:41:32.345240 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+10:41:32.345470 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+10:41:32.345512 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+10:41:32.345549 [debug]: Started analyzing model main.dim_products
+10:41:32.345993 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+10:41:32.346020 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+10:41:32.346033 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+10:41:32.349400 [info ]: Started scheduling
+10:41:32.349539 [info ]: Finished scheduling [  0.00s]
+10:41:32.350542 [info ]: Cached model count updated: 7 models (accurate)
+10:41:34.012825 [info ]: Started loading project
+10:41:34.013744 [info ]: Loading profiles.yml
+10:41:34.046782 [info ]: Cached model count updated: 7 models (estimate)
+10:41:34.046811 [info ]: Cached model count updated: 7 models (accurate)
+10:41:34.046891 [info ]: Started scheduling
+10:41:34.047004 [info ]: Finished scheduling [  0.00s]
+10:41:34.047018 [debug]: Compilation - 2 nodes selected: {"model.dbt_project.dim_products", "model.dbt_project.stg_products"}
+10:41:34.048220 [info ]: Started building task graph
+10:41:34.048315 [info ]: Finished building task graph [  0.00s]
+10:41:34.048782 [info ]: Started rendering (2 nodes)
+10:41:34.048807 [info ]: Started model main.dim_products
+10:41:34.048818 [debug]: Started rendering model main.dim_products
+10:41:34.048875 [info ]: Started model main.stg_products
+10:41:34.048882 [debug]: Started rendering model main.stg_products
+10:41:34.048910 [info ]: Finished loading project [  0.04s]
+10:41:34.049731 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+10:41:34.049769 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+10:41:34.049887 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+10:41:34.049944 [info ]: Started analyzing (2 nodes)
+10:41:34.049972 [debug]: Started analyzing model main.stg_products
+10:41:34.050018 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+10:41:34.050040 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+10:41:34.050059 [debug]: Started analyzing model main.dim_products
+10:41:34.050396 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+10:41:34.050441 [info ]:  Succeeded [-------] model main.stg_products (view)
+10:41:34.050568 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+10:41:34.050606 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+10:41:34.050624 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+10:41:34.057086 [info ]: Started scheduling
+10:41:34.057163 [info ]: Finished scheduling [  0.00s]
+10:41:34.057817 [info ]: Cached model count updated: 7 models (accurate)
+10:41:35.762813 [info ]: Started loading project
+10:41:35.763848 [info ]: Loading profiles.yml
+10:41:35.807230 [info ]: Cached model count updated: 7 models (estimate)
+10:41:35.807258 [info ]: Cached model count updated: 7 models (accurate)
+10:41:35.807333 [info ]: Started scheduling
+10:41:35.807463 [info ]: Finished scheduling [  0.00s]
+10:41:35.807479 [debug]: Compilation - 11 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products", "seed.dbt_project.customers", "seed.dbt_project.order_items", "seed.dbt_project.orders", "seed.dbt_project.products"}
+10:41:35.808749 [info ]: Started building task graph
+10:41:35.808892 [info ]: Finished building task graph [  0.00s]
+10:41:35.809289 [info ]: Finished loading project [  0.05s]
+10:41:35.815892 [info ]: Started rendering (11 nodes)
+10:41:35.815985 [info ]: Started seed main.products
+10:41:35.816004 [debug]: Started rendering seed main.products
+10:41:35.816039 [info ]: Started seed main.orders
+10:41:35.816055 [debug]: Started rendering seed main.orders
+10:41:35.816075 [info ]: Started seed main.order_items
+10:41:35.816096 [debug]: Started rendering seed main.order_items
+10:41:35.816113 [info ]: Started seed main.customers
+10:41:35.816126 [debug]: Started rendering seed main.customers
+10:41:35.816157 [info ]: Started model main.fct_orders
+10:41:35.816175 [debug]: Started rendering model main.fct_orders
+10:41:35.816196 [info ]: Started model main.stg_orders
+10:41:35.816209 [debug]: Started rendering model main.stg_orders
+10:41:35.816228 [info ]: Started model main.stg_order_items
+10:41:35.816243 [debug]: Started rendering model main.stg_order_items
+10:41:35.816264 [info ]: Started model main.dim_products
+10:41:35.816281 [debug]: Started rendering model main.dim_products
+10:41:35.816299 [info ]: Started model main.stg_products
+10:41:35.816335 [debug]: Started rendering model main.stg_products
+10:41:35.816352 [info ]: Started model main.dim_customers
+10:41:35.816366 [debug]: Started rendering model main.dim_customers
+10:41:35.816385 [info ]: Started model main.stg_customers
+10:41:35.816396 [debug]: Started rendering model main.stg_customers
+10:41:35.816441 [debug]: Finished rendering [  0.00s] seed main.orders [success]
+10:41:35.816469 [info ]:  Succeeded [-------] seed  main.orders (table)
+10:41:35.816500 [debug]: Finished rendering [  0.00s] seed main.products [success]
+10:41:35.816515 [info ]:  Succeeded [-------] seed  main.products (table)
+10:41:35.816538 [debug]: Finished rendering [  0.00s] seed main.order_items [success]
+10:41:35.816550 [info ]:  Succeeded [-------] seed  main.order_items (table)
+10:41:35.816600 [debug]: Finished rendering [  0.00s] seed main.customers [success]
+10:41:35.816613 [info ]:  Succeeded [-------] seed  main.customers (table)
+10:41:35.816953 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+10:41:35.816953 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+10:41:35.816963 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+10:41:35.817143 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+10:41:35.817404 [debug]: Finished rendering [  0.00s] model main.fct_orders [success]
+10:41:35.817463 [info ]: Started analyzing (7 nodes)
+10:41:35.817494 [debug]: Started analyzing model main.fct_orders
+10:41:35.817539 [debug]: Finished rendering [  0.00s] model main.stg_order_items [success]
+10:41:35.817567 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+10:41:35.817579 [debug]: Started analyzing model main.stg_order_items
+10:41:35.817606 [debug]: Started analyzing model main.dim_products
+10:41:35.817606 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+10:41:35.817631 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+10:41:35.817647 [debug]: Started analyzing model main.stg_orders
+10:41:35.817653 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+10:41:35.817676 [debug]: Started analyzing model main.dim_customers
+10:41:35.817698 [debug]: Started analyzing model main.stg_products
+10:41:35.817704 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+10:41:35.817734 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+10:41:35.817749 [debug]: Started analyzing model main.stg_customers
+10:41:35.817816 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+10:41:35.817845 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+10:41:35.817857 [info ]: Finished rendering [  0.00s] (11 nodes, 0 skipped, 0 errors)
+10:41:35.817996 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+10:41:35.818042 [info ]:  Succeeded [  0.00s] model main.stg_order_items (view)
+10:41:35.818208 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+10:41:35.818244 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+10:41:35.818309 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+10:41:35.818343 [info ]:  Succeeded [  0.00s] model main.stg_products (view)
+10:41:35.818372 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+10:41:35.818394 [info ]:  Succeeded [  0.00s] model main.stg_orders (view)
+10:41:35.818418 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+10:41:35.818438 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+10:41:35.818463 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+10:41:35.818484 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+10:41:35.820543 [debug]: Finished analyzing [  0.00s] model main.fct_orders [success]
+10:41:35.820595 [info ]: Finished analyzing [  0.00s] (7 nodes, 0 skipped, 0 errors)
+10:41:35.820613 [info ]:  Succeeded [  0.00s] model main.fct_orders (table)
+10:41:35.825730 [info ]: Started scheduling
+10:41:35.825851 [info ]: Finished scheduling [  0.00s]
+10:41:35.827024 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-06-11T03:37:18.644453Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-11T03:37:18.656365Z | d6a19f76-b6f2-4a81-836f-20c423d72b5f ====================
+03:37:18.657504 [info ]: Starting dbt LSP server
+03:37:18.659340 [info ]: Connecting to LSP client on port 8000
+03:37:18.667903 [info ]: Successfully connected to LSP client
+03:37:18.668317 [info ]: Creating LSP service...
+03:37:19.018220 [info ]: Creating LSP server...
+03:37:19.018279 [info ]: Starting LSP server...
+03:37:20.528206 [info ]: Loading profiles.yml
+03:37:20.905526 [info ]: Started loading project
+03:37:20.922891 [info ]: Loading profiles.yml
+03:37:21.008080 [debug]:    Started loading packages
+03:37:21.054469 [debug]:     Loaded [  0.05s] packages
+03:37:21.079377 [info ]: Finished loading project [  0.17s]
+03:37:21.092935 [info ]: Started parsing
+03:37:21.379125 [debug]: Finished parsing models\marts\marts.yml [  0.02s]
+03:37:21.383076 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+03:37:21.588850 [debug]: Finished parsing models\marts\dim_customers.sql [  0.08s]
+03:37:21.611878 [info ]: Finished parsing [  0.52s]
+03:37:21.621909 [info ]: Waiting for lease on 'target' directory
+03:37:22.139755 [info ]: Started loading project
+03:37:22.142012 [info ]: Loading profiles.yml
+03:37:22.160672 [debug]:    Started loading packages
+03:37:22.189124 [debug]:     Loaded [  0.03s] packages
+03:37:22.192255 [info ]: Finished loading project [  0.05s]
+03:37:22.193127 [info ]: Started parsing
+03:37:22.420092 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+03:37:22.421510 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+03:37:22.465271 [debug]: Finished parsing models\marts\dim_customers.sql [  0.02s]
+03:37:22.467912 [debug]: Finished parsing models\marts\dim_products.sql [  0.01s]
+03:37:22.492473 [debug]: Finished parsing models\marts\fct_orders.sql [  0.03s]
+03:37:22.501557 [debug]: Finished parsing models\staging\stg_customers.sql [  0.01s]
+03:37:22.503896 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+03:37:22.506604 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+03:37:22.511759 [debug]: Finished parsing models\staging\stg_products.sql [  0.01s]
+03:37:22.622334 [info ]: Finished parsing [  0.43s]
+03:37:22.647116 [info ]: Cached model count updated: 7 models (estimate)
+03:37:22.647385 [info ]: Cached model count updated: 7 models (accurate)
+03:37:22.656013 [info ]: Started scheduling
+03:37:22.673711 [info ]: Finished scheduling [  0.02s]
+03:37:22.674158 [debug]: Compilation - 0 nodes selected: {}
+03:37:22.679518 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:dbt_project.retail.orders +source:dbt_project.retail.order_items +source:dbt_project.retail.products +source:dbt_project.retail.customers' does not match any enabled nodes
+03:37:22.682792 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+03:37:22.683708 [info ]: Started scheduling
+03:37:22.688679 [info ]: Finished scheduling [  0.00s]
+03:37:22.698176 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "products" }) and interval: None
+03:37:22.699394 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "orders" }) and interval: None
+03:37:22.699546 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "customers" }) and interval: None
+03:37:22.699676 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "order_items" }) and interval: None
+03:37:22.745350 [info ]: Waiting for lease on 'target' directory
+03:37:23.178449 [info ]: Started loading project
+03:37:23.180878 [info ]: Loading profiles.yml
+03:37:23.200583 [debug]:    Started loading packages
+03:37:23.216145 [debug]:     Loaded [  0.02s] packages
+03:37:23.218347 [info ]: Finished loading project [  0.04s]
+03:37:23.218954 [info ]: Started parsing
+03:37:23.356986 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+03:37:23.359012 [debug]: Finished parsing models\staging\staging.yml [  0.00s]
+03:37:23.375499 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+03:37:23.379647 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+03:37:23.381657 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+03:37:23.383442 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+03:37:23.385447 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+03:37:23.387070 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+03:37:23.388905 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+03:37:23.441434 [info ]: Finished parsing [  0.22s]
+03:37:23.453183 [info ]: Cached model count updated: 7 models (estimate)
+03:37:23.453232 [info ]: Cached model count updated: 7 models (accurate)
+03:37:23.453565 [info ]: Started scheduling
+03:37:23.456299 [info ]: Finished scheduling [  0.00s]
+03:37:23.456411 [debug]: Compilation - 2 nodes selected: {"model.dbt_project.dim_products", "model.dbt_project.stg_products"}
+03:37:23.457376 [info ]: Started scheduling
+03:37:23.457709 [info ]: Finished scheduling [  0.00s]
+03:37:23.458070 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "products" }) and interval: None
+03:37:23.458261 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "order_items" }) and interval: None
+03:37:23.458330 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "orders" }) and interval: None
+03:37:23.458378 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "customers" }) and interval: None
+03:37:23.535404 [info ]: License loaded from file C:\Users\elbej\.dbt\license.70506183139093 is invalid (License expired; try running dbt login or downloading dbt_cloud.yml), skipping
+03:37:23.547968 [debug]: Requesting license from https://qz729.us1.dbt.com/api/private/accounts/70506183139093/feature-licenses/ with 1 key IDs: ["fusion-prod-2025-11-20"]
+03:37:24.322974 [debug]: License successfully retrieved from remote
+03:37:24.323607 [info ]: License loaded from remote server qz729.us1.dbt.com
+03:37:24.325282 [debug]: License cached to file for account 70506183139093
+03:37:24.360511 [info ]: Waiting for lease on 'target' directory
+03:37:24.786371 [info ]: Started loading project
+03:37:24.788214 [info ]: Loading profiles.yml
+03:37:24.807681 [debug]:    Started loading packages
+03:37:24.822850 [debug]:     Loaded [  0.02s] packages
+03:37:24.825006 [info ]: Finished loading project [  0.04s]
+03:37:24.825607 [info ]: Started parsing
+03:37:25.102525 [debug]: Finished parsing models\marts\marts.yml [  0.00s]
+03:37:25.107665 [debug]: Finished parsing models\staging\staging.yml [  0.01s]
+03:37:25.128294 [debug]: Finished parsing models\marts\dim_customers.sql [  0.00s]
+03:37:25.131393 [debug]: Finished parsing models\marts\dim_products.sql [  0.00s]
+03:37:25.133704 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+03:37:25.135534 [debug]: Finished parsing models\staging\stg_customers.sql [  0.00s]
+03:37:25.137545 [debug]: Finished parsing models\staging\stg_order_items.sql [  0.00s]
+03:37:25.139150 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+03:37:25.141771 [debug]: Finished parsing models\staging\stg_products.sql [  0.00s]
+03:37:25.206239 [info ]: Finished parsing [  0.38s]
+03:37:25.209498 [info ]: Cached model count updated: 7 models (estimate)
+03:37:25.209566 [info ]: Cached model count updated: 7 models (accurate)
+03:37:25.209699 [info ]: Started scheduling
+03:37:25.210192 [info ]: Finished scheduling [  0.00s]
+03:37:25.210265 [debug]: Compilation - 4 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.stg_customers", "model.dbt_project.stg_products"}
+03:37:25.210406 [info ]: Started scheduling
+03:37:25.210680 [info ]: Finished scheduling [  0.00s]
+03:37:25.210833 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "orders" }) and interval: None
+03:37:25.210988 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "customers" }) and interval: None
+03:37:25.211065 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "order_items" }) and interval: None
+03:37:25.211118 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "retail", schema: "main", table: "products" }) and interval: None
+03:37:25.249556 [info ]: Started building task graph
+03:37:25.297945 [info ]: Finished building task graph [  0.05s]
+03:37:25.415916 [info ]: Started rendering (4 nodes)
+03:37:25.420999 [info ]: Started model main.dim_products
+03:37:25.422684 [debug]: Started rendering model main.dim_products
+03:37:25.423528 [info ]: Started model main.stg_products
+03:37:25.423562 [debug]: Started rendering model main.stg_products
+03:37:25.423594 [info ]: Started model main.dim_customers
+03:37:25.423611 [debug]: Started rendering model main.dim_customers
+03:37:25.424014 [info ]: Started model main.stg_customers
+03:37:25.424075 [debug]: Started rendering model main.stg_customers
+03:37:25.447157 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+03:37:25.447157 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+03:37:25.449903 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+03:37:25.451749 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+03:37:25.453731 [debug]: Finished rendering [  0.03s] model main.dim_customers [success]
+03:37:25.456879 [info ]: Started analyzing (4 nodes)
+03:37:25.456945 [debug]: Started analyzing model main.dim_customers
+03:37:25.457062 [debug]: Finished rendering [  0.03s] model main.stg_products [success]
+03:37:25.457114 [debug]: Started analyzing model main.stg_products
+03:37:25.457458 [debug]: Finished rendering [  0.03s] model main.stg_customers [success]
+03:37:25.457576 [debug]: Started analyzing model main.stg_customers
+03:37:25.457645 [debug]: Finished rendering [  0.03s] model main.dim_products [success]
+03:37:25.457668 [info ]: Finished rendering [  0.04s] (4 nodes, 0 skipped, 0 errors)
+03:37:25.458058 [debug]: Started analyzing model main.dim_products
+03:37:25.526342 [debug]: Finished analyzing [  0.07s] model main.dim_customers [success]
+03:37:25.526409 [info ]:  Succeeded [  0.10s] model main.dim_customers (table)
+03:37:25.526478 [debug]: Finished analyzing [  0.07s] model main.dim_products [success]
+03:37:25.526503 [info ]:  Succeeded [  0.10s] model main.dim_products (table)
+03:37:25.526693 [debug]: Finished analyzing [  0.07s] model main.stg_customers [success]
+03:37:25.526732 [info ]:  Succeeded [  0.10s] model main.stg_customers (view)
+03:37:25.527099 [debug]: Finished analyzing [  0.07s] model main.stg_products [success]
+03:37:25.527140 [info ]: Finished analyzing [  0.07s] (4 nodes, 0 skipped, 0 errors)
+03:37:25.527175 [info ]:  Succeeded [  0.10s] model main.stg_products (view)
+03:37:25.548242 [info ]: Started scheduling
+03:37:25.548356 [info ]: Finished scheduling [  0.00s]
+03:37:25.550257 [info ]: Cached model count updated: 7 models (accurate)
+03:37:27.249254 [info ]: Started loading project
+03:37:27.250660 [info ]: Loading profiles.yml
+03:37:27.317535 [info ]: Cached model count updated: 7 models (estimate)
+03:37:27.317589 [info ]: Cached model count updated: 7 models (accurate)
+03:37:27.317697 [info ]: Started scheduling
+03:37:27.318013 [info ]: Finished scheduling [  0.00s]
+03:37:27.318214 [debug]: Compilation - 11 nodes selected: {"model.dbt_project.dim_customers", "model.dbt_project.dim_products", "model.dbt_project.fct_orders", "model.dbt_project.stg_customers", "model.dbt_project.stg_order_items", "model.dbt_project.stg_orders", "model.dbt_project.stg_products", "seed.dbt_project.customers", "seed.dbt_project.order_items", "seed.dbt_project.orders", "seed.dbt_project.products"}
+03:37:27.325456 [info ]: Started building task graph
+03:37:27.327221 [info ]: Finished building task graph [  0.00s]
+03:37:27.328152 [info ]: Finished loading project [  0.08s]
+03:37:27.380381 [info ]: Started rendering (11 nodes)
+03:37:27.380429 [info ]: Started seed main.products
+03:37:27.380447 [debug]: Started rendering seed main.products
+03:37:27.380486 [info ]: Started seed main.orders
+03:37:27.380508 [debug]: Started rendering seed main.orders
+03:37:27.380534 [info ]: Started seed main.order_items
+03:37:27.380567 [debug]: Started rendering seed main.order_items
+03:37:27.380601 [info ]: Started seed main.customers
+03:37:27.380615 [debug]: Started rendering seed main.customers
+03:37:27.380643 [info ]: Started model main.fct_orders
+03:37:27.380666 [debug]: Started rendering model main.fct_orders
+03:37:27.380699 [info ]: Started model main.stg_orders
+03:37:27.380718 [debug]: Started rendering model main.stg_orders
+03:37:27.380735 [info ]: Started model main.stg_order_items
+03:37:27.380746 [debug]: Started rendering model main.stg_order_items
+03:37:27.380763 [info ]: Started model main.dim_products
+03:37:27.380782 [debug]: Started rendering model main.dim_products
+03:37:27.380824 [info ]: Started model main.stg_products
+03:37:27.380847 [debug]: Started rendering model main.stg_products
+03:37:27.380875 [info ]: Started model main.dim_customers
+03:37:27.380893 [debug]: Started rendering model main.dim_customers
+03:37:27.380920 [info ]: Started model main.stg_customers
+03:37:27.380935 [debug]: Started rendering model main.stg_customers
+03:37:27.381214 [debug]: Finished rendering [  0.00s] seed main.products [success]
+03:37:27.381256 [info ]:  Succeeded [-------] seed  main.products (table)
+03:37:27.381303 [debug]: Finished rendering [  0.00s] seed main.orders [success]
+03:37:27.381321 [info ]:  Succeeded [-------] seed  main.orders (table)
+03:37:27.381345 [debug]: Finished rendering [  0.00s] seed main.order_items [success]
+03:37:27.381359 [info ]:  Succeeded [-------] seed  main.order_items (table)
+03:37:27.381482 [debug]: Finished rendering [  0.00s] seed main.customers [success]
+03:37:27.381527 [info ]:  Succeeded [-------] seed  main.customers (table)
+03:37:27.383476 [debug]: Compiled SQL for node model.dbt_project.dim_products at target\.lsp\compiled\dbt_project\models\marts\dim_products.sql
+03:37:27.383476 [debug]: Compiled SQL for node model.dbt_project.dim_customers at target\.lsp\compiled\dbt_project\models\marts\dim_customers.sql
+03:37:27.383531 [debug]: Compiled SQL for node model.dbt_project.stg_customers at target\.lsp\compiled\dbt_project\models\staging\stg_customers.sql
+03:37:27.383690 [debug]: Finished rendering [  0.00s] model main.dim_products [success]
+03:37:27.383772 [info ]: Started analyzing (7 nodes)
+03:37:27.383802 [debug]: Started analyzing model main.dim_products
+03:37:27.383859 [debug]: Finished rendering [  0.00s] model main.dim_customers [success]
+03:37:27.383889 [debug]: Started analyzing model main.dim_customers
+03:37:27.383926 [debug]: Finished rendering [  0.00s] model main.stg_customers [success]
+03:37:27.383967 [debug]: Started analyzing model main.stg_customers
+03:37:27.384692 [debug]: Finished analyzing [  0.00s] model main.dim_customers [success]
+03:37:27.384749 [info ]:  Succeeded [  0.00s] model main.dim_customers (table)
+03:37:27.384796 [debug]: Finished analyzing [  0.00s] model main.dim_products [success]
+03:37:27.384812 [info ]:  Succeeded [  0.00s] model main.dim_products (table)
+03:37:27.384835 [debug]: Finished analyzing [  0.00s] model main.stg_customers [success]
+03:37:27.384851 [info ]:  Succeeded [  0.00s] model main.stg_customers (view)
+03:37:27.385270 [debug]: Compiled SQL for node model.dbt_project.stg_products at target\.lsp\compiled\dbt_project\models\staging\stg_products.sql
+03:37:27.385585 [debug]: Finished rendering [  0.00s] model main.stg_products [success]
+03:37:27.385669 [debug]: Started analyzing model main.stg_products
+03:37:27.386293 [debug]: Finished analyzing [  0.00s] model main.stg_products [success]
+03:37:27.386364 [info ]:  Succeeded [  0.00s] model main.stg_products (view)
+03:37:27.387044 [debug]: Compiled SQL for node model.dbt_project.fct_orders at target\.lsp\compiled\dbt_project\models\marts\fct_orders.sql
+03:37:27.387337 [debug]: Finished rendering [  0.01s] model main.fct_orders [success]
+03:37:27.387443 [debug]: Started analyzing model main.fct_orders
+03:37:27.388369 [debug]: Compiled SQL for node model.dbt_project.stg_orders at target\.lsp\compiled\dbt_project\models\staging\stg_orders.sql
+03:37:27.388369 [debug]: Compiled SQL for node model.dbt_project.stg_order_items at target\.lsp\compiled\dbt_project\models\staging\stg_order_items.sql
+03:37:27.388872 [debug]: Finished rendering [  0.01s] model main.stg_orders [success]
+03:37:27.388949 [debug]: Started analyzing model main.stg_orders
+03:37:27.389006 [debug]: Finished rendering [  0.01s] model main.stg_order_items [success]
+03:37:27.389028 [info ]: Finished rendering [  0.01s] (11 nodes, 0 skipped, 0 errors)
+03:37:27.389049 [debug]: Started analyzing model main.stg_order_items
+03:37:27.389592 [debug]: Finished analyzing [  0.00s] model main.stg_order_items [success]
+03:37:27.389653 [info ]:  Succeeded [  0.01s] model main.stg_order_items (view)
+03:37:27.390451 [debug]: Finished analyzing [  0.00s] model main.stg_orders [success]
+03:37:27.390504 [info ]:  Succeeded [  0.01s] model main.stg_orders (view)
+03:37:27.396485 [debug]: Finished analyzing [  0.01s] model main.fct_orders [success]
+03:37:27.396538 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+03:37:27.396554 [info ]:  Succeeded [  0.01s] model main.fct_orders (table)
+03:37:27.403317 [info ]: Started scheduling
+03:37:27.403416 [info ]: Finished scheduling [  0.00s]
+03:37:27.404670 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-06-11T03:47:39.248113Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-11T03:47:39.248938Z | 2be0fc32-0fdf-4445-baeb-ab10b0c7424c ====================
+03:47:39.249039 [info ]: Starting dbt LSP server
+03:47:39.249130 [info ]: Connecting to LSP client on port 8000
+03:47:39.252454 [info ]: Successfully connected to LSP client
+03:47:39.252496 [info ]: Creating LSP service...
+03:47:39.435869 [info ]: Creating LSP server...
+03:47:39.435911 [info ]: Starting LSP server...
+==================== 2026-06-11T04:03:13.186104Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-11T04:03:13.187064Z | a783df84-47ef-44da-8bd5-3c24cbd259a9 ====================
+04:03:13.187144 [info ]: Starting dbt LSP server
+04:03:13.187224 [info ]: Connecting to LSP client on port 8000
+04:03:13.191452 [info ]: Successfully connected to LSP client
+04:03:13.191540 [info ]: Creating LSP service...
+04:03:13.398478 [info ]: Creating LSP server...
+04:03:13.398512 [info ]: Starting LSP server...

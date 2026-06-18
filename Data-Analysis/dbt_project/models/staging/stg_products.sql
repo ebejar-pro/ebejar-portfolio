@@ -1,0 +1,17 @@
+-- models/staging/stg_products.sql
+
+with source as (
+    select * from {{ source('retail', 'products') }}
+),
+
+renamed as (
+    select
+        id as product_id,
+        name,
+        price,
+        current_stock_level,
+        minimum_stock_level
+    from source
+)
+
+select * from renamed

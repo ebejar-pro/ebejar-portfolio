@@ -1,0 +1,13 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\elbej\\miniconda3\\envs\\dbt_env\\python.exe",
+    "python.terminal.activateEnvironment": true,
+    "terminal.integrated.shellArgs.windows": [
+        "-ExecutionPolicy",
+        "Bypass",
+        "-NoExit",
+        "-Command",
+        "& 'C:\\Users\\elbej\\miniconda3\\Scripts\\activate' 'dbt_env'"
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
+}

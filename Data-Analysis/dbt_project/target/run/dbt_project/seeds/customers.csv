@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "retail"."main"."customers" ("id" integer,"name" text,"email" text,"phone" integer,"address" text,"suburb" text,"state" text,"postcode" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "retail"."main"."customers" FROM 'C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\seeds\customers.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

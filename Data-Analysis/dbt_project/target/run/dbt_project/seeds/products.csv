@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "retail"."main"."products" ("id" integer,"name" text,"price" float8,"current_stock_level" integer,"minimum_stock_level" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "retail"."main"."products" FROM 'C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\seeds\products.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

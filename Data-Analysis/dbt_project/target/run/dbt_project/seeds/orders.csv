@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "retail"."main"."orders" ("id" integer,"customer_id" integer,"date" date,"sales_channel" text,"total_order" float8)
+  ;
+    -- dbt seed --
+    
+          COPY "retail"."main"."orders" FROM 'C:\Users\elbej\OneDrive\Documents\GitHub\ebejar-portfolio\Data-Analysis\dbt_project\seeds\orders.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
