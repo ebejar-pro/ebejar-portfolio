@@ -2167,3 +2167,7 @@ from "retail"."main"."stg_products"
 [0m20:35:10.265376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247CEDE0E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247D4D1E350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247CEDE0D50>]}
 [0m20:35:10.266378 [debug] [MainThread]: Flushing usage events
 [0m20:35:11.360962 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-08-26T09:50:47.849056Z | 01a03d7a-b81d-7da0-bc32-ef38a14d9e29 ====================
+09:50:47.960161 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [111ms]
