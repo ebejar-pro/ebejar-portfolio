@@ -106,43 +106,6 @@ It simulates a real retail environment where synthetic sales data is ingested, t
 
 [View MD File](Data-Analysis/Retail_Sales_Performance_Analysis/04_BigQuery_Sales/BigQuery_Sales.md)
 
-# 🧪 E-Commerce Test Automation Framework (Selenium POM) - under development
-
-This automation framework demonstrates your experience as a Test Analyst & future Test Automation Engineer.
-
-## 📁 Structure
-
-```
-E_Commerce_Test_Automation/
-│
-├── README.md
-│
-├── Test_Plan_Strategy/
-│   ├── Test_Plan_Document.pdf
-│   ├── Traceability_Matrix.xlsx
-│   └── Manual_Test_Cases.xlsx
-│
-├── Automation_Framework/
-│   ├── pages/
-│   ├── tests/
-│   ├── utilities/
-│   └── reports/
-│
-└── Bug_Reports/
-    ├── bug_report_sample.pdf
-    └── failure_screenshots/
-```
-
-### 🔧 Framework Capabilities
-
-* Selenium WebDriver + Java + TestNG (POM structure)
-* Automated UI workflow tests
-* Reusable page components
-* HTML reports
-* Sample bug analysis
-
----
-
 # 🧠 Skills Demonstrated in This Portfolio
 
 ### **Data Engineering / Analytics**
@@ -160,13 +123,6 @@ E_Commerce_Test_Automation/
 * ETL with Power Query
 * Dashboard storytelling for retail
 
-### **QA & Automation**
-
-* Functional testing
-* Selenium WebDriver (Java)
-* TestNG, POM Structure
-* API testing with Postman
-* Defect reporting & traceability
 
 ---
 
