@@ -1,10 +1,10 @@
 
 ---
 
-# 🌐 Edmundo Bejar – Data Engineering | Analytics | QA Automation Portfolio
+# 🌐 Edmundo Bejar – Data Engineering | Data Analytics | Big Query Analytics and ML Portfolio
 
 Welcome to my professional portfolio.
-This repository showcases end-to-end projects across **SQL, Data Engineering, Python Analytics, Power BI Reporting, and Test Automation**—demonstrating real-world technical skills used in retail, finance, and general software testing.
+This repository showcases end-to-end projects across **SQL, Data Engineering, Python Analytics, BigQuery Analytics and Power BI Reporting, **—demonstrating real-world technical skills used in retail, finance, telecommunications and general software testing.
 
 ---
 
